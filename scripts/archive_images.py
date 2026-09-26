@@ -54,15 +54,27 @@ def main():
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
     cursor=ROOT/'data'/'image_repair_cursor.txt'
-    # Prioritise logo-only sets and the largest image gaps, rather than cycling blindly.
+    # Rank only repairable source links; unresolvable sets remain in the diagnosis report.
     audit_path=ROOT/'data'/'image_audit.json'
     priority={}
     if audit_path.exists():
         audit=json.loads(audit_path.read_text(encoding='utf-8'))
         for row in audit.get('sets',[]):
             priority[row['id']]=(row.get('logo_status')!='local',len(row.get('missing_cards',[]))+len(row.get('external_unverified_cards',[])))
-    paths=sorted(SETS.glob('*.json'),key=lambda p:(-int(priority.get(p.stem,(False,0))[0] and priority.get(p.stem,(False,0))[1]==0),-priority.get(p.stem,(False,0))[1],p.stem))
-    start=0  # Re-evaluate priority after every audit; avoid stale cursor ordering.
+    # Only rank sets with a source URL or an explicitly mapped secondary source.
+    # Previously, missing-logo-only sets without any source consumed the repair budget.
+    paths=[]
+    for p in SETS.glob('*.json'):
+        payload=json.loads(p.read_text(encoding='utf-8'))
+        sid=p.stem
+        logo=payload['set'].get('images',{}).get('logo','')
+        cards=payload.get('cards',[])
+        logo_action=not logo.startswith('./assets/') and bool(logo or supplemental(sid,kind='logo'))
+        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number'))) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
+        if logo_action or card_actions:
+            paths.append((p,logo_action,card_actions))
+    paths=[p for p,_,_ in sorted(paths,key=lambda row:(-row[2],-int(row[1]),row[0].stem))]
+    start=0
     visited=0
     for path in paths[start:]+paths[:start]:
         if attempted>=LIMIT:break
