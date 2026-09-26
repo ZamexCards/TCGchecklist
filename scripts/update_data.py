@@ -69,7 +69,18 @@ def build_set(item):
         cards=list(pool.map(one,summaries))
     info=set_info(item,detail)
     payload={'set':info,'cards':cards,'updated':datetime.datetime.now(datetime.timezone.utc).isoformat()}
-    write(SETS/(sid+'.json'),payload)
+    path=SETS/(sid+'.json')
+    if path.exists():
+        try:
+            old=json.loads(path.read_text())
+            if not payload['set']['images']['logo']:
+                payload['set']['images']['logo']=old.get('set',{}).get('images',{}).get('logo','')
+            old_cards={c['id']:c for c in old.get('cards',[])}
+            for c in payload['cards']:
+                if not c['images']['small']:
+                    c['images']['small']=old_cards.get(c['id'],{}).get('images',{}).get('small','')
+        except (OSError,ValueError,KeyError):pass
+    write(path,payload)
     print('Updated:',sid,len(cards),flush=True)
     return info
 def main():
@@ -90,7 +101,14 @@ def main():
         existing=previous.get(sid)
         recent=bool(existing and existing.get('releaseDate') and
                     (today-datetime.date.fromisoformat(existing['releaseDate'])).days<45)
-        if path.exists() and not recent and os.environ.get('FORCE_REFRESH')!='1':
+        missing=False
+        if path.exists():
+            try:
+                snapshot=json.loads(path.read_text())
+                missing=not snapshot.get('set',{}).get('images',{}).get('logo') or any(
+                    not c.get('images',{}).get('small') for c in snapshot.get('cards',[]))
+            except (OSError,ValueError):pass
+        if path.exists() and not recent and not missing and os.environ.get('FORCE_REFRESH')!='1':
             try:
                 results[sid]=json.loads(path.read_text())['set']
                 continue
