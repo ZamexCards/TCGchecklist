@@ -5,6 +5,14 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
 MANIFEST=ROOT/'data'/'sets.json'
 LIMIT=int(os.getenv('IMAGE_REPAIR_LIMIT','16'))
+OVERRIDES=ROOT/'data'/'image_sources.json'
+def overrides():
+    if not OVERRIDES.exists():return {}
+    return json.loads(OVERRIDES.read_text(encoding='utf-8'))
+SOURCE_OVERRIDES=overrides()
+def override(sid,number='',kind='card'):
+    entry=SOURCE_OVERRIDES.get(sid,{})
+    return entry.get('logo','') if kind=='logo' else entry.get('cards',{}).get(str(number),'')
 HEADERS={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'image/webp,image/png,image/*'}
 def candidates(url,kind):
     if not url or url.startswith('./'):return []
@@ -42,6 +50,8 @@ FALLBACK_SETS={
     'ecard2':'ecard2','ecard3':'ecard3',
 }
 def supplemental(sid,number='',kind='card'):
+    explicit=override(sid,number,kind)
+    if explicit:return explicit
     other=FALLBACK_SETS.get(sid)
     if not other:return ''
     if kind=='logo':return 'https://images.pokemontcg.io/'+other+'/logo.png'
