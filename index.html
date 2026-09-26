@@ -110,7 +110,7 @@
   function englishSetFilter(s){return !/jp|japan|korea|china|chinese|japanese|korean/i.test((s.name||'')+' '+(s.id||''));}
   // Cache per browser: setlijst 24 uur, kaartgegevens 30 dagen.
   // De lijst wordt direct uit cache getoond; daarna controleren we op nieuwe sets.
-  const CACHE_VERSION='zc-checklist-v5-image-repair-';
+  const CACHE_VERSION='zc-checklist-v6-central-';
   const DAY=86400000;
   function cacheGet(key,maxAge){
     try{
@@ -168,7 +168,21 @@
       return data;
     }
   }
+  let centralMode=false;
+  async function centralJSON(path){
+    const response=await fetch(path,{cache:'no-cache'});
+    if(!response.ok)throw Error('Centrale data HTTP '+response.status);
+    return response.json();
+  }
+  async function loadCentralSets(){
+    const manifest=await centralJSON('./data/sets.json');
+    if(!Array.isArray(manifest.sets)||!manifest.sets.length)throw Error('Nog geen centrale setgegevens');
+    centralMode=true;
+    showSets(manifest.sets,'Sets direct geladen uit de centrale ZamexCards-database. Bijgewerkt: '+(manifest.updated||'onbekend'));
+    return true;
+  }
   async function loadSets(){
+    try{await loadCentralSets();return;}catch(e){console.warn('Centrale gegevens nog niet beschikbaar; tijdelijke reservebron:',e);}
     const cached=cacheGet('sets',24*DAY);
     if(cached?.length)showSets(cached,'Sets direct uit opgeslagen gegevens geladen. Nieuwe sets worden gecontroleerd...');
     else status('<span class="zc-loading"></span>Sets laden (eerste bezoek kan iets langer duren)...');
@@ -253,6 +267,7 @@
     return /common|uncommon|rare|holo rare/.test(rarity) || /pokemon|trainer|energy/i.test(card.supertype||'');
   }
   function variants(card){
+    if(Array.isArray(card.availableVariants)&&card.availableVariants.length)return card.availableVariants;
     const keys=variantKeys(card);
     const out=['Base'];
     if(reverseEligible(card)) out.push('Reverse holo');
@@ -261,22 +276,24 @@
     return out;
   }
   function cardType(card){return [card.supertype,(card.subtypes||[]).join(' / '),(card.types||[]).join(' / ')].filter(Boolean).join(' — ');}
-  function render(){let q=els.search.value.trim().toLowerCase();let data=cards.filter(c=>!q||[c.name,c.number,cardType(c),c.rarity].join(' ').toLowerCase().includes(q));data.sort((a,b)=>els.sort.value==='asc'?numVal(a.number)-numVal(b.number):numVal(b.number)-numVal(a.number));els.list.className='zc-list '+(els.view.value==='grid'?'zc-grid':''); if(!data.length){els.list.innerHTML='<div class="zc-empty">Geen kaarten gevonden met deze zoekopdracht.</div>';return;} els.list.innerHTML=data.map(c=>`<article class="zc-row"><img class="zc-card-img" loading="lazy" src="${esc(c.images?.small||'')}" alt="${esc(c.name)}"><div><div class="zc-card-no">#${esc(c.number)} / ${esc(activeSet?.printedTotal||activeSet?.total||'')}</div><div class="zc-card-title">${esc(c.name)}</div><div class="zc-small">${esc(cardType(c)||'Onbekend type')} ${c.rarity?' • '+esc(c.rarity):''}</div><div class="zc-checks">${variants(c).map(v=>`<label class="zc-check"><input type="checkbox"> ${esc(v)}</label>`).join('')}</div></div></article>`).join('');
+  function render(){let q=els.search.value.trim().toLowerCase();let data=cards.filter(c=>!q||[c.name,c.number,cardType(c),c.rarity].join(' ').toLowerCase().includes(q));data.sort((a,b)=>els.sort.value==='asc'?numVal(a.number)-numVal(b.number):numVal(b.number)-numVal(a.number));els.list.className='zc-list '+(els.view.value==='grid'?'zc-grid':''); if(!data.length){els.list.innerHTML='<div class="zc-empty">Geen kaarten gevonden met deze zoekopdracht.</div>';return;} els.list.innerHTML=data.map(c=>`<article class="zc-row"><img class="zc-card-img" loading="lazy" src="${esc(c.images?.small||'./assets/geen-kaart.svg')}" alt="${esc(c.name)}"><div><div class="zc-card-no">#${esc(c.number)} / ${esc(activeSet?.printedTotal||activeSet?.total||'')}</div><div class="zc-card-title">${esc(c.name)}</div><div class="zc-small">${esc(cardType(c)||'Onbekend type')} ${c.rarity?' • '+esc(c.rarity):''}</div><div class="zc-checks">${variants(c).map(v=>`<label class="zc-check"><input type="checkbox"> ${esc(v)}</label>`).join('')}</div></div></article>`).join('');
     els.list.querySelectorAll('.zc-card-img').forEach(img=>{
-      img.addEventListener('error',function(){
+      img.onerror=function(){
         if(!this.dataset.fallback && /\/low\.webp(?:\?.*)?$/i.test(this.src)){
-          this.dataset.fallback='1';
-          this.src=this.src.replace(/\/low\.webp(?:\?.*)?$/i,'/low.png');
-        }else{
-          this.removeAttribute('src');this.alt='Afbeelding niet beschikbaar';
-          this.style.visibility='hidden';
-        }
-      });
+          this.dataset.fallback='1';this.src=this.src.replace(/\/low\.webp(?:\?.*)?$/i,'/low.png');
+        }else{this.onerror=null;this.src='./assets/geen-kaart.svg';}
+      };
     });
   }
   async function loadCards(){const id=els.setSelect.value;if(!id){status('Kies eerst een set.');return;} activeSet=sets.find(s=>s.id===id);els.load.disabled=true;els.png.disabled=true;els.pdf.disabled=true;status('<span class="zc-loading"></span>Checklist wordt geladen...');try{let all=[],page=1,pageSize=250;
-    const cachedCards=cacheGet('cards-'+id,30*DAY);
-    if(cachedCards?.cards?.length){
+    if(centralMode){
+      const payload=await centralJSON('./data/sets/'+encodeURIComponent(id)+'.json');
+      if(!Array.isArray(payload.cards)||!payload.cards.length)throw Error('Geen kaartgegevens in centrale database');
+      all=payload.cards;
+      activeSet={...activeSet,...(payload.set||{})};
+    }
+    const cachedCards=centralMode?null:cacheGet('cards-'+id,30*DAY);
+    if(centralMode){/* centraal bestand is leidend */}else if(cachedCards?.cards?.length){
       all=cachedCards.cards;
       if(cachedCards.set)activeSet={...activeSet,...cachedCards.set};
     }else{
@@ -294,8 +311,8 @@
         if(!all.length)throw new Error('Reservebron bevat geen kaarten voor deze set');
       }
     }
-    if(!cachedCards?.cards?.length && all.length)cachePut('cards-'+id,{cards:all,set:activeSet});
-    cards=all;els.header.style.display='flex';els.setLogo.src=activeSet.images?.logo||'';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
+    if(!centralMode && !cachedCards?.cards?.length && all.length)cachePut('cards-'+id,{cards:all,set:activeSet});
+    cards=all;els.header.style.display='flex';els.setLogo.onerror=function(){this.onerror=null;this.src='./assets/geen-setlogo.svg';};els.setLogo.src=activeSet.images?.logo||'./assets/geen-setlogo.svg';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
   function reset(){els.search.value='';els.sort.value='asc';els.view.value='grid';cards=[];activeSet=null;els.list.innerHTML='';els.header.style.display='none';els.png.disabled=true;els.pdf.disabled=true;status('Selecteer eerst een set en druk daarna op “Laad pagina”.');window.scrollTo({top:0,behavior:'smooth'});}
   function fileName(){return 'ZamexCards-Pokemon-TCG-Checklist-'+(activeSet?.name||'set').replace(/[^a-z0-9]+/gi,'-');}
   function currentExportData(){
