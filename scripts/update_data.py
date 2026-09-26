@@ -138,8 +138,8 @@ def main():
         if path.exists():
             try:
                 snapshot=json.loads(path.read_text())
-                missing=not snapshot.get('set',{}).get('images',{}).get('logo') or any(
-                    not c.get('images',{}).get('small') for c in snapshot.get('cards',[]))
+                missing=not str(snapshot.get('set',{}).get('images',{}).get('logo','')).startswith('./assets/') or any(
+                    not str(c.get('images',{}).get('small','')).startswith('./assets/') for c in snapshot.get('cards',[]))
             except (OSError,ValueError):pass
         needs_repair=missing and repairs<REPAIR_LIMIT
         if needs_repair:repairs+=1
