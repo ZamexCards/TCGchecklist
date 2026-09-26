@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20207
-- missing_cards: 1396
+- local_cards: 20383
+- missing_cards: 1220
 - external_cards: 8
 - broken_cards: 0
-- local_logos: 146
-- missing_logos: 54
+- local_logos: 152
+- missing_logos: 48
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 124
+- complete_sets: 132
 
 ## Per set
 
@@ -67,9 +67,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | bw7 – Boundaries Crossed | local | 153/153 | 0 | 0 | 0 |
 | bw8 – Plasma Storm | local | 138/138 | 0 | 0 | 0 |
 | bw9 – Plasma Freeze | local | 122/122 | 0 | 0 | 0 |
-| bwp – BW Black Star Promos | local | 98/101 | 3 | 0 | 0 |
-| cel25 – Celebrations | local | 24/25 | 1 | 0 | 0 |
-| cel25cc – Celebrations Classic Collection | missing | 0/25 | 25 | 0 | 0 |
+| bwp – BW Black Star Promos | local | 101/101 | 0 | 0 | 0 |
+| cel25 – Celebrations | local | 25/25 | 0 | 0 | 0 |
+| cel25cc – Celebrations Classic Collection | local | 0/25 | 25 | 0 | 0 |
 | col1 – Call of Legends | local | 106/106 | 0 | 0 | 0 |
 | dc1 – Double Crisis | local | 33/34 | 0 | 1 | 0 |
 | det1 – Detective Pikachu | local | 18/18 | 0 | 0 | 0 |
@@ -83,7 +83,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | dpp – DP Black Star Promos | local | 56/56 | 0 | 0 | 0 |
 | dv1 – Dragon Vault | local | 21/21 | 0 | 0 | 0 |
 | ecard1 – Expedition Base Set | local | 165/165 | 0 | 0 | 0 |
-| ecard2 – Aquapolis | local | 146/186 | 40 | 0 | 0 |
+| ecard2 – Aquapolis | local | 169/186 | 17 | 0 | 0 |
 | ecard3 – Skyridge | local | 150/182 | 32 | 0 | 0 |
 | ex1 – Ruby & Sapphire | local | 109/109 | 0 | 0 | 0 |
 | ex10 – Unseen Forces | local | 117/117 | 0 | 0 | 0 |
@@ -167,14 +167,14 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
 | sv10 – Destined Rivals | local | 243/244 | 0 | 1 | 0 |
 | sve – Scarlet & Violet Energy | missing | 0/24 | 24 | 0 | 0 |
-| svp – SVP Black Star Promos | missing | 192/226 | 34 | 0 | 0 |
+| svp – SVP Black Star Promos | local | 198/226 | 28 | 0 | 0 |
 | swsh1 – Sword & Shield | local | 216/216 | 0 | 0 | 0 |
 | swsh10 – Astral Radiance | local | 216/216 | 0 | 0 | 0 |
-| swsh10tg – Astral Radiance Trainer Gallery | missing | 0/30 | 30 | 0 | 0 |
+| swsh10tg – Astral Radiance Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swsh11 – Lost Origin | local | 217/217 | 0 | 0 | 0 |
-| swsh11tg – Lost Origin Trainer Gallery | missing | 0/30 | 30 | 0 | 0 |
+| swsh11tg – Lost Origin Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swsh12 – Silver Tempest | local | 215/215 | 0 | 0 | 0 |
-| swsh12tg – Silver Tempest Trainer Gallery | missing | 0/30 | 30 | 0 | 0 |
+| swsh12tg – Silver Tempest Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swsh2 – Rebel Clash | local | 209/209 | 0 | 0 | 0 |
 | swsh3 – Darkness Ablaze | local | 201/201 | 0 | 0 | 0 |
 | swsh4 – Vivid Voltage | local | 203/203 | 0 | 0 | 0 |
@@ -183,8 +183,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | swsh7 – Evolving Skies | local | 237/237 | 0 | 0 | 0 |
 | swsh8 – Fusion Strike | local | 284/284 | 0 | 0 | 0 |
 | swsh9 – Brilliant Stars | local | 186/186 | 0 | 0 | 0 |
-| swsh9tg – Brilliant Stars Trainer Gallery | missing | 0/30 | 30 | 0 | 0 |
-| swshp – SWSH Black Star Promos | local | 285/307 | 22 | 0 | 0 |
+| swsh9tg – Brilliant Stars Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
+| swshp – SWSH Black Star Promos | local | 304/307 | 3 | 0 | 0 |
 | tk-bw-e – BW trainer Kit (Excadrill) | missing | 0/30 | 30 | 0 | 0 |
 | tk-bw-z – BW trainer Kit (Zoroark) | missing | 0/30 | 30 | 0 | 0 |
 | tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
@@ -216,10 +216,10 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | xy5 – Primal Clash | local | 164/164 | 0 | 0 | 0 |
 | xy6 – Roaring Skies | local | 112/112 | 0 | 0 | 0 |
 | xy7 – Ancient Origins | local | 101/101 | 0 | 0 | 0 |
-| xy8 – BREAKthrough | local | 164/165 | 1 | 0 | 0 |
+| xy8 – BREAKthrough | local | 165/165 | 0 | 0 | 0 |
 | xy9 – BREAKpoint | local | 126/126 | 0 | 0 | 0 |
 | xya – Yellow A Alternate | missing | 0/6 | 6 | 0 | 0 |
-| xyp – XY Black Star Promos | local | 213/216 | 3 | 0 | 0 |
+| xyp – XY Black Star Promos | local | 216/216 | 0 | 0 | 0 |
 
 ## Ontbrekende of ongeldige setlogo’s
 
@@ -242,7 +242,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - B1a – Crimson Blaze: missing
 - B2a – Paldean Wonders: missing
 - bog – Best of game: missing
-- cel25cc – Celebrations Classic Collection: missing
 - exu – Unseen Forces Unown Collection: missing
 - mee – Mega Evolution Energy: missing
 - mep – MEP Black Star Promos: missing
@@ -251,11 +250,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - sma – Hidden Fates Shiny Vault: missing
 - sv05 – Temporal Forces: missing
 - sve – Scarlet & Violet Energy: missing
-- svp – SVP Black Star Promos: missing
-- swsh10tg – Astral Radiance Trainer Gallery: missing
-- swsh11tg – Lost Origin Trainer Gallery: missing
-- swsh12tg – Silver Tempest Trainer Gallery: missing
-- swsh9tg – Brilliant Stars Trainer Gallery: missing
 - tk-bw-e – BW trainer Kit (Excadrill): missing
 - tk-bw-z – BW trainer Kit (Zoroark): missing
 - tk-dp-l – DP trainer Kit (Lucario): missing
@@ -334,12 +328,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### bog – Best of game
 **Geen bronlink (9):** 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-### bwp – BW Black Star Promos
-**Geen bronlink (3):** BW04, BW05, BW96
-
-### cel25 – Celebrations
-**Geen bronlink (1):** 25
-
 ### cel25cc – Celebrations Classic Collection
 **Geen bronlink (25):** CC001, CC002, CC003, CC004, CC005, CC006, CC007, CC008, CC009, CC010, CC011, CC012, CC013, CC014, CC015, CC016, CC017, CC018, CC019, CC020, CC021, CC022, CC023, CC024, CC025
 
@@ -347,7 +335,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Externe bronlink (niet geverifieerd) (1):** 1
 
 ### ecard2 – Aquapolis
-**Geen bronlink (40):** 50b, 50a, 74a, 74b, 95a, 95b, 103a, 103b, H01, H02, H03, H04, H05, H06, H07, H08, H09, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32
+**Geen bronlink (17):** 50b, 50a, 74a, 74b, 95a, 95b, 103a, 103b, H01, H02, H03, H04, H05, H06, H07, H08, H09
 
 ### ecard3 – Skyridge
 **Geen bronlink (32):** H01, H02, H03, H04, H05, H06, H07, H08, H09, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32
@@ -401,25 +389,13 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (24):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
 
 ### svp – SVP Black Star Promos
-**Geen bronlink (34):** 085, 102, 175, 176, 190, 191, 192, 196, 199, 200, 201, 202, 203, 204, 205, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 500
-
-### swsh10tg – Astral Radiance Trainer Gallery
-**Geen bronlink (30):** TG01, TG02, TG03, TG04, TG05, TG06, TG07, TG08, TG09, TG10, TG11, TG12, TG13, TG14, TG15, TG16, TG17, TG18, TG19, TG20, TG21, TG22, TG23, TG24, TG25, TG26, TG27, TG28, TG29, TG30
-
-### swsh11tg – Lost Origin Trainer Gallery
-**Geen bronlink (30):** TG01, TG02, TG03, TG04, TG05, TG06, TG07, TG08, TG09, TG10, TG11, TG12, TG13, TG14, TG15, TG16, TG17, TG18, TG19, TG20, TG21, TG22, TG23, TG24, TG25, TG26, TG27, TG28, TG29, TG30
-
-### swsh12tg – Silver Tempest Trainer Gallery
-**Geen bronlink (30):** TG01, TG02, TG03, TG04, TG05, TG06, TG07, TG08, TG09, TG10, TG11, TG12, TG13, TG14, TG15, TG16, TG17, TG18, TG19, TG20, TG21, TG22, TG23, TG24, TG25, TG26, TG27, TG28, TG29, TG30
+**Geen bronlink (28):** 085, 102, 175, 176, 190, 191, 192, 204, 205, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 500
 
 ### swsh6 – Chilling Reign
 **Externe bronlink (niet geverifieerd) (1):** 181
 
-### swsh9tg – Brilliant Stars Trainer Gallery
-**Geen bronlink (30):** TG01, TG02, TG03, TG04, TG05, TG06, TG07, TG08, TG09, TG10, TG11, TG12, TG13, TG14, TG15, TG16, TG17, TG18, TG19, TG20, TG21, TG22, TG23, TG24, TG25, TG26, TG27, TG28, TG29, TG30
-
 ### swshp – SWSH Black Star Promos
-**Geen bronlink (22):** SWSH074, SWSH075, SWSH177, SWSH251, SWSH282, SWSH283, SWSH284, SWSH287, SWSH288, SWSH289, SWSH290, SWSH292, SWSH293, SWSH299, SWSH300, SWSH301, SWSH302, SWSH303, SWSH304, SWSH305, SWSH306, SWSH307
+**Geen bronlink (3):** SWSH299, SWSH300, SWSH301
 
 ### tk-bw-e – BW trainer Kit (Excadrill)
 **Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
@@ -484,12 +460,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### xy10 – Fates Collide
 **Externe bronlink (niet geverifieerd) (1):** 79
 
-### xy8 – BREAKthrough
-**Geen bronlink (1):** 146a
-
 ### xya – Yellow A Alternate
 **Geen bronlink (6):** 24a, 28a, 54a, 55a, 92a, 107a
-
-### xyp – XY Black Star Promos
-**Geen bronlink (3):** XY39, XY46, XY68
 

@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20207,
-    "missing_cards": 1396,
+    "local_cards": 20383,
+    "missing_cards": 1220,
     "external_cards": 8,
     "broken_cards": 0,
-    "local_logos": 146,
-    "missing_logos": 54,
+    "local_logos": 152,
+    "missing_logos": 48,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 124
+    "complete_sets": 132
   },
   "sets": [
     {
@@ -2332,24 +2332,8 @@
       "name": "BW Black Star Promos",
       "logo_status": "local",
       "total_cards": 101,
-      "local_cards": 98,
-      "missing_cards": [
-        {
-          "id": "bwp-BW04",
-          "number": "BW04",
-          "name": "Reshiram"
-        },
-        {
-          "id": "bwp-BW05",
-          "number": "BW05",
-          "name": "Zekrom"
-        },
-        {
-          "id": "bwp-BW96",
-          "number": "BW96",
-          "name": "Tornadus-EX"
-        }
-      ],
+      "local_cards": 101,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -2358,21 +2342,15 @@
       "name": "Celebrations",
       "logo_status": "local",
       "total_cards": 25,
-      "local_cards": 24,
-      "missing_cards": [
-        {
-          "id": "cel25-25",
-          "number": "25",
-          "name": "Mew"
-        }
-      ],
+      "local_cards": 25,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
     {
       "id": "cel25cc",
       "name": "Celebrations Classic Collection",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 25,
       "local_cards": 0,
       "missing_cards": [
@@ -2646,7 +2624,7 @@
       "name": "Aquapolis",
       "logo_status": "local",
       "total_cards": 186,
-      "local_cards": 146,
+      "local_cards": 169,
       "missing_cards": [
         {
           "id": "ecard2-50b",
@@ -2732,121 +2710,6 @@
           "id": "ecard2-H09",
           "number": "H09",
           "name": "Espeon"
-        },
-        {
-          "id": "ecard2-H10",
-          "number": "H10",
-          "name": "Exeggutor"
-        },
-        {
-          "id": "ecard2-H11",
-          "number": "H11",
-          "name": "Houndoom"
-        },
-        {
-          "id": "ecard2-H12",
-          "number": "H12",
-          "name": "Hypno"
-        },
-        {
-          "id": "ecard2-H13",
-          "number": "H13",
-          "name": "Jumpluff"
-        },
-        {
-          "id": "ecard2-H14",
-          "number": "H14",
-          "name": "Kingdra"
-        },
-        {
-          "id": "ecard2-H15",
-          "number": "H15",
-          "name": "Lanturn"
-        },
-        {
-          "id": "ecard2-H16",
-          "number": "H16",
-          "name": "Magneton"
-        },
-        {
-          "id": "ecard2-H17",
-          "number": "H17",
-          "name": "Muk"
-        },
-        {
-          "id": "ecard2-H18",
-          "number": "H18",
-          "name": "Nidoking"
-        },
-        {
-          "id": "ecard2-H19",
-          "number": "H19",
-          "name": "Ninetales"
-        },
-        {
-          "id": "ecard2-H20",
-          "number": "H20",
-          "name": "Octillery"
-        },
-        {
-          "id": "ecard2-H21",
-          "number": "H21",
-          "name": "Scizor"
-        },
-        {
-          "id": "ecard2-H22",
-          "number": "H22",
-          "name": "Slowking"
-        },
-        {
-          "id": "ecard2-H23",
-          "number": "H23",
-          "name": "Steelix"
-        },
-        {
-          "id": "ecard2-H24",
-          "number": "H24",
-          "name": "Sudowoodo"
-        },
-        {
-          "id": "ecard2-H25",
-          "number": "H25",
-          "name": "Suicune"
-        },
-        {
-          "id": "ecard2-H26",
-          "number": "H26",
-          "name": "Tentacruel"
-        },
-        {
-          "id": "ecard2-H27",
-          "number": "H27",
-          "name": "Togetic"
-        },
-        {
-          "id": "ecard2-H28",
-          "number": "H28",
-          "name": "Tyranitar"
-        },
-        {
-          "id": "ecard2-H29",
-          "number": "H29",
-          "name": "Umbreon"
-        },
-        {
-          "id": "ecard2-H30",
-          "number": "H30",
-          "name": "Victreebel"
-        },
-        {
-          "id": "ecard2-H31",
-          "number": "H31",
-          "name": "Vileplume"
-        },
-        {
-          "id": "ecard2-H32",
-          "number": "H32",
-          "name": "Zapdos"
         }
       ],
       "external_unverified_cards": [],
@@ -5232,9 +5095,9 @@
     {
       "id": "svp",
       "name": "SVP Black Star Promos",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 226,
-      "local_cards": 192,
+      "local_cards": 198,
       "missing_cards": [
         {
           "id": "svp-085",
@@ -5270,36 +5133,6 @@
           "id": "svp-192",
           "number": "192",
           "name": "Fuecoco"
-        },
-        {
-          "id": "svp-196",
-          "number": "196",
-          "name": "Charizard ex"
-        },
-        {
-          "id": "svp-199",
-          "number": "199",
-          "name": "Zarude"
-        },
-        {
-          "id": "svp-200",
-          "number": "200",
-          "name": "Eevee"
-        },
-        {
-          "id": "svp-201",
-          "number": "201",
-          "name": "Zebstrika"
-        },
-        {
-          "id": "svp-202",
-          "number": "202",
-          "name": "Kangaskhan"
-        },
-        {
-          "id": "svp-203",
-          "number": "203",
-          "name": "Team Rocket's Wobbuffet"
         },
         {
           "id": "svp-204",
@@ -5433,161 +5266,10 @@
     {
       "id": "swsh10tg",
       "name": "Astral Radiance Trainer Gallery",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
-      "local_cards": 0,
-      "missing_cards": [
-        {
-          "id": "swsh10tg-TG01",
-          "number": "TG01",
-          "name": "Abomasnow"
-        },
-        {
-          "id": "swsh10tg-TG02",
-          "number": "TG02",
-          "name": "Flapple"
-        },
-        {
-          "id": "swsh10tg-TG03",
-          "number": "TG03",
-          "name": "Kingdra"
-        },
-        {
-          "id": "swsh10tg-TG04",
-          "number": "TG04",
-          "name": "Frosmoth"
-        },
-        {
-          "id": "swsh10tg-TG05",
-          "number": "TG05",
-          "name": "Gardevoir"
-        },
-        {
-          "id": "swsh10tg-TG06",
-          "number": "TG06",
-          "name": "Wyrdeer"
-        },
-        {
-          "id": "swsh10tg-TG07",
-          "number": "TG07",
-          "name": "Falinks"
-        },
-        {
-          "id": "swsh10tg-TG08",
-          "number": "TG08",
-          "name": "Kleavor"
-        },
-        {
-          "id": "swsh10tg-TG09",
-          "number": "TG09",
-          "name": "Mightyena"
-        },
-        {
-          "id": "swsh10tg-TG10",
-          "number": "TG10",
-          "name": "Galarian Obstagoon"
-        },
-        {
-          "id": "swsh10tg-TG11",
-          "number": "TG11",
-          "name": "Bronzong"
-        },
-        {
-          "id": "swsh10tg-TG12",
-          "number": "TG12",
-          "name": "Hoothoot"
-        },
-        {
-          "id": "swsh10tg-TG13",
-          "number": "TG13",
-          "name": "Starmie V"
-        },
-        {
-          "id": "swsh10tg-TG14",
-          "number": "TG14",
-          "name": "Ice Rider Calyrex V"
-        },
-        {
-          "id": "swsh10tg-TG15",
-          "number": "TG15",
-          "name": "Ice Rider Calyrex VMAX"
-        },
-        {
-          "id": "swsh10tg-TG16",
-          "number": "TG16",
-          "name": "Galarian Articuno V"
-        },
-        {
-          "id": "swsh10tg-TG17",
-          "number": "TG17",
-          "name": "Shadow Rider Calyrex V"
-        },
-        {
-          "id": "swsh10tg-TG18",
-          "number": "TG18",
-          "name": "Shadow Rider Calyrex VMAX"
-        },
-        {
-          "id": "swsh10tg-TG19",
-          "number": "TG19",
-          "name": "Galarian Zapdos V"
-        },
-        {
-          "id": "swsh10tg-TG20",
-          "number": "TG20",
-          "name": "Galarian Moltres V"
-        },
-        {
-          "id": "swsh10tg-TG21",
-          "number": "TG21",
-          "name": "Zacian V"
-        },
-        {
-          "id": "swsh10tg-TG22",
-          "number": "TG22",
-          "name": "Zamazenta V"
-        },
-        {
-          "id": "swsh10tg-TG23",
-          "number": "TG23",
-          "name": "Garchomp V"
-        },
-        {
-          "id": "swsh10tg-TG24",
-          "number": "TG24",
-          "name": "Allister"
-        },
-        {
-          "id": "swsh10tg-TG25",
-          "number": "TG25",
-          "name": "Bea"
-        },
-        {
-          "id": "swsh10tg-TG26",
-          "number": "TG26",
-          "name": "Melony"
-        },
-        {
-          "id": "swsh10tg-TG27",
-          "number": "TG27",
-          "name": "Milo"
-        },
-        {
-          "id": "swsh10tg-TG28",
-          "number": "TG28",
-          "name": "Piers"
-        },
-        {
-          "id": "swsh10tg-TG29",
-          "number": "TG29",
-          "name": "Ice Rider Calyrex VMAX"
-        },
-        {
-          "id": "swsh10tg-TG30",
-          "number": "TG30",
-          "name": "Shadow Rider Calyrex VMAX"
-        }
-      ],
+      "local_cards": 30,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -5604,161 +5286,10 @@
     {
       "id": "swsh11tg",
       "name": "Lost Origin Trainer Gallery",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
-      "local_cards": 0,
-      "missing_cards": [
-        {
-          "id": "swsh11tg-TG01",
-          "number": "TG01",
-          "name": "Parasect"
-        },
-        {
-          "id": "swsh11tg-TG02",
-          "number": "TG02",
-          "name": "Roserade"
-        },
-        {
-          "id": "swsh11tg-TG03",
-          "number": "TG03",
-          "name": "Charizard"
-        },
-        {
-          "id": "swsh11tg-TG04",
-          "number": "TG04",
-          "name": "Chandelure"
-        },
-        {
-          "id": "swsh11tg-TG05",
-          "number": "TG05",
-          "name": "Pikachu"
-        },
-        {
-          "id": "swsh11tg-TG06",
-          "number": "TG06",
-          "name": "Gengar"
-        },
-        {
-          "id": "swsh11tg-TG07",
-          "number": "TG07",
-          "name": "Banette"
-        },
-        {
-          "id": "swsh11tg-TG08",
-          "number": "TG08",
-          "name": "Hisuian Arcanine"
-        },
-        {
-          "id": "swsh11tg-TG09",
-          "number": "TG09",
-          "name": "Spiritomb"
-        },
-        {
-          "id": "swsh11tg-TG10",
-          "number": "TG10",
-          "name": "Snorlax"
-        },
-        {
-          "id": "swsh11tg-TG11",
-          "number": "TG11",
-          "name": "Castform"
-        },
-        {
-          "id": "swsh11tg-TG12",
-          "number": "TG12",
-          "name": "Orbeetle V"
-        },
-        {
-          "id": "swsh11tg-TG13",
-          "number": "TG13",
-          "name": "Orbeetle VMAX"
-        },
-        {
-          "id": "swsh11tg-TG14",
-          "number": "TG14",
-          "name": "Centiskorch V"
-        },
-        {
-          "id": "swsh11tg-TG15",
-          "number": "TG15",
-          "name": "Centiskorch VMAX"
-        },
-        {
-          "id": "swsh11tg-TG16",
-          "number": "TG16",
-          "name": "Pikachu V"
-        },
-        {
-          "id": "swsh11tg-TG17",
-          "number": "TG17",
-          "name": "Pikachu VMAX"
-        },
-        {
-          "id": "swsh11tg-TG18",
-          "number": "TG18",
-          "name": "Enamorus V"
-        },
-        {
-          "id": "swsh11tg-TG19",
-          "number": "TG19",
-          "name": "Gallade V"
-        },
-        {
-          "id": "swsh11tg-TG20",
-          "number": "TG20",
-          "name": "Crobat V"
-        },
-        {
-          "id": "swsh11tg-TG21",
-          "number": "TG21",
-          "name": "Eternatus V"
-        },
-        {
-          "id": "swsh11tg-TG22",
-          "number": "TG22",
-          "name": "Eternatus VMAX"
-        },
-        {
-          "id": "swsh11tg-TG23",
-          "number": "TG23",
-          "name": "Adventurer's Discovery"
-        },
-        {
-          "id": "swsh11tg-TG24",
-          "number": "TG24",
-          "name": "Boss's Orders"
-        },
-        {
-          "id": "swsh11tg-TG25",
-          "number": "TG25",
-          "name": "Cook"
-        },
-        {
-          "id": "swsh11tg-TG26",
-          "number": "TG26",
-          "name": "Kabu"
-        },
-        {
-          "id": "swsh11tg-TG27",
-          "number": "TG27",
-          "name": "Nessa"
-        },
-        {
-          "id": "swsh11tg-TG28",
-          "number": "TG28",
-          "name": "Opal"
-        },
-        {
-          "id": "swsh11tg-TG29",
-          "number": "TG29",
-          "name": "Pikachu VMAX"
-        },
-        {
-          "id": "swsh11tg-TG30",
-          "number": "TG30",
-          "name": "Mew VMAX"
-        }
-      ],
+      "local_cards": 30,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -5775,161 +5306,10 @@
     {
       "id": "swsh12tg",
       "name": "Silver Tempest Trainer Gallery",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
-      "local_cards": 0,
-      "missing_cards": [
-        {
-          "id": "swsh12tg-TG01",
-          "number": "TG01",
-          "name": "Braixen"
-        },
-        {
-          "id": "swsh12tg-TG02",
-          "number": "TG02",
-          "name": "Milotic"
-        },
-        {
-          "id": "swsh12tg-TG03",
-          "number": "TG03",
-          "name": "Flaaffy"
-        },
-        {
-          "id": "swsh12tg-TG04",
-          "number": "TG04",
-          "name": "Jynx"
-        },
-        {
-          "id": "swsh12tg-TG05",
-          "number": "TG05",
-          "name": "Gardevoir"
-        },
-        {
-          "id": "swsh12tg-TG06",
-          "number": "TG06",
-          "name": "Malamar"
-        },
-        {
-          "id": "swsh12tg-TG07",
-          "number": "TG07",
-          "name": "Rockruff"
-        },
-        {
-          "id": "swsh12tg-TG08",
-          "number": "TG08",
-          "name": "Passimian"
-        },
-        {
-          "id": "swsh12tg-TG09",
-          "number": "TG09",
-          "name": "Druddigon"
-        },
-        {
-          "id": "swsh12tg-TG10",
-          "number": "TG10",
-          "name": "Smeargle"
-        },
-        {
-          "id": "swsh12tg-TG11",
-          "number": "TG11",
-          "name": "Altaria"
-        },
-        {
-          "id": "swsh12tg-TG12",
-          "number": "TG12",
-          "name": "Kricketune V"
-        },
-        {
-          "id": "swsh12tg-TG13",
-          "number": "TG13",
-          "name": "Serperior V"
-        },
-        {
-          "id": "swsh12tg-TG14",
-          "number": "TG14",
-          "name": "Blaziken V"
-        },
-        {
-          "id": "swsh12tg-TG15",
-          "number": "TG15",
-          "name": "Blaziken VMAX"
-        },
-        {
-          "id": "swsh12tg-TG16",
-          "number": "TG16",
-          "name": "Zeraora V"
-        },
-        {
-          "id": "swsh12tg-TG17",
-          "number": "TG17",
-          "name": "Mawile V"
-        },
-        {
-          "id": "swsh12tg-TG18",
-          "number": "TG18",
-          "name": "Corviknight V"
-        },
-        {
-          "id": "swsh12tg-TG19",
-          "number": "TG19",
-          "name": "Corviknight VMAX"
-        },
-        {
-          "id": "swsh12tg-TG20",
-          "number": "TG20",
-          "name": "Rayquaza VMAX"
-        },
-        {
-          "id": "swsh12tg-TG21",
-          "number": "TG21",
-          "name": "Duraludon VMAX"
-        },
-        {
-          "id": "swsh12tg-TG22",
-          "number": "TG22",
-          "name": "Blissey V"
-        },
-        {
-          "id": "swsh12tg-TG23",
-          "number": "TG23",
-          "name": "Friends in Galar"
-        },
-        {
-          "id": "swsh12tg-TG24",
-          "number": "TG24",
-          "name": "Gordie"
-        },
-        {
-          "id": "swsh12tg-TG25",
-          "number": "TG25",
-          "name": "Judge"
-        },
-        {
-          "id": "swsh12tg-TG26",
-          "number": "TG26",
-          "name": "Professor Burnet"
-        },
-        {
-          "id": "swsh12tg-TG27",
-          "number": "TG27",
-          "name": "Raihan"
-        },
-        {
-          "id": "swsh12tg-TG28",
-          "number": "TG28",
-          "name": "Sordward & Shielbert"
-        },
-        {
-          "id": "swsh12tg-TG29",
-          "number": "TG29",
-          "name": "Rayquaza VMAX"
-        },
-        {
-          "id": "swsh12tg-TG30",
-          "number": "TG30",
-          "name": "Duraludon VMAX"
-        }
-      ],
+      "local_cards": 30,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -6022,161 +5402,10 @@
     {
       "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
-      "local_cards": 0,
-      "missing_cards": [
-        {
-          "id": "swsh9tg-TG01",
-          "number": "TG01",
-          "name": "Flareon"
-        },
-        {
-          "id": "swsh9tg-TG02",
-          "number": "TG02",
-          "name": "Vaporeon"
-        },
-        {
-          "id": "swsh9tg-TG03",
-          "number": "TG03",
-          "name": "Octillery"
-        },
-        {
-          "id": "swsh9tg-TG04",
-          "number": "TG04",
-          "name": "Jolteon"
-        },
-        {
-          "id": "swsh9tg-TG05",
-          "number": "TG05",
-          "name": "Zekrom"
-        },
-        {
-          "id": "swsh9tg-TG06",
-          "number": "TG06",
-          "name": "Dusknoir"
-        },
-        {
-          "id": "swsh9tg-TG07",
-          "number": "TG07",
-          "name": "Dedenne"
-        },
-        {
-          "id": "swsh9tg-TG08",
-          "number": "TG08",
-          "name": "Alcremie"
-        },
-        {
-          "id": "swsh9tg-TG09",
-          "number": "TG09",
-          "name": "Ariados"
-        },
-        {
-          "id": "swsh9tg-TG10",
-          "number": "TG10",
-          "name": "Houndoom"
-        },
-        {
-          "id": "swsh9tg-TG11",
-          "number": "TG11",
-          "name": "Eevee"
-        },
-        {
-          "id": "swsh9tg-TG12",
-          "number": "TG12",
-          "name": "Oranguru"
-        },
-        {
-          "id": "swsh9tg-TG13",
-          "number": "TG13",
-          "name": "Boltund V"
-        },
-        {
-          "id": "swsh9tg-TG14",
-          "number": "TG14",
-          "name": "Sylveon V"
-        },
-        {
-          "id": "swsh9tg-TG15",
-          "number": "TG15",
-          "name": "Sylveon VMAX"
-        },
-        {
-          "id": "swsh9tg-TG16",
-          "number": "TG16",
-          "name": "Mimikyu V"
-        },
-        {
-          "id": "swsh9tg-TG17",
-          "number": "TG17",
-          "name": "Mimikyu VMAX"
-        },
-        {
-          "id": "swsh9tg-TG18",
-          "number": "TG18",
-          "name": "Single Strike Urshifu V"
-        },
-        {
-          "id": "swsh9tg-TG19",
-          "number": "TG19",
-          "name": "Single Strike Urshifu VMAX"
-        },
-        {
-          "id": "swsh9tg-TG20",
-          "number": "TG20",
-          "name": "Rapid Strike Urshifu V"
-        },
-        {
-          "id": "swsh9tg-TG21",
-          "number": "TG21",
-          "name": "Rapid Strike Urshifu VMAX"
-        },
-        {
-          "id": "swsh9tg-TG22",
-          "number": "TG22",
-          "name": "Umbreon V"
-        },
-        {
-          "id": "swsh9tg-TG23",
-          "number": "TG23",
-          "name": "Umbreon VMAX"
-        },
-        {
-          "id": "swsh9tg-TG24",
-          "number": "TG24",
-          "name": "Acerola's Premonition"
-        },
-        {
-          "id": "swsh9tg-TG25",
-          "number": "TG25",
-          "name": "Café Master"
-        },
-        {
-          "id": "swsh9tg-TG26",
-          "number": "TG26",
-          "name": "Gloria"
-        },
-        {
-          "id": "swsh9tg-TG27",
-          "number": "TG27",
-          "name": "Rapid Strike Style Mustard"
-        },
-        {
-          "id": "swsh9tg-TG28",
-          "number": "TG28",
-          "name": "Single Strike Style Mustard"
-        },
-        {
-          "id": "swsh9tg-TG29",
-          "number": "TG29",
-          "name": "Single Strike Urshifu VMAX"
-        },
-        {
-          "id": "swsh9tg-TG30",
-          "number": "TG30",
-          "name": "Rapid Strike Urshifu VMAX"
-        }
-      ],
+      "local_cards": 30,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -6185,73 +5414,8 @@
       "name": "SWSH Black Star Promos",
       "logo_status": "local",
       "total_cards": 307,
-      "local_cards": 285,
+      "local_cards": 304,
       "missing_cards": [
-        {
-          "id": "swshp-SWSH074",
-          "number": "SWSH074",
-          "name": "Special Delivery Pikachu"
-        },
-        {
-          "id": "swshp-SWSH075",
-          "number": "SWSH075",
-          "name": "Special Delivery Charizard"
-        },
-        {
-          "id": "swshp-SWSH177",
-          "number": "SWSH177",
-          "name": "Special Delivery Bidoof"
-        },
-        {
-          "id": "swshp-SWSH251",
-          "number": "SWSH251",
-          "name": "Boss's Orders"
-        },
-        {
-          "id": "swshp-SWSH282",
-          "number": "SWSH282",
-          "name": "Galarian Articuno"
-        },
-        {
-          "id": "swshp-SWSH283",
-          "number": "SWSH283",
-          "name": "Galarian Zapdos"
-        },
-        {
-          "id": "swshp-SWSH284",
-          "number": "SWSH284",
-          "name": "Galarian Moltres"
-        },
-        {
-          "id": "swshp-SWSH287",
-          "number": "SWSH287",
-          "name": "Morpeko V-UNION"
-        },
-        {
-          "id": "swshp-SWSH288",
-          "number": "SWSH288",
-          "name": "Morpeko V-UNION"
-        },
-        {
-          "id": "swshp-SWSH289",
-          "number": "SWSH289",
-          "name": "Morpeko V-UNION"
-        },
-        {
-          "id": "swshp-SWSH290",
-          "number": "SWSH290",
-          "name": "Morpeko V-UNION"
-        },
-        {
-          "id": "swshp-SWSH292",
-          "number": "SWSH292",
-          "name": "Zacian V"
-        },
-        {
-          "id": "swshp-SWSH293",
-          "number": "SWSH293",
-          "name": "Zamazenta V"
-        },
         {
           "id": "swshp-SWSH299",
           "number": "SWSH299",
@@ -6266,36 +5430,6 @@
           "id": "swshp-SWSH301",
           "number": "SWSH301",
           "name": "Lugia V"
-        },
-        {
-          "id": "swshp-SWSH302",
-          "number": "SWSH302",
-          "name": "Klara"
-        },
-        {
-          "id": "swshp-SWSH303",
-          "number": "SWSH303",
-          "name": "Bulbasaur"
-        },
-        {
-          "id": "swshp-SWSH304",
-          "number": "SWSH304",
-          "name": "Arcanine"
-        },
-        {
-          "id": "swshp-SWSH305",
-          "number": "SWSH305",
-          "name": "Greninja"
-        },
-        {
-          "id": "swshp-SWSH306",
-          "number": "SWSH306",
-          "name": "Arceus V"
-        },
-        {
-          "id": "swshp-SWSH307",
-          "number": "SWSH307",
-          "name": "Arceus VSTAR"
         }
       ],
       "external_unverified_cards": [],
@@ -9017,14 +8151,8 @@
       "name": "BREAKthrough",
       "logo_status": "local",
       "total_cards": 165,
-      "local_cards": 164,
-      "missing_cards": [
-        {
-          "id": "xy8-146a",
-          "number": "146a",
-          "name": "Professor's Letter"
-        }
-      ],
+      "local_cards": 165,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -9084,24 +8212,8 @@
       "name": "XY Black Star Promos",
       "logo_status": "local",
       "total_cards": 216,
-      "local_cards": 213,
-      "missing_cards": [
-        {
-          "id": "xyp-XY39",
-          "number": "XY39",
-          "name": "Kingdra"
-        },
-        {
-          "id": "xyp-XY46",
-          "number": "XY46",
-          "name": "Altaria"
-        },
-        {
-          "id": "xyp-XY68",
-          "number": "XY68",
-          "name": "Chesnaught"
-        }
-      ],
+      "local_cards": 216,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     }
