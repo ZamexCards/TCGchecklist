@@ -32,6 +32,9 @@ jobs:
       - name: Audit all card images and set logos
         run: python scripts/audit_images.py
 
+      - name: Diagnose remaining missing image sources
+        run: python scripts/diagnose_images.py
+
       - name: Commit changed JSON
         run: |
           git config user.name "github-actions[bot]"
