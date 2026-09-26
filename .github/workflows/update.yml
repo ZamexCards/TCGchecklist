@@ -26,6 +26,9 @@ jobs:
       - name: Refresh set and card snapshots
         run: python scripts/update_data.py
 
+      - name: Archive and audit card images and set logos
+        run: python scripts/archive_images.py
+
       - name: Commit changed JSON
         run: |
           git config user.name "github-actions[bot]"
