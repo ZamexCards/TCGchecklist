@@ -54,7 +54,14 @@ def main():
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
     cursor=ROOT/'data'/'image_repair_cursor.txt'
-    # Prioritise logo-only sets and the largest image gaps, rather than cycling blindly.\n    audit_path=ROOT/'data'/'image_audit.json'\n    priority={}\n    if audit_path.exists():\n        audit=json.loads(audit_path.read_text(encoding='utf-8'))\n        for row in audit.get('sets',[]):\n            priority[row['id']]=(row.get('logo_status')!='local',len(row.get('missing_cards',[]))+len(row.get('external_unverified_cards',[])))\n    paths=sorted(SETS.glob('*.json'),key=lambda p:(-int(priority.get(p.stem,(False,0))[0] and priority.get(p.stem,(False,0))[1]==0),-priority.get(p.stem,(False,0))[1],p.stem))
+    # Prioritise logo-only sets and the largest image gaps, rather than cycling blindly.
+    audit_path=ROOT/'data'/'image_audit.json'
+    priority={}
+    if audit_path.exists():
+        audit=json.loads(audit_path.read_text(encoding='utf-8'))
+        for row in audit.get('sets',[]):
+            priority[row['id']]=(row.get('logo_status')!='local',len(row.get('missing_cards',[]))+len(row.get('external_unverified_cards',[])))
+    paths=sorted(SETS.glob('*.json'),key=lambda p:(-int(priority.get(p.stem,(False,0))[0] and priority.get(p.stem,(False,0))[1]==0),-priority.get(p.stem,(False,0))[1],p.stem))
     start=0  # Re-evaluate priority after every audit; avoid stale cursor ordering.
     visited=0
     for path in paths[start:]+paths[:start]:
