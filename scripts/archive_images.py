@@ -54,8 +54,8 @@ def main():
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
     cursor=ROOT/'data'/'image_repair_cursor.txt'
-    paths=sorted(SETS.glob('*.json'))
-    start=int(cursor.read_text().strip())%len(paths) if cursor.exists() and paths else 0
+    # Prioritise logo-only sets and the largest image gaps, rather than cycling blindly.\n    audit_path=ROOT/'data'/'image_audit.json'\n    priority={}\n    if audit_path.exists():\n        audit=json.loads(audit_path.read_text(encoding='utf-8'))\n        for row in audit.get('sets',[]):\n            priority[row['id']]=(row.get('logo_status')!='local',len(row.get('missing_cards',[]))+len(row.get('external_unverified_cards',[])))\n    paths=sorted(SETS.glob('*.json'),key=lambda p:(-int(priority.get(p.stem,(False,0))[0] and priority.get(p.stem,(False,0))[1]==0),-priority.get(p.stem,(False,0))[1],p.stem))
+    start=0  # Re-evaluate priority after every audit; avoid stale cursor ordering.
     visited=0
     for path in paths[start:]+paths[:start]:
         if attempted>=LIMIT:break
@@ -86,7 +86,7 @@ def main():
             changed+=1
             if sid in by_id:by_id[sid]['images']=info['images']
         print('Image audit:',sid,'logo:',bool(info['images'].get('logo')),'cards archived:',sum(c.get('images',{}).get('small','').startswith('./assets/') for c in cards),'/',len(cards),flush=True)
-    if paths:cursor.write_text(str((start+visited)%len(paths)),encoding='utf-8')
+    # Keep the previous cursor file for compatibility, but priority is recalculated each run.
     if changed:MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     print('Image archive: attempted sets:',attempted,'saved assets:',saved,'updated sets:',changed,flush=True)
 if __name__=='__main__':main()
