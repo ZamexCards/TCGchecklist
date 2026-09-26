@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20383
-- missing_cards: 1220
-- external_cards: 8
+- local_cards: 20490
+- missing_cards: 1114
+- external_cards: 7
 - broken_cards: 0
-- local_logos: 152
-- missing_logos: 48
+- local_logos: 154
+- missing_logos: 46
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 132
+- complete_sets: 139
 
 ## Per set
 
@@ -84,7 +84,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | dv1 – Dragon Vault | local | 21/21 | 0 | 0 | 0 |
 | ecard1 – Expedition Base Set | local | 165/165 | 0 | 0 | 0 |
 | ecard2 – Aquapolis | local | 169/186 | 17 | 0 | 0 |
-| ecard3 – Skyridge | local | 150/182 | 32 | 0 | 0 |
+| ecard3 – Skyridge | local | 173/182 | 9 | 0 | 0 |
 | ex1 – Ruby & Sapphire | local | 109/109 | 0 | 0 | 0 |
 | ex10 – Unseen Forces | local | 117/117 | 0 | 0 | 0 |
 | ex11 – Delta Species | local | 114/114 | 0 | 0 | 0 |
@@ -110,7 +110,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | hgss2 – Unleashed | local | 96/96 | 0 | 0 | 0 |
 | hgss3 – Undaunted | local | 91/91 | 0 | 0 | 0 |
 | hgss4 – Triumphant | local | 103/103 | 0 | 0 | 0 |
-| hgssp – HGSS Black Star Promos | local | 16/25 | 9 | 0 | 0 |
+| hgssp – HGSS Black Star Promos | local | 24/25 | 1 | 0 | 0 |
 | lc – Legendary Collection | local | 110/110 | 0 | 0 | 0 |
 | me01 – Mega Evolution | local | 188/188 | 0 | 0 | 0 |
 | me02 – Phantasmal Flames | local | 130/130 | 0 | 0 | 0 |
@@ -127,7 +127,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | neo4 – Neo Destiny | local | 113/113 | 0 | 0 | 0 |
 | np – Nintendo Black Star Promos | local | 40/40 | 0 | 0 | 0 |
 | pl1 – Platinum | local | 133/133 | 0 | 0 | 0 |
-| pl2 – Rising Rivals | local | 119/120 | 1 | 0 | 0 |
+| pl2 – Rising Rivals | local | 120/120 | 0 | 0 | 0 |
 | pl3 – Supreme Victors | local | 153/153 | 0 | 0 | 0 |
 | pl4 – Arceus | local | 111/111 | 0 | 0 | 0 |
 | pop1 – POP Series 1 | local | 17/17 | 0 | 0 | 0 |
@@ -146,21 +146,21 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sm11 – Unified Minds | local | 258/258 | 0 | 0 | 0 |
 | sm115 – Hidden Fates | local | 69/69 | 0 | 0 | 0 |
 | sm12 – Cosmic Eclipse | local | 271/271 | 0 | 0 | 0 |
-| sm2 – Guardians Rising | local | 168/169 | 1 | 0 | 0 |
-| sm3 – Burning Shadows | local | 168/169 | 0 | 1 | 0 |
+| sm2 – Guardians Rising | local | 169/169 | 0 | 0 | 0 |
+| sm3 – Burning Shadows | local | 169/169 | 0 | 0 | 0 |
 | sm4 – Crimson Invasion | local | 125/125 | 0 | 0 | 0 |
 | sm5 – Ultra Prism | local | 173/173 | 0 | 0 | 0 |
-| sm6 – Forbidden Light | local | 140/146 | 6 | 0 | 0 |
+| sm6 – Forbidden Light | local | 146/146 | 0 | 0 | 0 |
 | sm7 – Celestial Storm | local | 183/183 | 0 | 0 | 0 |
 | sm8 – Lost Thunder | local | 236/236 | 0 | 0 | 0 |
 | sm9 – Team Up | local | 196/196 | 0 | 0 | 0 |
-| sma – Hidden Fates Shiny Vault | missing | 94/94 | 0 | 0 | 0 |
-| smp – SM Black Star Promos | local | 181/248 | 67 | 0 | 0 |
+| sma – Hidden Fates Shiny Vault | local | 94/94 | 0 | 0 | 0 |
+| smp – SM Black Star Promos | local | 248/248 | 0 | 0 | 0 |
 | sv01 – Scarlet & Violet | local | 258/258 | 0 | 0 | 0 |
 | sv02 – Paldea Evolved | local | 279/279 | 0 | 0 | 0 |
 | sv03 – Obsidian Flames | local | 230/230 | 0 | 0 | 0 |
 | sv04 – Paradox Rift | local | 266/266 | 0 | 0 | 0 |
-| sv05 – Temporal Forces | missing | 218/218 | 0 | 0 | 0 |
+| sv05 – Temporal Forces | local | 218/218 | 0 | 0 | 0 |
 | sv06 – Twilight Masquerade | local | 226/226 | 0 | 0 | 0 |
 | sv07 – Stellar Crown | local | 175/175 | 0 | 0 | 0 |
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
@@ -247,8 +247,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - mep – MEP Black Star Promos: missing
 - mfb – My First Battle: missing
 - miscp – Miscellaneous Promos: missing
-- sma – Hidden Fates Shiny Vault: missing
-- sv05 – Temporal Forces: missing
 - sve – Scarlet & Violet Energy: missing
 - tk-bw-e – BW trainer Kit (Excadrill): missing
 - tk-bw-z – BW trainer Kit (Zoroark): missing
@@ -338,7 +336,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (17):** 50b, 50a, 74a, 74b, 95a, 95b, 103a, 103b, H01, H02, H03, H04, H05, H06, H07, H08, H09
 
 ### ecard3 – Skyridge
-**Geen bronlink (32):** H01, H02, H03, H04, H05, H06, H07, H08, H09, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32
+**Geen bronlink (9):** H01, H02, H03, H04, H05, H06, H07, H08, H09
 
 ### ex7 – Team Rocket Returns
 **Externe bronlink (niet geverifieerd) (1):** 88
@@ -350,7 +348,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Externe bronlink (niet geverifieerd) (1):** 19
 
 ### hgssp – HGSS Black Star Promos
-**Geen bronlink (9):** HGSS17, HGSS18, HGSS19, HGSS20, HGSS21, HGSS22, HGSS23, HGSS24, HGSS25
+**Geen bronlink (1):** HGSS18
 
 ### mee – Mega Evolution Energy
 **Geen bronlink (8):** 001, 002, 003, 004, 005, 006, 007, 008
@@ -364,23 +362,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### miscp – Miscellaneous Promos
 **Geen bronlink (1):** 001
 
-### pl2 – Rising Rivals
-**Geen bronlink (1):** 84
-
 ### pop6 – POP Series 6
 **Geen bronlink (2):** 13, 17
-
-### sm2 – Guardians Rising
-**Geen bronlink (1):** 143
-
-### sm3 – Burning Shadows
-**Externe bronlink (niet geverifieerd) (1):** 165
-
-### sm6 – Forbidden Light
-**Geen bronlink (6):** 82, 90, 122, 126, 134, 140
-
-### smp – SM Black Star Promos
-**Geen bronlink (67):** SM125, SM135, SM136, SM144, SM146, SM147, SM155, SM156, SM167, SM168, SM169, SM170, SM179, SM180, SM181, SM182, SM183, SM184, SM185, SM186, SM188, SM189, SM190, SM191, SM192, SM193, SM194, SM195, SM196, SM197, SM198, SM199, SM200, SM218, SM219, SM220, SM221, SM222, SM223, SM224, SM225, SM226, SM227, SM228, SM229, SM230, SM231, SM232, SM233, SM234, SM235, SM236, SM237, SM238, SM239, SM240, SM241, SM242, SM243, SM244, SM245, SM246, SM247, SM248, SM89, SM90, SM93
 
 ### sv10 – Destined Rivals
 **Externe bronlink (niet geverifieerd) (1):** 028

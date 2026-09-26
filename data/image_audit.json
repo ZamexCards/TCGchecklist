@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20383,
-    "missing_cards": 1220,
-    "external_cards": 8,
+    "local_cards": 20490,
+    "missing_cards": 1114,
+    "external_cards": 7,
     "broken_cards": 0,
-    "local_logos": 152,
-    "missing_logos": 48,
+    "local_logos": 154,
+    "missing_logos": 46,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 132
+    "complete_sets": 139
   },
   "sets": [
     {
@@ -2720,7 +2720,7 @@
       "name": "Skyridge",
       "logo_status": "local",
       "total_cards": 182,
-      "local_cards": 150,
+      "local_cards": 173,
       "missing_cards": [
         {
           "id": "ecard3-H01",
@@ -2766,121 +2766,6 @@
           "id": "ecard3-H09",
           "number": "H09",
           "name": "Gengar"
-        },
-        {
-          "id": "ecard3-H10",
-          "number": "H10",
-          "name": "Gyarados"
-        },
-        {
-          "id": "ecard3-H11",
-          "number": "H11",
-          "name": "Houndoom"
-        },
-        {
-          "id": "ecard3-H12",
-          "number": "H12",
-          "name": "Jolteon"
-        },
-        {
-          "id": "ecard3-H13",
-          "number": "H13",
-          "name": "Kabutops"
-        },
-        {
-          "id": "ecard3-H14",
-          "number": "H14",
-          "name": "Ledian"
-        },
-        {
-          "id": "ecard3-H15",
-          "number": "H15",
-          "name": "Machamp"
-        },
-        {
-          "id": "ecard3-H16",
-          "number": "H16",
-          "name": "Magcargo"
-        },
-        {
-          "id": "ecard3-H17",
-          "number": "H17",
-          "name": "Magcargo"
-        },
-        {
-          "id": "ecard3-H18",
-          "number": "H18",
-          "name": "Magneton"
-        },
-        {
-          "id": "ecard3-H19",
-          "number": "H19",
-          "name": "Magneton"
-        },
-        {
-          "id": "ecard3-H20",
-          "number": "H20",
-          "name": "Moltres"
-        },
-        {
-          "id": "ecard3-H21",
-          "number": "H21",
-          "name": "Nidoqueen"
-        },
-        {
-          "id": "ecard3-H22",
-          "number": "H22",
-          "name": "Piloswine"
-        },
-        {
-          "id": "ecard3-H23",
-          "number": "H23",
-          "name": "Politoed"
-        },
-        {
-          "id": "ecard3-H24",
-          "number": "H24",
-          "name": "Poliwrath"
-        },
-        {
-          "id": "ecard3-H25",
-          "number": "H25",
-          "name": "Raichu"
-        },
-        {
-          "id": "ecard3-H26",
-          "number": "H26",
-          "name": "Raikou"
-        },
-        {
-          "id": "ecard3-H27",
-          "number": "H27",
-          "name": "Rhydon"
-        },
-        {
-          "id": "ecard3-H28",
-          "number": "H28",
-          "name": "Starmie"
-        },
-        {
-          "id": "ecard3-H29",
-          "number": "H29",
-          "name": "Steelix"
-        },
-        {
-          "id": "ecard3-H30",
-          "number": "H30",
-          "name": "Umbreon"
-        },
-        {
-          "id": "ecard3-H31",
-          "number": "H31",
-          "name": "Vaporeon"
-        },
-        {
-          "id": "ecard3-H32",
-          "number": "H32",
-          "name": "Xatu"
         }
       ],
       "external_unverified_cards": [],
@@ -3294,52 +3179,12 @@
       "name": "HGSS Black Star Promos",
       "logo_status": "local",
       "total_cards": 25,
-      "local_cards": 16,
+      "local_cards": 24,
       "missing_cards": [
-        {
-          "id": "hgssp-HGSS17",
-          "number": "HGSS17",
-          "name": "Minun"
-        },
         {
           "id": "hgssp-HGSS18",
           "number": "HGSS18",
           "name": "Tropical Tidal Wave"
-        },
-        {
-          "id": "hgssp-HGSS19",
-          "number": "HGSS19",
-          "name": "Raikou"
-        },
-        {
-          "id": "hgssp-HGSS20",
-          "number": "HGSS20",
-          "name": "Entei"
-        },
-        {
-          "id": "hgssp-HGSS21",
-          "number": "HGSS21",
-          "name": "Suicune"
-        },
-        {
-          "id": "hgssp-HGSS22",
-          "number": "HGSS22",
-          "name": "Porygon"
-        },
-        {
-          "id": "hgssp-HGSS23",
-          "number": "HGSS23",
-          "name": "Porygon2"
-        },
-        {
-          "id": "hgssp-HGSS24",
-          "number": "HGSS24",
-          "name": "Hitmonchan"
-        },
-        {
-          "id": "hgssp-HGSS25",
-          "number": "HGSS25",
-          "name": "Hitmonlee"
         }
       ],
       "external_unverified_cards": [],
@@ -4174,14 +4019,8 @@
       "name": "Rising Rivals",
       "logo_status": "local",
       "total_cards": 120,
-      "local_cards": 119,
-      "missing_cards": [
-        {
-          "id": "pl2-84",
-          "number": "84",
-          "name": "Trapinch"
-        }
-      ],
+      "local_cards": 120,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4381,14 +4220,8 @@
       "name": "Guardians Rising",
       "logo_status": "local",
       "total_cards": 169,
-      "local_cards": 168,
-      "missing_cards": [
-        {
-          "id": "sm2-143",
-          "number": "143",
-          "name": "Hala"
-        }
-      ],
+      "local_cards": 169,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4397,15 +4230,9 @@
       "name": "Burning Shadows",
       "logo_status": "local",
       "total_cards": 169,
-      "local_cards": 168,
+      "local_cards": 169,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "sm3-165",
-          "number": "165",
-          "name": "Rescue Stretcher"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -4433,39 +4260,8 @@
       "name": "Forbidden Light",
       "logo_status": "local",
       "total_cards": 146,
-      "local_cards": 140,
-      "missing_cards": [
-        {
-          "id": "sm6-82",
-          "number": "82",
-          "name": "Dialga GX"
-        },
-        {
-          "id": "sm6-90",
-          "number": "90",
-          "name": "Xerneas GX"
-        },
-        {
-          "id": "sm6-122",
-          "number": "122",
-          "name": "Lucario GX"
-        },
-        {
-          "id": "sm6-126",
-          "number": "126",
-          "name": "Xerneas GX"
-        },
-        {
-          "id": "sm6-134",
-          "number": "134",
-          "name": "Naganadel GX"
-        },
-        {
-          "id": "sm6-140",
-          "number": "140",
-          "name": "Ultra Necrozma GX"
-        }
-      ],
+      "local_cards": 146,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4502,7 +4298,7 @@
     {
       "id": "sma",
       "name": "Hidden Fates Shiny Vault",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 94,
       "local_cards": 94,
       "missing_cards": [],
@@ -4514,344 +4310,8 @@
       "name": "SM Black Star Promos",
       "logo_status": "local",
       "total_cards": 248,
-      "local_cards": 181,
-      "missing_cards": [
-        {
-          "id": "smp-SM125",
-          "number": "SM125",
-          "name": "Naganadel GX"
-        },
-        {
-          "id": "smp-SM135",
-          "number": "SM135",
-          "name": "Latias"
-        },
-        {
-          "id": "smp-SM136",
-          "number": "SM136",
-          "name": "Latios"
-        },
-        {
-          "id": "smp-SM144",
-          "number": "SM144",
-          "name": "Articuno"
-        },
-        {
-          "id": "smp-SM146",
-          "number": "SM146",
-          "name": "Leafeon GX"
-        },
-        {
-          "id": "smp-SM147",
-          "number": "SM147",
-          "name": "Glaceon GX"
-        },
-        {
-          "id": "smp-SM155",
-          "number": "SM155",
-          "name": "Kingdra GX"
-        },
-        {
-          "id": "smp-SM156",
-          "number": "SM156",
-          "name": "Dragonite GX"
-        },
-        {
-          "id": "smp-SM167",
-          "number": "SM167",
-          "name": "Celebi & Venusaur GX"
-        },
-        {
-          "id": "smp-SM168",
-          "number": "SM168",
-          "name": "Pikachu & Zekrom GX"
-        },
-        {
-          "id": "smp-SM169",
-          "number": "SM169",
-          "name": "Eevee & Snorlax GX"
-        },
-        {
-          "id": "smp-SM170",
-          "number": "SM170",
-          "name": "Detective Pikachu"
-        },
-        {
-          "id": "smp-SM179",
-          "number": "SM179",
-          "name": "Volcanion"
-        },
-        {
-          "id": "smp-SM180",
-          "number": "SM180",
-          "name": "Stakataka"
-        },
-        {
-          "id": "smp-SM181",
-          "number": "SM181",
-          "name": "Melmetal"
-        },
-        {
-          "id": "smp-SM182",
-          "number": "SM182",
-          "name": "Persian"
-        },
-        {
-          "id": "smp-SM183",
-          "number": "SM183",
-          "name": "Pikachu"
-        },
-        {
-          "id": "smp-SM184",
-          "number": "SM184",
-          "name": "Eevee"
-        },
-        {
-          "id": "smp-SM185",
-          "number": "SM185",
-          "name": "Typhlosion"
-        },
-        {
-          "id": "smp-SM186",
-          "number": "SM186",
-          "name": "Flareon"
-        },
-        {
-          "id": "smp-SM188",
-          "number": "SM188",
-          "name": "Kangaskhan GX"
-        },
-        {
-          "id": "smp-SM189",
-          "number": "SM189",
-          "name": "Blastoise GX"
-        },
-        {
-          "id": "smp-SM190",
-          "number": "SM190",
-          "name": "Detective Pikachu"
-        },
-        {
-          "id": "smp-SM191",
-          "number": "SM191",
-          "name": "Mewtwo & Mew GX"
-        },
-        {
-          "id": "smp-SM192",
-          "number": "SM192",
-          "name": "Lucario & Melmetal GX"
-        },
-        {
-          "id": "smp-SM193",
-          "number": "SM193",
-          "name": "Garchomp & Giratina GX"
-        },
-        {
-          "id": "smp-SM194",
-          "number": "SM194",
-          "name": "Detective Pikachu"
-        },
-        {
-          "id": "smp-SM195",
-          "number": "SM195",
-          "name": "Charizard GX"
-        },
-        {
-          "id": "smp-SM196",
-          "number": "SM196",
-          "name": "Mewtwo GX"
-        },
-        {
-          "id": "smp-SM197",
-          "number": "SM197",
-          "name": "Greninja GX"
-        },
-        {
-          "id": "smp-SM198",
-          "number": "SM198",
-          "name": "Bulbasaur"
-        },
-        {
-          "id": "smp-SM199",
-          "number": "SM199",
-          "name": "Psyduck"
-        },
-        {
-          "id": "smp-SM200",
-          "number": "SM200",
-          "name": "Snubbull"
-        },
-        {
-          "id": "smp-SM218",
-          "number": "SM218",
-          "name": "Buzzwole"
-        },
-        {
-          "id": "smp-SM219",
-          "number": "SM219",
-          "name": "Entei"
-        },
-        {
-          "id": "smp-SM220",
-          "number": "SM220",
-          "name": "Phione"
-        },
-        {
-          "id": "smp-SM221",
-          "number": "SM221",
-          "name": "Blacephalon"
-        },
-        {
-          "id": "smp-SM222",
-          "number": "SM222",
-          "name": "Mismagius"
-        },
-        {
-          "id": "smp-SM223",
-          "number": "SM223",
-          "name": "Terrakion"
-        },
-        {
-          "id": "smp-SM224",
-          "number": "SM224",
-          "name": "Celebi"
-        },
-        {
-          "id": "smp-SM225",
-          "number": "SM225",
-          "name": "Victini"
-        },
-        {
-          "id": "smp-SM226",
-          "number": "SM226",
-          "name": "Charizard"
-        },
-        {
-          "id": "smp-SM227",
-          "number": "SM227",
-          "name": "Pikachu"
-        },
-        {
-          "id": "smp-SM228",
-          "number": "SM228",
-          "name": "Armored Mewtwo"
-        },
-        {
-          "id": "smp-SM229",
-          "number": "SM229",
-          "name": "Venusaur & Snivy GX"
-        },
-        {
-          "id": "smp-SM230",
-          "number": "SM230",
-          "name": "Charizard & Braixen GX"
-        },
-        {
-          "id": "smp-SM231",
-          "number": "SM231",
-          "name": "Champions Festival"
-        },
-        {
-          "id": "smp-SM232",
-          "number": "SM232",
-          "name": "Pikachu GX"
-        },
-        {
-          "id": "smp-SM233",
-          "number": "SM233",
-          "name": "Eevee GX"
-        },
-        {
-          "id": "smp-SM234",
-          "number": "SM234",
-          "name": "Pikachu"
-        },
-        {
-          "id": "smp-SM235",
-          "number": "SM235",
-          "name": "Eevee"
-        },
-        {
-          "id": "smp-SM236",
-          "number": "SM236",
-          "name": "Alolan Sandslash GX"
-        },
-        {
-          "id": "smp-SM237",
-          "number": "SM237",
-          "name": "Leafeon"
-        },
-        {
-          "id": "smp-SM238",
-          "number": "SM238",
-          "name": "Glaceon"
-        },
-        {
-          "id": "smp-SM239",
-          "number": "SM239",
-          "name": "Carracosta GX"
-        },
-        {
-          "id": "smp-SM240",
-          "number": "SM240",
-          "name": "Espeon & Deoxys GX"
-        },
-        {
-          "id": "smp-SM241",
-          "number": "SM241",
-          "name": "Umbreon & Darkrai GX"
-        },
-        {
-          "id": "smp-SM242",
-          "number": "SM242",
-          "name": "Eevee GX"
-        },
-        {
-          "id": "smp-SM243",
-          "number": "SM243",
-          "name": "Regigigas"
-        },
-        {
-          "id": "smp-SM244",
-          "number": "SM244",
-          "name": "Aipom"
-        },
-        {
-          "id": "smp-SM245",
-          "number": "SM245",
-          "name": "Mismagius"
-        },
-        {
-          "id": "smp-SM246",
-          "number": "SM246",
-          "name": "Sabrina & Brycen"
-        },
-        {
-          "id": "smp-SM247",
-          "number": "SM247",
-          "name": "Reshiram & Charizard GX"
-        },
-        {
-          "id": "smp-SM248",
-          "number": "SM248",
-          "name": "Pikachu & Zekrom GX"
-        },
-        {
-          "id": "smp-SM89",
-          "number": "SM89",
-          "name": "Zoroark"
-        },
-        {
-          "id": "smp-SM90",
-          "number": "SM90",
-          "name": "Raichu GX"
-        },
-        {
-          "id": "smp-SM93",
-          "number": "SM93",
-          "name": "Marshadow"
-        }
-      ],
+      "local_cards": 248,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4898,7 +4358,7 @@
     {
       "id": "sv05",
       "name": "Temporal Forces",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 218,
       "local_cards": 218,
       "missing_cards": [],
