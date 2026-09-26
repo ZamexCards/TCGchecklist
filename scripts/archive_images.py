@@ -59,10 +59,35 @@ def supplemental(sid,number='',kind='card'):
     number=str(number or '').strip()
     if not re.fullmatch(r'[A-Za-z0-9_-]+',number):return ''
     return 'https://images.pokemontcg.io/'+other+'/'+number+'.png'
+
+# Pocket B2a is a separate game: require matching set, printed number AND name.
+# The public dataset documents cards-by-set/B2a/<number>.webp.
+POCKET_META='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/cards/B2a.json'
+POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/cards-by-set/B2a/{}.webp'
+def pocket_cards():
+    try:
+        with urllib.request.urlopen(urllib.request.Request(POCKET_META,headers={'User-Agent':'ZamexCardsChecklist/1.0'}),timeout=15) as response:
+            rows=json.load(response)
+        if isinstance(rows,dict):rows=rows.get('cards',[])
+        return {str(row['number']):row for row in rows if isinstance(row,dict) and row.get('set','B2a').lower()=='b2a'}
+    except (ValueError,KeyError,TypeError,urllib.error.URLError,OSError,TimeoutError) as error:
+        print('Pocket source unavailable:',error,flush=True)
+        return {}
+def pocket_source(sid,card,known):
+    if sid.lower()!='b2a':return ''
+    number=str(card.get('number','')).strip()
+    if not number.isdigit():return ''
+    row=known.get(str(int(number)))
+    if not row:return ''
+    normal=lambda name:re.sub(r'[^a-z0-9]','',str(name).lower())
+    if normal(row.get('name'))!=normal(card.get('name')):return ''
+    return POCKET_IMAGE.format(int(number))
+
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
+    pocket=pocket_cards()
     cursor=ROOT/'data'/'image_repair_cursor.txt'
     # Rank only repairable source links; unresolvable sets remain in the diagnosis report.
     audit_path=ROOT/'data'/'image_audit.json'
@@ -80,7 +105,7 @@ def main():
         logo=payload['set'].get('images',{}).get('logo','')
         cards=payload.get('cards',[])
         logo_action=not logo.startswith('./assets/') and bool(logo or supplemental(sid,kind='logo'))
-        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number'))) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
+        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket)) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
         if logo_action or card_actions:
             paths.append((p,logo_action,card_actions))
     paths=[p for p,_,_ in sorted(paths,key=lambda row:(-row[2],-int(row[1]),row[0].stem))]
@@ -108,7 +133,7 @@ def main():
             current=card.get('images',{}).get('small','')
             if current.startswith('./assets/'):continue
             number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or card['id']))
-            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card')
+            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_source(sid,card,pocket),sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
