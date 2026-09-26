@@ -24,7 +24,6 @@ jobs:
           python-version: "3.12"
 
       - name: Refresh set and card snapshots
-        continue-on-error: true
         run: python scripts/update_data.py
 
       - name: Archive and audit card images and set logos
