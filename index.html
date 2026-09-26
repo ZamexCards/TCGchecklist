@@ -108,57 +108,93 @@
   const status=t=>els.status.innerHTML=t;
   async function getJSON(url){const r=await fetch(url); if(!r.ok) throw new Error('API fout '+r.status); return r.json();}
   function englishSetFilter(s){return !/jp|japan|korea|china|chinese|japanese|korean/i.test((s.name||'')+' '+(s.id||''));}
-  async function loadSets(){
-    status('<span class="zc-loading"></span>Sets laden...');
+  // Cache per browser: setlijst 24 uur, kaartgegevens 30 dagen.
+  // De lijst wordt direct uit cache getoond; daarna controleren we op nieuwe sets.
+  const CACHE_VERSION='zc-checklist-v4-recovery-';
+  const DAY=86400000;
+  function cacheGet(key,maxAge){
     try{
-      let data=[], source='pokemon';
+      const entry=JSON.parse(localStorage.getItem(CACHE_VERSION+key)||'null');
+      return entry&&Date.now()-entry.time<maxAge?entry.data:null;
+    }catch(e){return null;}
+  }
+  function cachePut(key,data){
+    try{localStorage.setItem(CACHE_VERSION+key,JSON.stringify({time:Date.now(),data}));}
+    catch(e){
+      // Browseropslag kan vol zijn; verwijder uitsluitend oude checklist-cache.
       try{
-        const j=await getJSON(API+'/sets?select=id,name,series,releaseDate,printedTotal,total,images&orderBy=-releaseDate&pageSize=250');
-        data=j.data||[];
-        if(!data.length)throw new Error('Lege setlijst');
-      }catch(primaryError){
-        console.warn('Primaire bron niet bereikbaar; reservebron wordt gebruikt:',primaryError);
-        const j=await getJSON(BACKUP_API+'/sets');
-        data=(Array.isArray(j)?j:[]).map(x=>({
-          id:x.id,name:x.name,series:x.serie?.name||'',
-          releaseDate:x.releaseDate||'',printedTotal:x.cardCount?.official||x.cardCount?.total||0,
-          total:x.cardCount?.total||0,images:{logo:x.logo||''},_source:'tcgdex'
-        }));
-        source='tcgdex';
-        // TCGdex geeft in het setoverzicht niet altijd releasedatums terug.
-        // Haal die daarom uit de setdetails, met een lokale cache voor volgende bezoeken.
-        let dateCache={};
-        try{dateCache=JSON.parse(localStorage.getItem('zamexcards_set_release_dates_v1')||'{}')||{};}catch(e){}
-        let cursor=0, completed=0;
-        const missing=data.filter(x=>!x.releaseDate);
-        async function dateWorker(){
-          while(cursor<missing.length){
-            const item=missing[cursor++];
-            if(dateCache[item.id]){
-              item.releaseDate=dateCache[item.id];
-            }else{
-              try{
-                const detail=await getJSON(BACKUP_API+'/sets/'+encodeURIComponent(item.id));
-                item.releaseDate=detail.releaseDate||'';
-                if(item.releaseDate)dateCache[item.id]=item.releaseDate;
-              }catch(e){console.warn('Releasedatum niet beschikbaar:',item.id);}
-            }
-            completed++;
-            if(completed%25===0)status('<span class="zc-loading"></span>Sets op releasedatum sorteren: '+completed+' / '+missing.length);
-          }
-        }
-        await Promise.all(Array.from({length:12},dateWorker));
-        try{localStorage.setItem('zamexcards_set_release_dates_v1',JSON.stringify(dateCache));}catch(e){}
-      }
-      sets=data.filter(englishSetFilter).sort((a,b)=>(b.releaseDate||'').localeCompare(a.releaseDate||''));
-      if(!sets.length)throw new Error('Geen sets gevonden');
-      els.setSelect.innerHTML='<option value="">Kies een set...</option>'+sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('');
-      status('Sets geladen. Selecteer een set en druk op “Laad pagina”.'+(source==='tcgdex'?' (Reservebron actief)':''));
-    }catch(e){
-      console.error('Beide setbronnen niet bereikbaar:',e);
-      els.setSelect.innerHTML='<option value="">Sets konden niet geladen worden</option>';
-      status('De setbronnen zijn momenteel niet bereikbaar. Controleer de internetverbinding en probeer de pagina opnieuw te laden.');
+        Object.keys(localStorage).filter(k=>k.startsWith(CACHE_VERSION+'cards-')).forEach(k=>localStorage.removeItem(k));
+        localStorage.setItem(CACHE_VERSION+key,JSON.stringify({time:Date.now(),data}));
+      }catch(err){console.warn('Cache niet beschikbaar:',err);}
     }
+  }
+  function showSets(data,message){
+    const selected=els.setSelect.value;
+    sets=data.filter(englishSetFilter).sort((a,b)=>(b.releaseDate||'').localeCompare(a.releaseDate||'')||a.name.localeCompare(b.name));
+    els.setSelect.innerHTML='<option value="">Kies een set...</option>'+sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('');
+    if(sets.some(x=>x.id===selected))els.setSelect.value=selected;
+    status(message);
+  }
+  async function fetchSetList(){
+    try{
+      const j=await getJSON(API+'/sets?select=id,name,series,releaseDate,printedTotal,total,images&orderBy=-releaseDate&pageSize=250');
+      if(!j.data?.length)throw Error('Lege setlijst');
+      return j.data;
+    }catch(primaryError){
+      console.warn('Primaire bron niet bereikbaar:',primaryError);
+      const j=await getJSON(BACKUP_API+'/sets');
+      const data=(Array.isArray(j)?j:[]).map(x=>({
+        id:x.id,name:x.name,series:x.serie?.name||'',
+        releaseDate:x.releaseDate||'',printedTotal:x.cardCount?.official||x.cardCount?.total||0,
+        total:x.cardCount?.total||0,images:{logo:setLogoUrl(x.logo||'',x.id)},_source:'tcgdex'
+      }));
+      // Alleen ontbrekende datums opzoeken, met maximaal 12 gelijktijdige aanvragen.
+      const dates=cacheGet('dates',365*DAY)||{};
+      let cursor=0;
+      const missing=data.filter(x=>!x.releaseDate);
+      async function worker(){
+        while(cursor<missing.length){
+          const item=missing[cursor++];
+          if(dates[item.id]){item.releaseDate=dates[item.id];continue;}
+          try{
+            const detail=await getJSON(BACKUP_API+'/sets/'+encodeURIComponent(item.id));
+            item.releaseDate=detail.releaseDate||'';
+            if(item.releaseDate)dates[item.id]=item.releaseDate;
+          }catch(e){console.warn('Datum niet beschikbaar:',item.id);}
+        }
+      }
+      await Promise.all(Array.from({length:12},worker));
+      cachePut('dates',dates);
+      return data;
+    }
+  }
+  async function loadSets(){
+    const cached=cacheGet('sets',24*DAY);
+    if(cached?.length)showSets(cached,'Sets direct uit opgeslagen gegevens geladen. Nieuwe sets worden gecontroleerd...');
+    else status('<span class="zc-loading"></span>Sets laden (eerste bezoek kan iets langer duren)...');
+    try{
+      const data=await fetchSetList();
+      if(!data.length)throw Error('Geen sets gevonden');
+      cachePut('sets',data);
+      showSets(data,'Sets geladen en bijgewerkt. Selecteer een set en druk op “Laad pagina”.');
+    }catch(e){
+      console.warn('Online bijwerken mislukt:',e);
+      if(cached?.length)showSets(cached,'Opgeslagen sets beschikbaar; online bijwerken is momenteel niet gelukt.');
+      else{
+        els.setSelect.innerHTML='<option value="">Sets konden niet geladen worden</option>';
+        status('De setbronnen zijn momenteel niet bereikbaar. Probeer later opnieuw.');
+      }
+    }
+  }
+  // TCGdex images may be omitted from API results. Its image CDN uses card IDs.
+  function cardImageUrl(image,id){
+    if(image)return /\.(?:webp|png|jpe?g)(?:\?|$)/i.test(image)?image:image.replace(/\/$/,'')+'/low.webp';
+    if(id)return 'https://assets.tcgdex.net/en/'+String(id).replace(/-([^-]+)$/,'/$1')+'/low.webp';
+    return '';
+  }
+  function setLogoUrl(image,id){
+    if(image)return image;
+    return id?'https://assets.tcgdex.net/en/'+id+'/logo.webp':'';
   }
   async function loadTCGdexCards(id){
     const detail=await getJSON(BACKUP_API+'/sets/'+encodeURIComponent(id));
@@ -167,7 +203,7 @@
     activeSet.releaseDate=detail.releaseDate||activeSet.releaseDate;
     activeSet.printedTotal=detail.cardCount?.official||activeSet.printedTotal;
     activeSet.total=detail.cardCount?.total||activeSet.total;
-    activeSet.images={logo:detail.logo||activeSet.images?.logo||''};
+    activeSet.images={logo:setLogoUrl(detail.logo||activeSet.images?.logo||'',id)};
     const summaries=detail.cards||[];
     const result=new Array(summaries.length);
     let cursor=0;
@@ -178,11 +214,11 @@
           const c=await getJSON(BACKUP_API+'/cards/'+encodeURIComponent(x.id));
           result[i]={id:c.id,name:c.name||x.name,number:c.localId||x.localId||'',
             supertype:c.category||'',subtypes:c.stage?[c.stage]:[],types:c.types||[],
-            rarity:c.rarity||'',images:{small:c.image?c.image+'/low.webp':''},
+            rarity:c.rarity||'',images:{small:cardImageUrl(c.image||x.image||'',c.id||x.id)},
             tcgplayer:{prices:{}},_variants:c.variants||{}};
         }catch(e){
           result[i]={id:x.id,name:x.name,number:x.localId||'',supertype:'',subtypes:[],types:[],
-            rarity:'',images:{small:x.image?x.image+'/low.webp':''},tcgplayer:{prices:{}}};
+            rarity:'',images:{small:cardImageUrl(x.image||'',x.id)},tcgplayer:{prices:{}}};
         }
       }
     }
@@ -217,13 +253,34 @@
     const keys=variantKeys(card);
     const out=['Base'];
     if(reverseEligible(card)) out.push('Reverse holo');
-    if(card._variants?.firstEdition===false && false || /pok[eé]?ball|poke_ball/.test(keys) || ballEligible(card)) out.push('Poké Ball');
+    if(/pok[eé]?ball|poke_ball/.test(keys) || ballEligible(card)) out.push('Poké Ball');
     if(/masterball|master_ball/.test(keys) || ballEligible(card)) out.push('Master Ball');
     return out;
   }
   function cardType(card){return [card.supertype,(card.subtypes||[]).join(' / '),(card.types||[]).join(' / ')].filter(Boolean).join(' — ');}
   function render(){let q=els.search.value.trim().toLowerCase();let data=cards.filter(c=>!q||[c.name,c.number,cardType(c),c.rarity].join(' ').toLowerCase().includes(q));data.sort((a,b)=>els.sort.value==='asc'?numVal(a.number)-numVal(b.number):numVal(b.number)-numVal(a.number));els.list.className='zc-list '+(els.view.value==='grid'?'zc-grid':''); if(!data.length){els.list.innerHTML='<div class="zc-empty">Geen kaarten gevonden met deze zoekopdracht.</div>';return;} els.list.innerHTML=data.map(c=>`<article class="zc-row"><img class="zc-card-img" loading="lazy" crossorigin="anonymous" referrerpolicy="no-referrer" src="${esc(c.images?.small||'')}" alt="${esc(c.name)}"><div><div class="zc-card-no">#${esc(c.number)} / ${esc(activeSet?.printedTotal||activeSet?.total||'')}</div><div class="zc-card-title">${esc(c.name)}</div><div class="zc-small">${esc(cardType(c)||'Onbekend type')} ${c.rarity?' • '+esc(c.rarity):''}</div><div class="zc-checks">${variants(c).map(v=>`<label class="zc-check"><input type="checkbox"> ${esc(v)}</label>`).join('')}</div></div></article>`).join('');}
-  async function loadCards(){const id=els.setSelect.value;if(!id){status('Kies eerst een set.');return;} activeSet=sets.find(s=>s.id===id);els.load.disabled=true;els.png.disabled=true;els.pdf.disabled=true;status('<span class="zc-loading"></span>Checklist wordt geladen...');try{let all=[],page=1,pageSize=250;if(activeSet._source==='tcgdex'){all=await loadTCGdexCards(id);}else while(true){const url=API+`/cards?q=set.id:${encodeURIComponent(id)}&select=id,name,number,supertype,subtypes,types,rarity,images,tcgplayer&orderBy=number&page=${page}&pageSize=${pageSize}`;const j=await getJSON(url);all=all.concat(j.data||[]);if(!j.data||j.data.length<pageSize)break;page++;}cards=all;els.header.style.display='flex';els.setLogo.crossOrigin='anonymous';els.setLogo.referrerPolicy='no-referrer';els.setLogo.src=activeSet.images?.logo||'';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){status('Kon de kaarten niet laden. Probeer het opnieuw of controleer of je website externe API-verzoeken toestaat.');}finally{els.load.disabled=false;}}
+  async function loadCards(){const id=els.setSelect.value;if(!id){status('Kies eerst een set.');return;} activeSet=sets.find(s=>s.id===id);els.load.disabled=true;els.png.disabled=true;els.pdf.disabled=true;status('<span class="zc-loading"></span>Checklist wordt geladen...');try{let all=[],page=1,pageSize=250;
+    const cachedCards=cacheGet('cards-'+id,30*DAY);
+    if(cachedCards?.cards?.length){
+      all=cachedCards.cards;
+      if(cachedCards.set)activeSet={...activeSet,...cachedCards.set};
+    }else{
+      try{
+        if(activeSet._source==='tcgdex')throw new Error('TCGdex-set');
+        while(true){
+          const url=API+`/cards?q=set.id:${encodeURIComponent(id)}&select=id,name,number,supertype,subtypes,types,rarity,images,tcgplayer&orderBy=number&page=${page}&pageSize=${pageSize}`;
+          const j=await getJSON(url);all=all.concat(j.data||[]);
+          if(!j.data||j.data.length<pageSize)break;page++;
+        }
+        if(!all.length)throw new Error('Geen kaarten uit primaire bron');
+      }catch(primaryError){
+        console.warn('Kaarten via reservebron ophalen:',primaryError);
+        all=await loadTCGdexCards(id);
+        if(!all.length)throw new Error('Reservebron bevat geen kaarten voor deze set');
+      }
+    }
+    if(!cachedCards?.cards?.length && all.length)cachePut('cards-'+id,{cards:all,set:activeSet});
+    cards=all;els.header.style.display='flex';els.setLogo.crossOrigin='anonymous';els.setLogo.referrerPolicy='no-referrer';els.setLogo.src=activeSet.images?.logo||'';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
   function reset(){els.search.value='';els.sort.value='asc';els.view.value='grid';cards=[];activeSet=null;els.list.innerHTML='';els.header.style.display='none';els.png.disabled=true;els.pdf.disabled=true;status('Selecteer eerst een set en druk daarna op “Laad pagina”.');window.scrollTo({top:0,behavior:'smooth'});}
   function fileName(){return 'ZamexCards-Pokemon-TCG-Checklist-'+(activeSet?.name||'set').replace(/[^a-z0-9]+/gi,'-');}
   function currentExportData(){
