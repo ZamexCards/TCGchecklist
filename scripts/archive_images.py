@@ -4,7 +4,7 @@ import json, pathlib, re, urllib.request, urllib.error, os
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
 MANIFEST=ROOT/'data'/'sets.json'
-LIMIT=int(os.getenv('IMAGE_REPAIR_LIMIT','8'))
+LIMIT=int(os.getenv('IMAGE_REPAIR_LIMIT','16'))
 HEADERS={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'image/webp,image/png,image/*'}
 def candidates(url,kind):
     if not url or url.startswith('./'):return []
@@ -40,6 +40,7 @@ def main():
     start=int(cursor.read_text().strip())%len(paths) if cursor.exists() and paths else 0
     visited=0
     for path in paths[start:]+paths[:start]:
+        if attempted>=LIMIT:break
         visited+=1
         sid=path.stem
         if not re.fullmatch(r'[A-Za-z0-9_-]+',sid):continue
@@ -51,7 +52,6 @@ def main():
         if not pending:continue
         actionable=(logo and not logo.startswith('./assets/')) or any(c.get('images',{}).get('small','') and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not actionable:continue
-        if attempted>=LIMIT:break
         attempted+=1
         original=json.dumps(payload,ensure_ascii=False,sort_keys=True)
         if not logo.startswith('./assets/'):
