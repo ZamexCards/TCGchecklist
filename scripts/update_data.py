@@ -92,6 +92,13 @@ def build_set(item, archive=True):
     with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
         cards=list(pool.map(one,summaries))
     info=set_info(item,detail)
+    serie_id=(detail.get('serie') or {}).get('id','')
+    if re.fullmatch(r'[A-Za-z0-9_.-]+',serie_id):
+        base='https://assets.tcgdex.net/en/'+serie_id+'/'+sid
+        if not info['images']['logo']:info['images']['logo']=base+'/logo.webp'
+        for c in cards:
+            if not c['images']['small'] and re.fullmatch(r'[A-Za-z0-9_.-]+',str(c['number'])):
+                c['images']['small']=base+'/'+str(c['number'])+'/low.webp'
     payload={'set':info,'cards':cards,'updated':datetime.datetime.now(datetime.timezone.utc).isoformat()}
     path=SETS/(sid+'.json')
     if path.exists():
@@ -105,7 +112,7 @@ def build_set(item, archive=True):
                     c['images']['small']=old_cards.get(c['id'],{}).get('images',{}).get('small','')
         except (OSError,ValueError,KeyError):pass
     if archive:
-        payload['set']['images']['logo']=store_asset(detail.get('logo') or '',sid,'logo','logo') or payload['set']['images']['logo']
+        payload['set']['images']['logo']=store_asset(info['images']['logo'],sid,'logo','logo') or payload['set']['images']['logo']
         for c in payload['cards']:
             base=(c.get('images') or {}).get('small','')
             if base.startswith('./assets/'):continue
