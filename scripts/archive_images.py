@@ -49,6 +49,8 @@ def main():
         cards=payload.get('cards',[])
         pending=not logo.startswith('./assets/') or any(not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not pending:continue
+        actionable=(logo and not logo.startswith('./assets/')) or any(c.get('images',{}).get('small','') and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
+        if not actionable:continue
         if attempted>=LIMIT:break
         attempted+=1
         original=json.dumps(payload,ensure_ascii=False,sort_keys=True)
