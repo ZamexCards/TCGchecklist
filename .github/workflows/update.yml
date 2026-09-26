@@ -29,6 +29,9 @@ jobs:
       - name: Archive and audit card images and set logos
         run: python scripts/archive_images.py
 
+      - name: Audit all card images and set logos
+        run: python scripts/audit_images.py
+
       - name: Commit changed JSON
         run: |
           git config user.name "github-actions[bot]"
