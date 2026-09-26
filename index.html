@@ -26,7 +26,7 @@
   <style>
     :root{--zc-blue:#2d8cff;--zc-blue2:#55a9ff;--zc-green:#44d35b;--zc-green2:#5bdf67;--zc-yellow:#44d35b;--zc-bg:#031a35;--zc-card:#071f3f;--zc-text:#f7fbff;--zc-muted:#a9bfd2;--zc-border:#1b4f76;--shadow:0 18px 44px rgba(0,0,0,.25)}
     *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(circle at 12% 0%,#0a3157 0%,#041d39 32%,#02152d 100%);color:var(--zc-text);font:14px/1.45 Arial,Helvetica,sans-serif}
+    html{min-height:100%;background:#02152d}body{margin:0;min-height:100%;background:radial-gradient(ellipse at 12% 0%,#0a3157 0%,#041d39 42%,#02152d 100%) no-repeat fixed;color:var(--zc-text);font:14px/1.45 Arial,Helvetica,sans-serif}
     .zc-wrap{max-width:1200px;margin:0 auto;padding:22px}
     .zc-hero{border-radius:16px;background:transparent;position:relative}
     .zc-brand{display:flex;gap:16px;align-items:center}
@@ -281,6 +281,25 @@
   }
   async function downloadPNG(){status('<span class="zc-loading"></span>Afbeelding maken...');try{const c=await exportCanvas();const a=document.createElement('a');a.download=fileName()+'.png';a.href=c.toDataURL('image/png');a.click();status('Afbeelding gedownload.');}catch(e){status('Kon de afbeelding niet maken. Probeer het opnieuw.');}}
   async function downloadPDF(){status('<span class="zc-loading"></span>PDF maken...');try{const c=await exportCanvas();const {jsPDF}=window.jspdf;const pdf=new jsPDF('l','mm','a4');const pageW=297,pageH=210;const ratio=Math.min(pageW/c.width,pageH/c.height);const imgW=c.width*ratio,imgH=c.height*ratio;pdf.addImage(c.toDataURL('image/png'),'PNG',(pageW-imgW)/2,(pageH-imgH)/2,imgW,imgH);pdf.save(fileName()+'.pdf');status('PDF gedownload.');}catch(e){status('Kon de PDF niet maken. Probeer het opnieuw.');}}
+  // Dynamic iframe height for JouwWeb: only the visible checklist determines height.
+  const heightRoot=document.querySelector('.zc-wrap');
+  let lastHeight=0, resizeQueued=false;
+  function sendHeight(){
+    resizeQueued=false;
+    const height=Math.ceil(heightRoot.getBoundingClientRect().bottom);
+    if(height!==lastHeight){lastHeight=height;window.parent.postMessage({type:'zamexcards-checklist-height',height:height},'*');}
+  }
+  function scheduleHeight(){
+    if(resizeQueued)return;
+    resizeQueued=true;
+    requestAnimationFrame(sendHeight);
+  }
+  if(window.ResizeObserver)new ResizeObserver(scheduleHeight).observe(heightRoot);
+  new MutationObserver(scheduleHeight).observe(heightRoot,{subtree:true,childList:true,attributes:true,characterData:true});
+  heightRoot.addEventListener('load',scheduleHeight,true);
+  window.addEventListener('resize',scheduleHeight);
+  window.addEventListener('message',e=>{if(e.data?.type==='zamexcards-checklist-request-height')scheduleHeight();});
+  scheduleHeight();
   els.load.addEventListener('click',loadCards);els.reset.addEventListener('click',reset);els.search.addEventListener('input',render);els.sort.addEventListener('change',render);els.view.addEventListener('change',render);els.png.addEventListener('click',downloadPNG);els.pdf.addEventListener('click',downloadPDF);loadSets();
 })();
 </script>
