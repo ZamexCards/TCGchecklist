@@ -125,6 +125,30 @@
           total:x.cardCount?.total||0,images:{logo:x.logo||''},_source:'tcgdex'
         }));
         source='tcgdex';
+        // TCGdex geeft in het setoverzicht niet altijd releasedatums terug.
+        // Haal die daarom uit de setdetails, met een lokale cache voor volgende bezoeken.
+        let dateCache={};
+        try{dateCache=JSON.parse(localStorage.getItem('zamexcards_set_release_dates_v1')||'{}')||{};}catch(e){}
+        let cursor=0, completed=0;
+        const missing=data.filter(x=>!x.releaseDate);
+        async function dateWorker(){
+          while(cursor<missing.length){
+            const item=missing[cursor++];
+            if(dateCache[item.id]){
+              item.releaseDate=dateCache[item.id];
+            }else{
+              try{
+                const detail=await getJSON(BACKUP_API+'/sets/'+encodeURIComponent(item.id));
+                item.releaseDate=detail.releaseDate||'';
+                if(item.releaseDate)dateCache[item.id]=item.releaseDate;
+              }catch(e){console.warn('Releasedatum niet beschikbaar:',item.id);}
+            }
+            completed++;
+            if(completed%25===0)status('<span class="zc-loading"></span>Sets op releasedatum sorteren: '+completed+' / '+missing.length);
+          }
+        }
+        await Promise.all(Array.from({length:12},dateWorker));
+        try{localStorage.setItem('zamexcards_set_release_dates_v1',JSON.stringify(dateCache));}catch(e){}
       }
       sets=data.filter(englishSetFilter).sort((a,b)=>(b.releaseDate||'').localeCompare(a.releaseDate||''));
       if(!sets.length)throw new Error('Geen sets gevonden');
