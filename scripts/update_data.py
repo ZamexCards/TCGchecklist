@@ -117,7 +117,7 @@ def build_set(item):
         except (OSError,ValueError,KeyError):pass
     write(path,payload)
     print('Updated:',sid,len(cards),flush=True)
-    return info
+    return payload['set']
 def main():
     DATA.mkdir(exist_ok=True)
     old_path=DATA/'sets.json'
