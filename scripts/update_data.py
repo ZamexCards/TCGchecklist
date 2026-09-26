@@ -127,8 +127,16 @@ def main():
     old_path=DATA/'sets.json'
     old=json.loads(old_path.read_text()) if old_path.exists() else {'sets':[]}
     previous={s['id']:s for s in old.get('sets',[])}
-    listing=fetch(BASE+'/sets')
-    if not isinstance(listing,list) or len(listing)<10:raise RuntimeError('Source returned incomplete set list')
+    try:
+        listing=fetch(BASE+'/sets')
+        if not isinstance(listing,list) or len(listing)<10:
+            raise RuntimeError('Source returned incomplete set list')
+    except (urllib.error.HTTPError,urllib.error.URLError,TimeoutError,ValueError,RuntimeError) as error:
+        if previous and all((SETS/(sid+'.json')).exists() for sid in previous):
+            print('WARNING: TCGdex set listing unavailable:',error,flush=True)
+            print('Preserving existing manifest; image archive can continue independently.',flush=True)
+            return
+        raise RuntimeError('TCGdex unavailable and no complete local snapshot; refusing to publish incomplete data') from error
     today=datetime.date.today()
     results={}
     errors=[]
