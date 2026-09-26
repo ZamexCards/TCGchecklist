@@ -209,6 +209,7 @@
     if(id)return 'https://assets.tcgdex.net/en/'+String(id).replace(/-([^-]+)$/,'/$1')+'/low.webp';
     return '';
   }
+  function logoImageUrl(url){return url && !/\.(webp|png|jpe?g)(?:\?|$)/i.test(url)?url+'.webp':url;}
   function setLogoUrl(image,id){
     if(image)return image;
     return id?'https://assets.tcgdex.net/en/'+id+'/logo.webp':'';
@@ -312,7 +313,7 @@
       }
     }
     if(!centralMode && !cachedCards?.cards?.length && all.length)cachePut('cards-'+id,{cards:all,set:activeSet});
-    cards=all;els.header.style.display='flex';els.setLogo.onerror=function(){this.onerror=null;this.src='./assets/geen-setlogo.svg';};els.setLogo.src=activeSet.images?.logo||'./assets/geen-setlogo.svg';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
+    cards=all;els.header.style.display='flex';els.setLogo.onerror=function(){this.onerror=null;this.src='./assets/geen-setlogo.svg';};els.setLogo.src=logoImageUrl(activeSet.images?.logo)||'./assets/geen-setlogo.svg';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
   function reset(){els.search.value='';els.sort.value='asc';els.view.value='grid';cards=[];activeSet=null;els.list.innerHTML='';els.header.style.display='none';els.png.disabled=true;els.pdf.disabled=true;status('Selecteer eerst een set en druk daarna op “Laad pagina”.');window.scrollTo({top:0,behavior:'smooth'});}
   function fileName(){return 'ZamexCards-Pokemon-TCG-Checklist-'+(activeSet?.name||'set').replace(/[^a-z0-9]+/gi,'-');}
   function currentExportData(){
