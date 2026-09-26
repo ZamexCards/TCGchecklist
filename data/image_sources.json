@@ -1,0 +1,11 @@
+{
+  "_instructions": "Only add verified exact image URLs. cards keys are printed local card numbers; logo is a verified set logo URL. Never use fuzzy card-name matching.",
+  "mep": {
+    "logo": "",
+    "cards": {}
+  },
+  "30th-c": {
+    "logo": "",
+    "cards": {}
+  }
+}
