@@ -108,10 +108,14 @@ def build_set(item):
     if path.exists():
         try:
             old=json.loads(path.read_text())
+            if old.get('set',{}).get('images',{}).get('logo','').startswith('./assets/'):
+                payload['set']['images']['logo']=old['set']['images']['logo']
             if not payload['set']['images']['logo']:
                 payload['set']['images']['logo']=old.get('set',{}).get('images',{}).get('logo','')
             old_cards={c['id']:c for c in old.get('cards',[])}
             for c in payload['cards']:
+                previous_image=old_cards.get(c['id'],{}).get('images',{}).get('small','')
+                if previous_image.startswith('./assets/'):c['images']['small']=previous_image
                 if not c['images']['small']:
                     c['images']['small']=old_cards.get(c['id'],{}).get('images',{}).get('small','')
         except (OSError,ValueError,KeyError):pass
