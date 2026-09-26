@@ -35,7 +35,12 @@ def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
-    for path in sorted(SETS.glob('*.json')):
+    cursor=ROOT/'data'/'image_repair_cursor.txt'
+    paths=sorted(SETS.glob('*.json'))
+    start=int(cursor.read_text().strip())%len(paths) if cursor.exists() and paths else 0
+    visited=0
+    for path in paths[start:]+paths[:start]:
+        visited+=1
         sid=path.stem
         if not re.fullmatch(r'[A-Za-z0-9_-]+',sid):continue
         payload=json.loads(path.read_text(encoding='utf-8'))
@@ -61,6 +66,7 @@ def main():
             changed+=1
             if sid in by_id:by_id[sid]['images']=info['images']
         print('Image audit:',sid,'logo:',bool(info['images'].get('logo')),'cards archived:',sum(c.get('images',{}).get('small','').startswith('./assets/') for c in cards),'/',len(cards),flush=True)
+    if paths:cursor.write_text(str((start+visited)%len(paths)),encoding='utf-8')
     if changed:MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     print('Image archive: attempted sets:',attempted,'saved assets:',saved,'updated sets:',changed,flush=True)
 if __name__=='__main__':main()
