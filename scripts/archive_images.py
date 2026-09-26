@@ -122,7 +122,7 @@ def main():
         cards=payload.get('cards',[])
         pending=not logo.startswith('./assets/') or any(not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not pending:continue
-        actionable=(bool(logo) or bool(supplemental(sid,kind='logo'))) and not logo.startswith('./assets/') or any((c.get('images',{}).get('small','') or supplemental(sid,c.get('number'))) and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
+        actionable=(bool(logo) or bool(supplemental(sid,kind='logo'))) and not logo.startswith('./assets/') or any((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket)) and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not actionable:continue
         attempted+=1
         original=json.dumps(payload,ensure_ascii=False,sort_keys=True)
