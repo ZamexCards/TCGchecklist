@@ -60,7 +60,10 @@ def build_set(item):
     def one(x):
         try:
             c=fetch(BASE+'/cards/'+urllib.parse.quote(x['id'],safe=''))
-            return card_summary(c)
+            result=card_summary(c)
+            if not result['images']['small']:
+                result['images']['small']=image_url(x.get('image'))
+            return result
         except Exception as error:
             # Do not invent image URLs or variants when detail is unavailable.
             print('Card detail unavailable:',x['id'],error,flush=True)
