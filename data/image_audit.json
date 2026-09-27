@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20672,
-    "missing_cards": 938,
+    "local_cards": 20683,
+    "missing_cards": 927,
     "external_cards": 1,
     "broken_cards": 0,
-    "local_logos": 169,
-    "missing_logos": 31,
+    "local_logos": 174,
+    "missing_logos": 26,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 145
+    "complete_sets": 146
   },
   "sets": [
     {
@@ -709,7 +709,7 @@
     {
       "id": "30th-c",
       "name": "30th Classic Collection",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -870,7 +870,7 @@
     {
       "id": "30th",
       "name": "30th Celebration",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 158,
       "local_cards": 158,
       "missing_cards": [],
@@ -2082,7 +2082,7 @@
     {
       "id": "exu",
       "name": "Unseen Forces Unown Collection",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 28,
       "local_cards": 0,
       "missing_cards": [
@@ -2389,7 +2389,7 @@
     {
       "id": "mee",
       "name": "Mega Evolution Energy",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 8,
       "local_cards": 0,
       "missing_cards": [
@@ -2896,7 +2896,7 @@
     {
       "id": "mfb",
       "name": "My First Battle",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 34,
       "local_cards": 0,
       "missing_cards": [
@@ -4519,7 +4519,7 @@
       "name": "EX trainer Kit (Latios)",
       "logo_status": "local",
       "total_cards": 10,
-      "local_cards": 3,
+      "local_cards": 4,
       "missing_cards": [
         {
           "id": "tk-ex-latio-2",
@@ -4547,11 +4547,6 @@
           "name": "Potion"
         },
         {
-          "id": "tk-ex-latio-9",
-          "number": "9",
-          "name": "Energy Search"
-        },
-        {
           "id": "tk-ex-latio-10",
           "number": "10",
           "name": "Lightning Energy"
@@ -4565,18 +4560,8 @@
       "name": "EX trainer Kit 2 (Minun)",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 7,
       "missing_cards": [
-        {
-          "id": "tk-ex-m-1",
-          "number": "1",
-          "name": "Arcanine"
-        },
-        {
-          "id": "tk-ex-m-2",
-          "number": "2",
-          "name": "Charmander"
-        },
         {
           "id": "tk-ex-m-3",
           "number": "3",
@@ -4588,21 +4573,6 @@
           "name": "Growlithe"
         },
         {
-          "id": "tk-ex-m-5",
-          "number": "5",
-          "name": "Mareep"
-        },
-        {
-          "id": "tk-ex-m-6",
-          "number": "6",
-          "name": "Minun"
-        },
-        {
-          "id": "tk-ex-m-7",
-          "number": "7",
-          "name": "Vulpix"
-        },
-        {
           "id": "tk-ex-m-8",
           "number": "8",
           "name": "Celio's Network"
@@ -4611,16 +4581,6 @@
           "id": "tk-ex-m-9",
           "number": "9",
           "name": "Energy Search"
-        },
-        {
-          "id": "tk-ex-m-10",
-          "number": "10",
-          "name": "Potion"
-        },
-        {
-          "id": "tk-ex-m-11",
-          "number": "11",
-          "name": "Fire Energy"
         },
         {
           "id": "tk-ex-m-12",
@@ -4636,7 +4596,7 @@
       "name": "EX trainer Kit 2 (Plusle)",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 3,
       "missing_cards": [
         {
           "id": "tk-ex-p-1",
@@ -4659,11 +4619,6 @@
           "name": "Meowth"
         },
         {
-          "id": "tk-ex-p-5",
-          "number": "5",
-          "name": "Metang"
-        },
-        {
           "id": "tk-ex-p-6",
           "number": "6",
           "name": "Plusle"
@@ -4674,11 +4629,6 @@
           "name": "Spoink"
         },
         {
-          "id": "tk-ex-p-8",
-          "number": "8",
-          "name": "Energy Search"
-        },
-        {
           "id": "tk-ex-p-9",
           "number": "9",
           "name": "Potion"
@@ -4687,11 +4637,6 @@
           "id": "tk-ex-p-10",
           "number": "10",
           "name": "Professor Cozmo's Discovery"
-        },
-        {
-          "id": "tk-ex-p-11",
-          "number": "11",
-          "name": "Lightning Energy"
         },
         {
           "id": "tk-ex-p-12",

@@ -4332,6 +4332,13 @@
     "status": "saved_identity",
     "strategy": "identity_v3"
   },
+  "tk-ex-latio/tk-ex-latio-10": {
+    "card_name": "Lightning Energy",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
   "tk-ex-latio/tk-ex-latio-2": {
     "card_name": "Latios",
     "card_number": "2",
@@ -4365,6 +4372,839 @@
     "card_number": "6",
     "checked": "2026-09-27",
     "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-latio/tk-ex-latio-7": {
+    "card_name": "Zigzagoon",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-latio/tk-ex-latio-8": {
+    "card_name": "Potion",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-latio/tk-ex-latio-9": {
+    "card_name": "Energy Search",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-1": {
+    "card_name": "Arcanine",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-10": {
+    "card_name": "Potion",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-11": {
+    "card_name": "Fire Energy",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-12": {
+    "card_name": "Lightning Energy",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-2": {
+    "card_name": "Charmander",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-3": {
+    "card_name": "Charmeleon",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-4": {
+    "card_name": "Growlithe",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-5": {
+    "card_name": "Mareep",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-6": {
+    "card_name": "Minun",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-7": {
+    "card_name": "Vulpix",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-8": {
+    "card_name": "Celio's Network",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-m/tk-ex-m-9": {
+    "card_name": "Energy Search",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-1": {
+    "card_name": "Beldum",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-10": {
+    "card_name": "Professor Cozmo's Discovery",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-11": {
+    "card_name": "Lightning Energy",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-12": {
+    "card_name": "Psychic Energy",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-2": {
+    "card_name": "Electrike",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-3": {
+    "card_name": "Grumpig",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-4": {
+    "card_name": "Meowth",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-5": {
+    "card_name": "Metang",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-6": {
+    "card_name": "Plusle",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-7": {
+    "card_name": "Spoink",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-8": {
+    "card_name": "Energy Search",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "tk-ex-p/tk-ex-p-9": {
+    "card_name": "Potion",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-1": {
+    "card_name": "Totodile",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-10": {
+    "card_name": "Water Energy",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-11": {
+    "card_name": "Water Energy",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-12": {
+    "card_name": "Magikarp",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-13": {
+    "card_name": "Croconaw",
+    "card_number": "13",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-14": {
+    "card_name": "Totodile",
+    "card_number": "14",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-15": {
+    "card_name": "Marill",
+    "card_number": "15",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-16": {
+    "card_name": "Water Energy",
+    "card_number": "16",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-17": {
+    "card_name": "Croconaw",
+    "card_number": "17",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-18": {
+    "card_name": "Bill",
+    "card_number": "18",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-19": {
+    "card_name": "Magikarp",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-2": {
+    "card_name": "Water Energy",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-20": {
+    "card_name": "Gyarados",
+    "card_number": "20",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-21": {
+    "card_name": "Energy Switch",
+    "card_number": "21",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-22": {
+    "card_name": "Pokémon Communication",
+    "card_number": "22",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-23": {
+    "card_name": "Poké Ball",
+    "card_number": "23",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-24": {
+    "card_name": "Marill",
+    "card_number": "24",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-25": {
+    "card_name": "Professor Elm's Training Method",
+    "card_number": "25",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-26": {
+    "card_name": "Water Energy",
+    "card_number": "26",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-27": {
+    "card_name": "Pokémon Communication",
+    "card_number": "27",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-28": {
+    "card_name": "Switch",
+    "card_number": "28",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-29": {
+    "card_name": "Water Energy",
+    "card_number": "29",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-3": {
+    "card_name": "Water Energy",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-30": {
+    "card_name": "Gyarados",
+    "card_number": "30",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-4": {
+    "card_name": "Water Energy",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-5": {
+    "card_name": "Bill",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-6": {
+    "card_name": "Water Energy",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-7": {
+    "card_name": "Water Energy",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-8": {
+    "card_name": "Water Energy",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-g/tk-hs-g-9": {
+    "card_name": "Water Energy",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-1": {
+    "card_name": "Moomoo Milk",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-10": {
+    "card_name": "Lightning Energy",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-11": {
+    "card_name": "Lightning Energy",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-12": {
+    "card_name": "Meowth",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-13": {
+    "card_name": "Mareep",
+    "card_number": "13",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-14": {
+    "card_name": "Lightning Energy",
+    "card_number": "14",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-15": {
+    "card_name": "Lightning Energy",
+    "card_number": "15",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-16": {
+    "card_name": "Pikachu",
+    "card_number": "16",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-17": {
+    "card_name": "Flaaffy",
+    "card_number": "17",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-18": {
+    "card_name": "Lightning Energy",
+    "card_number": "18",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-19": {
+    "card_name": "Raichu",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-2": {
+    "card_name": "Pikachu",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-20": {
+    "card_name": "Mareep",
+    "card_number": "20",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-21": {
+    "card_name": "Copycat",
+    "card_number": "21",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-22": {
+    "card_name": "Pokémon Collector",
+    "card_number": "22",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-23": {
+    "card_name": "Lightning Energy",
+    "card_number": "23",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-24": {
+    "card_name": "Switch",
+    "card_number": "24",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-25": {
+    "card_name": "Poké Ball",
+    "card_number": "25",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-26": {
+    "card_name": "Moomoo Milk",
+    "card_number": "26",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-27": {
+    "card_name": "Pokémon Collector",
+    "card_number": "27",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-28": {
+    "card_name": "Lightning Energy",
+    "card_number": "28",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-29": {
+    "card_name": "Energy Switch",
+    "card_number": "29",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-3": {
+    "card_name": "Flaaffy",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-30": {
+    "card_name": "Raichu",
+    "card_number": "30",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-4": {
+    "card_name": "Meowth",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-5": {
+    "card_name": "Lightning Energy",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-6": {
+    "card_name": "Lightning Energy",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-7": {
+    "card_name": "Lightning Energy",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-8": {
+    "card_name": "Lightning Energy",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-hs-r/tk-hs-r-9": {
+    "card_name": "Lightning Energy",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-1": {
+    "card_name": "Caterpie",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-11": {
+    "card_name": "Fletchling",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-12": {
+    "card_name": "Yungoos",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-13": {
+    "card_name": "Fletchinder",
+    "card_number": "13",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-14": {
+    "card_name": "Rockruff",
+    "card_number": "14",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-15": {
+    "card_name": "Pikipek",
+    "card_number": "15",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-16": {
+    "card_name": "Lycanroc",
+    "card_number": "16",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-18": {
+    "card_name": "Makuhita",
+    "card_number": "18",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-19": {
+    "card_name": "Hau",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-21": {
+    "card_name": "Great Ball",
+    "card_number": "21",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-22": {
+    "card_name": "Toucannon",
+    "card_number": "22",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-23": {
+    "card_name": "Hau",
+    "card_number": "23",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-25": {
+    "card_name": "Great Ball",
+    "card_number": "25",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-27": {
+    "card_name": "Big Malasada",
+    "card_number": "27",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-29": {
+    "card_name": "Rockruff",
+    "card_number": "29",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-30": {
+    "card_name": "Lycanroc",
+    "card_number": "30",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-4": {
+    "card_name": "Trumbeak",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-l/tk-sm-l-5": {
+    "card_name": "Fighting Energy",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-1": {
+    "card_name": "Lightning Energy",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-10": {
+    "card_name": "Lightning Energy",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-11": {
+    "card_name": "Zubat",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-12": {
+    "card_name": "Lightning Energy",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-13": {
+    "card_name": "Spearow",
+    "card_number": "13",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-14": {
+    "card_name": "Pikachu",
+    "card_number": "14",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-2": {
+    "card_name": "Lightning Energy",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-3": {
+    "card_name": "Lightning Energy",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-4": {
+    "card_name": "Stufful",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-5": {
+    "card_name": "Lightning Energy",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-6": {
+    "card_name": "Golbat",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-7": {
+    "card_name": "Lightning Energy",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-8": {
+    "card_name": "Lightning Energy",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-sm-r/tk-sm-r-9": {
+    "card_name": "Lightning Energy",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
     "strategy": "identity_v3"
   }
 }

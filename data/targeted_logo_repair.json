@@ -1,8 +1,4 @@
 {
-  "2016xy": {
-    "name": "McDonald's Collection 2016",
-    "status": "saved_historical_verified"
-  },
   "2023sv": {
     "name": "McDonald's Collection 2023",
     "status": "not_found; tcgdex_not_found; historical_not_found"
@@ -10,14 +6,6 @@
   "2024sv": {
     "name": "McDonald's Collection 2024",
     "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
-  "30th-c": {
-    "name": "30th Classic Collection",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
-  "30th": {
-    "name": "30th Celebration",
-    "status": "not_found; tcgdex_not_found; historical_verified"
   },
   "A3a": {
     "name": "Extradimensional Crisis",
@@ -35,24 +23,8 @@
     "name": "Paldean Wonders",
     "status": "not_found; tcgdex_not_found; historical_not_found"
   },
-  "bog": {
-    "name": "Best of game",
-    "status": "saved_exact_set_name"
-  },
-  "exu": {
-    "name": "Unseen Forces Unown Collection",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
-  "mee": {
-    "name": "Mega Evolution Energy",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
   "mep": {
     "name": "MEP Black Star Promos",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
-  "mfb": {
-    "name": "My First Battle",
     "status": "not_found; tcgdex_not_found; historical_not_found"
   },
   "miscp": {

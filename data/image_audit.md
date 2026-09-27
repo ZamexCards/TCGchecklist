@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20672
-- missing_cards: 938
+- local_cards: 20683
+- missing_cards: 927
 - external_cards: 1
 - broken_cards: 0
-- local_logos: 169
-- missing_logos: 31
+- local_logos: 174
+- missing_logos: 26
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 145
+- complete_sets: 146
 
 ## Per set
 
@@ -32,8 +32,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2022swsh – McDonald's Collection 2022 | local | 8/15 | 7 | 0 | 0 |
 | 2023sv – McDonald's Collection 2023 | missing | 0/15 | 15 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | missing | 0/15 | 15 | 0 | 0 |
-| 30th-c – 30th Classic Collection | missing | 0/30 | 30 | 0 | 0 |
-| 30th – 30th Celebration | missing | 158/158 | 0 | 0 | 0 |
+| 30th-c – 30th Classic Collection | local | 0/30 | 30 | 0 | 0 |
+| 30th – 30th Celebration | local | 158/158 | 0 | 0 | 0 |
 | A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
 | A1a – Mythical Island | local | 86/86 | 0 | 0 | 0 |
 | A2 – Space-Time Smackdown | local | 207/207 | 0 | 0 | 0 |
@@ -101,7 +101,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | ex7 – Team Rocket Returns | local | 111/111 | 0 | 0 | 0 |
 | ex8 – Deoxys | local | 108/108 | 0 | 0 | 0 |
 | ex9 – Emerald | local | 107/107 | 0 | 0 | 0 |
-| exu – Unseen Forces Unown Collection | missing | 0/28 | 28 | 0 | 0 |
+| exu – Unseen Forces Unown Collection | local | 0/28 | 28 | 0 | 0 |
 | fut2020 – Pokémon Futsal 2020 | local | 5/5 | 0 | 0 | 0 |
 | g1 – Generations | local | 117/117 | 0 | 0 | 0 |
 | gym1 – Gym Heroes | local | 132/132 | 0 | 0 | 0 |
@@ -117,9 +117,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me03 – Perfect Order | local | 124/124 | 0 | 0 | 0 |
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
-| mee – Mega Evolution Energy | missing | 0/8 | 8 | 0 | 0 |
+| mee – Mega Evolution Energy | local | 0/8 | 8 | 0 | 0 |
 | mep – MEP Black Star Promos | missing | 0/89 | 89 | 0 | 0 |
-| mfb – My First Battle | missing | 0/34 | 34 | 0 | 0 |
+| mfb – My First Battle | local | 0/34 | 34 | 0 | 0 |
 | miscp – Miscellaneous Promos | missing | 0/1 | 1 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
 | neo2 – Neo Discovery | local | 75/75 | 0 | 0 | 0 |
@@ -190,9 +190,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
 | tk-dp-m – DP trainer Kit (Manaphy) | missing | 0/12 | 12 | 0 | 0 |
 | tk-ex-latia – EX trainer Kit (Latias) | local | 4/10 | 6 | 0 | 0 |
-| tk-ex-latio – EX trainer Kit (Latios) | local | 3/10 | 7 | 0 | 0 |
-| tk-ex-m – EX trainer Kit 2 (Minun) | local | 0/12 | 12 | 0 | 0 |
-| tk-ex-p – EX trainer Kit 2 (Plusle) | local | 0/12 | 12 | 0 | 0 |
+| tk-ex-latio – EX trainer Kit (Latios) | local | 4/10 | 6 | 0 | 0 |
+| tk-ex-m – EX trainer Kit 2 (Minun) | local | 7/12 | 5 | 0 | 0 |
+| tk-ex-p – EX trainer Kit 2 (Plusle) | local | 3/12 | 9 | 0 | 0 |
 | tk-hs-g – HS trainer Kit (Gyarados) | missing | 0/30 | 30 | 0 | 0 |
 | tk-hs-r – HS trainer Kit (Raichu) | missing | 0/30 | 30 | 0 | 0 |
 | tk-sm-l – SM trainer Kit (Lycanroc) | missing | 0/18 | 18 | 0 | 0 |
@@ -225,16 +225,11 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - 2023sv – McDonald's Collection 2023: missing
 - 2024sv – McDonald's Collection 2024: missing
-- 30th-c – 30th Classic Collection: missing
-- 30th – 30th Celebration: missing
 - A3a – Extradimensional Crisis: missing
 - A3b – Eevee Grove: missing
 - B1a – Crimson Blaze: missing
 - B2a – Paldean Wonders: missing
-- exu – Unseen Forces Unown Collection: missing
-- mee – Mega Evolution Energy: missing
 - mep – MEP Black Star Promos: missing
-- mfb – My First Battle: missing
 - miscp – Miscellaneous Promos: missing
 - sve – Scarlet & Violet Energy: missing
 - tk-bw-e – BW trainer Kit (Excadrill): missing
@@ -363,13 +358,13 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (6):** 1, 2, 3, 6, 7, 8
 
 ### tk-ex-latio – EX trainer Kit (Latios)
-**Geen bronlink (7):** 2, 3, 5, 7, 8, 9, 10
+**Geen bronlink (6):** 2, 3, 5, 7, 8, 10
 
 ### tk-ex-m – EX trainer Kit 2 (Minun)
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (5):** 3, 4, 8, 9, 12
 
 ### tk-ex-p – EX trainer Kit 2 (Plusle)
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (9):** 1, 2, 3, 4, 6, 7, 9, 10, 12
 
 ### tk-hs-g – HS trainer Kit (Gyarados)
 **Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
