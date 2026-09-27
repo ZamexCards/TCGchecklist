@@ -58,8 +58,12 @@ def archive(url,sid,name,kind):
             (folder/(name+'.'+ext)).write_bytes(data)
             FAILURE_CACHE.pop(source,None)
             return './assets/sets/'+sid+'/'+name+'.'+ext
+        except urllib.error.HTTPError as error:
+            # Cache only permanent missing assets, not outages or throttling.
+            if error.code in (404,410):
+                FAILURE_CACHE[source]=TODAY.isoformat()
+            continue
         except (urllib.error.URLError,OSError,TimeoutError):
-            FAILURE_CACHE[source]=TODAY.isoformat()
             continue
     return ''
 # Explicit cross-database IDs only: never infer an image from a card name.
