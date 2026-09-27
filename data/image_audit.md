@@ -6,30 +6,30 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20704
-- missing_cards: 907
+- local_cards: 20738
+- missing_cards: 873
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 151
+- complete_sets: 157
 
 ## Per set
 
 | Set | Logo | Kaarten lokaal | Ontbrekend | Extern (niet geverifieerd) | Lokale fouten |
 |---|---|---:|---:|---:|---:|
-| 2011bw – McDonald's Collection 2011 | local | 8/12 | 4 | 0 | 0 |
-| 2012bw – McDonald's Collection 2012 | local | 4/12 | 8 | 0 | 0 |
+| 2011bw – McDonald's Collection 2011 | local | 12/12 | 0 | 0 | 0 |
+| 2012bw – McDonald's Collection 2012 | local | 12/12 | 0 | 0 | 0 |
 | 2014xy – McDonald's Collection 2014 | local | 0/12 | 12 | 0 | 0 |
 | 2015xy – McDonald's Collection 2015 | local | 0/12 | 12 | 0 | 0 |
-| 2016xy – McDonald's Collection 2016 | local | 10/12 | 2 | 0 | 0 |
+| 2016xy – McDonald's Collection 2016 | local | 12/12 | 0 | 0 | 0 |
 | 2017sm – McDonald's Collection 2017 | local | 0/12 | 12 | 0 | 0 |
 | 2018sm – McDonald's Collection 2018 | local | 0/12 | 12 | 0 | 0 |
-| 2019sm – McDonald's Collection 2019 | local | 9/12 | 3 | 0 | 0 |
-| 2021swsh – McDonald's Collection 2021 | local | 15/25 | 10 | 0 | 0 |
-| 2022swsh – McDonald's Collection 2022 | local | 8/15 | 7 | 0 | 0 |
+| 2019sm – McDonald's Collection 2019 | local | 12/12 | 0 | 0 | 0 |
+| 2021swsh – McDonald's Collection 2021 | local | 25/25 | 0 | 0 | 0 |
+| 2022swsh – McDonald's Collection 2022 | local | 15/15 | 0 | 0 | 0 |
 | 2023sv – McDonald's Collection 2023 | local | 0/15 | 15 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | local | 0/15 | 15 | 0 | 0 |
 | 30th-c – 30th Classic Collection | local | 0/30 | 30 | 0 | 0 |
@@ -226,35 +226,17 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Kaarten zonder lokale afbeelding (per set)
 
-### 2011bw – McDonald's Collection 2011
-**Geen bronlink (4):** 7, 8, 9, 12
-
-### 2012bw – McDonald's Collection 2012
-**Geen bronlink (8):** 1, 2, 3, 5, 8, 9, 10, 11
-
 ### 2014xy – McDonald's Collection 2014
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ### 2015xy – McDonald's Collection 2015
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
-### 2016xy – McDonald's Collection 2016
-**Geen bronlink (2):** 6, 8
-
 ### 2017sm – McDonald's Collection 2017
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ### 2018sm – McDonald's Collection 2018
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### 2019sm – McDonald's Collection 2019
-**Geen bronlink (3):** 3, 5, 12
-
-### 2021swsh – McDonald's Collection 2021
-**Geen bronlink (10):** 4, 6, 7, 8, 12, 13, 18, 19, 21, 24
-
-### 2022swsh – McDonald's Collection 2022
-**Geen bronlink (7):** 4, 5, 6, 8, 11, 12, 14
 
 ### 2023sv – McDonald's Collection 2023
 **Geen bronlink (15):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15

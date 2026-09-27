@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20704,
-    "missing_cards": 907,
+    "local_cards": 20738,
+    "missing_cards": 873,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 151
+    "complete_sets": 157
   },
   "sets": [
     {
@@ -19,29 +19,8 @@
       "name": "McDonald's Collection 2011",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 8,
-      "missing_cards": [
-        {
-          "id": "2011bw-7",
-          "number": "7",
-          "name": "Munna"
-        },
-        {
-          "id": "2011bw-8",
-          "number": "8",
-          "name": "Sandile"
-        },
-        {
-          "id": "2011bw-9",
-          "number": "9",
-          "name": "Zorua"
-        },
-        {
-          "id": "2011bw-12",
-          "number": "12",
-          "name": "Audino"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -50,49 +29,8 @@
       "name": "McDonald's Collection 2012",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 4,
-      "missing_cards": [
-        {
-          "id": "2012bw-1",
-          "number": "1",
-          "name": "Servine"
-        },
-        {
-          "id": "2012bw-2",
-          "number": "2",
-          "name": "Pansage"
-        },
-        {
-          "id": "2012bw-3",
-          "number": "3",
-          "name": "Dwebble"
-        },
-        {
-          "id": "2012bw-5",
-          "number": "5",
-          "name": "Dewott"
-        },
-        {
-          "id": "2012bw-8",
-          "number": "8",
-          "name": "Drilbur"
-        },
-        {
-          "id": "2012bw-9",
-          "number": "9",
-          "name": "Purrloin"
-        },
-        {
-          "id": "2012bw-10",
-          "number": "10",
-          "name": "Scraggy"
-        },
-        {
-          "id": "2012bw-11",
-          "number": "11",
-          "name": "Klang"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -243,19 +181,8 @@
       "name": "McDonald's Collection 2016",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 10,
-      "missing_cards": [
-        {
-          "id": "2016xy-6",
-          "number": "6",
-          "name": "Pikachu"
-        },
-        {
-          "id": "2016xy-8",
-          "number": "8",
-          "name": "Jigglypuff"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -406,24 +333,8 @@
       "name": "McDonald's Collection 2019",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 9,
-      "missing_cards": [
-        {
-          "id": "2019sm-3",
-          "number": "3",
-          "name": "Magmar"
-        },
-        {
-          "id": "2019sm-5",
-          "number": "5",
-          "name": "Lapras"
-        },
-        {
-          "id": "2019sm-12",
-          "number": "12",
-          "name": "Eevee"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -432,59 +343,8 @@
       "name": "McDonald's Collection 2021",
       "logo_status": "local",
       "total_cards": 25,
-      "local_cards": 15,
-      "missing_cards": [
-        {
-          "id": "2021swsh-4",
-          "number": "4",
-          "name": "Turtwig"
-        },
-        {
-          "id": "2021swsh-6",
-          "number": "6",
-          "name": "Chespin"
-        },
-        {
-          "id": "2021swsh-7",
-          "number": "7",
-          "name": "Rowlet"
-        },
-        {
-          "id": "2021swsh-8",
-          "number": "8",
-          "name": "Grookey"
-        },
-        {
-          "id": "2021swsh-12",
-          "number": "12",
-          "name": "Chimchar"
-        },
-        {
-          "id": "2021swsh-13",
-          "number": "13",
-          "name": "Tepig"
-        },
-        {
-          "id": "2021swsh-18",
-          "number": "18",
-          "name": "Totodile"
-        },
-        {
-          "id": "2021swsh-19",
-          "number": "19",
-          "name": "Mudkip"
-        },
-        {
-          "id": "2021swsh-21",
-          "number": "21",
-          "name": "Oshawott"
-        },
-        {
-          "id": "2021swsh-24",
-          "number": "24",
-          "name": "Sobble"
-        }
-      ],
+      "local_cards": 25,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -493,44 +353,8 @@
       "name": "McDonald's Collection 2022",
       "logo_status": "local",
       "total_cards": 15,
-      "local_cards": 8,
-      "missing_cards": [
-        {
-          "id": "2022swsh-4",
-          "number": "4",
-          "name": "Growlithe"
-        },
-        {
-          "id": "2022swsh-5",
-          "number": "5",
-          "name": "Victini"
-        },
-        {
-          "id": "2022swsh-6",
-          "number": "6",
-          "name": "Lapras"
-        },
-        {
-          "id": "2022swsh-8",
-          "number": "8",
-          "name": "Chinchou"
-        },
-        {
-          "id": "2022swsh-11",
-          "number": "11",
-          "name": "Cutiefly"
-        },
-        {
-          "id": "2022swsh-12",
-          "number": "12",
-          "name": "Bewear"
-        },
-        {
-          "id": "2022swsh-14",
-          "number": "14",
-          "name": "Drampa"
-        }
-      ],
+      "local_cards": 15,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
