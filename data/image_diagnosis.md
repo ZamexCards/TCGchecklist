@@ -21,8 +21,8 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | tk-xy-sy – XY trainer Kit (Sylveon) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-xy-w – XY trainer Kit (Wigglytuff) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | exu – Unseen Forces Unown Collection | Overig | 28 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| svp – SVP Black Star Promos | Promoties | 28 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | P-A – Promos-A | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| svp – SVP Black Star Promos | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | B2a – Paldean Wonders | Pocket | 19 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -32,17 +32,17 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | 2024sv – McDonald's Collection 2024 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2014xy – McDonald's Collection 2014 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2015xy – McDonald's Collection 2015 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2017sm – McDonald's Collection 2017 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2017sm – McDonald's Collection 2017 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2018sm – McDonald's Collection 2018 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-dp-m – DP trainer Kit (Manaphy) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-m – EX trainer Kit 2 (Minun) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-ex-m – EX trainer Kit 2 (Minun) | Trainer Kit | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | Trainer Kit | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2021swsh – McDonald's Collection 2021 | McDonald’s | 10 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-latia – EX trainer Kit (Latias) | Trainer Kit | 10 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-ex-latia – EX trainer Kit (Latias) | Trainer Kit | 10 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-latio – EX trainer Kit (Latios) | Trainer Kit | 10 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard3 – Skyridge | Overig | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2012bw – McDonald's Collection 2012 | McDonald’s | 8 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2012bw – McDonald's Collection 2012 | McDonald’s | 8 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mee – Mega Evolution Energy | Energy | 8 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2022swsh – McDonald's Collection 2022 | McDonald’s | 7 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | bog – Best of game | Overig | 7 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -58,7 +58,6 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | 30th – 30th Celebration | Overig | 0 | 0 | missing | Zoek en verifieer uitsluitend setlogo |
 | A3a – Extradimensional Crisis | Overig | 0 | 0 | missing | Zoek en verifieer uitsluitend setlogo |
 | A3b – Eevee Grove | Overig | 0 | 0 | missing | Zoek en verifieer uitsluitend setlogo |
-| sv10 – Destined Rivals | Overig | 0 | 1 | local | Controleer externe afbeeldingslink |
 | swsh6 – Chilling Reign | Overig | 0 | 1 | local | Controleer externe afbeeldingslink |
 | xy10 – Fates Collide | Overig | 0 | 1 | local | Controleer externe afbeeldingslink |
 

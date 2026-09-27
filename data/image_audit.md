@@ -6,26 +6,26 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20662
-- missing_cards: 946
-- external_cards: 3
+- local_cards: 20664
+- missing_cards: 945
+- external_cards: 2
 - broken_cards: 0
-- local_logos: 163
-- missing_logos: 37
+- local_logos: 167
+- missing_logos: 33
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 143
+- complete_sets: 144
 
 ## Per set
 
 | Set | Logo | Kaarten lokaal | Ontbrekend | Extern (niet geverifieerd) | Lokale fouten |
 |---|---|---:|---:|---:|---:|
 | 2011bw – McDonald's Collection 2011 | local | 8/12 | 4 | 0 | 0 |
-| 2012bw – McDonald's Collection 2012 | missing | 4/12 | 8 | 0 | 0 |
+| 2012bw – McDonald's Collection 2012 | local | 4/12 | 8 | 0 | 0 |
 | 2014xy – McDonald's Collection 2014 | local | 0/12 | 12 | 0 | 0 |
 | 2015xy – McDonald's Collection 2015 | local | 0/12 | 12 | 0 | 0 |
 | 2016xy – McDonald's Collection 2016 | missing | 10/12 | 2 | 0 | 0 |
-| 2017sm – McDonald's Collection 2017 | missing | 0/12 | 12 | 0 | 0 |
+| 2017sm – McDonald's Collection 2017 | local | 0/12 | 12 | 0 | 0 |
 | 2018sm – McDonald's Collection 2018 | local | 0/12 | 12 | 0 | 0 |
 | 2019sm – McDonald's Collection 2019 | local | 9/12 | 3 | 0 | 0 |
 | 2021swsh – McDonald's Collection 2021 | local | 15/25 | 10 | 0 | 0 |
@@ -165,9 +165,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sv07 – Stellar Crown | local | 175/175 | 0 | 0 | 0 |
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
-| sv10 – Destined Rivals | local | 243/244 | 0 | 1 | 0 |
+| sv10 – Destined Rivals | local | 244/244 | 0 | 0 | 0 |
 | sve – Scarlet & Violet Energy | missing | 0/24 | 24 | 0 | 0 |
-| svp – SVP Black Star Promos | local | 198/226 | 28 | 0 | 0 |
+| svp – SVP Black Star Promos | local | 199/226 | 27 | 0 | 0 |
 | swsh1 – Sword & Shield | local | 216/216 | 0 | 0 | 0 |
 | swsh10 – Astral Radiance | local | 216/216 | 0 | 0 | 0 |
 | swsh10tg – Astral Radiance Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
@@ -189,9 +189,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-bw-z – BW trainer Kit (Zoroark) | missing | 0/30 | 30 | 0 | 0 |
 | tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
 | tk-dp-m – DP trainer Kit (Manaphy) | missing | 0/12 | 12 | 0 | 0 |
-| tk-ex-latia – EX trainer Kit (Latias) | missing | 0/10 | 10 | 0 | 0 |
+| tk-ex-latia – EX trainer Kit (Latias) | local | 0/10 | 10 | 0 | 0 |
 | tk-ex-latio – EX trainer Kit (Latios) | local | 0/10 | 10 | 0 | 0 |
-| tk-ex-m – EX trainer Kit 2 (Minun) | missing | 0/12 | 12 | 0 | 0 |
+| tk-ex-m – EX trainer Kit 2 (Minun) | local | 0/12 | 12 | 0 | 0 |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | local | 0/12 | 12 | 0 | 0 |
 | tk-hs-g – HS trainer Kit (Gyarados) | missing | 0/30 | 30 | 0 | 0 |
 | tk-hs-r – HS trainer Kit (Raichu) | missing | 0/30 | 30 | 0 | 0 |
@@ -223,9 +223,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Ontbrekende of ongeldige setlogo’s
 
-- 2012bw – McDonald's Collection 2012: missing
 - 2016xy – McDonald's Collection 2016: missing
-- 2017sm – McDonald's Collection 2017: missing
 - 2023sv – McDonald's Collection 2023: missing
 - 2024sv – McDonald's Collection 2024: missing
 - 30th-c – 30th Classic Collection: missing
@@ -245,8 +243,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - tk-bw-z – BW trainer Kit (Zoroark): missing
 - tk-dp-l – DP trainer Kit (Lucario): missing
 - tk-dp-m – DP trainer Kit (Manaphy): missing
-- tk-ex-latia – EX trainer Kit (Latias): missing
-- tk-ex-m – EX trainer Kit 2 (Minun): missing
 - tk-hs-g – HS trainer Kit (Gyarados): missing
 - tk-hs-r – HS trainer Kit (Raichu): missing
 - tk-sm-l – SM trainer Kit (Lycanroc): missing
@@ -344,14 +340,11 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### pop6 – POP Series 6
 **Geen bronlink (2):** 13, 17
 
-### sv10 – Destined Rivals
-**Externe bronlink (niet geverifieerd) (1):** 028
-
 ### sve – Scarlet & Violet Energy
 **Geen bronlink (24):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
 
 ### svp – SVP Black Star Promos
-**Geen bronlink (28):** 085, 102, 175, 176, 190, 191, 192, 204, 205, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 500
+**Geen bronlink (27):** 102, 175, 176, 190, 191, 192, 204, 205, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 500
 
 ### swsh6 – Chilling Reign
 **Externe bronlink (niet geverifieerd) (1):** 181

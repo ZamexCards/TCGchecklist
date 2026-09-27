@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20662,
-    "missing_cards": 946,
-    "external_cards": 3,
+    "local_cards": 20664,
+    "missing_cards": 945,
+    "external_cards": 2,
     "broken_cards": 0,
-    "local_logos": 163,
-    "missing_logos": 37,
+    "local_logos": 167,
+    "missing_logos": 33,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 143
+    "complete_sets": 144
   },
   "sets": [
     {
@@ -48,7 +48,7 @@
     {
       "id": "2012bw",
       "name": "McDonald's Collection 2012",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 4,
       "missing_cards": [
@@ -262,7 +262,7 @@
     {
       "id": "2017sm",
       "name": "McDonald's Collection 2017",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
@@ -3546,15 +3546,9 @@
       "name": "Destined Rivals",
       "logo_status": "local",
       "total_cards": 244,
-      "local_cards": 243,
+      "local_cards": 244,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "sv10-028",
-          "number": "028",
-          "name": "Arcanine"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -3693,13 +3687,8 @@
       "name": "SVP Black Star Promos",
       "logo_status": "local",
       "total_cards": 226,
-      "local_cards": 198,
+      "local_cards": 199,
       "missing_cards": [
-        {
-          "id": "svp-085",
-          "number": "085",
-          "name": "Pikachu with Grey Felt Hat"
-        },
         {
           "id": "svp-102",
           "number": "102",
@@ -4493,7 +4482,7 @@
     {
       "id": "tk-ex-latia",
       "name": "EX trainer Kit (Latias)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 10,
       "local_cards": 0,
       "missing_cards": [
@@ -4615,7 +4604,7 @@
     {
       "id": "tk-ex-m",
       "name": "EX trainer Kit 2 (Minun)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
