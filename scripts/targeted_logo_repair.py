@@ -29,6 +29,16 @@ def exact_catalogue_logo(name):
     matches=[row for row in rows if norm(row.get('name'))==norm(name)]
     if len(matches)!=1:return '', 'ambiguous' if matches else 'not_found'
     return (matches[0].get('images') or {}).get('logo',''),'exact_set_name'
+def tcgdex_set_logo(sid,name):
+    """Independent set endpoint; only accept exact ID and name."""
+    for lang in ('en','fr'):
+        url='https://api.tcgdex.net/v2/'+lang+'/sets/'+urllib.parse.quote(sid,safe='')
+        payload=fetch(url) or {}
+        if str(payload.get('id','')).lower()!=sid.lower():continue
+        if lang=='en' and norm(payload.get('name'))!=norm(name):continue
+        logo=payload.get('logo','')
+        if logo:return logo,'tcgdex_'+lang
+    return '','tcgdex_not_found'
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
@@ -43,6 +53,8 @@ def main():
                     ('mapped',supplemental(sid,kind='logo'))]
         external,reason=exact_catalogue_logo(name)
         if external:candidates.append((reason,external))
+        tcglogo,tcgreason=tcgdex_set_logo(sid,name)
+        if tcglogo:candidates.append((tcgreason,tcglogo))
         outcome='not_found'
         for source,url in candidates:
             if not url:continue
@@ -53,7 +65,7 @@ def main():
                 if sid in by_id:by_id[sid]['images']=info['images']
                 saved+=1;outcome='saved_'+source
                 break
-        if outcome=='not_found':outcome=reason
+        if outcome=='not_found':outcome=reason+'; '+tcgreason
         results[sid]={'name':name,'status':outcome}
         print('Logo repair:',sid,name,outcome,flush=True)
     MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
