@@ -9,6 +9,7 @@ on:
       - 'scripts/targeted_logo_repair.py'
       - 'scripts/pikawiz_repair.py'
       - 'scripts/archive_images.py'
+      - 'data/image_sources.json'
       - 'scripts/diagnose_images.py'
   workflow_dispatch:
   schedule:
