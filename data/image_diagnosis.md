@@ -25,7 +25,6 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | svp – SVP Black Star Promos | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| B2a – Paldean Wonders | Pocket | 19 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard2 – Aquapolis | Overig | 17 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2023sv – McDonald's Collection 2023 | McDonald’s | 15 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

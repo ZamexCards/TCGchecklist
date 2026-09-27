@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20684
-- missing_cards: 927
+- local_cards: 20703
+- missing_cards: 908
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 149
+- complete_sets: 150
 
 ## Per set
 
@@ -47,7 +47,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | B1 – Mega Rising | local | 331/331 | 0 | 0 | 0 |
 | B1a – Crimson Blaze | local | 102/103 | 1 | 0 | 0 |
 | B2 – Fantastical Parade | local | 234/234 | 0 | 0 | 0 |
-| B2a – Paldean Wonders | local | 112/131 | 19 | 0 | 0 |
+| B2a – Paldean Wonders | local | 131/131 | 0 | 0 | 0 |
 | P-A – Promos-A | local | 73/100 | 27 | 0 | 0 |
 | base1 – Base Set | local | 102/102 | 0 | 0 | 0 |
 | base2 – Jungle | local | 64/64 | 0 | 0 | 0 |
@@ -267,9 +267,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### B1a – Crimson Blaze
 **Geen bronlink (1):** 088
-
-### B2a – Paldean Wonders
-**Geen bronlink (19):** 003, 020, 037, 042, 078, 100, 101, 102, 103, 104, 110, 111, 112, 113, 114, 126, 127, 128, 129
 
 ### P-A – Promos-A
 **Geen bronlink (27):** 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100

@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20684,
-    "missing_cards": 927,
+    "local_cards": 20703,
+    "missing_cards": 908,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 149
+    "complete_sets": 150
   },
   "sets": [
     {
@@ -1018,104 +1018,8 @@
       "name": "Paldean Wonders",
       "logo_status": "local",
       "total_cards": 131,
-      "local_cards": 112,
-      "missing_cards": [
-        {
-          "id": "B2a-003",
-          "number": "003",
-          "name": "Meowscarada"
-        },
-        {
-          "id": "B2a-020",
-          "number": "020",
-          "name": "Armarouge"
-        },
-        {
-          "id": "B2a-037",
-          "number": "037",
-          "name": "Chien-Pao"
-        },
-        {
-          "id": "B2a-042",
-          "number": "042",
-          "name": "Bellibolt"
-        },
-        {
-          "id": "B2a-078",
-          "number": "078",
-          "name": "Gholdengo"
-        },
-        {
-          "id": "B2a-100",
-          "number": "100",
-          "name": "Meowscarada"
-        },
-        {
-          "id": "B2a-101",
-          "number": "101",
-          "name": "Armarouge"
-        },
-        {
-          "id": "B2a-102",
-          "number": "102",
-          "name": "Chien-Pao"
-        },
-        {
-          "id": "B2a-103",
-          "number": "103",
-          "name": "Bellibolt"
-        },
-        {
-          "id": "B2a-104",
-          "number": "104",
-          "name": "Gholdengo"
-        },
-        {
-          "id": "B2a-110",
-          "number": "110",
-          "name": "Meowscarada"
-        },
-        {
-          "id": "B2a-111",
-          "number": "111",
-          "name": "Armarouge"
-        },
-        {
-          "id": "B2a-112",
-          "number": "112",
-          "name": "Chien-Pao"
-        },
-        {
-          "id": "B2a-113",
-          "number": "113",
-          "name": "Bellibolt"
-        },
-        {
-          "id": "B2a-114",
-          "number": "114",
-          "name": "Gholdengo"
-        },
-        {
-          "id": "B2a-126",
-          "number": "126",
-          "name": "Entei"
-        },
-        {
-          "id": "B2a-127",
-          "number": "127",
-          "name": "Suicune"
-        },
-        {
-          "id": "B2a-128",
-          "number": "128",
-          "name": "Raikou"
-        },
-        {
-          "id": "B2a-129",
-          "number": "129",
-          "name": "Tinkaton"
-        }
-      ],
+      "local_cards": 131,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
