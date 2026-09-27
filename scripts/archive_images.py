@@ -37,6 +37,14 @@ def candidates(url,kind):
     url=url.rstrip('/')
     if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?$',url,re.I):return [url]
     return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png',url+'/high.webp',url+'/high.png']
+MAX_IMAGE_BYTES=8_000_000
+
+def valid_image(data,mime):
+    if mime=='image/png':return data.startswith(b'\x89PNG\r\n\x1a\n')
+    if mime=='image/jpeg':return data.startswith(b'\xff\xd8\xff')
+    if mime=='image/webp':return data[:4]==b'RIFF' and data[8:12]==b'WEBP'
+    return False
+
 def archive(url,sid,name,kind):
     folder=ROOT/'assets'/'sets'/sid
     for ext in ('webp','png','jpg'):
@@ -49,8 +57,8 @@ def archive(url,sid,name,kind):
             with urllib.request.urlopen(urllib.request.Request(source,headers=HEADERS),timeout=12) as response:
                 mime=response.headers.get('Content-Type','').split(';')[0].lower()
                 if mime not in ('image/webp','image/png','image/jpeg'):continue
-                data=response.read(1000001)
-            if len(data)<1000 or len(data)>1000000:
+                data=response.read(MAX_IMAGE_BYTES+1)
+            if len(data)<1000 or len(data)>MAX_IMAGE_BYTES or not valid_image(data,mime):
                 FAILURE_CACHE[source]=TODAY.isoformat()
                 continue
             ext={'image/webp':'webp','image/png':'png','image/jpeg':'jpg'}[mime]
