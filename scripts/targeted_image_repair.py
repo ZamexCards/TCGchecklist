@@ -83,12 +83,15 @@ def historical_source(sid,number,name):
     if len(matches)!=1:return None,'historical_not_found'
     return (matches[0].get('images') or {}).get('small'),'historical_verified'
 def eligible(entry):
-    date=entry.get('checked','')
+    """Advance to new cards; retry transient failures, revisit definitive misses monthly."""
     if entry.get('strategy')!='identity_v3':return True
-    if entry.get('status') not in ('no_source','http_404','http_410','image_unavailable','mismatch','secondary_http_404','secondary_mismatch','secondary_image_unavailable'):
+    status=entry.get('status','')
+    if status in ('temporary_error','secondary_temporary_error','identity_temporary_error'):
         return True
-    try:return (TODAY-datetime.date.fromisoformat(date)).days>=30
-    except ValueError:return True
+    try:
+        return (TODAY-datetime.date.fromisoformat(entry.get('checked',''))).days>=30
+    except ValueError:
+        return True
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
