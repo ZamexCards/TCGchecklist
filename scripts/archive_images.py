@@ -86,7 +86,7 @@ FALLBACK_SETS={
     'cel25':'cel25','cel25cc':'cel25c','swsh9tg':'swsh9tg',
     'swsh10tg':'swsh10tg','swsh11tg':'swsh11tg','swsh12tg':'swsh12tg',
     'pl2':'pl2','xy8':'xy8','sm2':'sm2','sm3':'sm3','sm6':'sm6',
-    'ecard2':'ecard2','ecard3':'ecard3',
+    'ecard2':'ecard2','ecard3':'ecard3','pop6':'pop6',
     '2011bw':'mcd11','2012bw':'mcd12','2014xy':'mcd14',
     '2015xy':'mcd15','2016xy':'mcd16','2017sm':'mcd17',
     '2018sm':'mcd18','2019sm':'mcd19','2021swsh':'mcd21',
