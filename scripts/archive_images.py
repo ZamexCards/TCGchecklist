@@ -98,29 +98,31 @@ def supplemental(sid,number='',kind='card'):
 
 # Pocket B2a is a separate game: require matching set, printed number AND name.
 # The public dataset documents cards-by-set/B2a/<number>.webp.
-POCKET_META='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/cards/B2a.json'
-POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-exchange/main/public/images/cards-by-set/B2a/{}.webp'
+POCKET_META='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/cards/{}.json'
+POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-exchange/main/public/images/cards-by-set/{}/{}.webp'
+POCKET_SETS=('B1a','B2a')
 def pocket_cards():
-    try:
-        with urllib.request.urlopen(urllib.request.Request(POCKET_META,headers={'User-Agent':'ZamexCardsChecklist/1.0'}),timeout=15) as response:
-            rows=json.load(response)
-        if isinstance(rows,dict):rows=rows.get('cards',[])
-        return {str(row['number']):row for row in rows if isinstance(row,dict) and row.get('set','B2a').lower()=='b2a'}
-    except (ValueError,KeyError,TypeError,urllib.error.URLError,OSError,TimeoutError) as error:
-        print('Pocket source unavailable:',error,flush=True)
-        return {}
+    known={}
+    for sid in POCKET_SETS:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(POCKET_META.format(sid),headers={'User-Agent':'ZamexCardsChecklist/1.0'}),timeout=15) as response:
+                rows=json.load(response)
+            if isinstance(rows,dict):rows=rows.get('cards',[])
+            known[sid.lower()]={str(int(row['number'])):row for row in rows if isinstance(row,dict) and str(row.get('set',sid)).lower()==sid.lower() and str(row.get('number','')).isdigit()}
+        except (ValueError,KeyError,TypeError,urllib.error.URLError,OSError,TimeoutError) as error:
+            print('Pocket source unavailable:',sid,error,flush=True)
+    return known
 def pocket_source(sid,card,known):
-    if sid.lower()!='b2a':return ''
+    if sid.lower() not in known:return ''
     number=str(card.get('number','')).strip()
     if not number.isdigit():return ''
-    row=known.get(str(int(number)))
+    row=known[sid.lower()].get(str(int(number)))
     if not row:return ''
     normal=lambda name:re.sub(r'[^a-z0-9]','',str(name).lower())
     source_name=normal(row.get('name'))
     checklist_name=normal(card.get('name'))
-    # Pocket metadata includes the ex suffix; checklist labels omit it for these exact-numbered cards.
     if source_name!=checklist_name and source_name!=checklist_name+'ex':return ''
-    return POCKET_IMAGE.format(int(number))
+    return POCKET_IMAGE.format(sid,int(number))
 
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
@@ -174,7 +176,7 @@ def main():
             number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or card['id']))
             pocket_url=pocket_source(sid,card,pocket)
             # The same verified Pocket card number may be stored zero-padded in image repositories.
-            pocket_padded=(POCKET_IMAGE.format(str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
+            pocket_padded=(POCKET_IMAGE.format(sid,str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
             new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
