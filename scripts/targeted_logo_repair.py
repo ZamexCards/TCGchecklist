@@ -60,7 +60,6 @@ def main():
     for path in sorted(SETS.glob('*.json')):
         payload=json.loads(path.read_text(encoding='utf-8'))
         info=payload['set'];sid=path.stem
-        if info.get('images',{}).get('logo','').startswith('./assets/'):continue
         # User-uploaded artwork is authoritative when already present locally.
         folder=ROOT/'assets'/'sets'/sid
         uploaded=next((folder/('logo.'+ext) for ext in ('webp','png','jpg')
@@ -75,6 +74,7 @@ def main():
             results[sid]={'name':info.get('name',''),'status':'saved_user_uploaded'}
             print('Logo repair:',sid,'saved_user_uploaded',flush=True)
             continue
+        if info.get('images',{}).get('logo','').startswith('./assets/'):continue
         name=info.get('name','')
         candidates=[('user_verified',override(sid,kind='logo')),
                     ('existing',info.get('images',{}).get('logo','')),
