@@ -141,7 +141,7 @@ def bulbagarden_mep_cards():
     result={}
     base='https://api.github.com/repos/willregelmann/database-of-things/contents/collections/trading-cards/pokemon-tcg/mega-evolution-series/promos'
     try:
-        with urllib.request.urlopen(urllib.request.Request(base,headers=HEADERS),timeout=20) as response:
+        with urllib.request.urlopen(urllib.request.Request(base,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'application/vnd.github+json'}),timeout=20) as response:
             rows=json.load(response)
         for row in rows:
             match=re.fullmatch(r'mep([0-9]+)-(.+)[.]yaml',row.get('name',''),re.I)
@@ -161,7 +161,7 @@ def bulbagarden_mep_source(sid,card,known):
     for filename_name,metadata_url in known.get(int(number),[]):
         if normalize(filename_name)!=name:continue
         try:
-            with urllib.request.urlopen(urllib.request.Request(metadata_url,headers=HEADERS),timeout=12) as response:
+            with urllib.request.urlopen(urllib.request.Request(metadata_url,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'text/plain'}),timeout=12) as response:
                 metadata=response.read(10000).decode('utf-8')
             match=re.search(r'^image:\\s*(https://archives[.]bulbagarden[.]net/wiki/Special:FilePath/[^\\s]+)',metadata,re.M)
             if match:return match.group(1)
