@@ -35,7 +35,7 @@ HEADERS={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'image/webp,image/png,i
 def candidates(url,kind):
     if not url or url.startswith('./'):return []
     url=url.rstrip('/')
-    if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?:return [url]
+    if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?$',url,re.I):return [url]
     return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png']
 def archive(url,sid,name,kind):
     folder=ROOT/'assets'/'sets'/sid
