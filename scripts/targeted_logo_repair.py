@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive user-provided logo URLs locally, then repair missing logos by exact set name.
+"""Archive verified user-provided logos locally, then repair missing logos by exact set name.
 
 Runs independently of the card repair and records every unresolved set.
 """
