@@ -30,6 +30,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Record baseline image count
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/image_audit.json')
+          if p.exists():
+              t=json.loads(p.read_text())['totals']
+              Path('/tmp/zamex_baseline.json').write_text(json.dumps(t))
+          PY
+
       - name: Refresh set and card snapshots
         run: python scripts/update_data.py
 
@@ -63,7 +74,12 @@ jobs:
           import json
           from pathlib import Path
           t=json.loads(Path('data/image_audit.json').read_text())['totals']
+          baseline_path=Path('/tmp/zamex_baseline.json')
+          baseline=json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
+          delta=t['local_cards']-baseline.get('local_cards',t['local_cards'])
           print('## ZamexCards checklist – werkelijke afbeeldingsstatus')
+          print(f'**Nieuw lokaal opgeslagen in deze uitvoering:** {delta:+d}')
+          print('**Let op:** succesvolle uitvoering is geen garantie dat nieuwe afbeeldingen zijn gevonden.')
           print(f"**Volledige sets:** {t['complete_sets']} / {t['sets']}")
           print(f"**Kaartafbeeldingen lokaal:** {t['local_cards']} / {t['cards']}")
           print(f"**Ontbrekende kaartafbeeldingen:** {t['missing_cards']}")
