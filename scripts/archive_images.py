@@ -36,7 +36,7 @@ def candidates(url,kind):
     if not url or url.startswith('./'):return []
     url=url.rstrip('/')
     if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?$',url,re.I):return [url]
-    return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png',url+'/high.webp',url+'/high.png']
+    return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png',url+'/low.jpg',url+'/high.webp',url+'/high.png',url+'/high.jpg']
 MAX_IMAGE_BYTES=8_000_000
 
 def valid_image(data,mime):
