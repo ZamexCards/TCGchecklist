@@ -8,6 +8,7 @@ on:
       - 'scripts/targeted_image_repair.py'
       - 'scripts/targeted_logo_repair.py'
       - 'scripts/pikawiz_repair.py'
+      - 'scripts/archive_images.py'
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
