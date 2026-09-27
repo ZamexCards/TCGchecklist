@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Conservative Pikawiz card-art recovery: require exact card page identity and image URL."""
+# Trigger first scheduled repair after workflow registration.
 import html.parser, json, pathlib, re, urllib.parse, urllib.request, urllib.error
 from archive_images import ROOT, SETS, archive
 REPORT=ROOT/'data'/'pikawiz_repair.json'
