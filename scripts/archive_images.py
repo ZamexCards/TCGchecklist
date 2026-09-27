@@ -36,7 +36,7 @@ def candidates(url,kind):
     if not url or url.startswith('./'):return []
     url=url.rstrip('/')
     if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?$',url,re.I):return [url]
-    return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png']
+    return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png',url+'/high.webp',url+'/high.png']
 def archive(url,sid,name,kind):
     folder=ROOT/'assets'/'sets'/sid
     for ext in ('webp','png','jpg'):
