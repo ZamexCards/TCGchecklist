@@ -160,7 +160,10 @@ def main():
             current=card.get('images',{}).get('small','')
             if current.startswith('./assets/'):continue
             number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or card['id']))
-            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_source(sid,card,pocket),sid,number,'card')
+            pocket_url=pocket_source(sid,card,pocket)
+            # The same verified Pocket card number may be stored zero-padded in image repositories.
+            pocket_padded=(POCKET_IMAGE.format(str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
+            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
