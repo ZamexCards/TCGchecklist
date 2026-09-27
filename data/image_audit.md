@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20656
-- missing_cards: 948
-- external_cards: 7
+- local_cards: 20659
+- missing_cards: 946
+- external_cards: 6
 - broken_cards: 0
 - local_logos: 154
 - missing_logos: 46
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 139
+- complete_sets: 140
 
 ## Per set
 
@@ -34,7 +34,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2024sv – McDonald's Collection 2024 | missing | 0/15 | 15 | 0 | 0 |
 | 30th-c – 30th Classic Collection | missing | 0/30 | 30 | 0 | 0 |
 | 30th – 30th Celebration | missing | 158/158 | 0 | 0 | 0 |
-| A1 – Genetic Apex | local | 285/286 | 0 | 1 | 0 |
+| A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
 | A1a – Mythical Island | local | 86/86 | 0 | 0 | 0 |
 | A2 – Space-Time Smackdown | local | 207/207 | 0 | 0 | 0 |
 | A2a – Triumphant Light | local | 96/96 | 0 | 0 | 0 |
@@ -55,7 +55,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | base4 – Base Set 2 | local | 130/130 | 0 | 0 | 0 |
 | base5 – Team Rocket | local | 83/83 | 0 | 0 | 0 |
 | basep – Wizards Black Star Promos | local | 53/53 | 0 | 0 | 0 |
-| bog – Best of game | missing | 0/9 | 9 | 0 | 0 |
+| bog – Best of game | missing | 2/9 | 7 | 0 | 0 |
 | bw1 – Black & White | local | 115/115 | 0 | 0 | 0 |
 | bw10 – Plasma Blast | local | 105/105 | 0 | 0 | 0 |
 | bw11 – Legendary Treasures | local | 140/140 | 0 | 0 | 0 |
@@ -311,9 +311,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### 30th-c – 30th Classic Collection
 **Geen bronlink (30):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030
 
-### A1 – Genetic Apex
-**Externe bronlink (niet geverifieerd) (1):** 175
-
 ### B1a – Crimson Blaze
 **Geen bronlink (1):** 088
 
@@ -324,7 +321,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (27):** 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100
 
 ### bog – Best of game
-**Geen bronlink (9):** 1, 2, 3, 4, 5, 6, 7, 8, 9
+**Geen bronlink (7):** 1, 2, 3, 4, 5, 8, 9
 
 ### cel25cc – Celebrations Classic Collection
 **Geen bronlink (25):** CC001, CC002, CC003, CC004, CC005, CC006, CC007, CC008, CC009, CC010, CC011, CC012, CC013, CC014, CC015, CC016, CC017, CC018, CC019, CC020, CC021, CC022, CC023, CC024, CC025
