@@ -6,8 +6,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20602
-- missing_cards: 1002
+- local_cards: 20626
+- missing_cards: 978
 - external_cards: 7
 - broken_cards: 0
 - local_logos: 154
@@ -20,15 +20,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 | Set | Logo | Kaarten lokaal | Ontbrekend | Extern (niet geverifieerd) | Lokale fouten |
 |---|---|---:|---:|---:|---:|
-| 2011bw – McDonald's Collection 2011 | missing | 0/12 | 12 | 0 | 0 |
-| 2012bw – McDonald's Collection 2012 | missing | 0/12 | 12 | 0 | 0 |
+| 2011bw – McDonald's Collection 2011 | missing | 4/12 | 8 | 0 | 0 |
+| 2012bw – McDonald's Collection 2012 | missing | 2/12 | 10 | 0 | 0 |
 | 2014xy – McDonald's Collection 2014 | missing | 0/12 | 12 | 0 | 0 |
 | 2015xy – McDonald's Collection 2015 | missing | 0/12 | 12 | 0 | 0 |
-| 2016xy – McDonald's Collection 2016 | missing | 0/12 | 12 | 0 | 0 |
+| 2016xy – McDonald's Collection 2016 | missing | 7/12 | 5 | 0 | 0 |
 | 2017sm – McDonald's Collection 2017 | missing | 0/12 | 12 | 0 | 0 |
 | 2018sm – McDonald's Collection 2018 | missing | 0/12 | 12 | 0 | 0 |
-| 2019sm – McDonald's Collection 2019 | missing | 0/12 | 12 | 0 | 0 |
-| 2021swsh – McDonald's Collection 2021 | missing | 0/25 | 25 | 0 | 0 |
+| 2019sm – McDonald's Collection 2019 | missing | 7/12 | 5 | 0 | 0 |
+| 2021swsh – McDonald's Collection 2021 | missing | 4/25 | 21 | 0 | 0 |
 | 2022swsh – McDonald's Collection 2022 | missing | 0/15 | 15 | 0 | 0 |
 | 2023sv – McDonald's Collection 2023 | missing | 0/15 | 15 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | missing | 0/15 | 15 | 0 | 0 |
@@ -273,10 +273,10 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ## Kaarten zonder lokale afbeelding (per set)
 
 ### 2011bw – McDonald's Collection 2011
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (8):** 2, 3, 6, 7, 8, 9, 10, 12
 
 ### 2012bw – McDonald's Collection 2012
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (10):** 1, 2, 3, 5, 7, 8, 9, 10, 11, 12
 
 ### 2014xy – McDonald's Collection 2014
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
@@ -285,7 +285,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ### 2016xy – McDonald's Collection 2016
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (5):** 4, 6, 8, 9, 12
 
 ### 2017sm – McDonald's Collection 2017
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
@@ -294,10 +294,10 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ### 2019sm – McDonald's Collection 2019
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+**Geen bronlink (5):** 1, 3, 5, 9, 12
 
 ### 2021swsh – McDonald's Collection 2021
-**Geen bronlink (25):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+**Geen bronlink (21):** 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25
 
 ### 2022swsh – McDonald's Collection 2022
 **Geen bronlink (15):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15

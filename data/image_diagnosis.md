@@ -23,33 +23,33 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | exu – Unseen Forces Unown Collection | Overig | 28 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | svp – SVP Black Star Promos | Promoties | 28 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | P-A – Promos-A | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2021swsh – McDonald's Collection 2021 | McDonald’s | 25 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2021swsh – McDonald's Collection 2021 | McDonald’s | 21 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | B2a – Paldean Wonders | Pocket | 19 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard2 – Aquapolis | Overig | 17 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2022swsh – McDonald's Collection 2022 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2023sv – McDonald's Collection 2023 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2024sv – McDonald's Collection 2024 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2011bw – McDonald's Collection 2011 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2012bw – McDonald's Collection 2012 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2014xy – McDonald's Collection 2014 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2015xy – McDonald's Collection 2015 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2016xy – McDonald's Collection 2016 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2017sm – McDonald's Collection 2017 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2018sm – McDonald's Collection 2018 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2019sm – McDonald's Collection 2019 | McDonald’s | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-dp-m – DP trainer Kit (Manaphy) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-m – EX trainer Kit 2 (Minun) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2012bw – McDonald's Collection 2012 | McDonald’s | 10 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-latia – EX trainer Kit (Latias) | Trainer Kit | 10 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-latio – EX trainer Kit (Latios) | Trainer Kit | 10 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | bog – Best of game | Overig | 9 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard3 – Skyridge | Overig | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2011bw – McDonald's Collection 2011 | McDonald’s | 8 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mee – Mega Evolution Energy | Energy | 8 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | xya – Yellow A Alternate | Overig | 6 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2016xy – McDonald's Collection 2016 | McDonald’s | 5 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2019sm – McDonald's Collection 2019 | McDonald’s | 5 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | swshp – SWSH Black Star Promos | Promoties | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | pop6 – POP Series 6 | Overig | 2 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | B1a – Crimson Blaze | Overig | 1 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

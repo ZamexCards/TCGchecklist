@@ -3,8 +3,8 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20602,
-    "missing_cards": 1002,
+    "local_cards": 20626,
+    "missing_cards": 978,
     "external_cards": 7,
     "broken_cards": 0,
     "local_logos": 154,
@@ -19,13 +19,8 @@
       "name": "McDonald's Collection 2011",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 4,
       "missing_cards": [
-        {
-          "id": "2011bw-1",
-          "number": "1",
-          "name": "Snivy"
-        },
         {
           "id": "2011bw-2",
           "number": "2",
@@ -35,16 +30,6 @@
           "id": "2011bw-3",
           "number": "3",
           "name": "Tepig"
-        },
-        {
-          "id": "2011bw-4",
-          "number": "4",
-          "name": "Oshawott"
-        },
-        {
-          "id": "2011bw-5",
-          "number": "5",
-          "name": "Alomomola"
         },
         {
           "id": "2011bw-6",
@@ -72,11 +57,6 @@
           "name": "Klink"
         },
         {
-          "id": "2011bw-11",
-          "number": "11",
-          "name": "Pidove"
-        },
-        {
           "id": "2011bw-12",
           "number": "12",
           "name": "Audino"
@@ -90,7 +70,7 @@
       "name": "McDonald's Collection 2012",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 2,
       "missing_cards": [
         {
           "id": "2012bw-1",
@@ -108,19 +88,9 @@
           "name": "Dwebble"
         },
         {
-          "id": "2012bw-4",
-          "number": "4",
-          "name": "Pignite"
-        },
-        {
           "id": "2012bw-5",
           "number": "5",
           "name": "Dewott"
-        },
-        {
-          "id": "2012bw-6",
-          "number": "6",
-          "name": "Emolga"
         },
         {
           "id": "2012bw-7",
@@ -303,42 +273,17 @@
       "name": "McDonald's Collection 2016",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 7,
       "missing_cards": [
-        {
-          "id": "2016xy-1",
-          "number": "1",
-          "name": "Vulpix"
-        },
-        {
-          "id": "2016xy-2",
-          "number": "2",
-          "name": "Torchic"
-        },
-        {
-          "id": "2016xy-3",
-          "number": "3",
-          "name": "Fennekin"
-        },
         {
           "id": "2016xy-4",
           "number": "4",
           "name": "Magikarp"
         },
         {
-          "id": "2016xy-5",
-          "number": "5",
-          "name": "Totodile"
-        },
-        {
           "id": "2016xy-6",
           "number": "6",
           "name": "Pikachu"
-        },
-        {
-          "id": "2016xy-7",
-          "number": "7",
-          "name": "Scraggy"
         },
         {
           "id": "2016xy-8",
@@ -349,16 +294,6 @@
           "id": "2016xy-9",
           "number": "9",
           "name": "Togepi"
-        },
-        {
-          "id": "2016xy-10",
-          "number": "10",
-          "name": "Dedenne"
-        },
-        {
-          "id": "2016xy-11",
-          "number": "11",
-          "name": "Meowth"
         },
         {
           "id": "2016xy-12",
@@ -516,7 +451,7 @@
       "name": "McDonald's Collection 2019",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 0,
+      "local_cards": 7,
       "missing_cards": [
         {
           "id": "2019sm-1",
@@ -524,19 +459,9 @@
           "name": "Caterpie"
         },
         {
-          "id": "2019sm-2",
-          "number": "2",
-          "name": "Alolan Exeggutor"
-        },
-        {
           "id": "2019sm-3",
           "number": "3",
           "name": "Magmar"
-        },
-        {
-          "id": "2019sm-4",
-          "number": "4",
-          "name": "Alolan Sandshrew"
         },
         {
           "id": "2019sm-5",
@@ -544,34 +469,9 @@
           "name": "Lapras"
         },
         {
-          "id": "2019sm-6",
-          "number": "6",
-          "name": "Pikachu"
-        },
-        {
-          "id": "2019sm-7",
-          "number": "7",
-          "name": "Gastly"
-        },
-        {
-          "id": "2019sm-8",
-          "number": "8",
-          "name": "Mankey"
-        },
-        {
           "id": "2019sm-9",
           "number": "9",
           "name": "Onix"
-        },
-        {
-          "id": "2019sm-10",
-          "number": "10",
-          "name": "Alolan Meowth"
-        },
-        {
-          "id": "2019sm-11",
-          "number": "11",
-          "name": "Alolan Dugtrio"
         },
         {
           "id": "2019sm-12",
@@ -587,7 +487,7 @@
       "name": "McDonald's Collection 2021",
       "logo_status": "missing",
       "total_cards": 25,
-      "local_cards": 0,
+      "local_cards": 4,
       "missing_cards": [
         {
           "id": "2021swsh-1",
@@ -630,21 +530,6 @@
           "name": "Grookey"
         },
         {
-          "id": "2021swsh-9",
-          "number": "9",
-          "name": "Charmander"
-        },
-        {
-          "id": "2021swsh-10",
-          "number": "10",
-          "name": "Cyndaquil"
-        },
-        {
-          "id": "2021swsh-11",
-          "number": "11",
-          "name": "Torchic"
-        },
-        {
           "id": "2021swsh-12",
           "number": "12",
           "name": "Chimchar"
@@ -663,11 +548,6 @@
           "id": "2021swsh-15",
           "number": "15",
           "name": "Litten"
-        },
-        {
-          "id": "2021swsh-16",
-          "number": "16",
-          "name": "Scorbunny"
         },
         {
           "id": "2021swsh-17",
