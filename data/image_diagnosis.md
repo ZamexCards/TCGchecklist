@@ -4,7 +4,6 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 
 | Set | Categorie | Geen bronlink | Extern | Logo | Vervolg |
 |---|---|---:|---:|---|---|
-| B2a – Paldean Wonders | Pocket | 131 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mep – MEP Black Star Promos | Promoties | 89 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mfb – My First Battle | Battle-product | 34 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 30th-c – 30th Classic Collection | Classic Collection | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -27,6 +26,7 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | 2021swsh – McDonald's Collection 2021 | McDonald’s | 25 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| B2a – Paldean Wonders | Pocket | 19 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard2 – Aquapolis | Overig | 17 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2022swsh – McDonald's Collection 2022 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

@@ -3,8 +3,8 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20490,
-    "missing_cards": 1114,
+    "local_cards": 20602,
+    "missing_cards": 1002,
     "external_cards": 7,
     "broken_cards": 0,
     "local_logos": 154,
@@ -1294,102 +1294,12 @@
       "name": "Paldean Wonders",
       "logo_status": "missing",
       "total_cards": 131,
-      "local_cards": 0,
+      "local_cards": 112,
       "missing_cards": [
-        {
-          "id": "B2a-001",
-          "number": "001",
-          "name": "Sprigatito"
-        },
-        {
-          "id": "B2a-002",
-          "number": "002",
-          "name": "Floragato"
-        },
         {
           "id": "B2a-003",
           "number": "003",
           "name": "Meowscarada"
-        },
-        {
-          "id": "B2a-004",
-          "number": "004",
-          "name": "Tarountula"
-        },
-        {
-          "id": "B2a-005",
-          "number": "005",
-          "name": "Spidops"
-        },
-        {
-          "id": "B2a-006",
-          "number": "006",
-          "name": "Nymble"
-        },
-        {
-          "id": "B2a-007",
-          "number": "007",
-          "name": "Smoliv"
-        },
-        {
-          "id": "B2a-008",
-          "number": "008",
-          "name": "Dolliv"
-        },
-        {
-          "id": "B2a-009",
-          "number": "009",
-          "name": "Arboliva"
-        },
-        {
-          "id": "B2a-010",
-          "number": "010",
-          "name": "Bramblin"
-        },
-        {
-          "id": "B2a-011",
-          "number": "011",
-          "name": "Brambleghast"
-        },
-        {
-          "id": "B2a-012",
-          "number": "012",
-          "name": "Capsakid"
-        },
-        {
-          "id": "B2a-013",
-          "number": "013",
-          "name": "Scovillain"
-        },
-        {
-          "id": "B2a-014",
-          "number": "014",
-          "name": "Rellor"
-        },
-        {
-          "id": "B2a-015",
-          "number": "015",
-          "name": "Wo-Chien"
-        },
-        {
-          "id": "B2a-016",
-          "number": "016",
-          "name": "Fuecoco"
-        },
-        {
-          "id": "B2a-017",
-          "number": "017",
-          "name": "Crocalor"
-        },
-        {
-          "id": "B2a-018",
-          "number": "018",
-          "name": "Skeledirge"
-        },
-        {
-          "id": "B2a-019",
-          "number": "019",
-          "name": "Charcadet"
         },
         {
           "id": "B2a-020",
@@ -1397,109 +1307,9 @@
           "name": "Armarouge"
         },
         {
-          "id": "B2a-021",
-          "number": "021",
-          "name": "Chi-Yu"
-        },
-        {
-          "id": "B2a-022",
-          "number": "022",
-          "name": "Quaxly"
-        },
-        {
-          "id": "B2a-023",
-          "number": "023",
-          "name": "Quaxwell"
-        },
-        {
-          "id": "B2a-024",
-          "number": "024",
-          "name": "Quaquaval"
-        },
-        {
-          "id": "B2a-025",
-          "number": "025",
-          "name": "Wiglett"
-        },
-        {
-          "id": "B2a-026",
-          "number": "026",
-          "name": "Wugtrio"
-        },
-        {
-          "id": "B2a-027",
-          "number": "027",
-          "name": "Finizen"
-        },
-        {
-          "id": "B2a-028",
-          "number": "028",
-          "name": "Palafin"
-        },
-        {
-          "id": "B2a-029",
-          "number": "029",
-          "name": "Cetoddle"
-        },
-        {
-          "id": "B2a-030",
-          "number": "030",
-          "name": "Cetitan"
-        },
-        {
-          "id": "B2a-031",
-          "number": "031",
-          "name": "Veluza"
-        },
-        {
-          "id": "B2a-032",
-          "number": "032",
-          "name": "Dondozo"
-        },
-        {
-          "id": "B2a-033",
-          "number": "033",
-          "name": "Tatsugiri"
-        },
-        {
-          "id": "B2a-034",
-          "number": "034",
-          "name": "Frigibax"
-        },
-        {
-          "id": "B2a-035",
-          "number": "035",
-          "name": "Arctibax"
-        },
-        {
-          "id": "B2a-036",
-          "number": "036",
-          "name": "Baxcalibur"
-        },
-        {
           "id": "B2a-037",
           "number": "037",
           "name": "Chien-Pao"
-        },
-        {
-          "id": "B2a-038",
-          "number": "038",
-          "name": "Pawmi"
-        },
-        {
-          "id": "B2a-039",
-          "number": "039",
-          "name": "Pawmo"
-        },
-        {
-          "id": "B2a-040",
-          "number": "040",
-          "name": "Pawmot"
-        },
-        {
-          "id": "B2a-041",
-          "number": "041",
-          "name": "Tadbulb"
         },
         {
           "id": "B2a-042",
@@ -1507,289 +1317,9 @@
           "name": "Bellibolt"
         },
         {
-          "id": "B2a-043",
-          "number": "043",
-          "name": "Wattrel"
-        },
-        {
-          "id": "B2a-044",
-          "number": "044",
-          "name": "Kilowattrel"
-        },
-        {
-          "id": "B2a-045",
-          "number": "045",
-          "name": "Miraidon"
-        },
-        {
-          "id": "B2a-046",
-          "number": "046",
-          "name": "Fidough"
-        },
-        {
-          "id": "B2a-047",
-          "number": "047",
-          "name": "Dachsbun"
-        },
-        {
-          "id": "B2a-048",
-          "number": "048",
-          "name": "Ceruledge"
-        },
-        {
-          "id": "B2a-049",
-          "number": "049",
-          "name": "Rabsca"
-        },
-        {
-          "id": "B2a-050",
-          "number": "050",
-          "name": "Flittle"
-        },
-        {
-          "id": "B2a-051",
-          "number": "051",
-          "name": "Espathra"
-        },
-        {
-          "id": "B2a-052",
-          "number": "052",
-          "name": "Greavard"
-        },
-        {
-          "id": "B2a-053",
-          "number": "053",
-          "name": "Houndstone"
-        },
-        {
-          "id": "B2a-054",
-          "number": "054",
-          "name": "Gimmighoul"
-        },
-        {
-          "id": "B2a-055",
-          "number": "055",
-          "name": "Mankey"
-        },
-        {
-          "id": "B2a-056",
-          "number": "056",
-          "name": "Primeape"
-        },
-        {
-          "id": "B2a-057",
-          "number": "057",
-          "name": "Annihilape"
-        },
-        {
-          "id": "B2a-058",
-          "number": "058",
-          "name": "Paldean Tauros"
-        },
-        {
-          "id": "B2a-059",
-          "number": "059",
-          "name": "Toedscool"
-        },
-        {
-          "id": "B2a-060",
-          "number": "060",
-          "name": "Toedscruel"
-        },
-        {
-          "id": "B2a-061",
-          "number": "061",
-          "name": "Klawf"
-        },
-        {
-          "id": "B2a-062",
-          "number": "062",
-          "name": "Ting-Lu"
-        },
-        {
-          "id": "B2a-063",
-          "number": "063",
-          "name": "Koraidon"
-        },
-        {
-          "id": "B2a-064",
-          "number": "064",
-          "name": "Paldean Wooper"
-        },
-        {
-          "id": "B2a-065",
-          "number": "065",
-          "name": "Paldean Clodsire"
-        },
-        {
-          "id": "B2a-066",
-          "number": "066",
-          "name": "Lokix"
-        },
-        {
-          "id": "B2a-067",
-          "number": "067",
-          "name": "Maschiff"
-        },
-        {
-          "id": "B2a-068",
-          "number": "068",
-          "name": "Mabosstiff"
-        },
-        {
-          "id": "B2a-069",
-          "number": "069",
-          "name": "Shroodle"
-        },
-        {
-          "id": "B2a-070",
-          "number": "070",
-          "name": "Grafaiai"
-        },
-        {
-          "id": "B2a-071",
-          "number": "071",
-          "name": "Bombirdier"
-        },
-        {
-          "id": "B2a-072",
-          "number": "072",
-          "name": "Tinkatink"
-        },
-        {
-          "id": "B2a-073",
-          "number": "073",
-          "name": "Tinkatuff"
-        },
-        {
-          "id": "B2a-074",
-          "number": "074",
-          "name": "Tinkaton"
-        },
-        {
-          "id": "B2a-075",
-          "number": "075",
-          "name": "Varoom"
-        },
-        {
-          "id": "B2a-076",
-          "number": "076",
-          "name": "Revavroom"
-        },
-        {
-          "id": "B2a-077",
-          "number": "077",
-          "name": "Orthworm"
-        },
-        {
           "id": "B2a-078",
           "number": "078",
           "name": "Gholdengo"
-        },
-        {
-          "id": "B2a-079",
-          "number": "079",
-          "name": "Lechonk"
-        },
-        {
-          "id": "B2a-080",
-          "number": "080",
-          "name": "Oinkologne"
-        },
-        {
-          "id": "B2a-081",
-          "number": "081",
-          "name": "Tandemaus"
-        },
-        {
-          "id": "B2a-082",
-          "number": "082",
-          "name": "Maushold"
-        },
-        {
-          "id": "B2a-083",
-          "number": "083",
-          "name": "Squawkabilly"
-        },
-        {
-          "id": "B2a-084",
-          "number": "084",
-          "name": "Cyclizar"
-        },
-        {
-          "id": "B2a-085",
-          "number": "085",
-          "name": "Flamigo"
-        },
-        {
-          "id": "B2a-086",
-          "number": "086",
-          "name": "Electric Generator"
-        },
-        {
-          "id": "B2a-087",
-          "number": "087",
-          "name": "Big Air Balloon"
-        },
-        {
-          "id": "B2a-088",
-          "number": "088",
-          "name": "Team Star Grunt"
-        },
-        {
-          "id": "B2a-089",
-          "number": "089",
-          "name": "Iono"
-        },
-        {
-          "id": "B2a-090",
-          "number": "090",
-          "name": "Nemona"
-        },
-        {
-          "id": "B2a-091",
-          "number": "091",
-          "name": "Arven"
-        },
-        {
-          "id": "B2a-092",
-          "number": "092",
-          "name": "Penny"
-        },
-        {
-          "id": "B2a-093",
-          "number": "093",
-          "name": "Mesagoza"
-        },
-        {
-          "id": "B2a-094",
-          "number": "094",
-          "name": "Fuecoco"
-        },
-        {
-          "id": "B2a-095",
-          "number": "095",
-          "name": "Greavard"
-        },
-        {
-          "id": "B2a-096",
-          "number": "096",
-          "name": "Gimmighoul"
-        },
-        {
-          "id": "B2a-097",
-          "number": "097",
-          "name": "Paldean Wooper"
-        },
-        {
-          "id": "B2a-098",
-          "number": "098",
-          "name": "Orthworm"
-        },
-        {
-          "id": "B2a-099",
-          "number": "099",
-          "name": "Maushold"
         },
         {
           "id": "B2a-100",
@@ -1817,31 +1347,6 @@
           "name": "Gholdengo"
         },
         {
-          "id": "B2a-105",
-          "number": "105",
-          "name": "Team Star Grunt"
-        },
-        {
-          "id": "B2a-106",
-          "number": "106",
-          "name": "Iono"
-        },
-        {
-          "id": "B2a-107",
-          "number": "107",
-          "name": "Nemona"
-        },
-        {
-          "id": "B2a-108",
-          "number": "108",
-          "name": "Arven"
-        },
-        {
-          "id": "B2a-109",
-          "number": "109",
-          "name": "Penny"
-        },
-        {
           "id": "B2a-110",
           "number": "110",
           "name": "Meowscarada"
@@ -1867,61 +1372,6 @@
           "name": "Gholdengo"
         },
         {
-          "id": "B2a-115",
-          "number": "115",
-          "name": "Arven"
-        },
-        {
-          "id": "B2a-116",
-          "number": "116",
-          "name": "Sprigatito"
-        },
-        {
-          "id": "B2a-117",
-          "number": "117",
-          "name": "Floragato"
-        },
-        {
-          "id": "B2a-118",
-          "number": "118",
-          "name": "Meowscarada"
-        },
-        {
-          "id": "B2a-119",
-          "number": "119",
-          "name": "Pawmi"
-        },
-        {
-          "id": "B2a-120",
-          "number": "120",
-          "name": "Pawmo"
-        },
-        {
-          "id": "B2a-121",
-          "number": "121",
-          "name": "Pawmot"
-        },
-        {
-          "id": "B2a-122",
-          "number": "122",
-          "name": "Gimmighoul"
-        },
-        {
-          "id": "B2a-123",
-          "number": "123",
-          "name": "Tinkatink"
-        },
-        {
-          "id": "B2a-124",
-          "number": "124",
-          "name": "Tinkatuff"
-        },
-        {
-          "id": "B2a-125",
-          "number": "125",
-          "name": "Gholdengo"
-        },
-        {
           "id": "B2a-126",
           "number": "126",
           "name": "Entei"
@@ -1940,16 +1390,6 @@
           "id": "B2a-129",
           "number": "129",
           "name": "Tinkaton"
-        },
-        {
-          "id": "B2a-130",
-          "number": "130",
-          "name": "Baxcalibur"
-        },
-        {
-          "id": "B2a-131",
-          "number": "131",
-          "name": "Electric Generator"
         }
       ],
       "external_unverified_cards": [],
