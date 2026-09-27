@@ -19,8 +19,11 @@ def get(url):
 def norm(s):return re.sub('[^a-z0-9]','',str(s).casefold())
 def printed(s):return str(s).upper().removeprefix('CC').lstrip('0') or '0'
 def main():
- report={};saved=0
+ report={};saved=0;blocked=False
  for sid,slug in SETS_MAP.items():
+  if blocked:
+   report[sid]=[{'status':'source_blocked_skipped','reason':'Source returned HTTP 403 or 429'}]
+   continue
   p=SETS/(sid+'.json')
   if not p.exists():continue
   data=json.loads(p.read_text(encoding='utf-8'));items=[]
@@ -56,11 +59,16 @@ def main():
      card.setdefault('images',{})['small']=local;saved+=1
      items.append({'number':number,'name':name,'status':'saved','local':local})
     else:items.append({'number':number,'name':name,'status':'download_failed','url':url})
+   except urllib.error.HTTPError as e:
+    items.append({'number':number,'name':name,'status':'source_blocked' if e.code in (403,429) else 'http_error','http_code':e.code})
+    if e.code in (403,429):
+     blocked=True
+     break
    except (urllib.error.URLError,OSError,TimeoutError,ValueError) as e:
     items.append({'number':number,'name':name,'status':'request_failed','error':str(e)[:100]})
   p.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
   report[sid]=items
   print('Pikawiz:',sid,'checked:',len(items),'saved:',sum(x['status']=='saved' for x in items),flush=True)
  REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
- print('Pikawiz total saved:',saved,flush=True)
+ print('Pikawiz total saved:',saved,'blocked:',blocked,flush=True)
 if __name__=='__main__':main()
