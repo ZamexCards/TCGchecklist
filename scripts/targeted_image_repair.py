@@ -12,7 +12,7 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
-from archive_images import ROOT, SETS, MANIFEST, archive, supplemental, CACHE_PATH, FAILURE_CACHE
+from archive_images import ROOT, SETS, MANIFEST, archive, supplemental, CACHE_PATH, FAILURE_CACHE, FALLBACK_SETS
 
 REPORT=ROOT/'data'/'targeted_image_repair.json'
 LIMIT=int(os.getenv('TARGETED_REPAIR_LIMIT','120'))
@@ -33,9 +33,26 @@ def request_card(cid):
         return None,'http_'+str(exc.code)
     except (urllib.error.URLError,TimeoutError,ValueError,OSError):
         return None,'temporary_error'
+def secondary_card(sid,number,name):
+    """Query a second catalogue by exact mapped set ID and printed card number."""
+    mapped=FALLBACK_SETS.get(sid)
+    if not mapped:return None,'unmapped'
+    identifier=mapped+'-'+str(number)
+    url='https://api.pokemontcg.io/v2/cards/'+urllib.parse.quote(identifier,safe='')
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'application/json'}),timeout=12) as response:
+            row=json.load(response).get('data') or {}
+        if str(row.get('number',''))!=str(number) or norm(row.get('name'))!=norm(name):
+            return None,'secondary_mismatch'
+        images=row.get('images') or {}
+        return images.get('small') or images.get('large') or None,'secondary_verified'
+    except urllib.error.HTTPError as exc:
+        return None,'secondary_http_'+str(exc.code)
+    except (urllib.error.URLError,TimeoutError,ValueError,OSError):
+        return None,'secondary_temporary_error'
 def eligible(entry):
     date=entry.get('checked','')
-    if entry.get('status') not in ('no_source','http_404','http_410','image_unavailable','mismatch'):
+    if entry.get('status') not in ('no_source','http_404','http_410','image_unavailable','mismatch','secondary_http_404','secondary_mismatch','secondary_image_unavailable'):
         return True
     try:return (TODAY-datetime.date.fromisoformat(date)).days>=30
     except ValueError:return True
@@ -72,6 +89,17 @@ def main():
                         card.setdefault('images',{})['small']=local
                         saved+=1;dirty=True;status='saved'
                     else:status='image_unavailable' if source else 'no_source'
+            if status!='saved':
+                alternate,alternate_status=secondary_card(sid,card.get('number',''),card.get('name',''))
+                if alternate:
+                    number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
+                    local=archive(alternate,sid,number,'card')
+                    if local:
+                        card.setdefault('images',{})['small']=local
+                        saved+=1;dirty=True;status='saved_secondary'
+                    else:status='secondary_image_unavailable'
+                elif alternate_status!='unmapped':
+                    status=alternate_status
             history[key]={'status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
             print('Targeted:',key,status,flush=True)
         if dirty:
