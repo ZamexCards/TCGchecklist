@@ -23,5 +23,9 @@
   "mfb": {
     "logo": "https://tcg.pokemon.com/assets/img/my-first-battle/logo/en-us/logo.png",
     "cards": {}
+  },
+  "sve": {
+    "logo": "https://den-media.pokellector.com/logos/Scarlet-Violet-Energies.logo.404.png",
+    "cards": {}
   }
 }
