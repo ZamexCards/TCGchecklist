@@ -36,13 +36,9 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | tk-dp-m – DP trainer Kit (Manaphy) | Trainer Kit | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard3 – Skyridge | Overig | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-p – EX trainer Kit 2 (Plusle) | Trainer Kit | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mee – Mega Evolution Energy | Energy | 8 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | bog – Best of game | Overig | 7 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-latia – EX trainer Kit (Latias) | Trainer Kit | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-latio – EX trainer Kit (Latios) | Trainer Kit | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | xya – Yellow A Alternate | Overig | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-ex-m – EX trainer Kit 2 (Minun) | Trainer Kit | 5 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | swshp – SWSH Black Star Promos | Promoties | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | pop6 – POP Series 6 | Overig | 2 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | hgssp – HGSS Black Star Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

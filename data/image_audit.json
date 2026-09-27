@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20738,
-    "missing_cards": 873,
+    "local_cards": 20764,
+    "missing_cards": 847,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 157
+    "complete_sets": 161
   },
   "sets": [
     {
@@ -4200,39 +4200,8 @@
       "name": "EX trainer Kit (Latias)",
       "logo_status": "local",
       "total_cards": 10,
-      "local_cards": 4,
-      "missing_cards": [
-        {
-          "id": "tk-ex-latia-1",
-          "number": "1",
-          "name": "Bagon"
-        },
-        {
-          "id": "tk-ex-latia-2",
-          "number": "2",
-          "name": "Combusken"
-        },
-        {
-          "id": "tk-ex-latia-3",
-          "number": "3",
-          "name": "Delcatty"
-        },
-        {
-          "id": "tk-ex-latia-6",
-          "number": "6",
-          "name": "Skitty"
-        },
-        {
-          "id": "tk-ex-latia-7",
-          "number": "7",
-          "name": "Torchic"
-        },
-        {
-          "id": "tk-ex-latia-8",
-          "number": "8",
-          "name": "Potion"
-        }
-      ],
+      "local_cards": 10,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4241,39 +4210,8 @@
       "name": "EX trainer Kit (Latios)",
       "logo_status": "local",
       "total_cards": 10,
-      "local_cards": 4,
-      "missing_cards": [
-        {
-          "id": "tk-ex-latio-2",
-          "number": "2",
-          "name": "Latios"
-        },
-        {
-          "id": "tk-ex-latio-3",
-          "number": "3",
-          "name": "Linoone"
-        },
-        {
-          "id": "tk-ex-latio-5",
-          "number": "5",
-          "name": "Magneton"
-        },
-        {
-          "id": "tk-ex-latio-7",
-          "number": "7",
-          "name": "Zigzagoon"
-        },
-        {
-          "id": "tk-ex-latio-8",
-          "number": "8",
-          "name": "Potion"
-        },
-        {
-          "id": "tk-ex-latio-10",
-          "number": "10",
-          "name": "Lightning Energy"
-        }
-      ],
+      "local_cards": 10,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4282,34 +4220,8 @@
       "name": "EX trainer Kit 2 (Minun)",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 7,
-      "missing_cards": [
-        {
-          "id": "tk-ex-m-3",
-          "number": "3",
-          "name": "Charmeleon"
-        },
-        {
-          "id": "tk-ex-m-4",
-          "number": "4",
-          "name": "Growlithe"
-        },
-        {
-          "id": "tk-ex-m-8",
-          "number": "8",
-          "name": "Celio's Network"
-        },
-        {
-          "id": "tk-ex-m-9",
-          "number": "9",
-          "name": "Energy Search"
-        },
-        {
-          "id": "tk-ex-m-12",
-          "number": "12",
-          "name": "Lightning Energy"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -4318,54 +4230,8 @@
       "name": "EX trainer Kit 2 (Plusle)",
       "logo_status": "local",
       "total_cards": 12,
-      "local_cards": 3,
-      "missing_cards": [
-        {
-          "id": "tk-ex-p-1",
-          "number": "1",
-          "name": "Beldum"
-        },
-        {
-          "id": "tk-ex-p-2",
-          "number": "2",
-          "name": "Electrike"
-        },
-        {
-          "id": "tk-ex-p-3",
-          "number": "3",
-          "name": "Grumpig"
-        },
-        {
-          "id": "tk-ex-p-4",
-          "number": "4",
-          "name": "Meowth"
-        },
-        {
-          "id": "tk-ex-p-6",
-          "number": "6",
-          "name": "Plusle"
-        },
-        {
-          "id": "tk-ex-p-7",
-          "number": "7",
-          "name": "Spoink"
-        },
-        {
-          "id": "tk-ex-p-9",
-          "number": "9",
-          "name": "Potion"
-        },
-        {
-          "id": "tk-ex-p-10",
-          "number": "10",
-          "name": "Professor Cozmo's Discovery"
-        },
-        {
-          "id": "tk-ex-p-12",
-          "number": "12",
-          "name": "Psychic Energy"
-        }
-      ],
+      "local_cards": 12,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },

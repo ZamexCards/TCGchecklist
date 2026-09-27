@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20738
-- missing_cards: 873
+- local_cards: 20764
+- missing_cards: 847
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 157
+- complete_sets: 161
 
 ## Per set
 
@@ -189,10 +189,10 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-bw-z – BW trainer Kit (Zoroark) | local | 0/30 | 30 | 0 | 0 |
 | tk-dp-l – DP trainer Kit (Lucario) | local | 0/11 | 11 | 0 | 0 |
 | tk-dp-m – DP trainer Kit (Manaphy) | local | 0/12 | 12 | 0 | 0 |
-| tk-ex-latia – EX trainer Kit (Latias) | local | 4/10 | 6 | 0 | 0 |
-| tk-ex-latio – EX trainer Kit (Latios) | local | 4/10 | 6 | 0 | 0 |
-| tk-ex-m – EX trainer Kit 2 (Minun) | local | 7/12 | 5 | 0 | 0 |
-| tk-ex-p – EX trainer Kit 2 (Plusle) | local | 3/12 | 9 | 0 | 0 |
+| tk-ex-latia – EX trainer Kit (Latias) | local | 10/10 | 0 | 0 | 0 |
+| tk-ex-latio – EX trainer Kit (Latios) | local | 10/10 | 0 | 0 | 0 |
+| tk-ex-m – EX trainer Kit 2 (Minun) | local | 12/12 | 0 | 0 | 0 |
+| tk-ex-p – EX trainer Kit 2 (Plusle) | local | 12/12 | 0 | 0 | 0 |
 | tk-hs-g – HS trainer Kit (Gyarados) | local | 0/30 | 30 | 0 | 0 |
 | tk-hs-r – HS trainer Kit (Raichu) | local | 0/30 | 30 | 0 | 0 |
 | tk-sm-l – SM trainer Kit (Lycanroc) | local | 0/18 | 18 | 0 | 0 |
@@ -303,18 +303,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### tk-dp-m – DP trainer Kit (Manaphy)
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### tk-ex-latia – EX trainer Kit (Latias)
-**Geen bronlink (6):** 1, 2, 3, 6, 7, 8
-
-### tk-ex-latio – EX trainer Kit (Latios)
-**Geen bronlink (6):** 2, 3, 5, 7, 8, 10
-
-### tk-ex-m – EX trainer Kit 2 (Minun)
-**Geen bronlink (5):** 3, 4, 8, 9, 12
-
-### tk-ex-p – EX trainer Kit 2 (Plusle)
-**Geen bronlink (9):** 1, 2, 3, 4, 6, 7, 9, 10, 12
 
 ### tk-hs-g – HS trainer Kit (Gyarados)
 **Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
