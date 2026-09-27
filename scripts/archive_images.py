@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Incrementally archive verified TCGdex images without changing card metadata."""
-import json, pathlib, re, urllib.request, urllib.error, os
+import json, pathlib, re, urllib.request, urllib.error, os, datetime
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
 MANIFEST=ROOT/'data'/'sets.json'
@@ -10,6 +10,24 @@ def overrides():
     if not OVERRIDES.exists():return {}
     return json.loads(OVERRIDES.read_text(encoding='utf-8'))
 SOURCE_OVERRIDES=overrides()
+CACHE_PATH=ROOT/'data'/'image_failed_sources.json'
+try:
+    FAILURE_CACHE=json.loads(CACHE_PATH.read_text(encoding='utf-8'))
+except (OSError,ValueError):
+    FAILURE_CACHE={}
+TODAY=datetime.date.today()
+SKIPPED=0
+def eligible(url):
+    global SKIPPED
+    previous=FAILURE_CACHE.get(url,'')
+    try:
+        if previous and (TODAY-datetime.date.fromisoformat(previous)).days<30:
+            SKIPPED+=1
+            return False
+    except ValueError:
+        pass
+    return True
+
 def override(sid,number='',kind='card'):
     entry=SOURCE_OVERRIDES.get(sid,{})
     return entry.get('logo','') if kind=='logo' else entry.get('cards',{}).get(str(number),'')
@@ -26,17 +44,22 @@ def archive(url,sid,name,kind):
         if existing.exists() and existing.stat().st_size>1000:
             return './assets/sets/'+sid+'/'+existing.name
     for source in candidates(url,kind):
+        if not eligible(source):continue
         try:
             with urllib.request.urlopen(urllib.request.Request(source,headers=HEADERS),timeout=12) as response:
                 mime=response.headers.get('Content-Type','').split(';')[0].lower()
                 if mime not in ('image/webp','image/png','image/jpeg'):continue
                 data=response.read(1000001)
-            if len(data)<1000 or len(data)>1000000:continue
+            if len(data)<1000 or len(data)>1000000:
+                FAILURE_CACHE[source]=TODAY.isoformat()
+                continue
             ext={'image/webp':'webp','image/png':'png','image/jpeg':'jpg'}[mime]
             folder.mkdir(parents=True,exist_ok=True)
             (folder/(name+'.'+ext)).write_bytes(data)
+            FAILURE_CACHE.pop(source,None)
             return './assets/sets/'+sid+'/'+name+'.'+ext
         except (urllib.error.URLError,OSError,TimeoutError):
+            FAILURE_CACHE[source]=TODAY.isoformat()
             continue
     return ''
 # Explicit cross-database IDs only: never infer an image from a card name.
@@ -141,6 +164,7 @@ def main():
             if sid in by_id:by_id[sid]['images']=info['images']
         print('Image audit:',sid,'logo:',bool(info['images'].get('logo')),'cards archived:',sum(c.get('images',{}).get('small','').startswith('./assets/') for c in cards),'/',len(cards),flush=True)
     # Keep the previous cursor file for compatibility, but priority is recalculated each run.
+    CACHE_PATH.write_text(json.dumps(FAILURE_CACHE,ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf-8')
     if changed:MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
-    print('Image archive: attempted sets:',attempted,'saved assets:',saved,'updated sets:',changed,flush=True)
+    print('Image archive: attempted sets:',attempted,'saved assets:',saved,'updated sets:',changed,'cached source skips:',SKIPPED,flush=True)
 if __name__=='__main__':main()
