@@ -91,6 +91,7 @@ FALLBACK_SETS={
     '2011bw':'mcd11','2012bw':'mcd12','2014xy':'mcd14',
     '2015xy':'mcd15','2016xy':'mcd16','2017sm':'mcd17',
     '2018sm':'mcd18','2019sm':'mcd19','2021swsh':'mcd21',
+    'tk-bw-e':'tk5e','tk-bw-z':'tk5z',
     'tk-ex-latia':'tk1a','tk-ex-latio':'tk1b',
     'tk-ex-p':'tk2a','tk-ex-m':'tk2b',
     '2022swsh':'mcd22','2023sv':'mcd23','2024sv':'mcd24',
