@@ -21,7 +21,6 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | tk-xy-sy – XY trainer Kit (Sylveon) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-xy-w – XY trainer Kit (Wigglytuff) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | exu – Unseen Forces Unown Collection | Overig | 28 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| P-A – Promos-A | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | svp – SVP Black Star Promos | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

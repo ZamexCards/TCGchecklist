@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20766,
-    "missing_cards": 845,
+    "local_cards": 20793,
+    "missing_cards": 818,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 162
+    "complete_sets": 163
   },
   "sets": [
     {
@@ -846,144 +846,8 @@
       "name": "Promos-A",
       "logo_status": "local",
       "total_cards": 100,
-      "local_cards": 73,
-      "missing_cards": [
-        {
-          "id": "P-A-074",
-          "number": "074",
-          "name": "Zeraora"
-        },
-        {
-          "id": "P-A-075",
-          "number": "075",
-          "name": "Kartana"
-        },
-        {
-          "id": "P-A-076",
-          "number": "076",
-          "name": "Blacephalon"
-        },
-        {
-          "id": "P-A-077",
-          "number": "077",
-          "name": "Xurkitree"
-        },
-        {
-          "id": "P-A-078",
-          "number": "078",
-          "name": "Dawn Wings Necrozma"
-        },
-        {
-          "id": "P-A-079",
-          "number": "079",
-          "name": "Dusk Mane Necrozma"
-        },
-        {
-          "id": "P-A-080",
-          "number": "080",
-          "name": "Stakataka"
-        },
-        {
-          "id": "P-A-081",
-          "number": "081",
-          "name": "Ultra Necrozma ex"
-        },
-        {
-          "id": "P-A-082",
-          "number": "082",
-          "name": "Poipole"
-        },
-        {
-          "id": "P-A-083",
-          "number": "083",
-          "name": "Stufful"
-        },
-        {
-          "id": "P-A-084",
-          "number": "084",
-          "name": "Tapu Koko ex"
-        },
-        {
-          "id": "P-A-085",
-          "number": "085",
-          "name": "Vanillite"
-        },
-        {
-          "id": "P-A-086",
-          "number": "086",
-          "name": "Jolteon"
-        },
-        {
-          "id": "P-A-087",
-          "number": "087",
-          "name": "Alcremie"
-        },
-        {
-          "id": "P-A-088",
-          "number": "088",
-          "name": "Dragonair"
-        },
-        {
-          "id": "P-A-089",
-          "number": "089",
-          "name": "Audino"
-        },
-        {
-          "id": "P-A-090",
-          "number": "090",
-          "name": "Togedemaru"
-        },
-        {
-          "id": "P-A-091",
-          "number": "091",
-          "name": "Greedent"
-        },
-        {
-          "id": "P-A-092",
-          "number": "092",
-          "name": "Eevee"
-        },
-        {
-          "id": "P-A-093",
-          "number": "093",
-          "name": "Cleffa"
-        },
-        {
-          "id": "P-A-094",
-          "number": "094",
-          "name": "Horsea"
-        },
-        {
-          "id": "P-A-095",
-          "number": "095",
-          "name": "Chinchou"
-        },
-        {
-          "id": "P-A-096",
-          "number": "096",
-          "name": "Houndoom"
-        },
-        {
-          "id": "P-A-097",
-          "number": "097",
-          "name": "Kangaskhan"
-        },
-        {
-          "id": "P-A-098",
-          "number": "098",
-          "name": "Blissey ex"
-        },
-        {
-          "id": "P-A-099",
-          "number": "099",
-          "name": "Marill"
-        },
-        {
-          "id": "P-A-100",
-          "number": "100",
-          "name": "Weavile"
-        }
-      ],
+      "local_cards": 100,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
