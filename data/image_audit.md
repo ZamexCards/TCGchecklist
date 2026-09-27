@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20703
-- missing_cards: 908
+- local_cards: 20704
+- missing_cards: 907
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 150
+- complete_sets: 151
 
 ## Per set
 
@@ -45,7 +45,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | A4 – Wisdom of Sea and Sky | local | 241/241 | 0 | 0 | 0 |
 | A4a – Secluded Springs | local | 105/105 | 0 | 0 | 0 |
 | B1 – Mega Rising | local | 331/331 | 0 | 0 | 0 |
-| B1a – Crimson Blaze | local | 102/103 | 1 | 0 | 0 |
+| B1a – Crimson Blaze | local | 103/103 | 0 | 0 | 0 |
 | B2 – Fantastical Parade | local | 234/234 | 0 | 0 | 0 |
 | B2a – Paldean Wonders | local | 131/131 | 0 | 0 | 0 |
 | P-A – Promos-A | local | 73/100 | 27 | 0 | 0 |
@@ -264,9 +264,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### 30th-c – 30th Classic Collection
 **Geen bronlink (30):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030
-
-### B1a – Crimson Blaze
-**Geen bronlink (1):** 088
 
 ### P-A – Promos-A
 **Geen bronlink (27):** 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100

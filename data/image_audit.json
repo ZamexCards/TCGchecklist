@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20703,
-    "missing_cards": 908,
+    "local_cards": 20704,
+    "missing_cards": 907,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 150
+    "complete_sets": 151
   },
   "sets": [
     {
@@ -992,14 +992,8 @@
       "name": "Crimson Blaze",
       "logo_status": "local",
       "total_cards": 103,
-      "local_cards": 102,
-      "missing_cards": [
-        {
-          "id": "B1a-088",
-          "number": "088",
-          "name": "Oddish"
-        }
-      ],
+      "local_cards": 103,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
