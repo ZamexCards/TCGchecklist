@@ -27,5 +27,29 @@
   "sve": {
     "logo": "https://den-media.pokellector.com/logos/Scarlet-Violet-Energies.logo.404.png",
     "cards": {}
+  },
+  "tk-bw-e": {
+    "logo": "",
+    "cards": {
+      "30": "https://archives.bulbagarden.net/wiki/Special:Redirect/file/ExcadrillExcadrillHalfDeck30.jpg"
+    }
+  },
+  "tk-bw-z": {
+    "logo": "",
+    "cards": {
+      "30": "https://archives.bulbagarden.net/wiki/Special:Redirect/file/ZoroarkZoroarkHalfDeck30.jpg"
+    }
+  },
+  "tk-dp-l": {
+    "logo": "",
+    "cards": {
+      "3": "https://archives.bulbagarden.net/wiki/Special:Redirect/file/LucarioDPTrainerKit3.jpg"
+    }
+  },
+  "tk-dp-m": {
+    "logo": "",
+    "cards": {
+      "4": "https://archives.bulbagarden.net/wiki/Special:Redirect/file/ManaphyDPTrainerKit4.jpg"
+    }
   }
 }
