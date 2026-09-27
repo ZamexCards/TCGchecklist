@@ -3,8 +3,8 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20626,
-    "missing_cards": 978,
+    "local_cards": 20656,
+    "missing_cards": 948,
     "external_cards": 7,
     "broken_cards": 0,
     "local_logos": 154,
@@ -19,23 +19,8 @@
       "name": "McDonald's Collection 2011",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 4,
+      "local_cards": 8,
       "missing_cards": [
-        {
-          "id": "2011bw-2",
-          "number": "2",
-          "name": "Maractus"
-        },
-        {
-          "id": "2011bw-3",
-          "number": "3",
-          "name": "Tepig"
-        },
-        {
-          "id": "2011bw-6",
-          "number": "6",
-          "name": "Blitzle"
-        },
         {
           "id": "2011bw-7",
           "number": "7",
@@ -52,11 +37,6 @@
           "name": "Zorua"
         },
         {
-          "id": "2011bw-10",
-          "number": "10",
-          "name": "Klink"
-        },
-        {
           "id": "2011bw-12",
           "number": "12",
           "name": "Audino"
@@ -70,7 +50,7 @@
       "name": "McDonald's Collection 2012",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 2,
+      "local_cards": 4,
       "missing_cards": [
         {
           "id": "2012bw-1",
@@ -93,11 +73,6 @@
           "name": "Dewott"
         },
         {
-          "id": "2012bw-7",
-          "number": "7",
-          "name": "Woobat"
-        },
-        {
           "id": "2012bw-8",
           "number": "8",
           "name": "Drilbur"
@@ -116,11 +91,6 @@
           "id": "2012bw-11",
           "number": "11",
           "name": "Klang"
-        },
-        {
-          "id": "2012bw-12",
-          "number": "12",
-          "name": "Axew"
         }
       ],
       "external_unverified_cards": [],
@@ -273,13 +243,8 @@
       "name": "McDonald's Collection 2016",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 7,
+      "local_cards": 10,
       "missing_cards": [
-        {
-          "id": "2016xy-4",
-          "number": "4",
-          "name": "Magikarp"
-        },
         {
           "id": "2016xy-6",
           "number": "6",
@@ -289,16 +254,6 @@
           "id": "2016xy-8",
           "number": "8",
           "name": "Jigglypuff"
-        },
-        {
-          "id": "2016xy-9",
-          "number": "9",
-          "name": "Togepi"
-        },
-        {
-          "id": "2016xy-12",
-          "number": "12",
-          "name": "Eevee"
         }
       ],
       "external_unverified_cards": [],
@@ -451,13 +406,8 @@
       "name": "McDonald's Collection 2019",
       "logo_status": "missing",
       "total_cards": 12,
-      "local_cards": 7,
+      "local_cards": 9,
       "missing_cards": [
-        {
-          "id": "2019sm-1",
-          "number": "1",
-          "name": "Caterpie"
-        },
         {
           "id": "2019sm-3",
           "number": "3",
@@ -467,11 +417,6 @@
           "id": "2019sm-5",
           "number": "5",
           "name": "Lapras"
-        },
-        {
-          "id": "2019sm-9",
-          "number": "9",
-          "name": "Onix"
         },
         {
           "id": "2019sm-12",
@@ -487,32 +432,12 @@
       "name": "McDonald's Collection 2021",
       "logo_status": "missing",
       "total_cards": 25,
-      "local_cards": 4,
+      "local_cards": 15,
       "missing_cards": [
-        {
-          "id": "2021swsh-1",
-          "number": "1",
-          "name": "Bulbasaur"
-        },
-        {
-          "id": "2021swsh-2",
-          "number": "2",
-          "name": "Chikorita"
-        },
-        {
-          "id": "2021swsh-3",
-          "number": "3",
-          "name": "Treecko"
-        },
         {
           "id": "2021swsh-4",
           "number": "4",
           "name": "Turtwig"
-        },
-        {
-          "id": "2021swsh-5",
-          "number": "5",
-          "name": "Snivy"
         },
         {
           "id": "2021swsh-6",
@@ -540,21 +465,6 @@
           "name": "Tepig"
         },
         {
-          "id": "2021swsh-14",
-          "number": "14",
-          "name": "Fennekin"
-        },
-        {
-          "id": "2021swsh-15",
-          "number": "15",
-          "name": "Litten"
-        },
-        {
-          "id": "2021swsh-17",
-          "number": "17",
-          "name": "Squirtle"
-        },
-        {
           "id": "2021swsh-18",
           "number": "18",
           "name": "Totodile"
@@ -565,34 +475,14 @@
           "name": "Mudkip"
         },
         {
-          "id": "2021swsh-20",
-          "number": "20",
-          "name": "Piplup"
-        },
-        {
           "id": "2021swsh-21",
           "number": "21",
           "name": "Oshawott"
         },
         {
-          "id": "2021swsh-22",
-          "number": "22",
-          "name": "Froakie"
-        },
-        {
-          "id": "2021swsh-23",
-          "number": "23",
-          "name": "Popplio"
-        },
-        {
           "id": "2021swsh-24",
           "number": "24",
           "name": "Sobble"
-        },
-        {
-          "id": "2021swsh-25",
-          "number": "25",
-          "name": "Pikachu"
         }
       ],
       "external_unverified_cards": [],
@@ -603,23 +493,8 @@
       "name": "McDonald's Collection 2022",
       "logo_status": "missing",
       "total_cards": 15,
-      "local_cards": 0,
+      "local_cards": 8,
       "missing_cards": [
-        {
-          "id": "2022swsh-1",
-          "number": "1",
-          "name": "Ledyba"
-        },
-        {
-          "id": "2022swsh-2",
-          "number": "2",
-          "name": "Rowlet"
-        },
-        {
-          "id": "2022swsh-3",
-          "number": "3",
-          "name": "Gossifleur"
-        },
         {
           "id": "2022swsh-4",
           "number": "4",
@@ -636,24 +511,9 @@
           "name": "Lapras"
         },
         {
-          "id": "2022swsh-7",
-          "number": "7",
-          "name": "Pikachu"
-        },
-        {
           "id": "2022swsh-8",
           "number": "8",
           "name": "Chinchou"
-        },
-        {
-          "id": "2022swsh-9",
-          "number": "9",
-          "name": "Flaaffy"
-        },
-        {
-          "id": "2022swsh-10",
-          "number": "10",
-          "name": "Tynamo"
         },
         {
           "id": "2022swsh-11",
@@ -666,19 +526,9 @@
           "name": "Bewear"
         },
         {
-          "id": "2022swsh-13",
-          "number": "13",
-          "name": "Pangoro"
-        },
-        {
           "id": "2022swsh-14",
           "number": "14",
           "name": "Drampa"
-        },
-        {
-          "id": "2022swsh-15",
-          "number": "15",
-          "name": "Smeargle"
         }
       ],
       "external_unverified_cards": [],
