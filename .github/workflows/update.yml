@@ -37,6 +37,26 @@ jobs:
       - name: Diagnose remaining missing image sources
         run: python scripts/diagnose_images.py
 
+      - name: Publish clear progress summary
+        if: always()
+        run: |
+          if [ -f data/image_audit.json ]; then
+            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          t=json.loads(Path('data/image_audit.json').read_text())['totals']
+          print('## ZamexCards checklist – werkelijke afbeeldingsstatus')
+          print(f"**Volledige sets:** {t['complete_sets']} / {t['sets']}")
+          print(f"**Kaartafbeeldingen lokaal:** {t['local_cards']} / {t['cards']}")
+          print(f"**Ontbrekende kaartafbeeldingen:** {t['missing_cards']}")
+          print(f"**Externe kaartlinks, niet geverifieerd:** {t['external_cards']}")
+          print(f"**Setlogo's lokaal:** {t['local_logos']} / {t['sets']}")
+          print(f"**Ontbrekende setlogo's:** {t['missing_logos']}")
+          print()
+          print('Een groene workflow betekent dat de update is uitgevoerd, niet dat alle afbeeldingen gevonden zijn.')
+          PY
+          fi
+
       - name: Commit changed JSON
         run: |
           git config user.name "github-actions[bot]"
