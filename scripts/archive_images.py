@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Incrementally archive verified TCGdex images without changing card metadata."""
+"""Incrementally archive verified card images without changing card metadata."""
 import json, pathlib, re, urllib.request, urllib.error, os, datetime
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
