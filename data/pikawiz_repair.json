@@ -154,31 +154,31 @@
       "number": "026",
       "name": "Mew VMAX",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "027",
       "name": "Arceus VSTAR",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "028",
       "name": "Zacian V",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "029",
       "name": "Lugia",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "030",
       "name": "Magikarp",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "cel25cc": [
@@ -186,91 +186,91 @@
       "number": "CC001",
       "name": "Blastoise",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC002",
       "name": "Charizard",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC003",
       "name": "Venusaur",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC004",
       "name": "Imposter Professor Oak",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC005",
       "name": "Dark Gyarados",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC006",
       "name": "Here Comes Team Rocket!",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC007",
       "name": "Rocket's Zapdos",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC008",
       "name": "_____'s Pikachu",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC009",
       "name": "Cleffa",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC010",
       "name": "Shining Magikarp",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC011",
       "name": "Team Magma's Groudon",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC012",
       "name": "Rocket's Admin.",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC013",
       "name": "Mew ex",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC014",
       "name": "Gardevoir ex",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC015",
       "name": "Umbreon ☆",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC016",
@@ -294,7 +294,7 @@
       "number": "CC019",
       "name": "Donphan",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC020",
@@ -324,13 +324,13 @@
       "number": "CC024",
       "name": "M Rayquaza EX",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "CC025",
       "name": "Tapu Lele GX",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "ecard2": [
@@ -472,13 +472,13 @@
       "number": "13",
       "name": "Cherubi",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "number": "17",
       "name": "Turtwig",
       "status": "request_failed",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "swshp": [
