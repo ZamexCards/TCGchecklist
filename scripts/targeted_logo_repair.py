@@ -9,7 +9,7 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
-from archive_images import ROOT, SETS, MANIFEST, archive, supplemental, CACHE_PATH, FAILURE_CACHE
+from archive_images import ROOT, SETS, MANIFEST, archive, supplemental, override, CACHE_PATH, FAILURE_CACHE
 
 REPORT=ROOT/'data'/'targeted_logo_repair.json'
 HEADERS={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'application/json'}
@@ -62,7 +62,8 @@ def main():
         info=payload['set'];sid=path.stem
         if info.get('images',{}).get('logo','').startswith('./assets/'):continue
         name=info.get('name','')
-        candidates=[('existing',info.get('images',{}).get('logo','')),
+        candidates=[('user_verified',override(sid,kind='logo')),
+                    ('existing',info.get('images',{}).get('logo','')),
                     ('mapped',supplemental(sid,kind='logo'))]
         external,reason=exact_catalogue_logo(name)
         if external:candidates.append((reason,external))
