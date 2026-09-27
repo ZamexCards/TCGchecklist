@@ -21,7 +21,7 @@ def eligible(url):
     global SKIPPED
     previous=FAILURE_CACHE.get(url,'')
     try:
-        if previous and (TODAY-datetime.date.fromisoformat(previous)).days<30:
+        if previous and (TODAY-datetime.date.fromisoformat(previous)).days<7:
             SKIPPED+=1
             return False
     except ValueError:
