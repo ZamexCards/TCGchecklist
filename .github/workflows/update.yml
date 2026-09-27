@@ -26,7 +26,9 @@ jobs:
       - name: Refresh set and card snapshots
         run: python scripts/update_data.py
 
-      - name: Archive and audit card images and set logos
+      - name: Bulk archive card images and set logos from verified sources
+        env:
+          IMAGE_REPAIR_LIMIT: '200'
         run: python scripts/archive_images.py
 
       - name: Audit all card images and set logos
