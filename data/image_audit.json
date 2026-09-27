@@ -3,21 +3,21 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20659,
+    "local_cards": 20662,
     "missing_cards": 946,
-    "external_cards": 6,
+    "external_cards": 3,
     "broken_cards": 0,
-    "local_logos": 154,
-    "missing_logos": 46,
+    "local_logos": 163,
+    "missing_logos": 37,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 140
+    "complete_sets": 143
   },
   "sets": [
     {
       "id": "2011bw",
       "name": "McDonald's Collection 2011",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 8,
       "missing_cards": [
@@ -99,7 +99,7 @@
     {
       "id": "2014xy",
       "name": "McDonald's Collection 2014",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
@@ -170,7 +170,7 @@
     {
       "id": "2015xy",
       "name": "McDonald's Collection 2015",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
@@ -333,7 +333,7 @@
     {
       "id": "2018sm",
       "name": "McDonald's Collection 2018",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
@@ -404,7 +404,7 @@
     {
       "id": "2019sm",
       "name": "McDonald's Collection 2019",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 9,
       "missing_cards": [
@@ -430,7 +430,7 @@
     {
       "id": "2021swsh",
       "name": "McDonald's Collection 2021",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 25,
       "local_cards": 15,
       "missing_cards": [
@@ -491,7 +491,7 @@
     {
       "id": "2022swsh",
       "name": "McDonald's Collection 2022",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 15,
       "local_cards": 8,
       "missing_cards": [
@@ -1652,15 +1652,9 @@
       "name": "Double Crisis",
       "logo_status": "local",
       "total_cards": 34,
-      "local_cards": 33,
+      "local_cards": 34,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "dc1-1",
-          "number": "1",
-          "name": "Team Magma's Numel"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -2060,15 +2054,9 @@
       "name": "Team Rocket Returns",
       "logo_status": "local",
       "total_cards": 111,
-      "local_cards": 110,
+      "local_cards": 111,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "ex7-88",
-          "number": "88",
-          "name": "Rocket's Mission"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -2257,15 +2245,9 @@
       "name": "Generations",
       "logo_status": "local",
       "total_cards": 117,
-      "local_cards": 116,
+      "local_cards": 117,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "g1-19",
-          "number": "19",
-          "name": "Shellder"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -4572,7 +4554,7 @@
     {
       "id": "tk-ex-latio",
       "name": "EX trainer Kit (Latios)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 10,
       "local_cards": 0,
       "missing_cards": [
@@ -4704,7 +4686,7 @@
     {
       "id": "tk-ex-p",
       "name": "EX trainer Kit 2 (Plusle)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [

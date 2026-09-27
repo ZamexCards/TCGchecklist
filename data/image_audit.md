@@ -6,30 +6,30 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20659
+- local_cards: 20662
 - missing_cards: 946
-- external_cards: 6
+- external_cards: 3
 - broken_cards: 0
-- local_logos: 154
-- missing_logos: 46
+- local_logos: 163
+- missing_logos: 37
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 140
+- complete_sets: 143
 
 ## Per set
 
 | Set | Logo | Kaarten lokaal | Ontbrekend | Extern (niet geverifieerd) | Lokale fouten |
 |---|---|---:|---:|---:|---:|
-| 2011bw – McDonald's Collection 2011 | missing | 8/12 | 4 | 0 | 0 |
+| 2011bw – McDonald's Collection 2011 | local | 8/12 | 4 | 0 | 0 |
 | 2012bw – McDonald's Collection 2012 | missing | 4/12 | 8 | 0 | 0 |
-| 2014xy – McDonald's Collection 2014 | missing | 0/12 | 12 | 0 | 0 |
-| 2015xy – McDonald's Collection 2015 | missing | 0/12 | 12 | 0 | 0 |
+| 2014xy – McDonald's Collection 2014 | local | 0/12 | 12 | 0 | 0 |
+| 2015xy – McDonald's Collection 2015 | local | 0/12 | 12 | 0 | 0 |
 | 2016xy – McDonald's Collection 2016 | missing | 10/12 | 2 | 0 | 0 |
 | 2017sm – McDonald's Collection 2017 | missing | 0/12 | 12 | 0 | 0 |
-| 2018sm – McDonald's Collection 2018 | missing | 0/12 | 12 | 0 | 0 |
-| 2019sm – McDonald's Collection 2019 | missing | 9/12 | 3 | 0 | 0 |
-| 2021swsh – McDonald's Collection 2021 | missing | 15/25 | 10 | 0 | 0 |
-| 2022swsh – McDonald's Collection 2022 | missing | 8/15 | 7 | 0 | 0 |
+| 2018sm – McDonald's Collection 2018 | local | 0/12 | 12 | 0 | 0 |
+| 2019sm – McDonald's Collection 2019 | local | 9/12 | 3 | 0 | 0 |
+| 2021swsh – McDonald's Collection 2021 | local | 15/25 | 10 | 0 | 0 |
+| 2022swsh – McDonald's Collection 2022 | local | 8/15 | 7 | 0 | 0 |
 | 2023sv – McDonald's Collection 2023 | missing | 0/15 | 15 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | missing | 0/15 | 15 | 0 | 0 |
 | 30th-c – 30th Classic Collection | missing | 0/30 | 30 | 0 | 0 |
@@ -71,7 +71,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | cel25 – Celebrations | local | 25/25 | 0 | 0 | 0 |
 | cel25cc – Celebrations Classic Collection | local | 0/25 | 25 | 0 | 0 |
 | col1 – Call of Legends | local | 106/106 | 0 | 0 | 0 |
-| dc1 – Double Crisis | local | 33/34 | 0 | 1 | 0 |
+| dc1 – Double Crisis | local | 34/34 | 0 | 0 | 0 |
 | det1 – Detective Pikachu | local | 18/18 | 0 | 0 | 0 |
 | dp1 – Diamond & Pearl | local | 130/130 | 0 | 0 | 0 |
 | dp2 – Mysterious Treasures | local | 124/124 | 0 | 0 | 0 |
@@ -98,12 +98,12 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | ex4 – Team Magma vs Team Aqua | local | 97/97 | 0 | 0 | 0 |
 | ex5 – Hidden Legends | local | 102/102 | 0 | 0 | 0 |
 | ex6 – FireRed & LeafGreen | local | 116/116 | 0 | 0 | 0 |
-| ex7 – Team Rocket Returns | local | 110/111 | 0 | 1 | 0 |
+| ex7 – Team Rocket Returns | local | 111/111 | 0 | 0 | 0 |
 | ex8 – Deoxys | local | 108/108 | 0 | 0 | 0 |
 | ex9 – Emerald | local | 107/107 | 0 | 0 | 0 |
 | exu – Unseen Forces Unown Collection | missing | 0/28 | 28 | 0 | 0 |
 | fut2020 – Pokémon Futsal 2020 | local | 5/5 | 0 | 0 | 0 |
-| g1 – Generations | local | 116/117 | 0 | 1 | 0 |
+| g1 – Generations | local | 117/117 | 0 | 0 | 0 |
 | gym1 – Gym Heroes | local | 132/132 | 0 | 0 | 0 |
 | gym2 – Gym Challenge | local | 132/132 | 0 | 0 | 0 |
 | hgss1 – HeartGold SoulSilver | local | 124/124 | 0 | 0 | 0 |
@@ -190,9 +190,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
 | tk-dp-m – DP trainer Kit (Manaphy) | missing | 0/12 | 12 | 0 | 0 |
 | tk-ex-latia – EX trainer Kit (Latias) | missing | 0/10 | 10 | 0 | 0 |
-| tk-ex-latio – EX trainer Kit (Latios) | missing | 0/10 | 10 | 0 | 0 |
+| tk-ex-latio – EX trainer Kit (Latios) | local | 0/10 | 10 | 0 | 0 |
 | tk-ex-m – EX trainer Kit 2 (Minun) | missing | 0/12 | 12 | 0 | 0 |
-| tk-ex-p – EX trainer Kit 2 (Plusle) | missing | 0/12 | 12 | 0 | 0 |
+| tk-ex-p – EX trainer Kit 2 (Plusle) | local | 0/12 | 12 | 0 | 0 |
 | tk-hs-g – HS trainer Kit (Gyarados) | missing | 0/30 | 30 | 0 | 0 |
 | tk-hs-r – HS trainer Kit (Raichu) | missing | 0/30 | 30 | 0 | 0 |
 | tk-sm-l – SM trainer Kit (Lycanroc) | missing | 0/18 | 18 | 0 | 0 |
@@ -223,16 +223,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Ontbrekende of ongeldige setlogo’s
 
-- 2011bw – McDonald's Collection 2011: missing
 - 2012bw – McDonald's Collection 2012: missing
-- 2014xy – McDonald's Collection 2014: missing
-- 2015xy – McDonald's Collection 2015: missing
 - 2016xy – McDonald's Collection 2016: missing
 - 2017sm – McDonald's Collection 2017: missing
-- 2018sm – McDonald's Collection 2018: missing
-- 2019sm – McDonald's Collection 2019: missing
-- 2021swsh – McDonald's Collection 2021: missing
-- 2022swsh – McDonald's Collection 2022: missing
 - 2023sv – McDonald's Collection 2023: missing
 - 2024sv – McDonald's Collection 2024: missing
 - 30th-c – 30th Classic Collection: missing
@@ -253,9 +246,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - tk-dp-l – DP trainer Kit (Lucario): missing
 - tk-dp-m – DP trainer Kit (Manaphy): missing
 - tk-ex-latia – EX trainer Kit (Latias): missing
-- tk-ex-latio – EX trainer Kit (Latios): missing
 - tk-ex-m – EX trainer Kit 2 (Minun): missing
-- tk-ex-p – EX trainer Kit 2 (Plusle): missing
 - tk-hs-g – HS trainer Kit (Gyarados): missing
 - tk-hs-r – HS trainer Kit (Raichu): missing
 - tk-sm-l – SM trainer Kit (Lycanroc): missing
@@ -326,23 +317,14 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### cel25cc – Celebrations Classic Collection
 **Geen bronlink (25):** CC001, CC002, CC003, CC004, CC005, CC006, CC007, CC008, CC009, CC010, CC011, CC012, CC013, CC014, CC015, CC016, CC017, CC018, CC019, CC020, CC021, CC022, CC023, CC024, CC025
 
-### dc1 – Double Crisis
-**Externe bronlink (niet geverifieerd) (1):** 1
-
 ### ecard2 – Aquapolis
 **Geen bronlink (17):** 50b, 50a, 74a, 74b, 95a, 95b, 103a, 103b, H01, H02, H03, H04, H05, H06, H07, H08, H09
 
 ### ecard3 – Skyridge
 **Geen bronlink (9):** H01, H02, H03, H04, H05, H06, H07, H08, H09
 
-### ex7 – Team Rocket Returns
-**Externe bronlink (niet geverifieerd) (1):** 88
-
 ### exu – Unseen Forces Unown Collection
 **Geen bronlink (28):** !, %3F, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
-
-### g1 – Generations
-**Externe bronlink (niet geverifieerd) (1):** 19
 
 ### hgssp – HGSS Black Star Promos
 **Geen bronlink (1):** HGSS18

@@ -1,0 +1,186 @@
+{
+  "2011bw": {
+    "name": "McDonald's Collection 2011",
+    "status": "saved_exact_set_name"
+  },
+  "2012bw": {
+    "name": "McDonald's Collection 2012",
+    "status": "not_found"
+  },
+  "2014xy": {
+    "name": "McDonald's Collection 2014",
+    "status": "saved_exact_set_name"
+  },
+  "2015xy": {
+    "name": "McDonald's Collection 2015",
+    "status": "saved_exact_set_name"
+  },
+  "2016xy": {
+    "name": "McDonald's Collection 2016",
+    "status": "not_found"
+  },
+  "2017sm": {
+    "name": "McDonald's Collection 2017",
+    "status": "not_found"
+  },
+  "2018sm": {
+    "name": "McDonald's Collection 2018",
+    "status": "saved_exact_set_name"
+  },
+  "2019sm": {
+    "name": "McDonald's Collection 2019",
+    "status": "saved_exact_set_name"
+  },
+  "2021swsh": {
+    "name": "McDonald's Collection 2021",
+    "status": "saved_exact_set_name"
+  },
+  "2022swsh": {
+    "name": "McDonald's Collection 2022",
+    "status": "saved_exact_set_name"
+  },
+  "2023sv": {
+    "name": "McDonald's Collection 2023",
+    "status": "not_found"
+  },
+  "2024sv": {
+    "name": "McDonald's Collection 2024",
+    "status": "not_found"
+  },
+  "30th-c": {
+    "name": "30th Classic Collection",
+    "status": "not_found"
+  },
+  "30th": {
+    "name": "30th Celebration",
+    "status": "exact_set_name"
+  },
+  "A3a": {
+    "name": "Extradimensional Crisis",
+    "status": "not_found"
+  },
+  "A3b": {
+    "name": "Eevee Grove",
+    "status": "not_found"
+  },
+  "B1a": {
+    "name": "Crimson Blaze",
+    "status": "not_found"
+  },
+  "B2a": {
+    "name": "Paldean Wonders",
+    "status": "not_found"
+  },
+  "bog": {
+    "name": "Best of game",
+    "status": "not_found"
+  },
+  "exu": {
+    "name": "Unseen Forces Unown Collection",
+    "status": "not_found"
+  },
+  "mee": {
+    "name": "Mega Evolution Energy",
+    "status": "not_found"
+  },
+  "mep": {
+    "name": "MEP Black Star Promos",
+    "status": "not_found"
+  },
+  "mfb": {
+    "name": "My First Battle",
+    "status": "not_found"
+  },
+  "miscp": {
+    "name": "Miscellaneous Promos",
+    "status": "not_found"
+  },
+  "sve": {
+    "name": "Scarlet & Violet Energy",
+    "status": "not_found"
+  },
+  "tk-bw-e": {
+    "name": "BW trainer Kit (Excadrill)",
+    "status": "not_found"
+  },
+  "tk-bw-z": {
+    "name": "BW trainer Kit (Zoroark)",
+    "status": "not_found"
+  },
+  "tk-dp-l": {
+    "name": "DP trainer Kit (Lucario)",
+    "status": "not_found"
+  },
+  "tk-dp-m": {
+    "name": "DP trainer Kit (Manaphy)",
+    "status": "not_found"
+  },
+  "tk-ex-latia": {
+    "name": "EX trainer Kit (Latias)",
+    "status": "not_found"
+  },
+  "tk-ex-latio": {
+    "name": "EX trainer Kit (Latios)",
+    "status": "saved_exact_set_name"
+  },
+  "tk-ex-m": {
+    "name": "EX trainer Kit 2 (Minun)",
+    "status": "not_found"
+  },
+  "tk-ex-p": {
+    "name": "EX trainer Kit 2 (Plusle)",
+    "status": "saved_exact_set_name"
+  },
+  "tk-hs-g": {
+    "name": "HS trainer Kit (Gyarados)",
+    "status": "not_found"
+  },
+  "tk-hs-r": {
+    "name": "HS trainer Kit (Raichu)",
+    "status": "not_found"
+  },
+  "tk-sm-l": {
+    "name": "SM trainer Kit (Lycanroc)",
+    "status": "not_found"
+  },
+  "tk-sm-r": {
+    "name": "SM trainer Kit (Alolan Raichu)",
+    "status": "not_found"
+  },
+  "tk-xy-b": {
+    "name": "XY trainer Kit (Bisharp)",
+    "status": "not_found"
+  },
+  "tk-xy-latia": {
+    "name": "XY trainer Kit (Latias)",
+    "status": "not_found"
+  },
+  "tk-xy-latio": {
+    "name": "XY trainer Kit (Latios)",
+    "status": "not_found"
+  },
+  "tk-xy-n": {
+    "name": "XY trainer Kit (Noivern)",
+    "status": "not_found"
+  },
+  "tk-xy-p": {
+    "name": "XY trainer Kit (Pikachu Libre)",
+    "status": "not_found"
+  },
+  "tk-xy-su": {
+    "name": "XY trainer Kit (Suicune)",
+    "status": "not_found"
+  },
+  "tk-xy-sy": {
+    "name": "XY trainer Kit (Sylveon)",
+    "status": "not_found"
+  },
+  "tk-xy-w": {
+    "name": "XY trainer Kit (Wigglytuff)",
+    "status": "not_found"
+  },
+  "xya": {
+    "name": "Yellow A Alternate",
+    "status": "not_found"
+  }
+}

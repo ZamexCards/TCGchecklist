@@ -1846,5 +1846,845 @@
     "checked": "2026-09-27",
     "status": "historical_not_found",
     "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC012": {
+    "card_name": "Rocket's Admin.",
+    "card_number": "CC012",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC013": {
+    "card_name": "Mew ex",
+    "card_number": "CC013",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC014": {
+    "card_name": "Gardevoir ex",
+    "card_number": "CC014",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC015": {
+    "card_name": "Umbreon ☆",
+    "card_number": "CC015",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC016": {
+    "card_name": "Claydol",
+    "card_number": "CC016",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC017": {
+    "card_name": "Luxray GL LV.X",
+    "card_number": "CC017",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC018": {
+    "card_name": "Garchomp C LV.X",
+    "card_number": "CC018",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC019": {
+    "card_name": "Donphan",
+    "card_number": "CC019",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC020": {
+    "card_name": "Reshiram",
+    "card_number": "CC020",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC021": {
+    "card_name": "Zekrom",
+    "card_number": "CC021",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC022": {
+    "card_name": "Mewtwo EX",
+    "card_number": "CC022",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC023": {
+    "card_name": "Xerneas EX",
+    "card_number": "CC023",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC024": {
+    "card_name": "M Rayquaza EX",
+    "card_number": "CC024",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "cel25cc/cel25cc-CC025": {
+    "card_name": "Tapu Lele GX",
+    "card_number": "CC025",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "dc1/dc1-1": {
+    "card_name": "Team Magma's Numel",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "saved_identity",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-103a": {
+    "card_name": "Porygon",
+    "card_number": "103a",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-103b": {
+    "card_name": "Porygon",
+    "card_number": "103b",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-50a": {
+    "card_name": "Golduck",
+    "card_number": "50a",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-50b": {
+    "card_name": "Golduck",
+    "card_number": "50b",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-74a": {
+    "card_name": "Drowzee",
+    "card_number": "74a",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-74b": {
+    "card_name": "Drowzee",
+    "card_number": "74b",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-95a": {
+    "card_name": "Mr. Mime",
+    "card_number": "95a",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-95b": {
+    "card_name": "Mr. Mime",
+    "card_number": "95b",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H01": {
+    "card_name": "Ampharos",
+    "card_number": "H01",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H02": {
+    "card_name": "Arcanine",
+    "card_number": "H02",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H03": {
+    "card_name": "Ariados",
+    "card_number": "H03",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H04": {
+    "card_name": "Azumarill",
+    "card_number": "H04",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H05": {
+    "card_name": "Bellossom",
+    "card_number": "H05",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H06": {
+    "card_name": "Blissey",
+    "card_number": "H06",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H07": {
+    "card_name": "Electrode",
+    "card_number": "H07",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H08": {
+    "card_name": "Entei",
+    "card_number": "H08",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard2/ecard2-H09": {
+    "card_name": "Espeon",
+    "card_number": "H09",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H01": {
+    "card_name": "Alakazam",
+    "card_number": "H01",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H02": {
+    "card_name": "Arcanine",
+    "card_number": "H02",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H03": {
+    "card_name": "Articuno",
+    "card_number": "H03",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H04": {
+    "card_name": "Beedrill",
+    "card_number": "H04",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H05": {
+    "card_name": "Crobat",
+    "card_number": "H05",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H06": {
+    "card_name": "Dewgong",
+    "card_number": "H06",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H07": {
+    "card_name": "Flareon",
+    "card_number": "H07",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H08": {
+    "card_name": "Forretress",
+    "card_number": "H08",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ecard3/ecard3-H09": {
+    "card_name": "Gengar",
+    "card_number": "H09",
+    "checked": "2026-09-27",
+    "status": "historical_not_found",
+    "strategy": "identity_v3"
+  },
+  "ex7/ex7-88": {
+    "card_name": "Rocket's Mission",
+    "card_number": "88",
+    "checked": "2026-09-27",
+    "status": "saved",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-A": {
+    "card_name": "Unown",
+    "card_number": "A",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-B": {
+    "card_name": "Unown",
+    "card_number": "B",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-C": {
+    "card_name": "Unown",
+    "card_number": "C",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-D": {
+    "card_name": "Unown",
+    "card_number": "D",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-E": {
+    "card_name": "Unown",
+    "card_number": "E",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-F": {
+    "card_name": "Unown",
+    "card_number": "F",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-G": {
+    "card_name": "Unown",
+    "card_number": "G",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-H": {
+    "card_name": "Unown",
+    "card_number": "H",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-I": {
+    "card_name": "Unown",
+    "card_number": "I",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-J": {
+    "card_name": "Unown",
+    "card_number": "J",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-K": {
+    "card_name": "Unown",
+    "card_number": "K",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-L": {
+    "card_name": "Unown",
+    "card_number": "L",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-M": {
+    "card_name": "Unown",
+    "card_number": "M",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-N": {
+    "card_name": "Unown",
+    "card_number": "N",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-O": {
+    "card_name": "Unown",
+    "card_number": "O",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-P": {
+    "card_name": "Unown",
+    "card_number": "P",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-Q": {
+    "card_name": "Unown",
+    "card_number": "Q",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-R": {
+    "card_name": "Unown",
+    "card_number": "R",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-S": {
+    "card_name": "Unown",
+    "card_number": "S",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-T": {
+    "card_name": "Unown",
+    "card_number": "T",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-U": {
+    "card_name": "Unown",
+    "card_number": "U",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-V": {
+    "card_name": "Unown",
+    "card_number": "V",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-W": {
+    "card_name": "Unown",
+    "card_number": "W",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-X": {
+    "card_name": "Unown",
+    "card_number": "X",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-Y": {
+    "card_name": "Unown",
+    "card_number": "Y",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "exu/exu-Z": {
+    "card_name": "Unown",
+    "card_number": "Z",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "g1/g1-19": {
+    "card_name": "Shellder",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "saved",
+    "strategy": "identity_v3"
+  },
+  "hgssp/hgssp-HGSS18": {
+    "card_name": "Tropical Tidal Wave",
+    "card_number": "HGSS18",
+    "checked": "2026-09-27",
+    "status": "historical_image_unavailable",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-001": {
+    "card_name": "Grass Energy",
+    "card_number": "001",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-002": {
+    "card_name": "Fire Energy",
+    "card_number": "002",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-003": {
+    "card_name": "Water Energy",
+    "card_number": "003",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-004": {
+    "card_name": "Lightning Energy",
+    "card_number": "004",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-005": {
+    "card_name": "Psychic Energy",
+    "card_number": "005",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-006": {
+    "card_name": "Fighting Energy",
+    "card_number": "006",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-007": {
+    "card_name": "Darkness Energy",
+    "card_number": "007",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mee/mee-008": {
+    "card_name": "Metal Energy",
+    "card_number": "008",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-001": {
+    "card_name": "Meganium",
+    "card_number": "001",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-002": {
+    "card_name": "Inteleon",
+    "card_number": "002",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-003": {
+    "card_name": "Alakazam",
+    "card_number": "003",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-004": {
+    "card_name": "Lunatone",
+    "card_number": "004",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-005": {
+    "card_name": "Drifloon",
+    "card_number": "005",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-006": {
+    "card_name": "Drifblim",
+    "card_number": "006",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-007": {
+    "card_name": "Psyduck",
+    "card_number": "007",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-008": {
+    "card_name": "Golduck",
+    "card_number": "008",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-009": {
+    "card_name": "Alakazam",
+    "card_number": "009",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-010": {
+    "card_name": "Riolu",
+    "card_number": "010",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-011": {
+    "card_name": "Mega Latias ex",
+    "card_number": "011",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-012": {
+    "card_name": "Mega Lucario ex",
+    "card_number": "012",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-013": {
+    "card_name": "Mega Venusaur ex",
+    "card_number": "013",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-014": {
+    "card_name": "Ceruledge",
+    "card_number": "014",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-015": {
+    "card_name": "Zacian",
+    "card_number": "015",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-016": {
+    "card_name": "Flygon",
+    "card_number": "016",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-017": {
+    "card_name": "Toxtricity",
+    "card_number": "017",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-018": {
+    "card_name": "Cottonee",
+    "card_number": "018",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-019": {
+    "card_name": "Whimsicott",
+    "card_number": "019",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-020": {
+    "card_name": "Sneasel",
+    "card_number": "020",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-021": {
+    "card_name": "Weavile",
+    "card_number": "021",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-022": {
+    "card_name": "Charcadet",
+    "card_number": "022",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-023": {
+    "card_name": "Mega Charizard X ex",
+    "card_number": "023",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-024": {
+    "card_name": "Oricorio ex",
+    "card_number": "024",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-025": {
+    "card_name": "Mega Kangaskhan ex",
+    "card_number": "025",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-026": {
+    "card_name": "Meloetta",
+    "card_number": "026",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-027": {
+    "card_name": "Haunter",
+    "card_number": "027",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-028": {
+    "card_name": "Celebratory Fanfare",
+    "card_number": "028",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-029": {
+    "card_name": "Mega Charizard X ex",
+    "card_number": "029",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-030": {
+    "card_name": "Mega Charizard Y ex",
+    "card_number": "030",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-031": {
+    "card_name": "N's Zekrom",
+    "card_number": "031",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-032": {
+    "card_name": "Mega Gardevoir ex",
+    "card_number": "032",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-033": {
+    "card_name": "Mega Lucario ex",
+    "card_number": "033",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-034": {
+    "card_name": "Mega Meganium ex",
+    "card_number": "034",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-035": {
+    "card_name": "Mega Emboar ex",
+    "card_number": "035",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-036": {
+    "card_name": "Mega Feraligatr ex",
+    "card_number": "036",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-037": {
+    "card_name": "Bulbasaur",
+    "card_number": "037",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-038": {
+    "card_name": "Charmander",
+    "card_number": "038",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-039": {
+    "card_name": "Squirtle",
+    "card_number": "039",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-040": {
+    "card_name": "Turtwig",
+    "card_number": "040",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-041": {
+    "card_name": "Chimchar",
+    "card_number": "041",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "mep/mep-042": {
+    "card_name": "Piplup",
+    "card_number": "042",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
   }
 }
