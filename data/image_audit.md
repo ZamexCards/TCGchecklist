@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20683
+- local_cards: 20684
 - missing_cards: 927
-- external_cards: 1
+- external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 148
+- complete_sets: 149
 
 ## Per set
 
@@ -207,7 +207,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-xy-w – XY trainer Kit (Wigglytuff) | local | 0/30 | 30 | 0 | 0 |
 | xy0 – Kalos Starter Set | local | 39/39 | 0 | 0 | 0 |
 | xy1 – XY | local | 146/146 | 0 | 0 | 0 |
-| xy10 – Fates Collide | local | 128/129 | 0 | 1 | 0 |
+| xy10 – Fates Collide | local | 129/129 | 0 | 0 | 0 |
 | xy11 – Steam Siege | local | 116/116 | 0 | 0 | 0 |
 | xy12 – Evolutions | local | 113/113 | 0 | 0 | 0 |
 | xy2 – Flashfire | local | 110/110 | 0 | 0 | 0 |
@@ -375,9 +375,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### tk-xy-w – XY trainer Kit (Wigglytuff)
 **Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### xy10 – Fates Collide
-**Externe bronlink (niet geverifieerd) (1):** 79
 
 ### xya – Yellow A Alternate
 **Geen bronlink (6):** 24a, 28a, 54a, 55a, 92a, 107a

@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20683,
+    "local_cards": 20684,
     "missing_cards": 927,
-    "external_cards": 1,
+    "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 148
+    "complete_sets": 149
   },
   "sets": [
     {
@@ -6544,15 +6544,9 @@
       "name": "Fates Collide",
       "logo_status": "local",
       "total_cards": 129,
-      "local_cards": 128,
+      "local_cards": 129,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "xy10-79",
-          "number": "79",
-          "name": "Lugia BREAK"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {

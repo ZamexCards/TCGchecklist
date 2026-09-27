@@ -6831,6 +6831,41 @@
     "status": "identity_http_500",
     "strategy": "identity_v3"
   },
+  "tk-xy-w/tk-xy-w-15": {
+    "card_name": "Potion",
+    "card_number": "15",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-16": {
+    "card_name": "Clefable",
+    "card_number": "16",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-17": {
+    "card_name": "Fairy Energy",
+    "card_number": "17",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-18": {
+    "card_name": "Swirlix",
+    "card_number": "18",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-19": {
+    "card_name": "Clefairy",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
   "tk-xy-w/tk-xy-w-2": {
     "card_name": "Pidgeotto",
     "card_number": "2",
@@ -6838,11 +6873,88 @@
     "status": "identity_http_500",
     "strategy": "identity_v3"
   },
+  "tk-xy-w/tk-xy-w-20": {
+    "card_name": "Potion",
+    "card_number": "20",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-21": {
+    "card_name": "Fairy Energy",
+    "card_number": "21",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-22": {
+    "card_name": "Fairy Energy",
+    "card_number": "22",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-23": {
+    "card_name": "Pidgeotto",
+    "card_number": "23",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-24": {
+    "card_name": "Trevor",
+    "card_number": "24",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-25": {
+    "card_name": "Jigglypuff",
+    "card_number": "25",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-26": {
+    "card_name": "Tierno",
+    "card_number": "26",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-27": {
+    "card_name": "Fairy Energy",
+    "card_number": "27",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-28": {
+    "card_name": "Clefable",
+    "card_number": "28",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-29": {
+    "card_name": "Pidgey",
+    "card_number": "29",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
   "tk-xy-w/tk-xy-w-3": {
     "card_name": "Fairy Energy",
     "card_number": "3",
     "checked": "2026-09-27",
     "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "tk-xy-w/tk-xy-w-30": {
+    "card_name": "Wigglytuff",
+    "card_number": "30",
+    "checked": "2026-09-27",
+    "status": "identity_http_500",
     "strategy": "identity_v3"
   },
   "tk-xy-w/tk-xy-w-4": {
@@ -6885,6 +6997,55 @@
     "card_number": "9",
     "checked": "2026-09-27",
     "status": "identity_http_500",
+    "strategy": "identity_v3"
+  },
+  "xy10/xy10-79": {
+    "card_name": "Lugia BREAK",
+    "card_number": "79",
+    "checked": "2026-09-27",
+    "status": "saved",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-107a": {
+    "card_name": "Professor Sycamore",
+    "card_number": "107a",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-24a": {
+    "card_name": "M Manectric-EX",
+    "card_number": "24a",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-28a": {
+    "card_name": "Jolteon-EX",
+    "card_number": "28a",
+    "checked": "2026-09-27",
+    "status": "identity_http_502",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-54a": {
+    "card_name": "Zygarde-EX",
+    "card_number": "54a",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-55a": {
+    "card_name": "M Lucario-EX",
+    "card_number": "55a",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
+    "strategy": "identity_v3"
+  },
+  "xya/xya-92a": {
+    "card_name": "Trainers’ Mail",
+    "card_number": "92a",
+    "checked": "2026-09-27",
+    "status": "identity_not_found",
     "strategy": "identity_v3"
   }
 }
