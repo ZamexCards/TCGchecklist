@@ -137,19 +137,19 @@ def pocket_source(sid,card,known):
     return POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),int(number))
 
 def bulbagarden_mep_cards():
-    """Discover actual English MEP promo scan filenames via MediaWiki category API."""
+    """Read independent GitHub MEP catalog, avoiding the blocked Bulbagarden API."""
     result={}
-    endpoint='https://archives.bulbagarden.net/w/api.php?action=query&list=categorymembers&cmtitle=Category:MEP_Black_Star_Promos&cmlimit=500&format=json'
+    base='https://api.github.com/repos/willregelmann/database-of-things/contents/collections/trading-cards/pokemon-tcg/mega-evolution-series/promos'
     try:
-        with urllib.request.urlopen(urllib.request.Request(endpoint,headers=HEADERS),timeout=20) as response:
-            rows=json.load(response)['query']['categorymembers']
+        with urllib.request.urlopen(urllib.request.Request(base,headers=HEADERS),timeout=20) as response:
+            rows=json.load(response)
         for row in rows:
-            filename=row.get('title','').removeprefix('File:')
-            match=re.fullmatch(r'(.+?)MEPPromo([0-9]+)[.](jpg|jpeg|png)',filename,re.I)
-            if match:
-                result.setdefault(int(match.group(2)),[]).append((match.group(1),filename))
+            match=re.fullmatch(r'mep([0-9]+)-(.+)[.]yaml',row.get('name',''),re.I)
+            if not match:continue
+            number=int(match.group(1))
+            result.setdefault(number,[]).append((match.group(2),row.get('download_url','')))
     except (ValueError,KeyError,urllib.error.URLError,OSError,TimeoutError) as error:
-        print('Bulbagarden MEP discovery unavailable:',error,flush=True)
+        print('GitHub MEP catalog unavailable:',error,flush=True)
     return result
 
 def bulbagarden_mep_source(sid,card,known):
@@ -158,9 +158,14 @@ def bulbagarden_mep_source(sid,card,known):
     if not number.isdigit():return ''
     normalize=lambda x:re.sub(r'[^a-z0-9]','',str(x).lower())
     name=normalize(card.get('name',''))
-    for filename_name,filename in known.get(int(number),[]):
-        if normalize(filename_name)==name:
-            return 'https://archives.bulbagarden.net/wiki/Special:Redirect/file/'+urllib.parse.quote(filename)
+    for filename_name,metadata_url in known.get(int(number),[]):
+        if normalize(filename_name)!=name:continue
+        try:
+            with urllib.request.urlopen(urllib.request.Request(metadata_url,headers=HEADERS),timeout=12) as response:
+                metadata=response.read(10000).decode('utf-8')
+            match=re.search(r'^image:\\s*(https://archives[.]bulbagarden[.]net/wiki/Special:FilePath/[^\\s]+)',metadata,re.M)
+            if match:return match.group(1)
+        except (urllib.error.URLError,OSError,TimeoutError,UnicodeError):continue
     return ''
 
 def main():
