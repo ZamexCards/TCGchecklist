@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Repair missing set logos using exact set-name matches, never unrelated artwork."""
+"""Repair missing set logos using exact set-name matches, never unrelated artwork.
+
+Runs independently of the card repair and records every unresolved set.
+"""
 import json
 import pathlib
 import re
