@@ -85,7 +85,7 @@ def historical_source(sid,number,name):
     return (matches[0].get('images') or {}).get('small'),'historical_verified'
 def eligible(entry):
     """Advance to new cards; retry transient failures, revisit definitive misses monthly."""
-    if entry.get('strategy')!='identity_v3':return True
+    if entry.get('strategy')!='identity_v4':return True
     status=entry.get('status','')
     if status in ('temporary_error','secondary_temporary_error','identity_temporary_error'):
         return True
@@ -166,7 +166,7 @@ def main():
                         saved+=1;dirty=True;status='saved_historical'
                     else:status='historical_image_unavailable'
                 elif historical_status!='historical_unmapped':status=historical_status
-            history[key]={'strategy':'identity_v3','status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
+            history[key]={'strategy':'identity_v4','status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
             print('Targeted:',key,status,flush=True)
         if dirty:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
