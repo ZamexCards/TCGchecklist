@@ -155,7 +155,9 @@ def main():
                 missing=not snapshot.get('set',{}).get('images',{}).get('logo') or any(
                     not c.get('images',{}).get('small') for c in snapshot.get('cards',[]))
             except (OSError,ValueError):pass
-        if path.exists() and not recent and not missing and os.environ.get('FORCE_REFRESH')!='1':
+        # Missing upstream artwork is repaired independently by archive_images.py.
+        # Do not download hundreds of unchanged card records on every scheduled run.
+        if path.exists() and not recent and os.environ.get('FORCE_REFRESH')!='1':
             try:
                 results[sid]=json.loads(path.read_text())['set']
                 continue
