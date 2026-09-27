@@ -70,5 +70,21 @@ jobs:
           git add data/ assets/
           if ! git diff --cached --quiet; then
             git commit -m "Update Pokémon checklist data"
-            git push
+            # Another workflow may have advanced main while images were downloaded.
+            # Rebase the generated commit, then retry a bounded number of times.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                echo "::error::Concurrent changes conflict with generated data; refusing to overwrite them."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push raced with another update (attempt $attempt); retrying..."
+              sleep 3
+            done
+            echo "::error::Unable to push after five safe retries."
+            exit 1
           fi
