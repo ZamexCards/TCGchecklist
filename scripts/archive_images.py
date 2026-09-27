@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Incrementally archive verified card images without changing card metadata."""
-import json, pathlib, re, urllib.request, urllib.error, os, datetime
+import json, pathlib, re, urllib.request, urllib.error, urllib.parse, os, datetime
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
 MANIFEST=ROOT/'data'/'sets.json'
@@ -136,11 +136,39 @@ def pocket_source(sid,card,known):
     if source_name!=checklist_name and source_name!=checklist_name+'ex':return ''
     return POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),int(number))
 
+def bulbagarden_mep_cards():
+    """Discover actual English MEP promo scan filenames via MediaWiki category API."""
+    result={}
+    endpoint='https://archives.bulbagarden.net/w/api.php?action=query&list=categorymembers&cmtitle=Category:MEP_Black_Star_Promos&cmlimit=500&format=json'
+    try:
+        with urllib.request.urlopen(urllib.request.Request(endpoint,headers=HEADERS),timeout=20) as response:
+            rows=json.load(response)['query']['categorymembers']
+        for row in rows:
+            filename=row.get('title','').removeprefix('File:')
+            match=re.fullmatch(r'(.+?)MEPPromo([0-9]+)[.](jpg|jpeg|png)',filename,re.I)
+            if match:
+                result.setdefault(int(match.group(2)),[]).append((match.group(1),filename))
+    except (ValueError,KeyError,urllib.error.URLError,OSError,TimeoutError) as error:
+        print('Bulbagarden MEP discovery unavailable:',error,flush=True)
+    return result
+
+def bulbagarden_mep_source(sid,card,known):
+    if sid!='mep':return ''
+    number=str(card.get('number','')).strip()
+    if not number.isdigit():return ''
+    normalize=lambda x:re.sub(r'[^a-z0-9]','',str(x).lower())
+    name=normalize(card.get('name',''))
+    for filename_name,filename in known.get(int(number),[]):
+        if normalize(filename_name)==name:
+            return 'https://archives.bulbagarden.net/wiki/Special:Redirect/file/'+urllib.parse.quote(filename)
+    return ''
+
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
     attempted=0; saved=0; changed=0
     pocket=pocket_cards()
+    mep_scans=bulbagarden_mep_cards()
     cursor=ROOT/'data'/'image_repair_cursor.txt'
     # Rank only repairable source links; unresolvable sets remain in the diagnosis report.
     audit_path=ROOT/'data'/'image_audit.json'
@@ -158,7 +186,7 @@ def main():
         logo=payload['set'].get('images',{}).get('logo','')
         cards=payload.get('cards',[])
         logo_action=not logo.startswith('./assets/') and bool(logo or supplemental(sid,kind='logo'))
-        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket)) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
+        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket) or bulbagarden_mep_source(sid,c,mep_scans)) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
         if logo_action or card_actions:
             paths.append((p,logo_action,card_actions))
     paths=[p for p,_,_ in sorted(paths,key=lambda row:(-row[2],-int(row[1]),row[0].stem))]
@@ -175,7 +203,7 @@ def main():
         cards=payload.get('cards',[])
         pending=not logo.startswith('./assets/') or any(not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not pending:continue
-        actionable=(bool(logo) or bool(supplemental(sid,kind='logo'))) and not logo.startswith('./assets/') or any((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket)) and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
+        actionable=(bool(logo) or bool(supplemental(sid,kind='logo'))) and not logo.startswith('./assets/') or any((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket) or bulbagarden_mep_source(sid,c,mep_scans)) and not c.get('images',{}).get('small','').startswith('./assets/') for c in cards)
         if not actionable:continue
         attempted+=1
         original=json.dumps(payload,ensure_ascii=False,sort_keys=True)
@@ -191,7 +219,7 @@ def main():
             pocket_padded=(POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
             pocket_set={'p-a':'P-A','p-b':'P-B'}.get(sid.lower(),sid)
             alternate=(POCKET_ALTERNATE.format(pocket_set,str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
-            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card') or archive(alternate,sid,number,'card')
+            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card') or archive(alternate,sid,number,'card') or archive(bulbagarden_mep_source(sid,card,mep_scans),sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
