@@ -37,6 +37,11 @@ jobs:
           IMAGE_REPAIR_LIMIT: '200'
         run: python scripts/archive_images.py
 
+      - name: Targeted per-card search for missing artwork
+        env:
+          TARGETED_REPAIR_LIMIT: '120'
+        run: python scripts/targeted_image_repair.py
+
       - name: Audit all card images and set logos
         run: python scripts/audit_images.py
 
