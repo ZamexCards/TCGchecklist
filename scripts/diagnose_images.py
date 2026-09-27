@@ -25,3 +25,15 @@ for s in sorted(a['sets'],key=lambda s:(-len(s['missing_cards']),s['id'])):
 out+=['','## Prioriteit','','1. Sets met veel ontbrekende kaartafbeeldingen eerst; controleer of het een afwijkend product of aparte kaartnummering betreft.','2. Trainer Kits en speciale collecties niet automatisch aan gewone uitbreidingssets koppelen: afbeeldingen kunnen anders verkeerd worden toegewezen.','3. Logo-only sets los afhandelen; dit vereist geen herdownload van kaarten.','4. Externe afbeeldingslinks afzonderlijk controleren voordat ze als lokaal afgerond worden aangemerkt.','','Bron: data/image_audit.json. Dit is een diagnose, geen claim dat de ontbrekende afbeeldingen al beschikbaar zijn.']
 p=ROOT/'data/image_diagnosis.md';p.write_text('\n'.join(out)+'\n',encoding='utf-8')
 print('Diagnosis:',len(out),'lines, output:',p)
+
+# Export the exact missing-card queue for source-specific recovery.
+import csv
+queue=ROOT/'data'/'missing_image_queue.csv'
+with queue.open('w',newline='',encoding='utf-8-sig') as f:
+    w=csv.writer(f)
+    w.writerow(['set_id','set_name','card_id','card_number','card_name','status','verified_source_url','review'])
+    for row in a['sets']:
+        for key,status in [('missing_cards','missing'),('external_unverified_cards','external_unverified')]:
+            for c in row[key]:
+                w.writerow([row['id'],row['name'],c['id'],c['number'],c['name'],status,'',''])
+print('Per-card image queue:',queue)
