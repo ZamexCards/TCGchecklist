@@ -1,0 +1,722 @@
+{
+  "2011bw/2011bw-1": {
+    "card_name": "Snivy",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-10": {
+    "card_name": "Klink",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-11": {
+    "card_name": "Pidove",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-12": {
+    "card_name": "Audino",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-2": {
+    "card_name": "Maractus",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-3": {
+    "card_name": "Tepig",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-4": {
+    "card_name": "Oshawott",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-5": {
+    "card_name": "Alomomola",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-6": {
+    "card_name": "Blitzle",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-7": {
+    "card_name": "Munna",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-8": {
+    "card_name": "Sandile",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2011bw/2011bw-9": {
+    "card_name": "Zorua",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-1": {
+    "card_name": "Servine",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-10": {
+    "card_name": "Scraggy",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-11": {
+    "card_name": "Klang",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-12": {
+    "card_name": "Axew",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-2": {
+    "card_name": "Pansage",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-3": {
+    "card_name": "Dwebble",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-4": {
+    "card_name": "Pignite",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-5": {
+    "card_name": "Dewott",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-6": {
+    "card_name": "Emolga",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-7": {
+    "card_name": "Woobat",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-8": {
+    "card_name": "Drilbur",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2012bw/2012bw-9": {
+    "card_name": "Purrloin",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-1": {
+    "card_name": "Weedle",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-10": {
+    "card_name": "Bunnelby",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-11": {
+    "card_name": "Fletchling",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-12": {
+    "card_name": "Furfrou",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-2": {
+    "card_name": "Chespin",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-3": {
+    "card_name": "Fennekin",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-4": {
+    "card_name": "Froakie",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-5": {
+    "card_name": "Pikachu",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-6": {
+    "card_name": "Inkay",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-7": {
+    "card_name": "Honedge",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-8": {
+    "card_name": "Snubbull",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2014xy/2014xy-9": {
+    "card_name": "Swirlix",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-1": {
+    "card_name": "Treecko",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-10": {
+    "card_name": "Marill",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-11": {
+    "card_name": "Zigzagoon",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-12": {
+    "card_name": "Skitty",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-2": {
+    "card_name": "Lotad",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-3": {
+    "card_name": "Torchic",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-4": {
+    "card_name": "Staryu",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-5": {
+    "card_name": "Mudkip",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-6": {
+    "card_name": "Pikachu",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-7": {
+    "card_name": "Electrike",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-8": {
+    "card_name": "Rhyhorn",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2015xy/2015xy-9": {
+    "card_name": "Meditite",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-1": {
+    "card_name": "Vulpix",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-10": {
+    "card_name": "Dedenne",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-11": {
+    "card_name": "Meowth",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-12": {
+    "card_name": "Eevee",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-2": {
+    "card_name": "Torchic",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-3": {
+    "card_name": "Fennekin",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-4": {
+    "card_name": "Magikarp",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-5": {
+    "card_name": "Totodile",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-6": {
+    "card_name": "Pikachu",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-7": {
+    "card_name": "Scraggy",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-8": {
+    "card_name": "Jigglypuff",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2016xy/2016xy-9": {
+    "card_name": "Togepi",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-1": {
+    "card_name": "Rowlet",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-10": {
+    "card_name": "Cutiefly",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-11": {
+    "card_name": "Pikipek",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-12": {
+    "card_name": "Yungoos",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-2": {
+    "card_name": "Grubbin",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-3": {
+    "card_name": "Litten",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-4": {
+    "card_name": "Popplio",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-5": {
+    "card_name": "Pikachu",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-6": {
+    "card_name": "Cosmog",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-7": {
+    "card_name": "Crabrawler",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-8": {
+    "card_name": "Alolan Meowth",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2017sm/2017sm-9": {
+    "card_name": "Alolan Diglett",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-1": {
+    "card_name": "Growlithe",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-10": {
+    "card_name": "Chansey",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-11": {
+    "card_name": "Eevee",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-12": {
+    "card_name": "Porygon",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-2": {
+    "card_name": "Psyduck",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-3": {
+    "card_name": "Horsea",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-4": {
+    "card_name": "Pikachu",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-5": {
+    "card_name": "Slowpoke",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-6": {
+    "card_name": "Machop",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-7": {
+    "card_name": "Cubone",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-8": {
+    "card_name": "Magnemite",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2018sm/2018sm-9": {
+    "card_name": "Dratini",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-1": {
+    "card_name": "Caterpie",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-10": {
+    "card_name": "Alolan Meowth",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-11": {
+    "card_name": "Alolan Dugtrio",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-12": {
+    "card_name": "Eevee",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-2": {
+    "card_name": "Alolan Exeggutor",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-3": {
+    "card_name": "Magmar",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-4": {
+    "card_name": "Alolan Sandshrew",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-5": {
+    "card_name": "Lapras",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-6": {
+    "card_name": "Pikachu",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-7": {
+    "card_name": "Gastly",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-8": {
+    "card_name": "Mankey",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2019sm/2019sm-9": {
+    "card_name": "Onix",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-1": {
+    "card_name": "Bulbasaur",
+    "card_number": "1",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-10": {
+    "card_name": "Cyndaquil",
+    "card_number": "10",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-11": {
+    "card_name": "Torchic",
+    "card_number": "11",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-12": {
+    "card_name": "Chimchar",
+    "card_number": "12",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-13": {
+    "card_name": "Tepig",
+    "card_number": "13",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-14": {
+    "card_name": "Fennekin",
+    "card_number": "14",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-15": {
+    "card_name": "Litten",
+    "card_number": "15",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-16": {
+    "card_name": "Scorbunny",
+    "card_number": "16",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-17": {
+    "card_name": "Squirtle",
+    "card_number": "17",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-18": {
+    "card_name": "Totodile",
+    "card_number": "18",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-19": {
+    "card_name": "Mudkip",
+    "card_number": "19",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-2": {
+    "card_name": "Chikorita",
+    "card_number": "2",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-20": {
+    "card_name": "Piplup",
+    "card_number": "20",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-21": {
+    "card_name": "Oshawott",
+    "card_number": "21",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-22": {
+    "card_name": "Froakie",
+    "card_number": "22",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-23": {
+    "card_name": "Popplio",
+    "card_number": "23",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-24": {
+    "card_name": "Sobble",
+    "card_number": "24",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-3": {
+    "card_name": "Treecko",
+    "card_number": "3",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-4": {
+    "card_name": "Turtwig",
+    "card_number": "4",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-5": {
+    "card_name": "Snivy",
+    "card_number": "5",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-6": {
+    "card_name": "Chespin",
+    "card_number": "6",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-7": {
+    "card_name": "Rowlet",
+    "card_number": "7",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-8": {
+    "card_name": "Grookey",
+    "card_number": "8",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  },
+  "2021swsh/2021swsh-9": {
+    "card_name": "Charmander",
+    "card_number": "9",
+    "checked": "2026-09-27",
+    "status": "no_source"
+  }
+}
