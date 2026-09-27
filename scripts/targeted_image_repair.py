@@ -5,6 +5,7 @@ Only exact TCGdex card IDs with matching printed number and normalized name are 
 No fuzzy cross-set substitution; results and failed lookups are recorded per card.
 """
 import datetime
+from concurrent.futures import ThreadPoolExecutor
 import json
 import os
 import pathlib
@@ -111,7 +112,16 @@ def main():
                 skipped+=1
                 continue
             examined+=1
-            result,status=request_card(cid)
+            # Probe four independent catalogues concurrently; only archive after identity checks.
+            with ThreadPoolExecutor(max_workers=4) as pool:
+                primary_future=pool.submit(request_card,cid)
+                secondary_future=pool.submit(secondary_card,sid,card.get('number',''),card.get('name',''))
+                identity_future=pool.submit(search_by_identity,payload['set'].get('name',''),card.get('number',''),card.get('name',''))
+                historical_future=pool.submit(historical_source,sid,card.get('number',''),card.get('name',''))
+                result,status=primary_future.result()
+                alternate_result=secondary_future.result()
+                identity_result=identity_future.result()
+                historical_result=historical_future.result()
             if result:
                 if str(result.get('localId',''))!=str(card.get('number','')) or norm(result.get('name'))!=norm(card.get('name')):
                     status='mismatch'
@@ -126,7 +136,7 @@ def main():
                         saved+=1;dirty=True;status='saved'
                     else:status='image_unavailable' if source else 'no_source'
             if status!='saved':
-                alternate,alternate_status=secondary_card(sid,card.get('number',''),card.get('name',''))
+                alternate,alternate_status=alternate_result
                 if alternate:
                     number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
                     local=archive(alternate,sid,number,'card')
@@ -137,7 +147,7 @@ def main():
                 elif alternate_status!='unmapped':
                     status=alternate_status
             if status not in ('saved','saved_secondary'):
-                identity,identity_status=search_by_identity(payload['set'].get('name',''),card.get('number',''),card.get('name',''))
+                identity,identity_status=identity_result
                 if identity:
                     number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
                     local=archive(identity,sid,number,'card')
@@ -147,7 +157,7 @@ def main():
                     else:status='identity_image_unavailable'
                 else:status=identity_status
             if status not in ('saved','saved_secondary','saved_identity'):
-                historical,historical_status=historical_source(sid,card.get('number',''),card.get('name',''))
+                historical,historical_status=historical_result
                 if historical:
                     number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
                     local=archive(historical,sid,number,'card')
