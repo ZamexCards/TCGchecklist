@@ -110,7 +110,7 @@ def supplemental(sid,number='',kind='card'):
 # The public dataset documents cards-by-set/B2a/<number>.webp.
 POCKET_META='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/cards/{}.json'
 POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-exchange/main/public/images/cards-by-set/{}/{}.webp'
-POCKET_SETS=('B1a','B2a')
+POCKET_SETS=('B1a','B2a','PROMO-A','PROMO-B')
 def pocket_cards():
     known={}
     for sid in POCKET_SETS:
@@ -123,16 +123,17 @@ def pocket_cards():
             print('Pocket source unavailable:',sid,error,flush=True)
     return known
 def pocket_source(sid,card,known):
-    if sid.lower() not in known:return ''
+    source_sid={'p-a':'promo-a','p-b':'promo-b'}.get(sid.lower(),sid.lower())
+    if source_sid not in known:return ''
     number=str(card.get('number','')).strip()
     if not number.isdigit():return ''
-    row=known[sid.lower()].get(str(int(number)))
+    row=known[source_sid].get(str(int(number)))
     if not row:return ''
     normal=lambda name:re.sub(r'[^a-z0-9]','',str(name).lower())
     source_name=normal(row.get('name'))
     checklist_name=normal(card.get('name'))
     if source_name!=checklist_name and source_name!=checklist_name+'ex':return ''
-    return POCKET_IMAGE.format(sid,int(number))
+    return POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),int(number))
 
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
@@ -186,7 +187,7 @@ def main():
             number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or card['id']))
             pocket_url=pocket_source(sid,card,pocket)
             # The same verified Pocket card number may be stored zero-padded in image repositories.
-            pocket_padded=(POCKET_IMAGE.format(sid,str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
+            pocket_padded=(POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
             new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
