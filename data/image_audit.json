@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20664,
-    "missing_cards": 945,
-    "external_cards": 2,
+    "local_cards": 20672,
+    "missing_cards": 938,
+    "external_cards": 1,
     "broken_cards": 0,
-    "local_logos": 167,
-    "missing_logos": 33,
+    "local_logos": 169,
+    "missing_logos": 31,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 144
+    "complete_sets": 145
   },
   "sets": [
     {
@@ -241,7 +241,7 @@
     {
       "id": "2016xy",
       "name": "McDonald's Collection 2016",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 10,
       "missing_cards": [
@@ -1328,7 +1328,7 @@
     {
       "id": "bog",
       "name": "Best of game",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 9,
       "local_cards": 2,
       "missing_cards": [
@@ -3943,15 +3943,9 @@
       "name": "Chilling Reign",
       "logo_status": "local",
       "total_cards": 233,
-      "local_cards": 232,
+      "local_cards": 233,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "swsh6-181",
-          "number": "181",
-          "name": "Metagross V"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
@@ -4484,7 +4478,7 @@
       "name": "EX trainer Kit (Latias)",
       "logo_status": "local",
       "total_cards": 10,
-      "local_cards": 0,
+      "local_cards": 4,
       "missing_cards": [
         {
           "id": "tk-ex-latia-1",
@@ -4502,16 +4496,6 @@
           "name": "Delcatty"
         },
         {
-          "id": "tk-ex-latia-4",
-          "number": "4",
-          "name": "Latias"
-        },
-        {
-          "id": "tk-ex-latia-5",
-          "number": "5",
-          "name": "Numel"
-        },
-        {
           "id": "tk-ex-latia-6",
           "number": "6",
           "name": "Skitty"
@@ -4525,16 +4509,6 @@
           "id": "tk-ex-latia-8",
           "number": "8",
           "name": "Potion"
-        },
-        {
-          "id": "tk-ex-latia-9",
-          "number": "9",
-          "name": "Energy Search"
-        },
-        {
-          "id": "tk-ex-latia-10",
-          "number": "10",
-          "name": "Fire Energy"
         }
       ],
       "external_unverified_cards": [],
@@ -4545,13 +4519,8 @@
       "name": "EX trainer Kit (Latios)",
       "logo_status": "local",
       "total_cards": 10,
-      "local_cards": 0,
+      "local_cards": 3,
       "missing_cards": [
-        {
-          "id": "tk-ex-latio-1",
-          "number": "1",
-          "name": "Electrike"
-        },
         {
           "id": "tk-ex-latio-2",
           "number": "2",
@@ -4563,19 +4532,9 @@
           "name": "Linoone"
         },
         {
-          "id": "tk-ex-latio-4",
-          "number": "4",
-          "name": "Magnemite"
-        },
-        {
           "id": "tk-ex-latio-5",
           "number": "5",
           "name": "Magneton"
-        },
-        {
-          "id": "tk-ex-latio-6",
-          "number": "6",
-          "name": "Pikachu"
         },
         {
           "id": "tk-ex-latio-7",

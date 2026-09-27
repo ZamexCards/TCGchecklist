@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20664
-- missing_cards: 945
-- external_cards: 2
+- local_cards: 20672
+- missing_cards: 938
+- external_cards: 1
 - broken_cards: 0
-- local_logos: 167
-- missing_logos: 33
+- local_logos: 169
+- missing_logos: 31
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 144
+- complete_sets: 145
 
 ## Per set
 
@@ -24,7 +24,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2012bw – McDonald's Collection 2012 | local | 4/12 | 8 | 0 | 0 |
 | 2014xy – McDonald's Collection 2014 | local | 0/12 | 12 | 0 | 0 |
 | 2015xy – McDonald's Collection 2015 | local | 0/12 | 12 | 0 | 0 |
-| 2016xy – McDonald's Collection 2016 | missing | 10/12 | 2 | 0 | 0 |
+| 2016xy – McDonald's Collection 2016 | local | 10/12 | 2 | 0 | 0 |
 | 2017sm – McDonald's Collection 2017 | local | 0/12 | 12 | 0 | 0 |
 | 2018sm – McDonald's Collection 2018 | local | 0/12 | 12 | 0 | 0 |
 | 2019sm – McDonald's Collection 2019 | local | 9/12 | 3 | 0 | 0 |
@@ -55,7 +55,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | base4 – Base Set 2 | local | 130/130 | 0 | 0 | 0 |
 | base5 – Team Rocket | local | 83/83 | 0 | 0 | 0 |
 | basep – Wizards Black Star Promos | local | 53/53 | 0 | 0 | 0 |
-| bog – Best of game | missing | 2/9 | 7 | 0 | 0 |
+| bog – Best of game | local | 2/9 | 7 | 0 | 0 |
 | bw1 – Black & White | local | 115/115 | 0 | 0 | 0 |
 | bw10 – Plasma Blast | local | 105/105 | 0 | 0 | 0 |
 | bw11 – Legendary Treasures | local | 140/140 | 0 | 0 | 0 |
@@ -179,7 +179,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | swsh3 – Darkness Ablaze | local | 201/201 | 0 | 0 | 0 |
 | swsh4 – Vivid Voltage | local | 203/203 | 0 | 0 | 0 |
 | swsh5 – Battle Styles | local | 183/183 | 0 | 0 | 0 |
-| swsh6 – Chilling Reign | local | 232/233 | 0 | 1 | 0 |
+| swsh6 – Chilling Reign | local | 233/233 | 0 | 0 | 0 |
 | swsh7 – Evolving Skies | local | 237/237 | 0 | 0 | 0 |
 | swsh8 – Fusion Strike | local | 284/284 | 0 | 0 | 0 |
 | swsh9 – Brilliant Stars | local | 186/186 | 0 | 0 | 0 |
@@ -189,8 +189,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | tk-bw-z – BW trainer Kit (Zoroark) | missing | 0/30 | 30 | 0 | 0 |
 | tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
 | tk-dp-m – DP trainer Kit (Manaphy) | missing | 0/12 | 12 | 0 | 0 |
-| tk-ex-latia – EX trainer Kit (Latias) | local | 0/10 | 10 | 0 | 0 |
-| tk-ex-latio – EX trainer Kit (Latios) | local | 0/10 | 10 | 0 | 0 |
+| tk-ex-latia – EX trainer Kit (Latias) | local | 4/10 | 6 | 0 | 0 |
+| tk-ex-latio – EX trainer Kit (Latios) | local | 3/10 | 7 | 0 | 0 |
 | tk-ex-m – EX trainer Kit 2 (Minun) | local | 0/12 | 12 | 0 | 0 |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | local | 0/12 | 12 | 0 | 0 |
 | tk-hs-g – HS trainer Kit (Gyarados) | missing | 0/30 | 30 | 0 | 0 |
@@ -223,7 +223,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Ontbrekende of ongeldige setlogo’s
 
-- 2016xy – McDonald's Collection 2016: missing
 - 2023sv – McDonald's Collection 2023: missing
 - 2024sv – McDonald's Collection 2024: missing
 - 30th-c – 30th Classic Collection: missing
@@ -232,7 +231,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - A3b – Eevee Grove: missing
 - B1a – Crimson Blaze: missing
 - B2a – Paldean Wonders: missing
-- bog – Best of game: missing
 - exu – Unseen Forces Unown Collection: missing
 - mee – Mega Evolution Energy: missing
 - mep – MEP Black Star Promos: missing
@@ -346,9 +344,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ### svp – SVP Black Star Promos
 **Geen bronlink (27):** 102, 175, 176, 190, 191, 192, 204, 205, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 500
 
-### swsh6 – Chilling Reign
-**Externe bronlink (niet geverifieerd) (1):** 181
-
 ### swshp – SWSH Black Star Promos
 **Geen bronlink (3):** SWSH299, SWSH300, SWSH301
 
@@ -365,10 +360,10 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ### tk-ex-latia – EX trainer Kit (Latias)
-**Geen bronlink (10):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+**Geen bronlink (6):** 1, 2, 3, 6, 7, 8
 
 ### tk-ex-latio – EX trainer Kit (Latios)
-**Geen bronlink (10):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+**Geen bronlink (7):** 2, 3, 5, 7, 8, 9, 10
 
 ### tk-ex-m – EX trainer Kit 2 (Minun)
 **Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
