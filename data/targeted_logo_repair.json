@@ -31,73 +31,69 @@
     "name": "Miscellaneous Promos",
     "status": "not_found; tcgdex_not_found; historical_not_found"
   },
-  "sve": {
-    "name": "Scarlet & Violet Energy",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
-  },
   "tk-bw-e": {
     "name": "BW trainer Kit (Excadrill)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-bw-z": {
     "name": "BW trainer Kit (Zoroark)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-dp-l": {
     "name": "DP trainer Kit (Lucario)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-dp-m": {
     "name": "DP trainer Kit (Manaphy)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-hs-g": {
     "name": "HS trainer Kit (Gyarados)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-hs-r": {
     "name": "HS trainer Kit (Raichu)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-sm-l": {
     "name": "SM trainer Kit (Lycanroc)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-sm-r": {
     "name": "SM trainer Kit (Alolan Raichu)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-b": {
     "name": "XY trainer Kit (Bisharp)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-latia": {
     "name": "XY trainer Kit (Latias)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-latio": {
     "name": "XY trainer Kit (Latios)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-n": {
     "name": "XY trainer Kit (Noivern)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-p": {
     "name": "XY trainer Kit (Pikachu Libre)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-su": {
     "name": "XY trainer Kit (Suicune)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-sy": {
     "name": "XY trainer Kit (Sylveon)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "tk-xy-w": {
     "name": "XY trainer Kit (Wigglytuff)",
-    "status": "not_found; tcgdex_not_found; historical_not_found"
+    "status": "saved_user_uploaded"
   },
   "xya": {
     "name": "Yellow A Alternate",

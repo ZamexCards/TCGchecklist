@@ -7,8 +7,8 @@
     "missing_cards": 927,
     "external_cards": 1,
     "broken_cards": 0,
-    "local_logos": 174,
-    "missing_logos": 26,
+    "local_logos": 191,
+    "missing_logos": 9,
     "external_logos": 0,
     "broken_logos": 0,
     "complete_sets": 146
@@ -3554,7 +3554,7 @@
     {
       "id": "sve",
       "name": "Scarlet & Violet Energy",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 24,
       "local_cards": 0,
       "missing_cards": [
@@ -4017,7 +4017,7 @@
     {
       "id": "tk-bw-e",
       "name": "BW trainer Kit (Excadrill)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -4178,7 +4178,7 @@
     {
       "id": "tk-bw-z",
       "name": "BW trainer Kit (Zoroark)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -4339,7 +4339,7 @@
     {
       "id": "tk-dp-l",
       "name": "DP trainer Kit (Lucario)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 11,
       "local_cards": 0,
       "missing_cards": [
@@ -4405,7 +4405,7 @@
     {
       "id": "tk-dp-m",
       "name": "DP trainer Kit (Manaphy)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 12,
       "local_cards": 0,
       "missing_cards": [
@@ -4650,7 +4650,7 @@
     {
       "id": "tk-hs-g",
       "name": "HS trainer Kit (Gyarados)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -4811,7 +4811,7 @@
     {
       "id": "tk-hs-r",
       "name": "HS trainer Kit (Raichu)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -4972,7 +4972,7 @@
     {
       "id": "tk-sm-l",
       "name": "SM trainer Kit (Lycanroc)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 18,
       "local_cards": 0,
       "missing_cards": [
@@ -5073,7 +5073,7 @@
     {
       "id": "tk-sm-r",
       "name": "SM trainer Kit (Alolan Raichu)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -5234,7 +5234,7 @@
     {
       "id": "tk-xy-b",
       "name": "XY trainer Kit (Bisharp)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -5395,7 +5395,7 @@
     {
       "id": "tk-xy-latia",
       "name": "XY trainer Kit (Latias)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -5556,7 +5556,7 @@
     {
       "id": "tk-xy-latio",
       "name": "XY trainer Kit (Latios)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -5717,7 +5717,7 @@
     {
       "id": "tk-xy-n",
       "name": "XY trainer Kit (Noivern)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -5878,7 +5878,7 @@
     {
       "id": "tk-xy-p",
       "name": "XY trainer Kit (Pikachu Libre)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -6039,7 +6039,7 @@
     {
       "id": "tk-xy-su",
       "name": "XY trainer Kit (Suicune)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -6200,7 +6200,7 @@
     {
       "id": "tk-xy-sy",
       "name": "XY trainer Kit (Sylveon)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [
@@ -6361,7 +6361,7 @@
     {
       "id": "tk-xy-w",
       "name": "XY trainer Kit (Wigglytuff)",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 30,
       "local_cards": 0,
       "missing_cards": [

@@ -10,8 +10,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - missing_cards: 927
 - external_cards: 1
 - broken_cards: 0
-- local_logos: 174
-- missing_logos: 26
+- local_logos: 191
+- missing_logos: 9
 - external_logos: 0
 - broken_logos: 0
 - complete_sets: 146
@@ -166,7 +166,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
 | sv10 – Destined Rivals | local | 244/244 | 0 | 0 | 0 |
-| sve – Scarlet & Violet Energy | missing | 0/24 | 24 | 0 | 0 |
+| sve – Scarlet & Violet Energy | local | 0/24 | 24 | 0 | 0 |
 | svp – SVP Black Star Promos | local | 199/226 | 27 | 0 | 0 |
 | swsh1 – Sword & Shield | local | 216/216 | 0 | 0 | 0 |
 | swsh10 – Astral Radiance | local | 216/216 | 0 | 0 | 0 |
@@ -185,26 +185,26 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | swsh9 – Brilliant Stars | local | 186/186 | 0 | 0 | 0 |
 | swsh9tg – Brilliant Stars Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swshp – SWSH Black Star Promos | local | 304/307 | 3 | 0 | 0 |
-| tk-bw-e – BW trainer Kit (Excadrill) | missing | 0/30 | 30 | 0 | 0 |
-| tk-bw-z – BW trainer Kit (Zoroark) | missing | 0/30 | 30 | 0 | 0 |
-| tk-dp-l – DP trainer Kit (Lucario) | missing | 0/11 | 11 | 0 | 0 |
-| tk-dp-m – DP trainer Kit (Manaphy) | missing | 0/12 | 12 | 0 | 0 |
+| tk-bw-e – BW trainer Kit (Excadrill) | local | 0/30 | 30 | 0 | 0 |
+| tk-bw-z – BW trainer Kit (Zoroark) | local | 0/30 | 30 | 0 | 0 |
+| tk-dp-l – DP trainer Kit (Lucario) | local | 0/11 | 11 | 0 | 0 |
+| tk-dp-m – DP trainer Kit (Manaphy) | local | 0/12 | 12 | 0 | 0 |
 | tk-ex-latia – EX trainer Kit (Latias) | local | 4/10 | 6 | 0 | 0 |
 | tk-ex-latio – EX trainer Kit (Latios) | local | 4/10 | 6 | 0 | 0 |
 | tk-ex-m – EX trainer Kit 2 (Minun) | local | 7/12 | 5 | 0 | 0 |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | local | 3/12 | 9 | 0 | 0 |
-| tk-hs-g – HS trainer Kit (Gyarados) | missing | 0/30 | 30 | 0 | 0 |
-| tk-hs-r – HS trainer Kit (Raichu) | missing | 0/30 | 30 | 0 | 0 |
-| tk-sm-l – SM trainer Kit (Lycanroc) | missing | 0/18 | 18 | 0 | 0 |
-| tk-sm-r – SM trainer Kit (Alolan Raichu) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-b – XY trainer Kit (Bisharp) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-latia – XY trainer Kit (Latias) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-latio – XY trainer Kit (Latios) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-n – XY trainer Kit (Noivern) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-p – XY trainer Kit (Pikachu Libre) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-su – XY trainer Kit (Suicune) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-sy – XY trainer Kit (Sylveon) | missing | 0/30 | 30 | 0 | 0 |
-| tk-xy-w – XY trainer Kit (Wigglytuff) | missing | 0/30 | 30 | 0 | 0 |
+| tk-hs-g – HS trainer Kit (Gyarados) | local | 0/30 | 30 | 0 | 0 |
+| tk-hs-r – HS trainer Kit (Raichu) | local | 0/30 | 30 | 0 | 0 |
+| tk-sm-l – SM trainer Kit (Lycanroc) | local | 0/18 | 18 | 0 | 0 |
+| tk-sm-r – SM trainer Kit (Alolan Raichu) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-b – XY trainer Kit (Bisharp) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-latia – XY trainer Kit (Latias) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-latio – XY trainer Kit (Latios) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-n – XY trainer Kit (Noivern) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-p – XY trainer Kit (Pikachu Libre) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-su – XY trainer Kit (Suicune) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-sy – XY trainer Kit (Sylveon) | local | 0/30 | 30 | 0 | 0 |
+| tk-xy-w – XY trainer Kit (Wigglytuff) | local | 0/30 | 30 | 0 | 0 |
 | xy0 – Kalos Starter Set | local | 39/39 | 0 | 0 | 0 |
 | xy1 – XY | local | 146/146 | 0 | 0 | 0 |
 | xy10 – Fates Collide | local | 128/129 | 0 | 1 | 0 |
@@ -231,23 +231,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - B2a – Paldean Wonders: missing
 - mep – MEP Black Star Promos: missing
 - miscp – Miscellaneous Promos: missing
-- sve – Scarlet & Violet Energy: missing
-- tk-bw-e – BW trainer Kit (Excadrill): missing
-- tk-bw-z – BW trainer Kit (Zoroark): missing
-- tk-dp-l – DP trainer Kit (Lucario): missing
-- tk-dp-m – DP trainer Kit (Manaphy): missing
-- tk-hs-g – HS trainer Kit (Gyarados): missing
-- tk-hs-r – HS trainer Kit (Raichu): missing
-- tk-sm-l – SM trainer Kit (Lycanroc): missing
-- tk-sm-r – SM trainer Kit (Alolan Raichu): missing
-- tk-xy-b – XY trainer Kit (Bisharp): missing
-- tk-xy-latia – XY trainer Kit (Latias): missing
-- tk-xy-latio – XY trainer Kit (Latios): missing
-- tk-xy-n – XY trainer Kit (Noivern): missing
-- tk-xy-p – XY trainer Kit (Pikachu Libre): missing
-- tk-xy-su – XY trainer Kit (Suicune): missing
-- tk-xy-sy – XY trainer Kit (Sylveon): missing
-- tk-xy-w – XY trainer Kit (Wigglytuff): missing
 - xya – Yellow A Alternate: missing
 
 ## Kaarten zonder lokale afbeelding (per set)

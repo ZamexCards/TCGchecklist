@@ -7,26 +7,26 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | mep – MEP Black Star Promos | Promoties | 89 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mfb – My First Battle | Battle-product | 34 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 30th-c – 30th Classic Collection | Classic Collection | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-bw-e – BW trainer Kit (Excadrill) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-bw-z – BW trainer Kit (Zoroark) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-hs-g – HS trainer Kit (Gyarados) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-hs-r – HS trainer Kit (Raichu) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-sm-r – SM trainer Kit (Alolan Raichu) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-b – XY trainer Kit (Bisharp) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-latia – XY trainer Kit (Latias) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-latio – XY trainer Kit (Latios) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-n – XY trainer Kit (Noivern) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-p – XY trainer Kit (Pikachu Libre) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-su – XY trainer Kit (Suicune) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-sy – XY trainer Kit (Sylveon) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-xy-w – XY trainer Kit (Wigglytuff) | Trainer Kit | 30 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-bw-e – BW trainer Kit (Excadrill) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-bw-z – BW trainer Kit (Zoroark) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-hs-g – HS trainer Kit (Gyarados) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-hs-r – HS trainer Kit (Raichu) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-sm-r – SM trainer Kit (Alolan Raichu) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-b – XY trainer Kit (Bisharp) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-latia – XY trainer Kit (Latias) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-latio – XY trainer Kit (Latios) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-n – XY trainer Kit (Noivern) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-p – XY trainer Kit (Pikachu Libre) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-su – XY trainer Kit (Suicune) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-sy – XY trainer Kit (Sylveon) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-xy-w – XY trainer Kit (Wigglytuff) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | exu – Unseen Forces Unown Collection | Overig | 28 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | P-A – Promos-A | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | svp – SVP Black Star Promos | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| sve – Scarlet & Violet Energy | Energy | 24 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| sve – Scarlet & Violet Energy | Energy | 24 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | B2a – Paldean Wonders | Pocket | 19 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard2 – Aquapolis | Overig | 17 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2023sv – McDonald's Collection 2023 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2024sv – McDonald's Collection 2024 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -34,8 +34,8 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | 2015xy – McDonald's Collection 2015 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2017sm – McDonald's Collection 2017 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2018sm – McDonald's Collection 2018 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-dp-m – DP trainer Kit (Manaphy) | Trainer Kit | 12 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-dp-m – DP trainer Kit (Manaphy) | Trainer Kit | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2021swsh – McDonald's Collection 2021 | McDonald’s | 10 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard3 – Skyridge | Overig | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | Trainer Kit | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
