@@ -50,8 +50,24 @@ def secondary_card(sid,number,name):
         return None,'secondary_http_'+str(exc.code)
     except (urllib.error.URLError,TimeoutError,ValueError,OSError):
         return None,'secondary_temporary_error'
+def search_by_identity(set_name,number,name):
+    """Search by exact set title, printed number and card name."""
+    q='name:"'+str(name).replace('"','')+'" AND number:"'+str(number).replace('"','')+'"'
+    url='https://api.pokemontcg.io/v2/cards?'+urllib.parse.urlencode({'q':q,'pageSize':50,'select':'id,name,number,set,images'})
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'application/json'}),timeout=15) as response:
+            rows=json.load(response).get('data',[])
+        matches=[row for row in rows if norm(row.get('name'))==norm(name)
+                 and str(row.get('number','')).lstrip('0')==str(number).lstrip('0')
+                 and norm((row.get('set') or {}).get('name'))==norm(set_name)]
+        if len(matches)!=1:return None,'identity_ambiguous' if matches else 'identity_not_found'
+        images=matches[0].get('images') or {}
+        return images.get('small') or images.get('large') or None,'identity_verified'
+    except urllib.error.HTTPError as exc:return None,'identity_http_'+str(exc.code)
+    except (urllib.error.URLError,TimeoutError,ValueError,OSError):return None,'identity_temporary_error'
 def eligible(entry):
     date=entry.get('checked','')
+    if entry.get('strategy')!='identity_v2':return True
     if entry.get('status') not in ('no_source','http_404','http_410','image_unavailable','mismatch','secondary_http_404','secondary_mismatch','secondary_image_unavailable'):
         return True
     try:return (TODAY-datetime.date.fromisoformat(date)).days>=30
@@ -100,7 +116,17 @@ def main():
                     else:status='secondary_image_unavailable'
                 elif alternate_status!='unmapped':
                     status=alternate_status
-            history[key]={'status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
+            if status not in ('saved','saved_secondary'):
+                identity,identity_status=search_by_identity(payload['set'].get('name',''),card.get('number',''),card.get('name',''))
+                if identity:
+                    number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
+                    local=archive(identity,sid,number,'card')
+                    if local:
+                        card.setdefault('images',{})['small']=local
+                        saved+=1;dirty=True;status='saved_identity'
+                    else:status='identity_image_unavailable'
+                else:status=identity_status
+            history[key]={'strategy':'identity_v2','status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
             print('Targeted:',key,status,flush=True)
         if dirty:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
