@@ -4,7 +4,7 @@ import json, pathlib, re, urllib.request, urllib.error, os
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SETS=ROOT/'data'/'sets'
 MANIFEST=ROOT/'data'/'sets.json'
-LIMIT=int(os.getenv('IMAGE_REPAIR_LIMIT','16'))
+LIMIT=int(os.getenv('IMAGE_REPAIR_LIMIT','200'))
 OVERRIDES=ROOT/'data'/'image_sources.json'
 def overrides():
     if not OVERRIDES.exists():return {}
