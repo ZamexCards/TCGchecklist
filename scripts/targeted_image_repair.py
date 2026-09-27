@@ -65,9 +65,26 @@ def search_by_identity(set_name,number,name):
         return images.get('small') or images.get('large') or None,'identity_verified'
     except urllib.error.HTTPError as exc:return None,'identity_http_'+str(exc.code)
     except (urllib.error.URLError,TimeoutError,ValueError,OSError):return None,'identity_temporary_error'
+HISTORICAL_CACHE={}
+def historical_source(sid,number,name):
+    """Third independent catalogue: archived PokemonTCG GitHub card JSON."""
+    mapped=FALLBACK_SETS.get(sid)
+    if not mapped:return None,'historical_unmapped'
+    if mapped not in HISTORICAL_CACHE:
+        url='https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/'+urllib.parse.quote(mapped,safe='')+'.json'
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'application/json'}),timeout=12) as response:
+                HISTORICAL_CACHE[mapped]=json.load(response)
+        except (urllib.error.URLError,TimeoutError,ValueError,OSError):
+            HISTORICAL_CACHE[mapped]=[]
+    matches=[c for c in HISTORICAL_CACHE[mapped] if norm(c.get('name'))==norm(name)
+             and str(c.get('number','')).lstrip('0')==str(number).lstrip('0')
+             and str(c.get('id','')).startswith(mapped+'-')]
+    if len(matches)!=1:return None,'historical_not_found'
+    return (matches[0].get('images') or {}).get('small'),'historical_verified'
 def eligible(entry):
     date=entry.get('checked','')
-    if entry.get('strategy')!='identity_v2':return True
+    if entry.get('strategy')!='identity_v3':return True
     if entry.get('status') not in ('no_source','http_404','http_410','image_unavailable','mismatch','secondary_http_404','secondary_mismatch','secondary_image_unavailable'):
         return True
     try:return (TODAY-datetime.date.fromisoformat(date)).days>=30
@@ -126,7 +143,17 @@ def main():
                         saved+=1;dirty=True;status='saved_identity'
                     else:status='identity_image_unavailable'
                 else:status=identity_status
-            history[key]={'strategy':'identity_v2','status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
+            if status not in ('saved','saved_secondary','saved_identity'):
+                historical,historical_status=historical_source(sid,card.get('number',''),card.get('name',''))
+                if historical:
+                    number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or cid))
+                    local=archive(historical,sid,number,'card')
+                    if local:
+                        card.setdefault('images',{})['small']=local
+                        saved+=1;dirty=True;status='saved_historical'
+                    else:status='historical_image_unavailable'
+                elif historical_status!='historical_unmapped':status=historical_status
+            history[key]={'strategy':'identity_v3','status':status,'checked':TODAY.isoformat(),'card_number':card.get('number',''),'card_name':card.get('name','')}
             print('Targeted:',key,status,flush=True)
         if dirty:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
