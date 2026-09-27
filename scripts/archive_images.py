@@ -53,7 +53,7 @@ def archive(url,sid,name,kind):
             return './assets/sets/'+sid+'/'+existing.name
     sources=candidates(url,kind)
     # PokemonTCG's high-resolution image can exist when the small CDN file is absent.
-    if kind=='card' and re.fullmatch(r'https://images\\.pokemontcg\\.io/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\\.png',url or ''):
+    if kind=='card' and url and url.startswith('https://images.pokemontcg.io/') and re.fullmatch('[A-Za-z0-9_-]+/[A-Za-z0-9_-]+[.]png',url.split('images.pokemontcg.io/',1)[1]):
         sources.append(url[:-4]+'_hires.png')
     for source in sources:
         if not eligible(source):continue
