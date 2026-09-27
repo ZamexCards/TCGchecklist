@@ -3,8 +3,8 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20793,
-    "missing_cards": 818,
+    "local_cards": 20794,
+    "missing_cards": 817,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
@@ -916,17 +916,12 @@
       "name": "Best of game",
       "logo_status": "local",
       "total_cards": 9,
-      "local_cards": 2,
+      "local_cards": 3,
       "missing_cards": [
         {
           "id": "bog-1",
           "number": "1",
           "name": "Electabuzz"
-        },
-        {
-          "id": "bog-2",
-          "number": "2",
-          "name": "Hitmonchan"
         },
         {
           "id": "bog-3",

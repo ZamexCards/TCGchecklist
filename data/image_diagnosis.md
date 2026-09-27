@@ -36,7 +36,7 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | tk-dp-l – DP trainer Kit (Lucario) | Trainer Kit | 11 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard3 – Skyridge | Overig | 9 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mee – Mega Evolution Energy | Energy | 8 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| bog – Best of game | Overig | 7 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| bog – Best of game | Overig | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | xya – Yellow A Alternate | Overig | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | swshp – SWSH Black Star Promos | Promoties | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | hgssp – HGSS Black Star Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

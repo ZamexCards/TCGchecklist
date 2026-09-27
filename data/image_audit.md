@@ -6,8 +6,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20793
-- missing_cards: 818
+- local_cards: 20794
+- missing_cards: 817
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
@@ -55,7 +55,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | base4 – Base Set 2 | local | 130/130 | 0 | 0 | 0 |
 | base5 – Team Rocket | local | 83/83 | 0 | 0 | 0 |
 | basep – Wizards Black Star Promos | local | 53/53 | 0 | 0 | 0 |
-| bog – Best of game | local | 2/9 | 7 | 0 | 0 |
+| bog – Best of game | local | 3/9 | 6 | 0 | 0 |
 | bw1 – Black & White | local | 115/115 | 0 | 0 | 0 |
 | bw10 – Plasma Blast | local | 105/105 | 0 | 0 | 0 |
 | bw11 – Legendary Treasures | local | 140/140 | 0 | 0 | 0 |
@@ -248,7 +248,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (30):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030
 
 ### bog – Best of game
-**Geen bronlink (7):** 1, 2, 3, 4, 5, 8, 9
+**Geen bronlink (6):** 1, 3, 4, 5, 8, 9
 
 ### cel25cc – Celebrations Classic Collection
 **Geen bronlink (25):** CC001, CC002, CC003, CC004, CC005, CC006, CC007, CC008, CC009, CC010, CC011, CC012, CC013, CC014, CC015, CC016, CC017, CC018, CC019, CC020, CC021, CC022, CC023, CC024, CC025
