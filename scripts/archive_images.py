@@ -90,7 +90,7 @@ def supplemental(sid,number='',kind='card'):
 # Pocket B2a is a separate game: require matching set, printed number AND name.
 # The public dataset documents cards-by-set/B2a/<number>.webp.
 POCKET_META='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/cards/B2a.json'
-POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/cards-by-set/B2a/{}.webp'
+POCKET_IMAGE='https://raw.githubusercontent.com/flibustier/pokemon-tcg-exchange/main/public/images/cards-by-set/B2a/{}.webp'
 def pocket_cards():
     try:
         with urllib.request.urlopen(urllib.request.Request(POCKET_META,headers={'User-Agent':'ZamexCardsChecklist/1.0'}),timeout=15) as response:
