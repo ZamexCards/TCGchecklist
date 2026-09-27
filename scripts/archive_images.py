@@ -35,6 +35,7 @@ HEADERS={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'image/webp,image/png,i
 def candidates(url,kind):
     if not url or url.startswith('./'):return []
     url=url.rstrip('/')
+    if '/wiki/Special:FilePath/' in url or '/wiki/Special:Redirect/file/' in url:return [url]
     if re.search(r'\.(webp|png|jpe?g)(?:\?.*)?$',url,re.I):return [url]
     return [url+'.webp',url+'.png'] if kind=='logo' else [url+'/low.webp',url+'/low.png',url+'/low.jpg',url+'/high.webp',url+'/high.png',url+'/high.jpg']
 MAX_IMAGE_BYTES=8_000_000
@@ -163,7 +164,7 @@ def bulbagarden_mep_source(sid,card,known):
         try:
             with urllib.request.urlopen(urllib.request.Request(metadata_url,headers={'User-Agent':'ZamexCardsChecklist/1.0','Accept':'text/plain'}),timeout=12) as response:
                 metadata=response.read(10000).decode('utf-8')
-            match=re.search(r'^image:\\s*(https://archives[.]bulbagarden[.]net/wiki/Special:FilePath/[^\\s]+)',metadata,re.M)
+            match=re.search(r'^image:\s*(https://archives[.]bulbagarden[.]net/wiki/Special:FilePath/[^\s]+)',metadata,re.M)
             if match:return match.group(1)
         except (urllib.error.URLError,OSError,TimeoutError,UnicodeError):continue
     return ''
