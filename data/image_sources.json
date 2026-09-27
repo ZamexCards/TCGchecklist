@@ -5,7 +5,23 @@
     "cards": {}
   },
   "30th-c": {
-    "logo": "",
+    "logo": "https://www.despelvogel.com/wp-content/uploads/2026/07/17803925710055-1024x571.png",
+    "cards": {}
+  },
+  "30th": {
+    "logo": "https://www.despelvogel.com/wp-content/uploads/2026/07/17803925710055-1024x571.png",
+    "cards": {}
+  },
+  "exu": {
+    "logo": "https://rarecards.nl/cdn/shop/collections/EX-Unseen-Forces-Unown-Collection.logo.161.webp?v=1742470626",
+    "cards": {}
+  },
+  "mee": {
+    "logo": "https://pokecardex.b-cdn.net/assets/images/logos/US/MEE.png",
+    "cards": {}
+  },
+  "mfb": {
+    "logo": "https://tcg.pokemon.com/assets/img/my-first-battle/logo/en-us/logo.png",
     "cards": {}
   }
 }
