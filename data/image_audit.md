@@ -10,11 +10,11 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - missing_cards: 927
 - external_cards: 1
 - broken_cards: 0
-- local_logos: 191
-- missing_logos: 9
+- local_logos: 200
+- missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 146
+- complete_sets: 148
 
 ## Per set
 
@@ -30,8 +30,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2019sm – McDonald's Collection 2019 | local | 9/12 | 3 | 0 | 0 |
 | 2021swsh – McDonald's Collection 2021 | local | 15/25 | 10 | 0 | 0 |
 | 2022swsh – McDonald's Collection 2022 | local | 8/15 | 7 | 0 | 0 |
-| 2023sv – McDonald's Collection 2023 | missing | 0/15 | 15 | 0 | 0 |
-| 2024sv – McDonald's Collection 2024 | missing | 0/15 | 15 | 0 | 0 |
+| 2023sv – McDonald's Collection 2023 | local | 0/15 | 15 | 0 | 0 |
+| 2024sv – McDonald's Collection 2024 | local | 0/15 | 15 | 0 | 0 |
 | 30th-c – 30th Classic Collection | local | 0/30 | 30 | 0 | 0 |
 | 30th – 30th Celebration | local | 158/158 | 0 | 0 | 0 |
 | A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
@@ -40,14 +40,14 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | A2a – Triumphant Light | local | 96/96 | 0 | 0 | 0 |
 | A2b – Shining Revelry | local | 111/111 | 0 | 0 | 0 |
 | A3 – Celestial Guardians | local | 239/239 | 0 | 0 | 0 |
-| A3a – Extradimensional Crisis | missing | 103/103 | 0 | 0 | 0 |
-| A3b – Eevee Grove | missing | 107/107 | 0 | 0 | 0 |
+| A3a – Extradimensional Crisis | local | 103/103 | 0 | 0 | 0 |
+| A3b – Eevee Grove | local | 107/107 | 0 | 0 | 0 |
 | A4 – Wisdom of Sea and Sky | local | 241/241 | 0 | 0 | 0 |
 | A4a – Secluded Springs | local | 105/105 | 0 | 0 | 0 |
 | B1 – Mega Rising | local | 331/331 | 0 | 0 | 0 |
-| B1a – Crimson Blaze | missing | 102/103 | 1 | 0 | 0 |
+| B1a – Crimson Blaze | local | 102/103 | 1 | 0 | 0 |
 | B2 – Fantastical Parade | local | 234/234 | 0 | 0 | 0 |
-| B2a – Paldean Wonders | missing | 112/131 | 19 | 0 | 0 |
+| B2a – Paldean Wonders | local | 112/131 | 19 | 0 | 0 |
 | P-A – Promos-A | local | 73/100 | 27 | 0 | 0 |
 | base1 – Base Set | local | 102/102 | 0 | 0 | 0 |
 | base2 – Jungle | local | 64/64 | 0 | 0 | 0 |
@@ -118,9 +118,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
 | mee – Mega Evolution Energy | local | 0/8 | 8 | 0 | 0 |
-| mep – MEP Black Star Promos | missing | 0/89 | 89 | 0 | 0 |
+| mep – MEP Black Star Promos | local | 0/89 | 89 | 0 | 0 |
 | mfb – My First Battle | local | 0/34 | 34 | 0 | 0 |
-| miscp – Miscellaneous Promos | missing | 0/1 | 1 | 0 | 0 |
+| miscp – Miscellaneous Promos | local | 0/1 | 1 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
 | neo2 – Neo Discovery | local | 75/75 | 0 | 0 | 0 |
 | neo3 – Neo Revelation | local | 66/66 | 0 | 0 | 0 |
@@ -218,20 +218,11 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | xy7 – Ancient Origins | local | 101/101 | 0 | 0 | 0 |
 | xy8 – BREAKthrough | local | 165/165 | 0 | 0 | 0 |
 | xy9 – BREAKpoint | local | 126/126 | 0 | 0 | 0 |
-| xya – Yellow A Alternate | missing | 0/6 | 6 | 0 | 0 |
+| xya – Yellow A Alternate | local | 0/6 | 6 | 0 | 0 |
 | xyp – XY Black Star Promos | local | 216/216 | 0 | 0 | 0 |
 
 ## Ontbrekende of ongeldige setlogo’s
 
-- 2023sv – McDonald's Collection 2023: missing
-- 2024sv – McDonald's Collection 2024: missing
-- A3a – Extradimensional Crisis: missing
-- A3b – Eevee Grove: missing
-- B1a – Crimson Blaze: missing
-- B2a – Paldean Wonders: missing
-- mep – MEP Black Star Promos: missing
-- miscp – Miscellaneous Promos: missing
-- xya – Yellow A Alternate: missing
 
 ## Kaarten zonder lokale afbeelding (per set)
 

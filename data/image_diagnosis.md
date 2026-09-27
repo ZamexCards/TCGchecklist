@@ -4,7 +4,7 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 
 | Set | Categorie | Geen bronlink | Extern | Logo | Vervolg |
 |---|---|---:|---:|---|---|
-| mep – MEP Black Star Promos | Promoties | 89 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| mep – MEP Black Star Promos | Promoties | 89 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mfb – My First Battle | Battle-product | 34 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 30th-c – 30th Classic Collection | Classic Collection | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-bw-e – BW trainer Kit (Excadrill) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -25,11 +25,11 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | svp – SVP Black Star Promos | Promoties | 27 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | cel25cc – Celebrations Classic Collection | Classic Collection | 25 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | sve – Scarlet & Violet Energy | Energy | 24 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| B2a – Paldean Wonders | Pocket | 19 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| B2a – Paldean Wonders | Pocket | 19 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-sm-l – SM trainer Kit (Lycanroc) | Trainer Kit | 18 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | ecard2 – Aquapolis | Overig | 17 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2023sv – McDonald's Collection 2023 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| 2024sv – McDonald's Collection 2024 | McDonald’s | 15 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2023sv – McDonald's Collection 2023 | McDonald’s | 15 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| 2024sv – McDonald's Collection 2024 | McDonald’s | 15 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2014xy – McDonald's Collection 2014 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2015xy – McDonald's Collection 2015 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2017sm – McDonald's Collection 2017 | McDonald’s | 12 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
@@ -45,18 +45,16 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | bog – Best of game | Overig | 7 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-latia – EX trainer Kit (Latias) | Trainer Kit | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-latio – EX trainer Kit (Latios) | Trainer Kit | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| xya – Yellow A Alternate | Overig | 6 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| xya – Yellow A Alternate | Overig | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-ex-m – EX trainer Kit 2 (Minun) | Trainer Kit | 5 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2011bw – McDonald's Collection 2011 | McDonald’s | 4 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2019sm – McDonald's Collection 2019 | McDonald’s | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | swshp – SWSH Black Star Promos | Promoties | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 2016xy – McDonald's Collection 2016 | McDonald’s | 2 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | pop6 – POP Series 6 | Overig | 2 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| B1a – Crimson Blaze | Overig | 1 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| B1a – Crimson Blaze | Overig | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | hgssp – HGSS Black Star Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| miscp – Miscellaneous Promos | Promoties | 1 | 0 | missing | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| A3a – Extradimensional Crisis | Overig | 0 | 0 | missing | Zoek en verifieer uitsluitend setlogo |
-| A3b – Eevee Grove | Overig | 0 | 0 | missing | Zoek en verifieer uitsluitend setlogo |
+| miscp – Miscellaneous Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | xy10 – Fates Collide | Overig | 0 | 1 | local | Controleer externe afbeeldingslink |
 
 ## Prioriteit

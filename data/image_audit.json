@@ -7,11 +7,11 @@
     "missing_cards": 927,
     "external_cards": 1,
     "broken_cards": 0,
-    "local_logos": 191,
-    "missing_logos": 9,
+    "local_logos": 200,
+    "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 146
+    "complete_sets": 148
   },
   "sets": [
     {
@@ -537,7 +537,7 @@
     {
       "id": "2023sv",
       "name": "McDonald's Collection 2023",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 15,
       "local_cards": 0,
       "missing_cards": [
@@ -623,7 +623,7 @@
     {
       "id": "2024sv",
       "name": "McDonald's Collection 2024",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 15,
       "local_cards": 0,
       "missing_cards": [
@@ -940,7 +940,7 @@
     {
       "id": "A3a",
       "name": "Extradimensional Crisis",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 103,
       "local_cards": 103,
       "missing_cards": [],
@@ -950,7 +950,7 @@
     {
       "id": "A3b",
       "name": "Eevee Grove",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 107,
       "local_cards": 107,
       "missing_cards": [],
@@ -990,7 +990,7 @@
     {
       "id": "B1a",
       "name": "Crimson Blaze",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 103,
       "local_cards": 102,
       "missing_cards": [
@@ -1016,7 +1016,7 @@
     {
       "id": "B2a",
       "name": "Paldean Wonders",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 131,
       "local_cards": 112,
       "missing_cards": [
@@ -2440,7 +2440,7 @@
     {
       "id": "mep",
       "name": "MEP Black Star Promos",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 89,
       "local_cards": 0,
       "missing_cards": [
@@ -3077,7 +3077,7 @@
     {
       "id": "miscp",
       "name": "Miscellaneous Promos",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 1,
       "local_cards": 0,
       "missing_cards": [
@@ -6658,7 +6658,7 @@
     {
       "id": "xya",
       "name": "Yellow A Alternate",
-      "logo_status": "missing",
+      "logo_status": "local",
       "total_cards": 6,
       "local_cards": 0,
       "missing_cards": [
