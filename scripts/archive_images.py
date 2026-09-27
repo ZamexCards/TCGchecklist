@@ -75,6 +75,7 @@ FALLBACK_SETS={
     'swsh10tg':'swsh10tg','swsh11tg':'swsh11tg','swsh12tg':'swsh12tg',
     'pl2':'pl2','xy8':'xy8','sm2':'sm2','sm3':'sm3','sm6':'sm6',
     'ecard2':'ecard2','ecard3':'ecard3',
+    '2014xy':'mcd14',
 }
 def supplemental(sid,number='',kind='card'):
     explicit=override(sid,number,kind)
