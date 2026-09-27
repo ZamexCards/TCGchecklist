@@ -103,6 +103,7 @@ def supplemental(sid,number='',kind='card'):
     # Exact printed local ID, not fuzzy name matching. Do not guess for other sets.
     number=str(number or '').strip()
     if not re.fullmatch(r'[A-Za-z0-9_-]+',number):return ''
+    # Preserve printed suffixes and holographic H-numbers in the source identity.
     return 'https://images.pokemontcg.io/'+other+'/'+number+'.png'
 
 # Pocket B2a is a separate game: require matching set, printed number AND name.
