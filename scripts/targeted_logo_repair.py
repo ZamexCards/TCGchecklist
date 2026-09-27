@@ -61,6 +61,20 @@ def main():
         payload=json.loads(path.read_text(encoding='utf-8'))
         info=payload['set'];sid=path.stem
         if info.get('images',{}).get('logo','').startswith('./assets/'):continue
+        # User-uploaded artwork is authoritative when already present locally.
+        folder=ROOT/'assets'/'sets'/sid
+        uploaded=next((folder/('logo.'+ext) for ext in ('webp','png','jpg')
+                       if (folder/('logo.'+ext)).exists()
+                       and (folder/('logo.'+ext)).stat().st_size>1000),None)
+        if uploaded:
+            local='./assets/sets/'+sid+'/'+uploaded.name
+            info.setdefault('images',{})['logo']=local
+            path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+            if sid in by_id:by_id[sid]['images']=info['images']
+            saved+=1
+            results[sid]={'name':info.get('name',''),'status':'saved_user_uploaded'}
+            print('Logo repair:',sid,'saved_user_uploaded',flush=True)
+            continue
         name=info.get('name','')
         candidates=[('user_verified',override(sid,kind='logo')),
                     ('existing',info.get('images',{}).get('logo','')),
