@@ -116,7 +116,10 @@ def pocket_source(sid,card,known):
     row=known.get(str(int(number)))
     if not row:return ''
     normal=lambda name:re.sub(r'[^a-z0-9]','',str(name).lower())
-    if normal(row.get('name'))!=normal(card.get('name')):return ''
+    source_name=normal(row.get('name'))
+    checklist_name=normal(card.get('name'))
+    # Pocket metadata includes the ex suffix; checklist labels omit it for these exact-numbered cards.
+    if source_name!=checklist_name and source_name!=checklist_name+'ex':return ''
     return POCKET_IMAGE.format(int(number))
 
 def main():
