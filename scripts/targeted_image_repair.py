@@ -160,5 +160,6 @@ def main():
             changed+=1
     REPORT.write_text(json.dumps(history,ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf-8')
     CACHE_PATH.write_text(json.dumps(FAILURE_CACHE,ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf-8')
+    print('Targeted sources: TCGdex, PokemonTCG API identity, PokemonTCG GitHub historical catalogue',flush=True)
     print('Targeted repair: checked:',examined,'saved:',saved,'updated sets:',changed,'recent failed checks skipped:',skipped,flush=True)
 if __name__=='__main__':main()
