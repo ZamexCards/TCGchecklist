@@ -3,15 +3,15 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20764,
-    "missing_cards": 847,
+    "local_cards": 20766,
+    "missing_cards": 845,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
     "missing_logos": 0,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 161
+    "complete_sets": 162
   },
   "sets": [
     {
@@ -2957,19 +2957,8 @@
       "name": "POP Series 6",
       "logo_status": "local",
       "total_cards": 17,
-      "local_cards": 15,
-      "missing_cards": [
-        {
-          "id": "pop6-13",
-          "number": "13",
-          "name": "Cherubi"
-        },
-        {
-          "id": "pop6-17",
-          "number": "17",
-          "name": "Turtwig"
-        }
-      ],
+      "local_cards": 17,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },

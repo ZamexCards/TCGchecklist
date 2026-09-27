@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20764
-- missing_cards: 847
+- local_cards: 20766
+- missing_cards: 845
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 161
+- complete_sets: 162
 
 ## Per set
 
@@ -135,7 +135,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | pop3 – POP Series 3 | local | 17/17 | 0 | 0 | 0 |
 | pop4 – POP Series 4 | local | 17/17 | 0 | 0 | 0 |
 | pop5 – POP Series 5 | local | 17/17 | 0 | 0 | 0 |
-| pop6 – POP Series 6 | local | 15/17 | 2 | 0 | 0 |
+| pop6 – POP Series 6 | local | 17/17 | 0 | 0 | 0 |
 | pop7 – POP Series 7 | local | 17/17 | 0 | 0 | 0 |
 | pop8 – POP Series 8 | local | 17/17 | 0 | 0 | 0 |
 | pop9 – POP Series 9 | local | 17/17 | 0 | 0 | 0 |
@@ -279,9 +279,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### miscp – Miscellaneous Promos
 **Geen bronlink (1):** 001
-
-### pop6 – POP Series 6
-**Geen bronlink (2):** 13, 17
 
 ### sve – Scarlet & Violet Energy
 **Geen bronlink (24):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024

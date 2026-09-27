@@ -40,7 +40,6 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 | bog – Best of game | Overig | 7 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | xya – Yellow A Alternate | Overig | 6 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | swshp – SWSH Black Star Promos | Promoties | 3 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
-| pop6 – POP Series 6 | Overig | 2 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | hgssp – HGSS Black Star Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | miscp – Miscellaneous Promos | Promoties | 1 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 
