@@ -51,7 +51,11 @@ def archive(url,sid,name,kind):
         existing=folder/(name+'.'+ext)
         if existing.exists() and existing.stat().st_size>1000:
             return './assets/sets/'+sid+'/'+existing.name
-    for source in candidates(url,kind):
+    sources=candidates(url,kind)
+    # PokemonTCG's high-resolution image can exist when the small CDN file is absent.
+    if kind=='card' and re.fullmatch(r'https://images\\.pokemontcg\\.io/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\\.png',url or ''):
+        sources.append(url[:-4]+'_hires.png')
+    for source in sources:
         if not eligible(source):continue
         try:
             with urllib.request.urlopen(urllib.request.Request(source,headers=HEADERS),timeout=12) as response:
