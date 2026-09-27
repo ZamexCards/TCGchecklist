@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/targeted_image_repair.py'
       - 'scripts/targeted_logo_repair.py'
+      - 'scripts/pikawiz_repair.py'
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
@@ -43,6 +44,9 @@ jobs:
 
       - name: Repair missing set logos by exact set identity
         run: python scripts/targeted_logo_repair.py
+
+      - name: Verify and archive Pikawiz card artwork
+        run: python scripts/pikawiz_repair.py
 
       - name: Audit all card images and set logos
         run: python scripts/audit_images.py
