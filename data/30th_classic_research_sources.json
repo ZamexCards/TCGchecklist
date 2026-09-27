@@ -1,0 +1,31 @@
+{
+  "set_id": "30th-c",
+  "status": "research_only_not_image_downloads",
+  "warning": "Local 001-030 IDs are not the original printed reprint numbers. Never attach original-card art without verifying the 30th anniversary edition and matching name.",
+  "sources": [
+    {
+      "url": "https://www.pokemonkaart.nl/set/30th-celebration-classic-collection",
+      "role": "set overview"
+    },
+    {
+      "url": "https://tcg.pokemon.com/en-us/galleries/30th-celebration/",
+      "role": "official gallery; image links not verified"
+    },
+    {
+      "url": "https://www.cardrake.com/expansions/cel30c",
+      "role": "original-number reprint checklist"
+    },
+    {
+      "url": "https://app.getcollectr.com/sets/category/3/30th-celebration-classic-collection?groupId=24837&cardType=cards",
+      "role": "collector catalog; image links not verified"
+    },
+    {
+      "url": "https://pokewallet.io/blog/30th-celebration-classic-collection-all-30-cards",
+      "role": "card list"
+    },
+    {
+      "url": "https://obsidia-tcg.store/blogs/news/pokemon-tcg-30th-celebration-reprints-classic-collection-full-list-revealed",
+      "role": "card list; image links not verified"
+    }
+  ]
+}
