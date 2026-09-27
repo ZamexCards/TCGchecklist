@@ -2,6 +2,10 @@
 name: Update Pokemon checklist data
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/targeted_image_repair.py'
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
