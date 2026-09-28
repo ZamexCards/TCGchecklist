@@ -44,35 +44,42 @@ async def main():
                         if im.width<300 or im.height<400 or not .62<im.width/im.height<.82:
                             result['status']='capture_dimensions_invalid'
                         else:
-                            rgba=im.convert('RGBA')
-                            # Only remove near-white pixels connected to the canvas corners.
-                            rgb=rgba.convert('RGB')
-                            pixels=rgb.load()
-                            mask=Image.new('L',rgb.size,255)
-                            mp=mask.load()
-                            for y in range(rgb.height):
-                                for x in range(rgb.width):
-                                    red,green,blue=pixels[x,y]
-                                    if min(red,green,blue)>=232 and max(red,green,blue)-min(red,green,blue)<=20:
-                                        mp[x,y]=0
-                            for corner in ((0,0),(rgb.width-1,0),(0,rgb.height-1),(rgb.width-1,rgb.height-1)):
-                                if mask.getpixel(corner)==0:
-                                    ImageDraw.floodfill(mask,corner,128,thresh=0)
-                            outside=mask.point(lambda v: 0 if v==128 else 255)
-                            bbox=outside.getbbox()
-                            result['detected_card_bounds']=list(bbox) if bbox else None
-                            if not bbox or bbox[2]-bbox[0]<300 or bbox[3]-bbox[1]<400:
-                                result['status']='card_bounds_not_verified'
-                            elif not (bbox[0]>2 and bbox[1]>2 and bbox[2]<rgb.width-2 and bbox[3]<rgb.height-2):
-                                result['status']='card_touches_canvas_edge_manual_review'
+                            rgb=im.convert('RGB')
+                            w,h=rgb.size
+                            px=rgb.load()
+                            # Use occupancy of each scanline, rather than a single noisy JPEG pixel.
+                            def ink(x,y):
+                                r,g,b=px[x,y]
+                                return min(r,g,b)<218 or max(r,g,b)-min(r,g,b)>32
+                            cols=[sum(ink(x,y) for y in range(h//5,4*h//5,3)) for x in range(w)]
+                            rows=[sum(ink(x,y) for x in range(w//5,4*w//5,3)) for y in range(h)]
+                            col_min=max(5,int(.18*(3*h//5/3)))
+                            row_min=max(5,int(.18*(3*w//5/3)))
+                            xs=[x for x,v in enumerate(cols) if v>=col_min]
+                            ys=[y for y,v in enumerate(rows) if v>=row_min]
+                            if not xs or not ys:
+                                result['status']='card_contour_not_detected'
                             else:
-                                rgba.putalpha(outside)
-                                cropped=rgba.crop(bbox)
-                                result['cropped_dimensions']=list(cropped.size)
-                                result['transparent_corner_pixels']=sum(cropped.getpixel(pt)[3]==0 for pt in ((0,0),(cropped.width-1,0),(0,cropped.height-1),(cropped.width-1,cropped.height-1)))
-                                if not .62<cropped.width/cropped.height<.82 or result['transparent_corner_pixels']<3:
-                                    result['status']='transparency_validation_failed'
+                                # Two pixels of outward tolerance protect the metallic card edge.
+                                left=max(0,min(xs)-2);top=max(0,min(ys)-2)
+                                right=min(w,max(xs)+3);bottom=min(h,max(ys)+3)
+                                result['detected_card_bounds']=[left,top,right,bottom]
+                                if left<3 or top<3 or right>w-3 or bottom>h-3:
+                                    result['status']='card_touches_canvas_edge_manual_review'
+                                elif not .62<(right-left)/(bottom-top)<.82:
+                                    result['status']='card_ratio_invalid'
                                 else:
+                                    cropped=rgb.crop((left,top,right,bottom)).convert('RGBA')
+                                    # Only connected background at the rounded corners becomes transparent.
+                                    # This conservative corner mask never modifies the printed card interior.
+                                    cw,ch=cropped.size
+                                    radius=max(8,round(min(cw,ch)*.035))
+                                    alpha=Image.new('L',(cw,ch),0)
+                                    draw=ImageDraw.Draw(alpha)
+                                    draw.rounded_rectangle((0,0,cw-1,ch-1),radius=radius,fill=255)
+                                    cropped.putalpha(alpha)
+                                    result['cropped_dimensions']=[cw,ch]
+                                    result['corner_radius']=radius
                                     cropped.save(out,format='PNG',optimize=True)
                                     result['status']='saved_transparent_png'
                                     result['local_path']='./assets/sets/mep/001.png'
