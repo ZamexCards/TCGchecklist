@@ -20,11 +20,11 @@
       900,
       1200
     ],
-    "output": "assets/sets/svp/500.png",
     "size": [
       764,
       1052
     ],
-    "status": "saved"
+    "status": "rejected_by_user",
+    "reason": "Photo quality unsuitable for checklist"
   }
 ]
