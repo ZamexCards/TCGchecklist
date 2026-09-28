@@ -24,5 +24,15 @@
     728,
     1016
   ],
+  "detected_card_bounds": [
+    0,
+    0,
+    728,
+    1016
+  ],
+  "cropped_dimensions": [
+    728,
+    1016
+  ],
   "local_path": "./assets/sets/mep/001.png"
 }
