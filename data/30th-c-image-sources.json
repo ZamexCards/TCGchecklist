@@ -1,0 +1,182 @@
+[
+  {
+    "number": "001",
+    "name": "Charizard",
+    "source": "https://www.serebii.net/card/30thcelebration/h2.jpg",
+    "path": "assets/sets/30th-c/001.png"
+  },
+  {
+    "number": "002",
+    "name": "Delcatty",
+    "source": "https://www.serebii.net/card/30thcelebration/h8.jpg",
+    "path": "assets/sets/30th-c/002.png"
+  },
+  {
+    "number": "003",
+    "name": "Metagross",
+    "source": "https://www.serebii.net/card/30thcelebration/h11.jpg",
+    "path": "assets/sets/30th-c/003.png"
+  },
+  {
+    "number": "004",
+    "name": "Genesect EX",
+    "source": "https://www.serebii.net/card/30thcelebration/h20.jpg",
+    "path": "assets/sets/30th-c/004.png"
+  },
+  {
+    "number": "005",
+    "name": "Misty",
+    "source": "https://www.serebii.net/card/30thcelebration/h3.jpg",
+    "path": "assets/sets/30th-c/005.png"
+  },
+  {
+    "number": "006",
+    "name": "Dark Tyranitar",
+    "source": "https://www.serebii.net/card/30thcelebration/h9.jpg",
+    "path": "assets/sets/30th-c/006.png"
+  },
+  {
+    "number": "007",
+    "name": "Sneasel",
+    "source": "https://www.serebii.net/card/30thcelebration/h5.jpg",
+    "path": "assets/sets/30th-c/007.png"
+  },
+  {
+    "number": "008",
+    "name": "Pikachu & Zekrom GX",
+    "source": "https://www.serebii.net/card/30thcelebration/h25.jpg",
+    "path": "assets/sets/30th-c/008.png"
+  },
+  {
+    "number": "009",
+    "name": "Greninja BREAK",
+    "source": "https://www.serebii.net/card/30thcelebration/h22.jpg",
+    "path": "assets/sets/30th-c/009.png"
+  },
+  {
+    "number": "010",
+    "name": "Uxie",
+    "source": "https://www.serebii.net/card/30thcelebration/h13.jpg",
+    "path": "assets/sets/30th-c/010.png"
+  },
+  {
+    "number": "011",
+    "name": "Crobat G",
+    "source": "https://www.serebii.net/card/30thcelebration/h14.jpg",
+    "path": "assets/sets/30th-c/011.png"
+  },
+  {
+    "number": "012",
+    "name": "Raikou",
+    "source": "https://www.serebii.net/card/30thcelebration/h27.jpg",
+    "path": "assets/sets/30th-c/012.png"
+  },
+  {
+    "number": "013",
+    "name": "Buzzwole GX",
+    "source": "https://www.serebii.net/card/30thcelebration/h24.jpg",
+    "path": "assets/sets/30th-c/013.png"
+  },
+  {
+    "number": "014",
+    "name": "Pikachu",
+    "source": "https://www.serebii.net/card/30thcelebration/h1.jpg",
+    "path": "assets/sets/30th-c/014.png"
+  },
+  {
+    "number": "015",
+    "name": "Erika's Jigglypuff",
+    "source": "https://www.serebii.net/card/30thcelebration/h4.jpg",
+    "path": "assets/sets/30th-c/015.png"
+  },
+  {
+    "number": "016",
+    "name": "Rayquaza EX",
+    "source": "https://www.serebii.net/card/30thcelebration/h19.jpg",
+    "path": "assets/sets/30th-c/016.png"
+  },
+  {
+    "number": "017",
+    "name": "Solgaleo GX",
+    "source": "https://www.serebii.net/card/30thcelebration/h23.jpg",
+    "path": "assets/sets/30th-c/017.png"
+  },
+  {
+    "number": "018",
+    "name": "Gengar",
+    "source": "https://www.serebii.net/card/30thcelebration/h15.jpg",
+    "path": "assets/sets/30th-c/018.png"
+  },
+  {
+    "number": "019",
+    "name": "Darkrai & Cresselia LEGEND",
+    "source": "https://www.serebii.net/card/30thcelebration/h16.jpg",
+    "path": "assets/sets/30th-c/019.png"
+  },
+  {
+    "number": "020",
+    "name": "Darkrai & Cresselia LEGEND",
+    "source": "https://www.serebii.net/card/30thcelebration/h17.jpg",
+    "path": "assets/sets/30th-c/020.png"
+  },
+  {
+    "number": "021",
+    "name": "N",
+    "source": "https://www.serebii.net/card/30thcelebration/h18.jpg",
+    "path": "assets/sets/30th-c/021.png"
+  },
+  {
+    "number": "022",
+    "name": "Palkia",
+    "source": "https://www.serebii.net/card/30thcelebration/h12.jpg",
+    "path": "assets/sets/30th-c/022.png"
+  },
+  {
+    "number": "023",
+    "name": "M Gardevoir EX",
+    "source": "https://www.serebii.net/card/30thcelebration/h21.jpg",
+    "path": "assets/sets/30th-c/023.png"
+  },
+  {
+    "number": "024",
+    "name": "Shining Celebi",
+    "source": "https://www.serebii.net/card/30thcelebration/h6.jpg",
+    "path": "assets/sets/30th-c/024.png"
+  },
+  {
+    "number": "025",
+    "name": "Scizor ex",
+    "source": "https://www.serebii.net/card/30thcelebration/h10.jpg",
+    "path": "assets/sets/30th-c/025.png"
+  },
+  {
+    "number": "026",
+    "name": "Mew VMAX",
+    "source": "https://www.serebii.net/card/30thcelebration/h28.jpg",
+    "path": "assets/sets/30th-c/026.png"
+  },
+  {
+    "number": "027",
+    "name": "Arceus VSTAR",
+    "source": "https://www.serebii.net/card/30thcelebration/h29.jpg",
+    "path": "assets/sets/30th-c/027.png"
+  },
+  {
+    "number": "028",
+    "name": "Zacian V",
+    "source": "https://www.serebii.net/card/30thcelebration/h26.jpg",
+    "path": "assets/sets/30th-c/028.png"
+  },
+  {
+    "number": "029",
+    "name": "Lugia",
+    "source": "https://www.serebii.net/card/30thcelebration/h7.jpg",
+    "path": "assets/sets/30th-c/029.png"
+  },
+  {
+    "number": "030",
+    "name": "Magikarp",
+    "source": "https://www.serebii.net/card/30thcelebration/h30.jpg",
+    "path": "assets/sets/30th-c/030.png"
+  }
+]
