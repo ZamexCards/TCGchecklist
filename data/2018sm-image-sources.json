@@ -1,0 +1,122 @@
+[
+  {
+    "number": "1",
+    "name": "Growlithe",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Growlithe.jpg",
+    "source_size": [
+      320,
+      450
+    ],
+    "path": "assets/sets/2018sm/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Psyduck",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Psyduck.jpg",
+    "source_size": [
+      322,
+      450
+    ],
+    "path": "assets/sets/2018sm/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Horsea",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Horsea.jpg",
+    "source_size": [
+      322,
+      450
+    ],
+    "path": "assets/sets/2018sm/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Pikachu",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Pikachu.jpg",
+    "source_size": [
+      321,
+      450
+    ],
+    "path": "assets/sets/2018sm/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Slowpoke",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Slowpoke.jpg",
+    "source_size": [
+      322,
+      450
+    ],
+    "path": "assets/sets/2018sm/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Machop",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Machop.jpg",
+    "source_size": [
+      326,
+      450
+    ],
+    "path": "assets/sets/2018sm/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Cubone",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Cubone.jpg",
+    "source_size": [
+      322,
+      450
+    ],
+    "path": "assets/sets/2018sm/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Magnemite",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Magnemite.jpg",
+    "source_size": [
+      320,
+      450
+    ],
+    "path": "assets/sets/2018sm/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Dratini",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Dratini.jpg",
+    "source_size": [
+      324,
+      450
+    ],
+    "path": "assets/sets/2018sm/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Chansey",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Chansey.jpg",
+    "source_size": [
+      324,
+      450
+    ],
+    "path": "assets/sets/2018sm/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Eevee",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Eevee.jpg",
+    "source_size": [
+      320,
+      450
+    ],
+    "path": "assets/sets/2018sm/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Porygon",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/McDonalds-Collection-2018_Porygon.jpg",
+    "source_size": [
+      323,
+      450
+    ],
+    "path": "assets/sets/2018sm/012.png"
+  }
+]
