@@ -187,8 +187,9 @@ def trainer_kit_scan(sid,card):
         title=re.search(r'<title[^>]*>(.*?)</title>',html,re.I|re.S)
         if not title or code.upper() not in title.group(1).upper() or not re.search(r'#'+str(int(number))+r'\\b',title.group(1)):return ''
         if re.sub(r'[^a-z0-9]','',name.lower()) not in re.sub(r'[^a-z0-9]','',title.group(1).lower()):return ''
-        image=re.search(r'<meta[^>]+property=["\\']og:image["\\'][^>]+content=["\\']([^"\\']+)',html,re.I)
-        if not image:image=re.search(r'<meta[^>]+content=["\\']([^"\\']+)["\\'][^>]+property=["\\']og:image["\\']',html,re.I)
+        tag=re.search(r'<meta[^>]+og:image[^>]*>',html,re.I)
+        image=re.search(r'content="([^"]+)"',tag.group(0),re.I) if tag else None
+        if tag and not image:image=re.search("content='([^']+)'",tag.group(0),re.I)
         return image.group(1).replace('&amp;','&') if image and image.group(1).startswith('https://') else ''
     except (urllib.error.URLError,OSError,TimeoutError):return ''
 
