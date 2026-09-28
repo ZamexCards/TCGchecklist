@@ -1,0 +1,15 @@
+{
+  "number": "Museum",
+  "name": "Pikachu at the Museum",
+  "source": "https://images.stockx.com/images/Pikachu-at-the-Museum-Pokemon-Natural-History-Museum-Promo-Ungraded.jpg?bg=FFFFFF&dpr=2&fit=fill&h=1024&q=90&trim=color&w=733",
+  "source_size": [
+    1466,
+    2048
+  ],
+  "output": "assets/sets/mep/Museum.png",
+  "size": [
+    764,
+    1052
+  ],
+  "status": "saved"
+}
