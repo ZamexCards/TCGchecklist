@@ -6,8 +6,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 200
 - cards: 21611
-- local_cards: 20794
-- missing_cards: 817
+- local_cards: 20795
+- missing_cards: 816
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
@@ -118,7 +118,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
 | mee – Mega Evolution Energy | local | 0/8 | 8 | 0 | 0 |
-| mep – MEP Black Star Promos | local | 0/89 | 89 | 0 | 0 |
+| mep – MEP Black Star Promos | local | 1/89 | 88 | 0 | 0 |
 | mfb – My First Battle | local | 0/34 | 34 | 0 | 0 |
 | miscp – Miscellaneous Promos | local | 0/1 | 1 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
@@ -269,7 +269,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 **Geen bronlink (8):** 001, 002, 003, 004, 005, 006, 007, 008
 
 ### mep – MEP Black Star Promos
-**Geen bronlink (89):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046, 047, 048, 049, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 065, 066, 067, 068, 069, 070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, Museum
+**Geen bronlink (88):** 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046, 047, 048, 049, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 065, 066, 067, 068, 069, 070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, Museum
 
 ### mfb – My First Battle
 **Geen bronlink (34):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34

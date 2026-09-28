@@ -4,7 +4,7 @@ Geen afbeeldingsbron wordt op basis van een gelijkende kaartnaam aangenomen. Een
 
 | Set | Categorie | Geen bronlink | Extern | Logo | Vervolg |
 |---|---|---:|---:|---|---|
-| mep – MEP Black Star Promos | Promoties | 89 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
+| mep – MEP Black Star Promos | Promoties | 88 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | mfb – My First Battle | Battle-product | 34 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | 30th-c – 30th Classic Collection | Classic Collection | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |
 | tk-bw-e – BW trainer Kit (Excadrill) | Trainer Kit | 30 | 0 | local | Controleer afzonderlijke set-ID en kaartnummer bij tweede bron |

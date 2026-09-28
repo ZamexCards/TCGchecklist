@@ -3,8 +3,8 @@
   "totals": {
     "sets": 200,
     "cards": 21611,
-    "local_cards": 20794,
-    "missing_cards": 817,
+    "local_cards": 20795,
+    "missing_cards": 816,
     "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 200,
@@ -2023,13 +2023,8 @@
       "name": "MEP Black Star Promos",
       "logo_status": "local",
       "total_cards": 89,
-      "local_cards": 0,
+      "local_cards": 1,
       "missing_cards": [
-        {
-          "id": "mep-001",
-          "number": "001",
-          "name": "Meganium"
-        },
         {
           "id": "mep-002",
           "number": "002",
