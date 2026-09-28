@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-card visual capture trial; no checklist data is changed unless validated."""
+"""One-card visual capture trial; only verified captures are archived."""
 import asyncio,json,re
 from pathlib import Path
 from PIL import Image
