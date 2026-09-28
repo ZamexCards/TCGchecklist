@@ -2,7 +2,7 @@
 """One-card visual capture trial; only verified captures are archived."""
 import asyncio,json,re
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageChops
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parents[1]
 PAGE='https://pkmncards.com/card/meganium-mega-evolution-promos-mep-001/'
@@ -44,8 +44,23 @@ async def main():
                         if im.width<300 or im.height<400 or not .62<im.width/im.height<.82:
                             result['status']='capture_dimensions_invalid'
                         else:
-                            im.convert('RGB').save(out,format='PNG',optimize=True)
-                            result['status']='saved'
+                            rgb=im.convert('RGB')
+                            # Remove only the near-white canvas outside the physical card.
+                            # Keep the original rounded grey/silver printed card border.
+                            background=Image.new('RGB',rgb.size,(255,255,255))
+                            difference=ImageChops.difference(rgb,background).convert('L').point(lambda x: 255 if x>25 else 0)
+                            bbox=difference.getbbox()
+                            result['detected_card_bounds']=list(bbox) if bbox else None
+                            if not bbox or bbox[2]-bbox[0]<300 or bbox[3]-bbox[1]<400:
+                                result['status']='card_bounds_not_verified'
+                            else:
+                                cropped=rgb.crop(bbox)
+                                result['cropped_dimensions']=list(cropped.size)
+                                if not .62 < cropped.width/cropped.height < .82:
+                                    result['status']='cropped_ratio_invalid'
+                                else:
+                                    cropped.save(out,format='PNG',optimize=True)
+                                    result['status']='saved'
                             result['local_path']='./assets/sets/mep/001.png'
                     temp.unlink(missing_ok=True)
             await browser.close()
