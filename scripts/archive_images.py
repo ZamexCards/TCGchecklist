@@ -57,26 +57,34 @@ def archive(url,sid,name,kind):
     if kind=='card' and url and url.startswith('https://images.pokemontcg.io/') and re.fullmatch('[A-Za-z0-9_-]+/[A-Za-z0-9_-]+[.]png',url.split('images.pokemontcg.io/',1)[1]):
         sources.append(url[:-4]+'_hires.png')
     for source in sources:
-        if not eligible(source):continue
+        if not eligible(source):
+            if sid=='mep':print('MEP source cached:',name,source,flush=True)
+            continue
         try:
             with urllib.request.urlopen(urllib.request.Request(source,headers=HEADERS),timeout=12) as response:
                 mime=response.headers.get('Content-Type','').split(';')[0].lower()
-                if mime not in ('image/webp','image/png','image/jpeg'):continue
+                if mime not in ('image/webp','image/png','image/jpeg'):
+                    if sid=='mep':print('MEP wrong MIME:',name,mime,source,flush=True)
+                    continue
                 data=response.read(MAX_IMAGE_BYTES+1)
             if len(data)<1000 or len(data)>MAX_IMAGE_BYTES or not valid_image(data,mime):
                 FAILURE_CACHE[source]=TODAY.isoformat()
+                if sid=='mep':print('MEP invalid image:',name,mime,len(data),source,flush=True)
                 continue
             ext={'image/webp':'webp','image/png':'png','image/jpeg':'jpg'}[mime]
             folder.mkdir(parents=True,exist_ok=True)
             (folder/(name+'.'+ext)).write_bytes(data)
             FAILURE_CACHE.pop(source,None)
+            if sid=='mep':print('MEP saved:',name,source,flush=True)
             return './assets/sets/'+sid+'/'+name+'.'+ext
         except urllib.error.HTTPError as error:
+            if sid=='mep':print('MEP HTTP:',name,error.code,source,flush=True)
             # Cache only permanent missing assets, not outages or throttling.
             if error.code in (404,410):
                 FAILURE_CACHE[source]=TODAY.isoformat()
             continue
-        except (urllib.error.URLError,OSError,TimeoutError):
+        except (urllib.error.URLError,OSError,TimeoutError) as error:
+            if sid=='mep':print('MEP network:',name,type(error).__name__,source,flush=True)
             continue
     return ''
 # Explicit cross-database IDs only: never infer an image from a card name.
@@ -242,7 +250,9 @@ def main():
         if not logo.startswith('./assets/'):
             new=archive(logo,sid,'logo','logo') or archive(supplemental(sid,kind='logo'),sid,'logo','logo')
             if new:info['images']['logo']=new;saved+=1
+        pilot=int(os.getenv('IMAGE_PILOT_CARDS','0'))
         for card in cards:
+            if pilot and sid=='mep' and (not str(card.get('number','')).isdigit() or int(card['number'])>pilot):continue
             current=card.get('images',{}).get('small','')
             if current.startswith('./assets/'):continue
             number=re.sub(r'[^A-Za-z0-9_-]','_',str(card.get('number') or card['id']))
