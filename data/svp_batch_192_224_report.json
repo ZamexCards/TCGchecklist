@@ -1,0 +1,242 @@
+[
+  {
+    "number": "192",
+    "name": "Fuecoco",
+    "page": "https://pkmncards.com/card/fuecoco-scarlet-violet-promos-svp-192/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_192_std.jpg",
+    "output": "assets/sets/svp/192.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "204",
+    "name": "Cynthia's Garchomp ex",
+    "page": "https://pkmncards.com/card/cynthia-s-garchomp-ex-scarlet-violet-promos-svp-204/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_204_std.jpg",
+    "output": "assets/sets/svp/204.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "205",
+    "name": "Team Rocket's Mewtwo ex",
+    "page": "https://pkmncards.com/card/team-rocket-s-mewtwo-ex-scarlet-violet-promos-svp-205/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_205_std.jpg",
+    "output": "assets/sets/svp/205.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "208",
+    "name": "Victini",
+    "page": "https://pkmncards.com/card/victini-scarlet-violet-promos-svp-208/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_208_std.jpg",
+    "output": "assets/sets/svp/208.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "209",
+    "name": "Thundurus",
+    "page": "https://pkmncards.com/card/thundurus-scarlet-violet-promos-svp-209/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/SVP_209_R_EN.png",
+    "output": "assets/sets/svp/209.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "210",
+    "name": "Tornadus",
+    "page": "https://pkmncards.com/card/tornadus-scarlet-violet-promos-svp-210/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/SVP_210_R_EN.png",
+    "output": "assets/sets/svp/210.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "211",
+    "name": "Gothitelle",
+    "page": "https://pkmncards.com/card/gothitelle-scarlet-violet-promos-svp-211/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/SVP_211_R_EN.png",
+    "output": "assets/sets/svp/211.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "212",
+    "name": "Reuniclus",
+    "page": "https://pkmncards.com/card/reuniclus-scarlet-violet-promos-svp-212/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/SVP_212_R_EN.png",
+    "output": "assets/sets/svp/212.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "213",
+    "name": "Feraligatr",
+    "page": "https://pkmncards.com/card/feraligatr-scarlet-violet-promos-svp-213/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_213_std.jpg",
+    "output": "assets/sets/svp/213.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "214",
+    "name": "Pikachu",
+    "page": "https://pkmncards.com/card/pikachu-scarlet-violet-promos-svp-214/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_214_std.jpg",
+    "output": "assets/sets/svp/214.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "215",
+    "name": "Toxtricity ex",
+    "page": "https://pkmncards.com/card/toxtricity-ex-scarlet-violet-promos-svp-215/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_215_std.jpg",
+    "output": "assets/sets/svp/215.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "216",
+    "name": "Team Rocket's Mewtwo ex",
+    "page": "https://pkmncards.com/card/team-rocket-s-mewtwo-ex-scarlet-violet-promos-svp-216/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_216_std.jpg",
+    "output": "assets/sets/svp/216.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "217",
+    "name": "Team Rocket's Nidoking ex",
+    "page": "https://pkmncards.com/card/team-rocket-s-nidoking-ex-scarlet-violet-promos-svp-217/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_217_std.jpg",
+    "output": "assets/sets/svp/217.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "218",
+    "name": "Team Rocket's Persian ex",
+    "page": "https://pkmncards.com/card/team-rocket-s-persian-ex-scarlet-violet-promos-svp-218/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_218_std.jpg",
+    "output": "assets/sets/svp/218.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "219",
+    "name": "Black Belt's Training",
+    "page": "https://pkmncards.com/card/black-belt-s-training-scarlet-violet-promos-svp-219/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_219_std.jpg",
+    "output": "assets/sets/svp/219.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "220",
+    "name": "Black Belt's Training",
+    "page": "https://pkmncards.com/card/black-belt-s-training-scarlet-violet-promos-svp-220/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_220_std.jpg",
+    "output": "assets/sets/svp/220.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "221",
+    "name": "Professor's Research",
+    "page": "https://pkmncards.com/card/professor-s-research-scarlet-violet-promos-svp-221/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_221_std.jpg",
+    "output": "assets/sets/svp/221.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "222",
+    "name": "Professor's Research",
+    "page": "https://pkmncards.com/card/professor-s-research-scarlet-violet-promos-svp-222/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_222_std.jpg",
+    "output": "assets/sets/svp/222.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "223",
+    "name": "Professor's Research",
+    "page": "https://pkmncards.com/card/professor-s-research-scarlet-violet-promos-svp-223/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_223_std.jpg",
+    "output": "assets/sets/svp/223.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "224",
+    "name": "Paradise Resort",
+    "page": "https://pkmncards.com/card/paradise-resort-scarlet-violet-promos-svp-224/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_224_std.jpg",
+    "output": "assets/sets/svp/224.png",
+    "size": [
+      764,
+      1052
+    ]
+  }
+]

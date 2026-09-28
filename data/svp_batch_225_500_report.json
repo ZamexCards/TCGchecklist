@@ -1,0 +1,30 @@
+[
+  {
+    "number": "225",
+    "name": "Pikachu",
+    "page": "https://pkmncards.com/card/pikachu-scarlet-violet-promos-svp-225/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/svbsp_en_225_std.jpg",
+    "output": "assets/sets/svp/225.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "500",
+    "name": "Terapagos & Friends",
+    "source": "https://i.ebayimg.com/images/g/jEoAAOSwzIxnWjK~/s-l1200.jpg",
+    "source_type": "photograph",
+    "source_size": [
+      900,
+      1200
+    ],
+    "output": "assets/sets/svp/500.png",
+    "size": [
+      764,
+      1052
+    ],
+    "status": "saved"
+  }
+]

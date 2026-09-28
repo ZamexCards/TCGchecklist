@@ -9,7 +9,7 @@ import re
 import urllib.request
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data/sets/svp.json'
@@ -37,18 +37,21 @@ def process(card):
             rf'https://pkmncards\.com/wp-content/uploads/svbsp_en_{number}_std(?:-\d+)?\.(?:jpg|png)',
             body, re.I,
         )
+        sources += re.findall(
+            rf'https://pkmncards\.com/wp-content/uploads/SVP_{number}_R_EN\.png', body, re.I,
+        )
         sources = list(dict.fromkeys(sources))
         sources.sort(key=lambda url: (not url.lower().endswith('.jpg'), '-1.' in url))
         if not sources:
             raise ValueError('No matching numbered source image')
         source = sources[0]
         with Image.open(io.BytesIO(fetch(source))) as original:
-            if original.size != (733, 1024):
+            if original.size not in ((733, 1024), (734, 1024)):
                 raise ValueError(f'Unexpected image size: {original.size}')
             image = original.convert('RGBA').resize((728, 1016), Image.Resampling.LANCZOS)
         mask = Image.new('L', image.size, 0)
         ImageDraw.Draw(mask).rounded_rectangle((0, 0, 727, 1015), radius=25, fill=255)
-        image.putalpha(mask)
+        image.putalpha(ImageChops.multiply(image.getchannel('A'), mask))
         canvas = Image.new('RGBA', (764, 1052), (0, 0, 0, 0))
         canvas.alpha_composite(image, (18, 18))
         target = ROOT / f'assets/sets/svp/{number}.png'
