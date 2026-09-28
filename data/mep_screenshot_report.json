@@ -1,7 +1,7 @@
 {
   "card": "mep-001",
   "page": "https://pkmncards.com/card/meganium-mega-evolution-promos-mep-001/",
-  "status": "saved",
+  "status": "card_touches_canvas_edge_manual_review",
   "title": "Meganium · Mega Evolution Promos (MEP) #001 ‹ PkmnCards",
   "image_candidates": [
     {
@@ -29,10 +29,5 @@
     0,
     728,
     1016
-  ],
-  "cropped_dimensions": [
-    728,
-    1016
-  ],
-  "local_path": "./assets/sets/mep/001.png"
+  ]
 }
