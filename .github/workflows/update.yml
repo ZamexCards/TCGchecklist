@@ -50,6 +50,7 @@ jobs:
         env:
           IMAGE_REPAIR_LIMIT: '1'
           IMAGE_FOCUS_SET: 'mep'
+          IMAGE_PILOT_CARDS: '5'
         run: python scripts/archive_images.py
 
       # Broad per-card probing is paused while we diagnose MEP independently.
