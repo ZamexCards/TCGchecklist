@@ -1,0 +1,92 @@
+[
+  {
+    "number": "1",
+    "name": "Sprigatito",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_001_std.png",
+    "path": "assets/sets/2023sv/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Fuecoco",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_002_std.png",
+    "path": "assets/sets/2023sv/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Quaxly",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_003_std.png",
+    "path": "assets/sets/2023sv/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Cetoddle",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_004_std.png",
+    "path": "assets/sets/2023sv/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Cetitan",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_005_std.png",
+    "path": "assets/sets/2023sv/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Pikachu",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_006_std.png",
+    "path": "assets/sets/2023sv/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Pawmi",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_007_std.png",
+    "path": "assets/sets/2023sv/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Kilowattrel",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_008_std.png",
+    "path": "assets/sets/2023sv/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Flittle",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_009_std.png",
+    "path": "assets/sets/2023sv/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Sandaconda",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_010_std.png",
+    "path": "assets/sets/2023sv/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Klawf",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_011_std.png",
+    "path": "assets/sets/2023sv/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Blissey",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_012_std.png",
+    "path": "assets/sets/2023sv/012.png"
+  },
+  {
+    "number": "13",
+    "name": "Tandemaus",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_013_std.png",
+    "path": "assets/sets/2023sv/013.png"
+  },
+  {
+    "number": "14",
+    "name": "Cyclizar",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_014_std.png",
+    "path": "assets/sets/2023sv/014.png"
+  },
+  {
+    "number": "15",
+    "name": "Kirlia",
+    "source": "https://pkmncards.com/wp-content/uploads/m23_en_015_std.png",
+    "path": "assets/sets/2023sv/015.png"
+  }
+]
