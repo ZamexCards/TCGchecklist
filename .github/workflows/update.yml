@@ -10,6 +10,7 @@ on:
       - 'scripts/pikawiz_repair.py'
       - 'scripts/archive_images.py'
       - 'scripts/mep_one_card.py'
+      - 'scripts/mep_screenshot_trial.py'
       - 'data/image_sources.json'
       - 'scripts/diagnose_images.py'
   workflow_dispatch:
@@ -47,8 +48,13 @@ jobs:
       - name: Refresh set and card snapshots
         run: python scripts/update_data.py
 
-      - name: Test alternative source for MEP 001
-        run: python scripts/mep_one_card.py
+      - name: Install browser capture dependencies
+        run: |
+          python -m pip install playwright pillow
+          python -m playwright install --with-deps chromium
+
+      - name: Test visible card screenshot for MEP 001
+        run: python scripts/mep_screenshot_trial.py
 
       - name: Bulk archive card images and set logos from verified sources
         env:
