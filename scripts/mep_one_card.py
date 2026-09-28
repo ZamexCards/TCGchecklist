@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Isolated MEP 001 image trial using the independently identified PkmnCards page."""
+"""Isolated MEP 001 image trial using the independently identified PkmnCards page.\nA source failure is recorded separately from successful local image archival.\n"""
 import json,re,html,urllib.request,urllib.error
 from pathlib import Path
 from archive_images import ROOT,archive
