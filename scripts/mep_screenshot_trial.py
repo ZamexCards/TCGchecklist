@@ -44,45 +44,31 @@ async def main():
                         if im.width<300 or im.height<400 or not .62<im.width/im.height<.82:
                             result['status']='capture_dimensions_invalid'
                         else:
-                            rgb=im.convert('RGB')
-                            w,h=rgb.size
-                            px=rgb.load()
-                            # Use occupancy of each scanline, rather than a single noisy JPEG pixel.
-                            def ink(x,y):
-                                r,g,b=px[x,y]
-                                return min(r,g,b)<218 or max(r,g,b)-min(r,g,b)>32
-                            cols=[sum(ink(x,y) for y in range(h//5,4*h//5,3)) for x in range(w)]
-                            rows=[sum(ink(x,y) for x in range(w//5,4*w//5,3)) for y in range(h)]
-                            col_min=max(5,int(.18*(3*h//5/3)))
-                            row_min=max(5,int(.18*(3*w//5/3)))
-                            xs=[x for x,v in enumerate(cols) if v>=col_min]
-                            ys=[y for y,v in enumerate(rows) if v>=row_min]
-                            if not xs or not ys:
-                                result['status']='card_contour_not_detected'
+                            # The source already has the complete physical card at its image edges.
+                            # Do not crop its content: add transparent padding and round only
+                            # the four exterior corners, preserving the full printed border.
+                            rgba=im.convert('RGBA')
+                            w,h=rgba.size
+                            radius=max(8,round(min(w,h)*.035))
+                            alpha=Image.new('L',(w,h),0)
+                            draw=ImageDraw.Draw(alpha)
+                            draw.rounded_rectangle((0,0,w-1,h-1),radius=radius,fill=255)
+                            rgba.putalpha(alpha)
+                            pad=max(8,round(min(w,h)*.025))
+                            canvas=Image.new('RGBA',(w+2*pad,h+2*pad),(0,0,0,0))
+                            canvas.alpha_composite(rgba,(pad,pad))
+                            result['detected_card_bounds']=[pad,pad,pad+w,pad+h]
+                            result['cropped_dimensions']=[w,h]
+                            result['output_dimensions']=list(canvas.size)
+                            result['transparent_padding']=pad
+                            result['corner_radius']=radius
+                            result['transparent_corner_pixels']=sum(canvas.getpixel(pt)[3]==0 for pt in ((0,0),(canvas.width-1,0),(0,canvas.height-1),(canvas.width-1,canvas.height-1)))
+                            if result['transparent_corner_pixels']!=4:
+                                result['status']='transparency_validation_failed'
                             else:
-                                # Two pixels of outward tolerance protect the metallic card edge.
-                                left=max(0,min(xs)-2);top=max(0,min(ys)-2)
-                                right=min(w,max(xs)+3);bottom=min(h,max(ys)+3)
-                                result['detected_card_bounds']=[left,top,right,bottom]
-                                if left<3 or top<3 or right>w-3 or bottom>h-3:
-                                    result['status']='card_touches_canvas_edge_manual_review'
-                                elif not .62<(right-left)/(bottom-top)<.82:
-                                    result['status']='card_ratio_invalid'
-                                else:
-                                    cropped=rgb.crop((left,top,right,bottom)).convert('RGBA')
-                                    # Only connected background at the rounded corners becomes transparent.
-                                    # This conservative corner mask never modifies the printed card interior.
-                                    cw,ch=cropped.size
-                                    radius=max(8,round(min(cw,ch)*.035))
-                                    alpha=Image.new('L',(cw,ch),0)
-                                    draw=ImageDraw.Draw(alpha)
-                                    draw.rounded_rectangle((0,0,cw-1,ch-1),radius=radius,fill=255)
-                                    cropped.putalpha(alpha)
-                                    result['cropped_dimensions']=[cw,ch]
-                                    result['corner_radius']=radius
-                                    cropped.save(out,format='PNG',optimize=True)
-                                    result['status']='saved_transparent_png'
-                                    result['local_path']='./assets/sets/mep/001.png'
+                                canvas.save(out,format='PNG',optimize=True)
+                                result['status']='saved_transparent_png'
+                                result['local_path']='./assets/sets/mep/001.png'
                     temp.unlink(missing_ok=True)
             await browser.close()
     except Exception as exc:
