@@ -1,0 +1,66 @@
+[
+  {
+    "number": "001",
+    "name": "Grass Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/1",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_001_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/001.png"
+  },
+  {
+    "number": "002",
+    "name": "Fire Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/2",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_002_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/002.png"
+  },
+  {
+    "number": "003",
+    "name": "Water Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/3",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_003_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/003.png"
+  },
+  {
+    "number": "004",
+    "name": "Lightning Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/4",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_004_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/004.png"
+  },
+  {
+    "number": "005",
+    "name": "Psychic Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/5",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_005_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/005.png"
+  },
+  {
+    "number": "006",
+    "name": "Fighting Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/6",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_006_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/006.png"
+  },
+  {
+    "number": "007",
+    "name": "Darkness Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/7",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_007_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/007.png"
+  },
+  {
+    "number": "008",
+    "name": "Metal Energy",
+    "page": "https://limitlesstcg.com/cards/en/MEE/8",
+    "source": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_008_R_EN.png",
+    "status": "saved",
+    "output": "assets/sets/mee/008.png"
+  }
+]
