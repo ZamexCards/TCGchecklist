@@ -6617,8 +6617,8 @@
   "tk-xy-sy/tk-xy-sy-14": {
     "card_name": "Granbull",
     "card_number": "14",
-    "checked": "2026-09-27",
-    "status": "identity_temporary_error",
+    "checked": "2026-09-28",
+    "status": "identity_not_found",
     "strategy": "identity_v4"
   },
   "tk-xy-sy/tk-xy-sy-15": {
