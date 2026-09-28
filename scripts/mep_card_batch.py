@@ -30,7 +30,8 @@ def process(card):
         body = fetch(page).decode('utf-8', 'replace')
         title_match = re.search(r'<title[^>]*>(.*?)</title>', body, re.I | re.S)
         title = html.unescape(title_match.group(1)) if title_match else ''
-        if not all(token in title.lower() for token in (name.lower(), 'mep', f'#{number}')):
+        normalized_title = title.lower().replace('’', "'")
+        if not all(token in normalized_title for token in (name.lower(), 'mep', f'#{number}')):
             raise ValueError(f'Card identity mismatch: {title}')
         sources = re.findall(
             rf'https://pkmncards\.com/wp-content/uploads/mebsp_en_{number}_std(?:-\d+)?\.(?:jpg|png)',
