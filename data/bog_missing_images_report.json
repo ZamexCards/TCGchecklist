@@ -1,0 +1,56 @@
+[
+  {
+    "number": "1",
+    "name": "Electabuzz",
+    "page": "https://pkmncards.com/card/electabuzz-best-of-game-1/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/electabuzz-best-of-game-1.jpg",
+    "output": "assets/sets/bog/1.png",
+    "printed_variant": "Standard"
+  },
+  {
+    "number": "3",
+    "name": "Professor Elm",
+    "page": "https://pkmncards.com/card/professor-elm-best-of-game-3/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/professor-elm-best-of-game-3.jpg",
+    "output": "assets/sets/bog/3.png",
+    "printed_variant": "Standard"
+  },
+  {
+    "number": "4",
+    "name": "Rocket’s Scizor",
+    "page": "https://pkmncards.com/card/rockets-scizor-best-of-game-4/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/rockets-scizor-best-of-game-4.jpg",
+    "output": "assets/sets/bog/4.png",
+    "printed_variant": "Standard"
+  },
+  {
+    "number": "5",
+    "name": "Rocket’s Sneasel",
+    "page": "https://pkmncards.com/card/rockets-sneasel-best-of-game-5/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/rockets-sneasel-best-of-game-5.jpg",
+    "output": "assets/sets/bog/5.png",
+    "printed_variant": "Standard"
+  },
+  {
+    "number": "8",
+    "name": "Rocket’s Mewtwo",
+    "page": "https://pkmncards.com/card/rockets-mewtwo-best-of-game-8/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/rockets-mewtwo-best-of-game-winner-8.jpg",
+    "output": "assets/sets/bog/8.png",
+    "printed_variant": "Winner"
+  },
+  {
+    "number": "9",
+    "name": "Rocket’s Hitmonchan",
+    "page": "https://pkmncards.com/card/rockets-hitmonchan-best-of-game-9/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/rockets-hitmonchan-best-of-game-winner-9.jpg",
+    "output": "assets/sets/bog/9.png",
+    "printed_variant": "Winner"
+  }
+]
