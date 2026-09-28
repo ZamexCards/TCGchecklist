@@ -9,6 +9,7 @@ on:
       - 'scripts/targeted_logo_repair.py'
       - 'scripts/pikawiz_repair.py'
       - 'scripts/archive_images.py'
+      - 'scripts/mep_one_card.py'
       - 'data/image_sources.json'
       - 'scripts/diagnose_images.py'
   workflow_dispatch:
@@ -45,6 +46,9 @@ jobs:
 
       - name: Refresh set and card snapshots
         run: python scripts/update_data.py
+
+      - name: Test alternative source for MEP 001
+        run: python scripts/mep_one_card.py
 
       - name: Bulk archive card images and set logos from verified sources
         env:
