@@ -1,0 +1,146 @@
+[
+  {
+    "number": "077",
+    "name": "Goodra",
+    "page": "https://pkmncards.com/card/goodra-mega-evolution-promos-mep-077/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_077_std.jpg",
+    "output": "assets/sets/mep/077.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "078",
+    "name": "Toxel",
+    "page": "https://pkmncards.com/card/toxel-mega-evolution-promos-mep-078/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_078_std.jpg",
+    "output": "assets/sets/mep/078.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "079",
+    "name": "Charmeleon",
+    "page": "https://pkmncards.com/card/charmeleon-mega-evolution-promos-mep-079/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_079_std.jpg",
+    "output": "assets/sets/mep/079.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "080",
+    "name": "Fennekin",
+    "page": "https://pkmncards.com/card/fennekin-mega-evolution-promos-mep-080/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_080_std.jpg",
+    "output": "assets/sets/mep/080.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "081",
+    "name": "Mega Greninja ex",
+    "page": "https://pkmncards.com/card/mega-greninja-ex-mega-evolution-promos-mep-081/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_081_std.jpg",
+    "output": "assets/sets/mep/081.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "082",
+    "name": "Miraidon",
+    "page": "https://pkmncards.com/card/miraidon-mega-evolution-promos-mep-082/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_082_std.jpg",
+    "output": "assets/sets/mep/082.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "083",
+    "name": "Slowbro",
+    "page": "https://pkmncards.com/card/slowbro-mega-evolution-promos-mep-083/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_083_std.jpg",
+    "output": "assets/sets/mep/083.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "084",
+    "name": "Dhelmise",
+    "page": "https://pkmncards.com/card/dhelmise-mega-evolution-promos-mep-084/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_084_std.jpg",
+    "output": "assets/sets/mep/084.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "085",
+    "name": "Bastiodon",
+    "page": "https://pkmncards.com/card/bastiodon-mega-evolution-promos-mep-085/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_085_std.jpg",
+    "output": "assets/sets/mep/085.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "086",
+    "name": "Slowpoke",
+    "page": "https://pkmncards.com/card/slowpoke-mega-evolution-promos-mep-086/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_086_std.jpg",
+    "output": "assets/sets/mep/086.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "087",
+    "name": "Binacle",
+    "page": "https://pkmncards.com/card/binacle-mega-evolution-promos-mep-087/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_087_std.jpg",
+    "output": "assets/sets/mep/087.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "088",
+    "name": "Zarude",
+    "page": "https://pkmncards.com/card/zarude-mega-evolution-promos-mep-088/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_088_std.jpg",
+    "output": "assets/sets/mep/088.png",
+    "size": [
+      764,
+      1052
+    ]
+  }
+]

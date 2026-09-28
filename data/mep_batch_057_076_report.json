@@ -1,0 +1,207 @@
+[
+  {
+    "number": "057",
+    "name": "Mudkip",
+    "page": "https://pkmncards.com/card/mudkip-mega-evolution-promos-mep-057/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "058",
+    "name": "Chespin",
+    "page": "https://pkmncards.com/card/chespin-mega-evolution-promos-mep-058/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "059",
+    "name": "Fennekin",
+    "page": "https://pkmncards.com/card/fennekin-mega-evolution-promos-mep-059/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "060",
+    "name": "Froakie",
+    "page": "https://pkmncards.com/card/froakie-mega-evolution-promos-mep-060/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "061",
+    "name": "Sprigatito",
+    "page": "https://pkmncards.com/card/sprigatito-mega-evolution-promos-mep-061/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "062",
+    "name": "Fuecoco",
+    "page": "https://pkmncards.com/card/fuecoco-mega-evolution-promos-mep-062/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "063",
+    "name": "Quaxly",
+    "page": "https://pkmncards.com/card/quaxly-mega-evolution-promos-mep-063/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "064",
+    "name": "Serperior",
+    "page": "https://pkmncards.com/card/serperior-mega-evolution-promos-mep-064/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_064_std.jpg",
+    "output": "assets/sets/mep/064.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "065",
+    "name": "Barbaracle",
+    "page": "https://pkmncards.com/card/barbaracle-mega-evolution-promos-mep-065/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_065_std.jpg",
+    "output": "assets/sets/mep/065.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "066",
+    "name": "Tyrantrum",
+    "page": "https://pkmncards.com/card/tyrantrum-mega-evolution-promos-mep-066/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_066_std.jpg",
+    "output": "assets/sets/mep/066.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "067",
+    "name": "Doublade",
+    "page": "https://pkmncards.com/card/doublade-mega-evolution-promos-mep-067/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_067_std.jpg",
+    "output": "assets/sets/mep/067.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "068",
+    "name": "Makuhita",
+    "page": "https://pkmncards.com/card/makuhita-mega-evolution-promos-mep-068/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_068_std.jpg",
+    "output": "assets/sets/mep/068.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "069",
+    "name": "Chikorita",
+    "page": "https://pkmncards.com/card/chikorita-mega-evolution-promos-mep-069/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_069_std.jpg",
+    "output": "assets/sets/mep/069.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "070",
+    "name": "Tyrunt",
+    "page": "https://pkmncards.com/card/tyrunt-mega-evolution-promos-mep-070/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_070_std.jpg",
+    "output": "assets/sets/mep/070.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "071",
+    "name": "Mega Zygarde ex",
+    "page": "https://pkmncards.com/card/mega-zygarde-ex-mega-evolution-promos-mep-071/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_071_std.jpg",
+    "output": "assets/sets/mep/071.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "072",
+    "name": "Mega Clefable ex",
+    "page": "https://pkmncards.com/card/mega-clefable-ex-mega-evolution-promos-mep-072/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_072_std.jpg",
+    "output": "assets/sets/mep/072.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "073",
+    "name": "Mega Gengar ex",
+    "page": "https://pkmncards.com/card/mega-gengar-ex-mega-evolution-promos-mep-073/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_073_std.jpg",
+    "output": "assets/sets/mep/073.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "074",
+    "name": "Delphox",
+    "page": "https://pkmncards.com/card/delphox-mega-evolution-promos-mep-074/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_074_std.jpg",
+    "output": "assets/sets/mep/074.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "075",
+    "name": "Ampharos",
+    "page": "https://pkmncards.com/card/ampharos-mega-evolution-promos-mep-075/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_075_std.jpg",
+    "output": "assets/sets/mep/075.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "076",
+    "name": "Crobat",
+    "page": "https://pkmncards.com/card/crobat-mega-evolution-promos-mep-076/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_076_std.jpg",
+    "output": "assets/sets/mep/076.png",
+    "size": [
+      764,
+      1052
+    ]
+  }
+]

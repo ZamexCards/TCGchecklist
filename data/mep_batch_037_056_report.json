@@ -1,0 +1,232 @@
+[
+  {
+    "number": "037",
+    "name": "Bulbasaur",
+    "page": "https://pkmncards.com/card/bulbasaur-mega-evolution-promos-mep-037/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_037_std.jpg",
+    "output": "assets/sets/mep/037.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "038",
+    "name": "Charmander",
+    "page": "https://pkmncards.com/card/charmander-mega-evolution-promos-mep-038/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_038_std.jpg",
+    "output": "assets/sets/mep/038.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "039",
+    "name": "Squirtle",
+    "page": "https://pkmncards.com/card/squirtle-mega-evolution-promos-mep-039/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_039_std.jpg",
+    "output": "assets/sets/mep/039.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "040",
+    "name": "Turtwig",
+    "page": "https://pkmncards.com/card/turtwig-mega-evolution-promos-mep-040/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_040_std.jpg",
+    "output": "assets/sets/mep/040.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "041",
+    "name": "Chimchar",
+    "page": "https://pkmncards.com/card/chimchar-mega-evolution-promos-mep-041/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_041_std.jpg",
+    "output": "assets/sets/mep/041.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "042",
+    "name": "Piplup",
+    "page": "https://pkmncards.com/card/piplup-mega-evolution-promos-mep-042/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_042_std.jpg",
+    "output": "assets/sets/mep/042.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "043",
+    "name": "Rowlet",
+    "page": "https://pkmncards.com/card/rowlet-mega-evolution-promos-mep-043/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.jpg",
+    "output": "assets/sets/mep/043.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "044",
+    "name": "Litten",
+    "page": "https://pkmncards.com/card/litten-mega-evolution-promos-mep-044/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_044_std.jpg",
+    "output": "assets/sets/mep/044.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "045",
+    "name": "Popplio",
+    "page": "https://pkmncards.com/card/popplio-mega-evolution-promos-mep-045/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_045_std.jpg",
+    "output": "assets/sets/mep/045.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "046",
+    "name": "Chikorita",
+    "page": "https://pkmncards.com/card/chikorita-mega-evolution-promos-mep-046/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_046_std.jpg",
+    "output": "assets/sets/mep/046.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "047",
+    "name": "Cyndaquil",
+    "page": "https://pkmncards.com/card/cyndaquil-mega-evolution-promos-mep-047/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_047_std.jpg",
+    "output": "assets/sets/mep/047.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "048",
+    "name": "Totodile",
+    "page": "https://pkmncards.com/card/totodile-mega-evolution-promos-mep-048/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_048_std.jpg",
+    "output": "assets/sets/mep/048.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "049",
+    "name": "Snivy",
+    "page": "https://pkmncards.com/card/snivy-mega-evolution-promos-mep-049/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_049_std.jpg",
+    "output": "assets/sets/mep/049.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "050",
+    "name": "Tepig",
+    "page": "https://pkmncards.com/card/tepig-mega-evolution-promos-mep-050/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_050_std.jpg",
+    "output": "assets/sets/mep/050.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "051",
+    "name": "Oshawott",
+    "page": "https://pkmncards.com/card/oshawott-mega-evolution-promos-mep-051/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_051_std.jpg",
+    "output": "assets/sets/mep/051.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "052",
+    "name": "Grookey",
+    "page": "https://pkmncards.com/card/grookey-mega-evolution-promos-mep-052/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_052_std.jpg",
+    "output": "assets/sets/mep/052.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "053",
+    "name": "Scorbunny",
+    "page": "https://pkmncards.com/card/scorbunny-mega-evolution-promos-mep-053/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_053_std.jpg",
+    "output": "assets/sets/mep/053.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "054",
+    "name": "Sobble",
+    "page": "https://pkmncards.com/card/sobble-mega-evolution-promos-mep-054/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_054_std.jpg",
+    "output": "assets/sets/mep/054.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "055",
+    "name": "Treecko",
+    "page": "https://pkmncards.com/card/treecko-mega-evolution-promos-mep-055/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "number": "056",
+    "name": "Torchic",
+    "page": "https://pkmncards.com/card/torchic-mega-evolution-promos-mep-056/",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  }
+]
