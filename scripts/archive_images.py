@@ -170,6 +170,28 @@ def bulbagarden_mep_source(sid,card,known):
         except (urllib.error.URLError,OSError,TimeoutError,UnicodeError):continue
     return ''
 
+# Independent Trainer Kit scans: resolve exact PkmnCards card page and verify its title.
+TRAINER_KIT_CODES={'tk-bw-e':'tk5e','tk-bw-z':'tk5z'}
+def trainer_kit_scan(sid,card):
+    code=TRAINER_KIT_CODES.get(sid)
+    if not code:return ''
+    number=str(card.get('number','')).strip()
+    if not number.isdigit():return ''
+    name=str(card.get('name','')).strip()
+    slug=re.sub(r'[^a-z0-9]+','-',name.lower()).strip('-')
+    label='black-white-trainer-kit-'+('excadrill' if sid=='tk-bw-e' else 'zoroark')
+    url='https://pkmncards.com/card/'+slug+'-'+label+'-'+code+'-'+str(int(number))+'/'
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; ZamexCardsChecklist/1.0)','Accept':'text/html'}),timeout=12) as response:
+            html=response.read(250000).decode('utf-8','replace')
+        title=re.search(r'<title[^>]*>(.*?)</title>',html,re.I|re.S)
+        if not title or code.upper() not in title.group(1).upper() or not re.search(r'#'+str(int(number))+r'\\b',title.group(1)):return ''
+        if re.sub(r'[^a-z0-9]','',name.lower()) not in re.sub(r'[^a-z0-9]','',title.group(1).lower()):return ''
+        image=re.search(r'<meta[^>]+property=["\\']og:image["\\'][^>]+content=["\\']([^"\\']+)',html,re.I)
+        if not image:image=re.search(r'<meta[^>]+content=["\\']([^"\\']+)["\\'][^>]+property=["\\']og:image["\\']',html,re.I)
+        return image.group(1).replace('&amp;','&') if image and image.group(1).startswith('https://') else ''
+    except (urllib.error.URLError,OSError,TimeoutError):return ''
+
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     by_id={s['id']:s for s in manifest['sets']}
@@ -193,7 +215,7 @@ def main():
         logo=payload['set'].get('images',{}).get('logo','')
         cards=payload.get('cards',[])
         logo_action=not logo.startswith('./assets/') and bool(logo or supplemental(sid,kind='logo'))
-        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket) or bulbagarden_mep_source(sid,c,mep_scans)) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
+        card_actions=sum(bool((c.get('images',{}).get('small','') or supplemental(sid,c.get('number')) or pocket_source(sid,c,pocket) or bulbagarden_mep_source(sid,c,mep_scans) or sid in TRAINER_KIT_CODES) and not c.get('images',{}).get('small','').startswith('./assets/')) for c in cards)
         if logo_action or card_actions:
             paths.append((p,logo_action,card_actions))
     paths=[p for p,_,_ in sorted(paths,key=lambda row:(-row[2],-int(row[1]),row[0].stem))]
@@ -226,7 +248,7 @@ def main():
             pocket_padded=(POCKET_IMAGE.format({'p-a':'PROMO-A','p-b':'PROMO-B'}.get(sid.lower(),sid),str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
             pocket_set={'p-a':'P-A','p-b':'P-B'}.get(sid.lower(),sid)
             alternate=(POCKET_ALTERNATE.format(pocket_set,str(int(card['number'])).zfill(3)) if pocket_url and str(card.get('number','')).isdigit() else '')
-            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card') or archive(alternate,sid,number,'card') or archive(bulbagarden_mep_source(sid,card,mep_scans),sid,number,'card')
+            new=archive(current,sid,number,'card') or archive(supplemental(sid,card.get('number')),sid,number,'card') or archive(pocket_url,sid,number,'card') or archive(pocket_padded,sid,number,'card') or archive(alternate,sid,number,'card') or archive(bulbagarden_mep_source(sid,card,mep_scans),sid,number,'card') or archive(trainer_kit_scan(sid,card),sid,number,'card')
             if new:card['images']['small']=new;saved+=1
         if json.dumps(payload,ensure_ascii=False,sort_keys=True)!=original:
             path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
