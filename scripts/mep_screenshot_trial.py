@@ -28,7 +28,7 @@ async def main():
                     props=await im.evaluate('(e)=>({alt:e.alt,src:e.currentSrc||e.src,w:e.naturalWidth,h:e.naturalHeight,ow:e.offsetWidth,oh:e.offsetHeight})')
                     if props['w']<300 or props['h']<400 or props['ow']<150 or props['oh']<200:continue
                     if not (.62 < props['w']/props['h'] < .82):continue
-                    if not re.search('meganium|mep|promo',props['alt']+' '+props['src'],re.I):continue
+                    if not re.search('meganium|mep|promo|mebsp_en_001',props['alt']+' '+props['src'],re.I):continue
                     selected=im
                     result['selected']=props
                     break
