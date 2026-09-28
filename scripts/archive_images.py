@@ -210,7 +210,9 @@ def main():
     # Only rank sets with a source URL or an explicitly mapped secondary source.
     # Previously, missing-logo-only sets without any source consumed the repair budget.
     paths=[]
+    focus=os.getenv('IMAGE_FOCUS_SET','').strip().lower()
     for p in SETS.glob('*.json'):
+        if focus and p.stem.lower()!=focus:continue
         payload=json.loads(p.read_text(encoding='utf-8'))
         sid=p.stem
         logo=payload['set'].get('images',{}).get('logo','')
