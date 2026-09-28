@@ -1,0 +1,26 @@
+[
+  {
+    "number": "SWSH299",
+    "name": "Jirachi V",
+    "page": "https://pkmncards.com/card/jirachi-v-sword-shield-promos-swsh299/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/swshbsp_en_299_std.jpg",
+    "output": "assets/sets/swshp/SWSH299.png"
+  },
+  {
+    "number": "SWSH300",
+    "name": "Unown V",
+    "page": "https://pkmncards.com/card/unown-v-sword-shield-promos-swsh300/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-Promo_SWSH-SWSH300-unown_v.jpg",
+    "output": "assets/sets/swshp/SWSH300.png"
+  },
+  {
+    "number": "SWSH301",
+    "name": "Lugia V",
+    "page": "https://pkmncards.com/card/lugia-v-sword-shield-promos-swsh301/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-Promo_SWSH-SWSH301-lugia_v.jpg",
+    "output": "assets/sets/swshp/SWSH301.png"
+  }
+]
