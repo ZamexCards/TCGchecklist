@@ -1,0 +1,110 @@
+[
+  {
+    "number": "055",
+    "name": "Treecko",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-055-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/055.png"
+  },
+  {
+    "number": "056",
+    "name": "Torchic",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-056-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/056.png"
+  },
+  {
+    "number": "057",
+    "name": "Mudkip",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-057-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/057.png"
+  },
+  {
+    "number": "058",
+    "name": "Chespin",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-058-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/058.png"
+  },
+  {
+    "number": "059",
+    "name": "Fennekin",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-059-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/059.png"
+  },
+  {
+    "number": "060",
+    "name": "Froakie",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-060-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/060.png"
+  },
+  {
+    "number": "061",
+    "name": "Sprigatito",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-061-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/061.png"
+  },
+  {
+    "number": "062",
+    "name": "Fuecoco",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-062-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/062.png"
+  },
+  {
+    "number": "063",
+    "name": "Quaxly",
+    "page": "https://pokedexia.com/en/pokemon-cards/sets/mega-evolution-mep-black-star-promos",
+    "status": "saved",
+    "source": "https://cdn.pokedexia.com/cards/me/MEP/cards/en/mep-063-high.webp",
+    "source_size": [
+      420,
+      585
+    ],
+    "output": "assets/sets/mep/063.png"
+  }
+]
