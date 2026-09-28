@@ -1,0 +1,50 @@
+[
+  {
+    "number": "24a",
+    "name": "M Manectric-EX",
+    "page": "https://pkmncards.com/card/m-manectric-ex-phantom-forces-phf-24a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-XY4-24a-m_manectric_ex-yaa.jpg",
+    "output": "assets/sets/xya/24a.png"
+  },
+  {
+    "number": "28a",
+    "name": "Jolteon-EX",
+    "page": "https://pkmncards.com/card/jolteon-ex-generations-gen-28a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-TwentiethAnn-28a-jolteon_ex-yaa.jpg",
+    "output": "assets/sets/xya/28a.png"
+  },
+  {
+    "number": "54a",
+    "name": "Zygarde-EX",
+    "page": "https://pkmncards.com/card/zygarde-ex-fates-collide-fco-54a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-XY10-54a-zygarde_ex-yaa.jpg",
+    "output": "assets/sets/xya/54a.png"
+  },
+  {
+    "number": "55a",
+    "name": "M Lucario-EX",
+    "page": "https://pkmncards.com/card/m-lucario-ex-furious-fists-ffi-55a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-XY3-55a-m_lucario_ex-yaa.jpg",
+    "output": "assets/sets/xya/55a.png"
+  },
+  {
+    "number": "92a",
+    "name": "Trainers’ Mail",
+    "page": "https://pkmncards.com/card/trainers-mail-roaring-skies-ros-92a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-XY6-92a-trainers_mail-yaa.jpg",
+    "output": "assets/sets/xya/92a.png"
+  },
+  {
+    "number": "107a",
+    "name": "Professor Sycamore",
+    "page": "https://pkmncards.com/card/professor-sycamore-breakpoint-bkp-107a/",
+    "status": "saved",
+    "source": "https://pkmncards.com/wp-content/uploads/en_US-XY9-107a-professor_sycamore-yaa.jpg",
+    "output": "assets/sets/xya/107a.png"
+  }
+]
