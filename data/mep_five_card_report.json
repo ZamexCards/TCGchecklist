@@ -1,0 +1,62 @@
+[
+  {
+    "number": "002",
+    "name": "Inteleon",
+    "page": "https://pkmncards.com/card/inteleon-mega-evolution-promos-mep-002/",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_002_std.jpg",
+    "status": "saved",
+    "output": "assets/sets/mep/002.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "003",
+    "name": "Alakazam",
+    "page": "https://pkmncards.com/card/alakazam-mega-evolution-promos-mep-003/",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_003_std.jpg",
+    "status": "saved",
+    "output": "assets/sets/mep/003.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "004",
+    "name": "Lunatone",
+    "page": "https://pkmncards.com/card/lunatone-mega-evolution-promos-mep-004/",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_004_std.jpg",
+    "status": "saved",
+    "output": "assets/sets/mep/004.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "005",
+    "name": "Drifloon",
+    "page": "https://pkmncards.com/card/drifloon-mega-evolution-promos-mep-005/",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_005_std.jpg",
+    "status": "saved",
+    "output": "assets/sets/mep/005.png",
+    "size": [
+      764,
+      1052
+    ]
+  },
+  {
+    "number": "006",
+    "name": "Drifblim",
+    "page": "https://pkmncards.com/card/drifblim-mega-evolution-promos-mep-006/",
+    "source": "https://pkmncards.com/wp-content/uploads/mebsp_en_006_std.jpg",
+    "status": "saved",
+    "output": "assets/sets/mep/006.png",
+    "size": [
+      764,
+      1052
+    ]
+  }
+]
