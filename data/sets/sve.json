@@ -1,1 +1,401 @@
-{"set":{"id":"sve","name":"Scarlet & Violet Energy","series":"Scarlet & Violet","releaseDate":"2023-03-31","printedTotal":24,"total":24,"images":{"logo":"./assets/sets/sve/logo.webp"},"_source":"central"},"cards":[{"id":"sve-001","name":"Grass Energy","number":"001","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-002","name":"Fire Energy","number":"002","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-003","name":"Water Energy","number":"003","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-004","name":"Lightning Energy","number":"004","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-005","name":"Psychic Energy","number":"005","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-006","name":"Fighting Energy","number":"006","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-007","name":"Darkness Energy","number":"007","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-008","name":"Metal Energy","number":"008","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-009","name":"Grass Energy","number":"009","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-010","name":"Fire Energy","number":"010","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-011","name":"Water Energy","number":"011","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-012","name":"Lightning Energy","number":"012","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-013","name":"Psychic Energy","number":"013","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-014","name":"Fighting Energy","number":"014","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-015","name":"Darkness Energy","number":"015","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-016","name":"Metal Energy","number":"016","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-017","name":"Grass Energy","number":"017","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-018","name":"Fire Energy","number":"018","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-019","name":"Water Energy","number":"019","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-020","name":"Lightning Energy","number":"020","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-021","name":"Psychic Energy","number":"021","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-022","name":"Fighting Energy","number":"022","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-023","name":"Darkness Energy","number":"023","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]},{"id":"sve-024","name":"Metal Energy","number":"024","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base","Reverse holo"]}],"updated":"2026-09-27T10:34:22.957432+00:00"}
+{
+  "set": {
+    "id": "sve",
+    "name": "Scarlet & Violet Energy",
+    "series": "Scarlet & Violet",
+    "releaseDate": "2023-03-31",
+    "printedTotal": 24,
+    "total": 24,
+    "images": {
+      "logo": "./assets/sets/sve/logo.webp"
+    },
+    "_source": "central"
+  },
+  "cards": [
+    {
+      "id": "sve-001",
+      "name": "Grass Energy",
+      "number": "001",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/001.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-002",
+      "name": "Fire Energy",
+      "number": "002",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/002.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-003",
+      "name": "Water Energy",
+      "number": "003",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/003.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-004",
+      "name": "Lightning Energy",
+      "number": "004",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/004.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-005",
+      "name": "Psychic Energy",
+      "number": "005",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/005.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-006",
+      "name": "Fighting Energy",
+      "number": "006",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/006.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-007",
+      "name": "Darkness Energy",
+      "number": "007",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/007.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-008",
+      "name": "Metal Energy",
+      "number": "008",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/008.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-009",
+      "name": "Grass Energy",
+      "number": "009",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/009.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-010",
+      "name": "Fire Energy",
+      "number": "010",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/010.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-011",
+      "name": "Water Energy",
+      "number": "011",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/011.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-012",
+      "name": "Lightning Energy",
+      "number": "012",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/012.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-013",
+      "name": "Psychic Energy",
+      "number": "013",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/013.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-014",
+      "name": "Fighting Energy",
+      "number": "014",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/014.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-015",
+      "name": "Darkness Energy",
+      "number": "015",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/015.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-016",
+      "name": "Metal Energy",
+      "number": "016",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/016.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-017",
+      "name": "Grass Energy",
+      "number": "017",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/017.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-018",
+      "name": "Fire Energy",
+      "number": "018",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/018.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-019",
+      "name": "Water Energy",
+      "number": "019",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/019.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-020",
+      "name": "Lightning Energy",
+      "number": "020",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/020.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-021",
+      "name": "Psychic Energy",
+      "number": "021",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/021.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-022",
+      "name": "Fighting Energy",
+      "number": "022",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/022.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-023",
+      "name": "Darkness Energy",
+      "number": "023",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/023.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    },
+    {
+      "id": "sve-024",
+      "name": "Metal Energy",
+      "number": "024",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/sve/024.png"
+      },
+      "availableVariants": [
+        "Base",
+        "Reverse holo"
+      ]
+    }
+  ],
+  "updated": "2026-09-27T10:34:22.957432+00:00"
+}
