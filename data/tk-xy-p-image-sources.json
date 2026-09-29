@@ -1,0 +1,302 @@
+[
+  {
+    "number": "1",
+    "name": "Glameow",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Glameow-1-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/93/47/f1/9347f10f6ba80667afcdfae7f84337cb955d5ab7cb7f09d6fc8f85ae85cf61bb.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/a2/b3/8d/a2b38d726a2f917e66571d8d82c5fb8e7400e028faed5613c7d9e8587ff42155.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Electivire",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electivire-4-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/79/6e/82/796e82496836a45cf196dd7f1166ae9be74b79c6f32857eb2fde7e9c5fb50fa3.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/79/d9/4a/79d94a84464eda956c3b99de9c5910659872a7a535f4a27794834d19f77f0dfb.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Taillow",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Taillow-7-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/4a/83/34/4a83346c9826b0d8f5845c5d4cd55e0b5ee1d145bd5f52cb3bea40389dbd5801.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Lightning Energy",
+    "source": "https://i.ebayimg.com/images/g/-08AAeSwt5BqPBgG/s-l1600.jpg",
+    "source_size": [
+      1018,
+      1409
+    ],
+    "path": "assets/sets/tk-xy-p/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/72/28/8f/72288f38c6ef02b6ff4037a93bfcedf01a72bbe97371a292651f3f796afaa5cd.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Electrike",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electrike-11-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Blitzle",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Blitzle-12-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/012.png"
+  },
+  {
+    "number": "13",
+    "name": "Manectric",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Manectric-13-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/013.png"
+  },
+  {
+    "number": "14",
+    "name": "Pikachu Libre",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Pikachu-Libre-14-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/014.png"
+  },
+  {
+    "number": "15",
+    "name": "Electabuzz",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electabuzz-15-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/015.png"
+  },
+  {
+    "number": "16",
+    "name": "Fletchling",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Fletchling-16-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/016.png"
+  },
+  {
+    "number": "17",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/dc/fc/1a/dcfc1aaaa106969f83d38c5f707d93bacf8f26c8cfdfedd6857365da898983a1.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/017.png"
+  },
+  {
+    "number": "18",
+    "name": "Lightning Energy",
+    "source": "https://static.tcgcollector.com/content/images/ae/1b/2b/ae1b2b71efbbf2304c1150b90270b5a52cc65eba0c8b1d43aa4aefe09f5221d0.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-p/018.png"
+  },
+  {
+    "number": "19",
+    "name": "Purugly",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Purugly-19-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/019.png"
+  },
+  {
+    "number": "20",
+    "name": "Tierno",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Tierno-20-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/020.png"
+  },
+  {
+    "number": "21",
+    "name": "Potion",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Potion-21-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/021.png"
+  },
+  {
+    "number": "22",
+    "name": "Manectric",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Manectric-22-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/022.png"
+  },
+  {
+    "number": "23",
+    "name": "Electabuzz",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electabuzz-23-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/023.png"
+  },
+  {
+    "number": "24",
+    "name": "Purugly",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Purugly-24-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/024.png"
+  },
+  {
+    "number": "25",
+    "name": "Electivire",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electivire-25-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/025.png"
+  },
+  {
+    "number": "26",
+    "name": "Blitzle",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Blitzle-26-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/026.png"
+  },
+  {
+    "number": "27",
+    "name": "Glameow",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Glameow-27-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/027.png"
+  },
+  {
+    "number": "28",
+    "name": "Electrike",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Electrike-28-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/028.png"
+  },
+  {
+    "number": "29",
+    "name": "Lightning Energy",
+    "source": "https://i.ebayimg.com/images/g/32cAAeSwHgVoogY9/s-l1600.jpg",
+    "source_size": [
+      1061,
+      1483
+    ],
+    "path": "assets/sets/tk-xy-p/029.png"
+  },
+  {
+    "number": "30",
+    "name": "Pikachu Libre",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Pikachu-Libre-30-XY-Trainer-Kit-Pikachu-Libre.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-p/030.png"
+  }
+]
