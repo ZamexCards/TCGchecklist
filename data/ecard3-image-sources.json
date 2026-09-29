@@ -1,0 +1,92 @@
+[
+  {
+    "number": "H01",
+    "name": "Alakazam",
+    "source": "https://pkmncards.com/wp-content/uploads/h01.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H01.png"
+  },
+  {
+    "number": "H02",
+    "name": "Arcanine",
+    "source": "https://pkmncards.com/wp-content/uploads/h02.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H02.png"
+  },
+  {
+    "number": "H03",
+    "name": "Articuno",
+    "source": "https://pkmncards.com/wp-content/uploads/h03.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H03.png"
+  },
+  {
+    "number": "H04",
+    "name": "Beedrill",
+    "source": "https://pkmncards.com/wp-content/uploads/h04.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H04.png"
+  },
+  {
+    "number": "H05",
+    "name": "Crobat",
+    "source": "https://pkmncards.com/wp-content/uploads/h05.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H05.png"
+  },
+  {
+    "number": "H06",
+    "name": "Dewgong",
+    "source": "https://pkmncards.com/wp-content/uploads/h06.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H06.png"
+  },
+  {
+    "number": "H07",
+    "name": "Flareon",
+    "source": "https://pkmncards.com/wp-content/uploads/h07.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H07.png"
+  },
+  {
+    "number": "H08",
+    "name": "Forretress",
+    "source": "https://pkmncards.com/wp-content/uploads/h08.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H08.png"
+  },
+  {
+    "number": "H09",
+    "name": "Gengar",
+    "source": "https://pkmncards.com/wp-content/uploads/h09.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard3/H09.png"
+  }
+]
