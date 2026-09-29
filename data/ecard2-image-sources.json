@@ -1,0 +1,172 @@
+[
+  {
+    "number": "50b",
+    "name": "Golduck",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/9/94/latest/20260710144335/Golduck_%28Aquapolis_50b_TCG%29.png",
+    "source_size": [
+      360,
+      502
+    ],
+    "path": "assets/sets/ecard2/50b.png"
+  },
+  {
+    "number": "50a",
+    "name": "Golduck",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/e/e9/latest/20220918151232/Golduck_%28Aquapolis_TCG%29.png",
+    "source_size": [
+      400,
+      550
+    ],
+    "path": "assets/sets/ecard2/50a.png"
+  },
+  {
+    "number": "74a",
+    "name": "Drowzee",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a0/latest/20260703133632/Drowzee_%28Aquapolis_74a_TCG%29.png",
+    "source_size": [
+      356,
+      499
+    ],
+    "path": "assets/sets/ecard2/74a.png"
+  },
+  {
+    "number": "74b",
+    "name": "Drowzee",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/1/11/latest/20260703133721/Drowzee_%28Aquapolis_74b_TCG%29.png",
+    "source_size": [
+      631,
+      883
+    ],
+    "path": "assets/sets/ecard2/74b.png"
+  },
+  {
+    "number": "95a",
+    "name": "Mr. Mime",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/9/9c/latest/20260711213833/Mr._Mime_%28Aquapolis_95a_TCG%29.png",
+    "source_size": [
+      360,
+      498
+    ],
+    "path": "assets/sets/ecard2/95a.png"
+  },
+  {
+    "number": "95b",
+    "name": "Mr. Mime",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d6/latest/20260711213855/Mr._Mime_%28Aquapolis_95b_TCG%29.png",
+    "source_size": [
+      702,
+      1000
+    ],
+    "path": "assets/sets/ecard2/95b.png"
+  },
+  {
+    "number": "103a",
+    "name": "Porygon",
+    "source": "https://images.wikidexcdn.net/mwuploads/wikidex/6/66/latest/20260614142916/Porygon_%28Aquapolis_103a_TCG%29.png",
+    "source_size": [
+      467,
+      650
+    ],
+    "path": "assets/sets/ecard2/103a.png"
+  },
+  {
+    "number": "103b",
+    "name": "Porygon",
+    "source": "https://d1rv4ufwpgk2kk.cloudfront.net/88307.jpg",
+    "source_size": [
+      200,
+      280
+    ],
+    "path": "assets/sets/ecard2/103b.png"
+  },
+  {
+    "number": "H01",
+    "name": "Ampharos",
+    "source": "https://pkmncards.com/wp-content/uploads/h01-ampharos-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H01.png"
+  },
+  {
+    "number": "H02",
+    "name": "Arcanine",
+    "source": "https://pkmncards.com/wp-content/uploads/h02-arcanaine-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H02.png"
+  },
+  {
+    "number": "H03",
+    "name": "Ariados",
+    "source": "https://pkmncards.com/wp-content/uploads/h03-ariados-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H03.png"
+  },
+  {
+    "number": "H04",
+    "name": "Azumarill",
+    "source": "https://pkmncards.com/wp-content/uploads/h04-azumarill-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H04.png"
+  },
+  {
+    "number": "H05",
+    "name": "Bellossom",
+    "source": "https://pkmncards.com/wp-content/uploads/h05-bellossom-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H05.png"
+  },
+  {
+    "number": "H06",
+    "name": "Blissey",
+    "source": "https://pkmncards.com/wp-content/uploads/h06-blissey-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H06.png"
+  },
+  {
+    "number": "H07",
+    "name": "Electrode",
+    "source": "https://pkmncards.com/wp-content/uploads/h07-electrode-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H07.png"
+  },
+  {
+    "number": "H08",
+    "name": "Entei",
+    "source": "https://pkmncards.com/wp-content/uploads/h08-entei-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H08.png"
+  },
+  {
+    "number": "H09",
+    "name": "Espeon",
+    "source": "https://pkmncards.com/wp-content/uploads/h09-espeon-expedition.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/ecard2/H09.png"
+  }
+]
