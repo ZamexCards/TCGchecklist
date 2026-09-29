@@ -1,0 +1,112 @@
+[
+  {
+    "number": "1",
+    "name": "Geodude",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Geodude-1-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Graveler",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Graveler-2-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Lucario",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Lucario-3-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Machoke",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machoke-4-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Machop",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machop-5-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Riolu",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Riolu-6-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Starly",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Starly-7-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Energy Search",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Energy-Search-8-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Potion",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Potion-9-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Quick Ball",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Quick-Ball-10-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Fighting Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Fighting-Energy-11-Trainer-KitsDP-Trainer-Kit-Lucario.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-l/011.png"
+  }
+]
