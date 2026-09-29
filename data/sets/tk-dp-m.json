@@ -1,1 +1,233 @@
-{"set":{"id":"tk-dp-m","name":"DP trainer Kit (Manaphy)","series":"Trainer kits","releaseDate":"2007-09-01","printedTotal":12,"total":12,"images":{"logo":"./assets/sets/tk-dp-m/logo.webp"},"_source":"central"},"cards":[{"id":"tk-dp-m-1","name":"Buizel","number":"1","supertype":"Pokemon","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-2","name":"Floatzel","number":"2","supertype":"Pokemon","subtypes":["Stage1"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-3","name":"Goldeen","number":"3","supertype":"Pokemon","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-4","name":"Manaphy","number":"4","supertype":"Pokemon","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-5","name":"Piplup","number":"5","supertype":"Pokemon","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-6","name":"Prinplup","number":"6","supertype":"Pokemon","subtypes":["Stage1"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-7","name":"Seaking","number":"7","supertype":"Pokemon","subtypes":["Stage1"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-8","name":"Totodile","number":"8","supertype":"Pokemon","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-9","name":"Dusk Ball","number":"9","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-10","name":"Energy Search","number":"10","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-11","name":"Potion","number":"11","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-dp-m-12","name":"Water Energy","number":"12","supertype":"Energy","subtypes":["Basic"],"types":["Water"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]}],"updated":"2026-09-27T10:33:59.178852+00:00"}
+{
+  "set": {
+    "id": "tk-dp-m",
+    "name": "DP trainer Kit (Manaphy)",
+    "series": "Trainer kits",
+    "releaseDate": "2007-09-01",
+    "printedTotal": 12,
+    "total": 12,
+    "images": {
+      "logo": "./assets/sets/tk-dp-m/logo.webp"
+    },
+    "_source": "central"
+  },
+  "cards": [
+    {
+      "id": "tk-dp-m-1",
+      "name": "Buizel",
+      "number": "1",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/001.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-2",
+      "name": "Floatzel",
+      "number": "2",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/002.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-3",
+      "name": "Goldeen",
+      "number": "3",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/003.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-4",
+      "name": "Manaphy",
+      "number": "4",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/004.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-5",
+      "name": "Piplup",
+      "number": "5",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/005.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-6",
+      "name": "Prinplup",
+      "number": "6",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/006.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-7",
+      "name": "Seaking",
+      "number": "7",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/007.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-8",
+      "name": "Totodile",
+      "number": "8",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/008.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-9",
+      "name": "Dusk Ball",
+      "number": "9",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/009.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-10",
+      "name": "Energy Search",
+      "number": "10",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/010.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-11",
+      "name": "Potion",
+      "number": "11",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/011.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-dp-m-12",
+      "name": "Water Energy",
+      "number": "12",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-dp-m/012.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    }
+  ],
+  "updated": "2026-09-27T10:33:59.178852+00:00"
+}

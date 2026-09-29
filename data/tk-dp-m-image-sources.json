@@ -1,0 +1,122 @@
+[
+  {
+    "number": "1",
+    "name": "Buizel",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Buizel-1-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Floatzel",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Floatzel-2-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Goldeen",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Goldeen-3-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Manaphy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Manaphy-4-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Piplup",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Piplup-5-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Prinplup",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Prinplup-6-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Seaking",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Seaking-7-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Totodile",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Totodile-8-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Dusk Ball",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Dusk-Ball-9-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Energy Search",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Energy-Search-10-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Potion",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Potion-11-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-12-Trainer-KitsDP-Trainer-Kit-Manaphy.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-dp-m/012.png"
+  }
+]
