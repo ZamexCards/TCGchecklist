@@ -81,8 +81,8 @@
     </div>
     <section class="zc-panel" aria-label="Zoekmogelijkheden en opties">
       <div class="zc-controls">
-        <div class="zc-field"><label for="setSelect">Engelse Pokémon TCG set</label><select id="setSelect"><option>Laden van sets...</option></select></div>
-        <div class="zc-field"><label for="searchBox">Zoeken</label><input id="searchBox" type="search" placeholder="Naam, nummer of type"></div>
+        <div class="zc-field"><label for="setSearch">Zoek een Engelse Pokémon TCG set</label><input id="setSearch" type="search" placeholder="(Deel van) setnaam of setcode" autocomplete="off" style="margin-bottom:8px"><label for="setSelect">Kies een set</label><select id="setSelect"><option>Laden van sets...</option></select></div>
+        <div class="zc-field"><label for="searchBox">Zoek kaarten in de geladen set</label><input id="searchBox" type="search" placeholder="Kaartnaam, nummer of type"></div>
         <div class="zc-field"><label for="sortSelect">Sorteren op nummer</label><select id="sortSelect"><option value="asc">Laag naar hoog</option><option value="desc">Hoog naar laag</option></select></div>
         <div class="zc-field"><label for="viewSelect">Weergave</label><select id="viewSelect"><option value="grid" selected>4 kaarten naast elkaar</option><option value="list">Kaarten onder elkaar</option></select></div>
       </div>
@@ -93,7 +93,7 @@
   </section>
   <section class="zc-set-header" id="setHeader"><img id="setLogo" alt="Set logo"><div><h2 id="setName"></h2><div class="zc-meta"><span class="zc-pill" id="seriesName"></span><span class="zc-pill" id="releaseDate"></span><span class="zc-pill" id="totalCards"></span></div></div></section>
   <section id="checklist" class="zc-list" aria-live="polite"></section>
-  <section class="zc-help"><strong>Uitleg:</strong> kies bovenaan eerst een set in het drop-down menu en druk daarna op de knop “laad pagina” om de checklist op te vragen. Daarna kun je zoeken, sorteren, de weergave aanpassen en de checklist downloaden als afbeelding of PDF. Er is bewust geen A4-printknop toegevoegd.</section>
+  <section class="zc-help"><strong>Uitleg:</strong> typ een setnaam of setcode in het eerste zoekveld, kies de set en druk op “Laad pagina”. Het tweede zoekveld zoekt daarna binnen de geladen kaarten. Je kunt ook sorteren, de weergave aanpassen en de checklist downloaden als afbeelding of PDF.</section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
@@ -101,7 +101,7 @@
 (function(){
   const API='https://api.pokemontcg.io/v2';
   const BACKUP_API='https://api.tcgdex.net/v2/en';
-  const els={setSelect:document.getElementById('setSelect'),search:document.getElementById('searchBox'),sort:document.getElementById('sortSelect'),view:document.getElementById('viewSelect'),load:document.getElementById('loadBtn'),reset:document.getElementById('resetBtn'),png:document.getElementById('pngBtn'),pdf:document.getElementById('pdfBtn'),status:document.getElementById('status'),list:document.getElementById('checklist'),header:document.getElementById('setHeader'),setLogo:document.getElementById('setLogo'),setName:document.getElementById('setName'),seriesName:document.getElementById('seriesName'),releaseDate:document.getElementById('releaseDate'),totalCards:document.getElementById('totalCards')};
+  const els={setSearch:document.getElementById('setSearch'),setSelect:document.getElementById('setSelect'),search:document.getElementById('searchBox'),sort:document.getElementById('sortSelect'),view:document.getElementById('viewSelect'),load:document.getElementById('loadBtn'),reset:document.getElementById('resetBtn'),png:document.getElementById('pngBtn'),pdf:document.getElementById('pdfBtn'),status:document.getElementById('status'),list:document.getElementById('checklist'),header:document.getElementById('setHeader'),setLogo:document.getElementById('setLogo'),setName:document.getElementById('setName'),seriesName:document.getElementById('seriesName'),releaseDate:document.getElementById('releaseDate'),totalCards:document.getElementById('totalCards')};
   let sets=[],cards=[],activeSet=null;
   const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
   const numVal=n=>{const m=String(n||'').match(/\d+/);return m?parseInt(m[0],10):999999};
@@ -128,12 +128,21 @@
       }catch(err){console.warn('Cache niet beschikbaar:',err);}
     }
   }
+  const setSearchText=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  function filterSetOptions(selected=els.setSelect.value){
+    const query=setSearchText(els.setSearch.value.trim());
+    const matches=sets.filter(s=>setSearchText(s.name+' '+s.id).includes(query));
+    els.setSelect.innerHTML='<option value="">'+(matches.length?'Kies een set...':'Geen sets gevonden')+'</option>'+matches.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('');
+    const exact=matches.find(s=>setSearchText(s.name)===query||setSearchText(s.id)===query);
+    if(matches.some(s=>s.id===selected))els.setSelect.value=selected;
+    else if(exact||matches.length===1)els.setSelect.value=(exact||matches[0]).id;
+    if(query)status(matches.length?matches.length+' set'+(matches.length===1?'':'s')+' gevonden. Kies een set en druk op “Laad pagina”.':'Geen sets gevonden. Probeer een andere naam of setcode.');
+  }
   function showSets(data,message){
     const selected=els.setSelect.value;
     sets=data.filter(englishSetFilter).sort((a,b)=>(b.releaseDate||'').localeCompare(a.releaseDate||'')||a.name.localeCompare(b.name));
-    els.setSelect.innerHTML='<option value="">Kies een set...</option>'+sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('');
-    if(sets.some(x=>x.id===selected))els.setSelect.value=selected;
-    status(message);
+    filterSetOptions(selected);
+    if(!els.setSearch.value.trim())status(message);
   }
   async function fetchSetList(){
     try{
@@ -314,7 +323,7 @@
     }
     if(!centralMode && !cachedCards?.cards?.length && all.length)cachePut('cards-'+id,{cards:all,set:activeSet});
     cards=all;els.header.style.display='flex';els.setLogo.onerror=function(){this.onerror=null;this.src='./assets/geen-setlogo.svg';};els.setLogo.src=logoImageUrl(activeSet.images?.logo)||'./assets/geen-setlogo.svg';els.setName.textContent=activeSet.name;els.seriesName.textContent='Serie: '+(activeSet.series||'Onbekend');els.releaseDate.textContent='Release datum: '+(activeSet.releaseDate||'Onbekend');els.totalCards.textContent='Totaal: '+(activeSet.printedTotal||activeSet.total||cards.length)+' kaarten';render();els.png.disabled=false;els.pdf.disabled=false;status(cards.length+' kaarten geladen.');}catch(e){console.error('Checklist laden mislukt:',e);status('Kon de kaarten niet laden: '+String(e.message||e)+'. Probeer opnieuw.');}finally{els.load.disabled=false;}}
-  function reset(){els.search.value='';els.sort.value='asc';els.view.value='grid';cards=[];activeSet=null;els.list.innerHTML='';els.header.style.display='none';els.png.disabled=true;els.pdf.disabled=true;status('Selecteer eerst een set en druk daarna op “Laad pagina”.');window.scrollTo({top:0,behavior:'smooth'});}
+  function reset(){els.setSearch.value='';filterSetOptions('');els.setSelect.value='';els.search.value='';els.sort.value='asc';els.view.value='grid';cards=[];activeSet=null;els.list.innerHTML='';els.header.style.display='none';els.png.disabled=true;els.pdf.disabled=true;status('Zoek of selecteer een set en druk daarna op “Laad pagina”.');window.scrollTo({top:0,behavior:'smooth'});}
   function fileName(){return 'ZamexCards-Pokemon-TCG-Checklist-'+(activeSet?.name||'set').replace(/[^a-z0-9]+/gi,'-');}
   function currentExportData(){
     let q=els.search.value.trim().toLowerCase();
@@ -390,6 +399,7 @@
   window.addEventListener('resize',scheduleHeight);
   window.addEventListener('message',e=>{if(e.data?.type==='zamexcards-checklist-request-height')scheduleHeight();});
   scheduleHeight();
+  els.setSearch.addEventListener('input',()=>filterSetOptions());els.setSearch.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();if(els.setSelect.value)loadCards();else els.setSelect.focus();}});
   els.load.addEventListener('click',loadCards);els.reset.addEventListener('click',reset);els.search.addEventListener('input',render);els.sort.addEventListener('change',render);els.view.addEventListener('change',render);els.png.addEventListener('click',downloadPNG);els.pdf.addEventListener('click',downloadPDF);loadSets();
 })();
 </script>
