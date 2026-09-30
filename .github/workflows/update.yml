@@ -1,24 +1,21 @@
-
 name: Update Pokemon checklist data
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - 'scripts/targeted_image_repair.py'
-      - 'scripts/targeted_logo_repair.py'
-      - 'scripts/pikawiz_repair.py'
-      - 'scripts/archive_images.py'
-      - 'scripts/mep_one_card.py'
-      - 'scripts/mep_screenshot_trial.py'
-      - 'data/image_sources.json'
-      - 'scripts/diagnose_images.py'
-  workflow_dispatch:
+      - '.github/workflows/update.yml'
+      - 'scripts/update_data.py'
+      - 'scripts/archive_available_images.py'
+      - 'scripts/audit_images.py'
   schedule:
-    - cron: "17 4 * * 1"
+    - cron: '17 4 * * 1'
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: pokemon-checklist-data
@@ -27,101 +24,74 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 120
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Record baseline image count
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          p=Path('data/image_audit.json')
-          if p.exists():
-              t=json.loads(p.read_text())['totals']
-              Path('/tmp/zamex_baseline.json').write_text(json.dumps(t))
-          PY
-
-      - name: Refresh set and card snapshots
+          python-version: '3.12'
+      - name: Install image validation
+        run: python -m pip install pillow
+      - name: Refresh new sets, promos and missing artwork
         run: python scripts/update_data.py
-
-      - name: Install browser capture dependencies
-        run: |
-          python -m pip install playwright pillow
-          python -m playwright install --with-deps chromium
-
-      - name: Test visible card screenshot for MEP 001
-        run: python scripts/mep_screenshot_trial.py
-
-      - name: Bulk archive card images and set logos from verified sources
-        env:
-          IMAGE_REPAIR_LIMIT: '1'
-          IMAGE_FOCUS_SET: 'mep'
-          IMAGE_PILOT_CARDS: '5'
-        run: python scripts/archive_images.py
-
-      # Broad per-card probing is paused while we diagnose MEP independently.
-
-      - name: Repair missing set logos by exact set identity
-        run: python scripts/targeted_logo_repair.py
-
-      # Pikawiz returned 403/429; do not repeat blocked requests on every run.
-      - name: Audit all card images and set logos
+      - name: Store available card images and logos
+        run: python scripts/archive_available_images.py
+      - name: Audit images
         run: python scripts/audit_images.py
-
-      - name: Diagnose remaining missing image sources
-        run: python scripts/diagnose_images.py
-
-      - name: Publish clear progress summary
-        if: always()
+      - name: Publish progress summary
         run: |
-          if [ -f data/image_audit.json ]; then
-            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           from pathlib import Path
           t=json.loads(Path('data/image_audit.json').read_text())['totals']
-          baseline_path=Path('/tmp/zamex_baseline.json')
-          baseline=json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
-          delta=t['local_cards']-baseline.get('local_cards',t['local_cards'])
-          print('## ZamexCards checklist – werkelijke afbeeldingsstatus')
-          print(f'**Nieuw lokaal opgeslagen in deze uitvoering:** {delta:+d}')
-          print('**Let op:** succesvolle uitvoering is geen garantie dat nieuwe afbeeldingen zijn gevonden.')
-          print(f"**Volledige sets:** {t['complete_sets']} / {t['sets']}")
-          print(f"**Kaartafbeeldingen lokaal:** {t['local_cards']} / {t['cards']}")
-          print(f"**Ontbrekende kaartafbeeldingen:** {t['missing_cards']}")
-          print(f"**Externe kaartlinks, niet geverifieerd:** {t['external_cards']}")
-          print(f"**Setlogo's lokaal:** {t['local_logos']} / {t['sets']}")
-          print(f"**Ontbrekende setlogo's:** {t['missing_logos']}")
-          print()
-          print('Een groene workflow betekent dat de update is uitgevoerd, niet dat alle afbeeldingen gevonden zijn.')
+          print('## ZamexCards — wekelijkse update')
+          print(f"Sets compleet: {t['complete_sets']} / {t['sets']}")
+          print(f"Afbeeldingen opgeslagen: {t['local_cards']} / {t['cards']}")
+          print(f"Nog zonder afbeelding: {t['missing_cards']}")
+          print(f"Nog te downloaden: {t['external_cards']}")
+          print('Onbeschikbare afbeeldingen worden bij de volgende maandagupdate opnieuw geprobeerd.')
           PY
-          fi
-
-      - name: Commit changed JSON
+      - name: Commit and preserve concurrent changes
+        id: commit
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/ assets/
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
           if ! git diff --cached --quiet; then
-            git commit -m "Update Pokémon checklist data"
-            # Another workflow may have advanced main while images were downloaded.
-            # Rebase the generated commit, then retry a bounded number of times.
+            git commit -m 'Weekly Pokemon checklist update'
             for attempt in 1 2 3 4 5; do
               git fetch origin main
               if ! git rebase origin/main; then
                 git rebase --abort
-                echo "::error::Concurrent changes conflict with generated data; refusing to overwrite them."
+                echo '::error::Concurrent changes conflict; refusing to overwrite them.'
                 exit 1
               fi
               if git push origin HEAD:main; then
+                echo 'changed=true' >> "$GITHUB_OUTPUT"
                 exit 0
               fi
-              echo "Push raced with another update (attempt $attempt); retrying..."
-              sleep 3
             done
-            echo "::error::Unable to push after five safe retries."
             exit 1
           fi
+      - name: Package updated site
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+  deploy:
+    if: needs.update.outputs.changed == 'true'
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish updated checklist
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -118,6 +118,9 @@ def build_set(item):
                 if previous_image.startswith('./assets/'):c['images']['small']=previous_image
                 if not c['images']['small']:
                     c['images']['small']=old_cards.get(c['id'],{}).get('images',{}).get('small','')
+            # Upstream lists can temporarily omit manually verified promo cards.
+            seen={c['id'] for c in payload['cards']}
+            payload['cards'].extend(c for c in old.get('cards',[]) if c['id'] not in seen)
         except (OSError,ValueError,KeyError):pass
     write(path,payload)
     print('Updated:',sid,len(cards),flush=True)
@@ -149,6 +152,7 @@ def main():
         recent=bool(existing and existing.get('releaseDate') and
                     (today-datetime.date.fromisoformat(existing['releaseDate'])).days<45)
         missing=False
+        snapshot={}
         if path.exists():
             try:
                 snapshot=json.loads(path.read_text())
@@ -157,7 +161,12 @@ def main():
             except (OSError,ValueError):pass
         # Missing upstream artwork is repaired independently by archive_images.py.
         # Do not download hundreds of unchanged card records on every scheduled run.
-        if path.exists() and not recent and os.environ.get('FORCE_REFRESH')!='1':
+        upstream_count=item.get('cardCount')
+        if isinstance(upstream_count,dict):upstream_count=upstream_count.get('total')
+        expanded=bool(path.exists() and isinstance(upstream_count,int) and
+                      upstream_count>len(snapshot.get('cards',[])))
+        promo=bool(existing and ('promo' in existing.get('name','').lower()))
+        if path.exists() and not (recent or missing or expanded or promo) and os.environ.get('FORCE_REFRESH')!='1':
             try:
                 results[sid]=json.loads(path.read_text())['set']
                 continue
