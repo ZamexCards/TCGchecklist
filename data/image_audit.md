@@ -5,16 +5,16 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 ## Totaaloverzicht
 
 - sets: 200
-- cards: 21611
-- local_cards: 20920
-- missing_cards: 691
+- cards: 21623
+- local_cards: 21623
+- missing_cards: 0
 - external_cards: 0
 - broken_cards: 0
 - local_logos: 200
 - missing_logos: 0
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 166
+- complete_sets: 200
 
 ## Per set
 
@@ -22,17 +22,17 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 |---|---|---:|---:|---:|---:|
 | 2011bw – McDonald's Collection 2011 | local | 12/12 | 0 | 0 | 0 |
 | 2012bw – McDonald's Collection 2012 | local | 12/12 | 0 | 0 | 0 |
-| 2014xy – McDonald's Collection 2014 | local | 0/12 | 12 | 0 | 0 |
-| 2015xy – McDonald's Collection 2015 | local | 0/12 | 12 | 0 | 0 |
+| 2014xy – McDonald's Collection 2014 | local | 12/12 | 0 | 0 | 0 |
+| 2015xy – McDonald's Collection 2015 | local | 12/12 | 0 | 0 | 0 |
 | 2016xy – McDonald's Collection 2016 | local | 12/12 | 0 | 0 | 0 |
-| 2017sm – McDonald's Collection 2017 | local | 0/12 | 12 | 0 | 0 |
-| 2018sm – McDonald's Collection 2018 | local | 0/12 | 12 | 0 | 0 |
+| 2017sm – McDonald's Collection 2017 | local | 12/12 | 0 | 0 | 0 |
+| 2018sm – McDonald's Collection 2018 | local | 12/12 | 0 | 0 | 0 |
 | 2019sm – McDonald's Collection 2019 | local | 12/12 | 0 | 0 | 0 |
 | 2021swsh – McDonald's Collection 2021 | local | 25/25 | 0 | 0 | 0 |
 | 2022swsh – McDonald's Collection 2022 | local | 15/15 | 0 | 0 | 0 |
-| 2023sv – McDonald's Collection 2023 | local | 0/15 | 15 | 0 | 0 |
-| 2024sv – McDonald's Collection 2024 | local | 0/15 | 15 | 0 | 0 |
-| 30th-c – 30th Classic Collection | local | 0/30 | 30 | 0 | 0 |
+| 2023sv – McDonald's Collection 2023 | local | 15/15 | 0 | 0 | 0 |
+| 2024sv – McDonald's Collection 2024 | local | 15/15 | 0 | 0 | 0 |
+| 30th-c – 30th Classic Collection | local | 30/30 | 0 | 0 | 0 |
 | 30th – 30th Celebration | local | 158/158 | 0 | 0 | 0 |
 | A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
 | A1a – Mythical Island | local | 86/86 | 0 | 0 | 0 |
@@ -55,7 +55,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | base4 – Base Set 2 | local | 130/130 | 0 | 0 | 0 |
 | base5 – Team Rocket | local | 83/83 | 0 | 0 | 0 |
 | basep – Wizards Black Star Promos | local | 53/53 | 0 | 0 | 0 |
-| bog – Best of game | local | 3/9 | 6 | 0 | 0 |
+| bog – Best of game | local | 9/9 | 0 | 0 | 0 |
 | bw1 – Black & White | local | 115/115 | 0 | 0 | 0 |
 | bw10 – Plasma Blast | local | 105/105 | 0 | 0 | 0 |
 | bw11 – Legendary Treasures | local | 140/140 | 0 | 0 | 0 |
@@ -69,7 +69,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | bw9 – Plasma Freeze | local | 122/122 | 0 | 0 | 0 |
 | bwp – BW Black Star Promos | local | 101/101 | 0 | 0 | 0 |
 | cel25 – Celebrations | local | 25/25 | 0 | 0 | 0 |
-| cel25cc – Celebrations Classic Collection | local | 0/25 | 25 | 0 | 0 |
+| cel25cc – Celebrations Classic Collection | local | 25/25 | 0 | 0 | 0 |
 | col1 – Call of Legends | local | 106/106 | 0 | 0 | 0 |
 | dc1 – Double Crisis | local | 34/34 | 0 | 0 | 0 |
 | det1 – Detective Pikachu | local | 18/18 | 0 | 0 | 0 |
@@ -83,8 +83,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | dpp – DP Black Star Promos | local | 56/56 | 0 | 0 | 0 |
 | dv1 – Dragon Vault | local | 21/21 | 0 | 0 | 0 |
 | ecard1 – Expedition Base Set | local | 165/165 | 0 | 0 | 0 |
-| ecard2 – Aquapolis | local | 169/186 | 17 | 0 | 0 |
-| ecard3 – Skyridge | local | 173/182 | 9 | 0 | 0 |
+| ecard2 – Aquapolis | local | 186/186 | 0 | 0 | 0 |
+| ecard3 – Skyridge | local | 182/182 | 0 | 0 | 0 |
 | ex1 – Ruby & Sapphire | local | 109/109 | 0 | 0 | 0 |
 | ex10 – Unseen Forces | local | 117/117 | 0 | 0 | 0 |
 | ex11 – Delta Species | local | 114/114 | 0 | 0 | 0 |
@@ -101,7 +101,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | ex7 – Team Rocket Returns | local | 111/111 | 0 | 0 | 0 |
 | ex8 – Deoxys | local | 108/108 | 0 | 0 | 0 |
 | ex9 – Emerald | local | 107/107 | 0 | 0 | 0 |
-| exu – Unseen Forces Unown Collection | local | 0/28 | 28 | 0 | 0 |
+| exu – Unseen Forces Unown Collection | local | 28/28 | 0 | 0 | 0 |
 | fut2020 – Pokémon Futsal 2020 | local | 5/5 | 0 | 0 | 0 |
 | g1 – Generations | local | 117/117 | 0 | 0 | 0 |
 | gym1 – Gym Heroes | local | 132/132 | 0 | 0 | 0 |
@@ -110,7 +110,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | hgss2 – Unleashed | local | 96/96 | 0 | 0 | 0 |
 | hgss3 – Undaunted | local | 91/91 | 0 | 0 | 0 |
 | hgss4 – Triumphant | local | 103/103 | 0 | 0 | 0 |
-| hgssp – HGSS Black Star Promos | local | 24/25 | 1 | 0 | 0 |
+| hgssp – HGSS Black Star Promos | local | 25/25 | 0 | 0 | 0 |
 | lc – Legendary Collection | local | 110/110 | 0 | 0 | 0 |
 | me01 – Mega Evolution | local | 188/188 | 0 | 0 | 0 |
 | me02 – Phantasmal Flames | local | 130/130 | 0 | 0 | 0 |
@@ -119,8 +119,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
 | mee – Mega Evolution Energy | local | 8/8 | 0 | 0 | 0 |
 | mep – MEP Black Star Promos | local | 89/89 | 0 | 0 | 0 |
-| mfb – My First Battle | local | 0/34 | 34 | 0 | 0 |
-| miscp – Miscellaneous Promos | local | 0/1 | 1 | 0 | 0 |
+| mfb – My First Battle | local | 34/34 | 0 | 0 | 0 |
+| miscp – Miscellaneous Promos | local | 1/1 | 0 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
 | neo2 – Neo Discovery | local | 75/75 | 0 | 0 | 0 |
 | neo3 – Neo Revelation | local | 66/66 | 0 | 0 | 0 |
@@ -166,8 +166,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
 | sv10 – Destined Rivals | local | 244/244 | 0 | 0 | 0 |
-| sve – Scarlet & Violet Energy | local | 0/24 | 24 | 0 | 0 |
-| svp – SVP Black Star Promos | local | 225/226 | 1 | 0 | 0 |
+| sve – Scarlet & Violet Energy | local | 24/24 | 0 | 0 | 0 |
+| svp – SVP Black Star Promos | local | 226/226 | 0 | 0 | 0 |
 | swsh1 – Sword & Shield | local | 216/216 | 0 | 0 | 0 |
 | swsh10 – Astral Radiance | local | 216/216 | 0 | 0 | 0 |
 | swsh10tg – Astral Radiance Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
@@ -185,26 +185,26 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | swsh9 – Brilliant Stars | local | 186/186 | 0 | 0 | 0 |
 | swsh9tg – Brilliant Stars Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swshp – SWSH Black Star Promos | local | 307/307 | 0 | 0 | 0 |
-| tk-bw-e – BW trainer Kit (Excadrill) | local | 0/30 | 30 | 0 | 0 |
-| tk-bw-z – BW trainer Kit (Zoroark) | local | 0/30 | 30 | 0 | 0 |
-| tk-dp-l – DP trainer Kit (Lucario) | local | 0/11 | 11 | 0 | 0 |
-| tk-dp-m – DP trainer Kit (Manaphy) | local | 0/12 | 12 | 0 | 0 |
+| tk-bw-e – BW trainer Kit (Excadrill) | local | 30/30 | 0 | 0 | 0 |
+| tk-bw-z – BW trainer Kit (Zoroark) | local | 30/30 | 0 | 0 | 0 |
+| tk-dp-l – DP trainer Kit (Lucario) | local | 11/11 | 0 | 0 | 0 |
+| tk-dp-m – DP trainer Kit (Manaphy) | local | 12/12 | 0 | 0 | 0 |
 | tk-ex-latia – EX trainer Kit (Latias) | local | 10/10 | 0 | 0 | 0 |
 | tk-ex-latio – EX trainer Kit (Latios) | local | 10/10 | 0 | 0 | 0 |
 | tk-ex-m – EX trainer Kit 2 (Minun) | local | 12/12 | 0 | 0 | 0 |
 | tk-ex-p – EX trainer Kit 2 (Plusle) | local | 12/12 | 0 | 0 | 0 |
-| tk-hs-g – HS trainer Kit (Gyarados) | local | 0/30 | 30 | 0 | 0 |
-| tk-hs-r – HS trainer Kit (Raichu) | local | 0/30 | 30 | 0 | 0 |
-| tk-sm-l – SM trainer Kit (Lycanroc) | local | 0/18 | 18 | 0 | 0 |
-| tk-sm-r – SM trainer Kit (Alolan Raichu) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-b – XY trainer Kit (Bisharp) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-latia – XY trainer Kit (Latias) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-latio – XY trainer Kit (Latios) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-n – XY trainer Kit (Noivern) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-p – XY trainer Kit (Pikachu Libre) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-su – XY trainer Kit (Suicune) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-sy – XY trainer Kit (Sylveon) | local | 0/30 | 30 | 0 | 0 |
-| tk-xy-w – XY trainer Kit (Wigglytuff) | local | 0/30 | 30 | 0 | 0 |
+| tk-hs-g – HS trainer Kit (Gyarados) | local | 30/30 | 0 | 0 | 0 |
+| tk-hs-r – HS trainer Kit (Raichu) | local | 30/30 | 0 | 0 | 0 |
+| tk-sm-l – SM trainer Kit (Lycanroc) | local | 30/30 | 0 | 0 | 0 |
+| tk-sm-r – SM trainer Kit (Alolan Raichu) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-b – XY trainer Kit (Bisharp) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-latia – XY trainer Kit (Latias) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-latio – XY trainer Kit (Latios) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-n – XY trainer Kit (Noivern) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-p – XY trainer Kit (Pikachu Libre) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-su – XY trainer Kit (Suicune) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-sy – XY trainer Kit (Sylveon) | local | 30/30 | 0 | 0 | 0 |
+| tk-xy-w – XY trainer Kit (Wigglytuff) | local | 30/30 | 0 | 0 | 0 |
 | xy0 – Kalos Starter Set | local | 39/39 | 0 | 0 | 0 |
 | xy1 – XY | local | 146/146 | 0 | 0 | 0 |
 | xy10 – Fates Collide | local | 129/129 | 0 | 0 | 0 |
@@ -218,113 +218,11 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | xy7 – Ancient Origins | local | 101/101 | 0 | 0 | 0 |
 | xy8 – BREAKthrough | local | 165/165 | 0 | 0 | 0 |
 | xy9 – BREAKpoint | local | 126/126 | 0 | 0 | 0 |
-| xya – Yellow A Alternate | local | 0/6 | 6 | 0 | 0 |
+| xya – Yellow A Alternate | local | 6/6 | 0 | 0 | 0 |
 | xyp – XY Black Star Promos | local | 216/216 | 0 | 0 | 0 |
 
 ## Ontbrekende of ongeldige setlogo’s
 
 
 ## Kaarten zonder lokale afbeelding (per set)
-
-### 2014xy – McDonald's Collection 2014
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### 2015xy – McDonald's Collection 2015
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### 2017sm – McDonald's Collection 2017
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### 2018sm – McDonald's Collection 2018
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### 2023sv – McDonald's Collection 2023
-**Geen bronlink (15):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-
-### 2024sv – McDonald's Collection 2024
-**Geen bronlink (15):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-
-### 30th-c – 30th Classic Collection
-**Geen bronlink (30):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030
-
-### bog – Best of game
-**Geen bronlink (6):** 1, 3, 4, 5, 8, 9
-
-### cel25cc – Celebrations Classic Collection
-**Geen bronlink (25):** CC001, CC002, CC003, CC004, CC005, CC006, CC007, CC008, CC009, CC010, CC011, CC012, CC013, CC014, CC015, CC016, CC017, CC018, CC019, CC020, CC021, CC022, CC023, CC024, CC025
-
-### ecard2 – Aquapolis
-**Geen bronlink (17):** 50b, 50a, 74a, 74b, 95a, 95b, 103a, 103b, H01, H02, H03, H04, H05, H06, H07, H08, H09
-
-### ecard3 – Skyridge
-**Geen bronlink (9):** H01, H02, H03, H04, H05, H06, H07, H08, H09
-
-### exu – Unseen Forces Unown Collection
-**Geen bronlink (28):** !, %3F, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
-
-### hgssp – HGSS Black Star Promos
-**Geen bronlink (1):** HGSS18
-
-### mfb – My First Battle
-**Geen bronlink (34):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34
-
-### miscp – Miscellaneous Promos
-**Geen bronlink (1):** 001
-
-### sve – Scarlet & Violet Energy
-**Geen bronlink (24):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
-
-### svp – SVP Black Star Promos
-**Geen bronlink (1):** 500
-
-### tk-bw-e – BW trainer Kit (Excadrill)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-bw-z – BW trainer Kit (Zoroark)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-dp-l – DP trainer Kit (Lucario)
-**Geen bronlink (11):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
-
-### tk-dp-m – DP trainer Kit (Manaphy)
-**Geen bronlink (12):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
-### tk-hs-g – HS trainer Kit (Gyarados)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-hs-r – HS trainer Kit (Raichu)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-sm-l – SM trainer Kit (Lycanroc)
-**Geen bronlink (18):** 1, 4, 5, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 23, 25, 27, 29, 30
-
-### tk-sm-r – SM trainer Kit (Alolan Raichu)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-b – XY trainer Kit (Bisharp)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-latia – XY trainer Kit (Latias)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-latio – XY trainer Kit (Latios)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-n – XY trainer Kit (Noivern)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-p – XY trainer Kit (Pikachu Libre)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-su – XY trainer Kit (Suicune)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-sy – XY trainer Kit (Sylveon)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### tk-xy-w – XY trainer Kit (Wigglytuff)
-**Geen bronlink (30):** 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-
-### xya – Yellow A Alternate
-**Geen bronlink (6):** 24a, 28a, 54a, 55a, 92a, 107a
 
