@@ -1,0 +1,342 @@
+[
+  {
+    "number": "1",
+    "name": "Bulbasaur",
+    "source": "https://archives.bulbagarden.net/media/upload/6/61/BulbasaurMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/001.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "2",
+    "name": "Ivysaur",
+    "source": "https://archives.bulbagarden.net/media/upload/1/10/IvysaurMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/002.png",
+    "size": [
+      640,
+      894
+    ]
+  },
+  {
+    "number": "3",
+    "name": "Oddish",
+    "source": "https://archives.bulbagarden.net/media/upload/8/8d/OddishMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/003.png",
+    "size": [
+      640,
+      896
+    ]
+  },
+  {
+    "number": "4",
+    "name": "Gloom",
+    "source": "https://archives.bulbagarden.net/media/upload/c/ce/GloomMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/004.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "5",
+    "name": "Exeggcute",
+    "source": "https://archives.bulbagarden.net/media/upload/f/fc/ExeggcuteMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/005.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "6",
+    "name": "Exeggutor",
+    "source": "https://archives.bulbagarden.net/media/upload/e/ec/ExeggutorMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/006.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "7",
+    "name": "Scyther",
+    "source": "https://archives.bulbagarden.net/media/upload/3/31/ScytherMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/007.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "8",
+    "name": "Grass Energy",
+    "source": "https://archives.bulbagarden.net/media/upload/f/f0/BasicGrassEnergySVEEnergy1.jpg",
+    "path": "assets/sets/mfb/008.png",
+    "size": [
+      734,
+      1024
+    ]
+  },
+  {
+    "number": "9",
+    "name": "Charmander",
+    "source": "https://archives.bulbagarden.net/media/upload/1/15/CharmanderMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/009.png",
+    "size": [
+      566,
+      792
+    ]
+  },
+  {
+    "number": "10",
+    "name": "Charmeleon",
+    "source": "https://archives.bulbagarden.net/media/upload/5/58/CharmeleonMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/010.png",
+    "size": [
+      640,
+      894
+    ]
+  },
+  {
+    "number": "11",
+    "name": "Vulpix",
+    "source": "https://archives.bulbagarden.net/media/upload/7/78/VulpixMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/011.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "12",
+    "name": "Ninetales",
+    "source": "https://archives.bulbagarden.net/media/upload/4/45/NinetalesMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/012.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "13",
+    "name": "Growlithe",
+    "source": "https://archives.bulbagarden.net/media/upload/f/fc/GrowlitheMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/013.png",
+    "size": [
+      734,
+      1024
+    ]
+  },
+  {
+    "number": "14",
+    "name": "Arcanine",
+    "source": "https://archives.bulbagarden.net/media/upload/6/62/ArcanineMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/014.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "15",
+    "name": "Magmar",
+    "source": "https://archives.bulbagarden.net/media/upload/a/ab/MagmarMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/015.png",
+    "size": [
+      640,
+      892
+    ]
+  },
+  {
+    "number": "16",
+    "name": "Fire Energy",
+    "source": "https://archives.bulbagarden.net/media/upload/2/24/BasicFireEnergySVEEnergy2.jpg",
+    "path": "assets/sets/mfb/016.png",
+    "size": [
+      734,
+      1024
+    ]
+  },
+  {
+    "number": "17",
+    "name": "Pikachu",
+    "source": "https://archives.bulbagarden.net/media/upload/1/13/PikachuMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/017.png",
+    "size": [
+      566,
+      792
+    ]
+  },
+  {
+    "number": "18",
+    "name": "Raichu",
+    "source": "https://archives.bulbagarden.net/media/upload/1/1a/RaichuMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/018.png",
+    "size": [
+      640,
+      894
+    ]
+  },
+  {
+    "number": "19",
+    "name": "Magnemite",
+    "source": "https://archives.bulbagarden.net/media/upload/3/35/MagnemiteMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/019.png",
+    "size": [
+      640,
+      896
+    ]
+  },
+  {
+    "number": "20",
+    "name": "Magneton",
+    "source": "https://archives.bulbagarden.net/media/upload/3/34/MagnetonMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/020.png",
+    "size": [
+      640,
+      897
+    ]
+  },
+  {
+    "number": "21",
+    "name": "Voltorb",
+    "source": "https://archives.bulbagarden.net/media/upload/e/ee/VoltorbMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/021.png",
+    "size": [
+      618,
+      865
+    ]
+  },
+  {
+    "number": "22",
+    "name": "Electrode",
+    "source": "https://archives.bulbagarden.net/media/upload/6/62/ElectrodeMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/022.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "23",
+    "name": "Electabuzz",
+    "source": "https://archives.bulbagarden.net/media/upload/5/5c/ElectabuzzMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/023.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "24",
+    "name": "Lightning Energy",
+    "source": "https://archives.bulbagarden.net/media/upload/7/7b/BasicLightningEnergySVEEnergy4.jpg",
+    "path": "assets/sets/mfb/024.png",
+    "size": [
+      734,
+      1024
+    ]
+  },
+  {
+    "number": "25",
+    "name": "Squirtle",
+    "source": "https://archives.bulbagarden.net/media/upload/c/cd/SquirtleMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/025.png",
+    "size": [
+      566,
+      792
+    ]
+  },
+  {
+    "number": "26",
+    "name": "Wartortle",
+    "source": "https://archives.bulbagarden.net/media/upload/1/1a/WartortleMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/026.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "27",
+    "name": "Poliwag",
+    "source": "https://archives.bulbagarden.net/media/upload/8/86/PoliwagMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/027.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "28",
+    "name": "Poliwhirl",
+    "source": "https://archives.bulbagarden.net/media/upload/b/bf/PoliwhirlMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/028.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "29",
+    "name": "Magikarp",
+    "source": "https://archives.bulbagarden.net/media/upload/5/55/MagikarpMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/029.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "30",
+    "name": "Gyarados",
+    "source": "https://archives.bulbagarden.net/media/upload/9/96/GyaradosMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/030.png",
+    "size": [
+      734,
+      1022
+    ]
+  },
+  {
+    "number": "31",
+    "name": "Lapras",
+    "source": "https://archives.bulbagarden.net/media/upload/c/c8/LaprasMyFirstBattle.jpg",
+    "path": "assets/sets/mfb/031.png",
+    "size": [
+      733,
+      1024
+    ]
+  },
+  {
+    "number": "32",
+    "name": "Water Energy",
+    "source": "https://archives.bulbagarden.net/media/upload/c/c2/BasicWaterEnergySVEEnergy3.jpg",
+    "path": "assets/sets/mfb/032.png",
+    "size": [
+      734,
+      1024
+    ]
+  },
+  {
+    "number": "33",
+    "name": "Potion",
+    "source": "https://archives.bulbagarden.net/media/upload/8/84/PotionScarletViolet188.jpg",
+    "path": "assets/sets/mfb/033.png",
+    "size": [
+      660,
+      920
+    ]
+  },
+  {
+    "number": "34",
+    "name": "Switch",
+    "source": "https://archives.bulbagarden.net/media/upload/f/ff/SwitchScarletViolet194.jpg",
+    "path": "assets/sets/mfb/034.png",
+    "size": [
+      660,
+      920
+    ]
+  }
+]
