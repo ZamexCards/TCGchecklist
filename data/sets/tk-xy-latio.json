@@ -1,1 +1,531 @@
-{"set":{"id":"tk-xy-latio","name":"XY trainer Kit (Latios)","series":"Trainer kits","releaseDate":"2015-04-29","printedTotal":30,"total":30,"images":{"logo":"./assets/sets/tk-xy-latio/logo.webp"},"_source":"central"},"cards":[{"id":"tk-xy-latio-1","name":"Skitty","number":"1","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-2","name":"Fighting Energy","number":"2","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-3","name":"Fighting Energy","number":"3","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-4","name":"Rhydon","number":"4","supertype":"Pokemon","subtypes":["Stage1"],"types":["Fighting"],"rarity":"Uncommon","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-5","name":"Fighting Energy","number":"5","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-6","name":"Fighting Energy","number":"6","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-7","name":"Fighting Energy","number":"7","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-8","name":"Fighting Energy","number":"8","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-9","name":"Fighting Energy","number":"9","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-10","name":"Fighting Energy","number":"10","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-11","name":"Machop","number":"11","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-12","name":"Solrock","number":"12","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-13","name":"Latios","number":"13","supertype":"Pokemon","subtypes":["Basic"],"types":["Psychic"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-14","name":"Machoke","number":"14","supertype":"Pokemon","subtypes":["Stage1"],"types":["Fighting"],"rarity":"Uncommon","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-15","name":"Rhyhorn","number":"15","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-16","name":"Psychic Energy","number":"16","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-17","name":"Fighting Energy","number":"17","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-18","name":"Psychic Energy","number":"18","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-19","name":"Delcatty","number":"19","supertype":"Pokemon","subtypes":["Stage1"],"types":["Colorless"],"rarity":"Rare","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-20","name":"Acro Bike","number":"20","supertype":"Trainer","subtypes":[],"types":[],"rarity":"Uncommon","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-21","name":"Potion","number":"21","supertype":"Trainer","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-22","name":"Machoke","number":"22","supertype":"Pokemon","subtypes":["Stage1"],"types":["Fighting"],"rarity":"Uncommon","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-23","name":"Rhyhorn","number":"23","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-24","name":"Delcatty","number":"24","supertype":"Pokemon","subtypes":["Stage1"],"types":["Colorless"],"rarity":"Rare","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-25","name":"Rhydon","number":"25","supertype":"Pokemon","subtypes":["Stage1"],"types":["Fighting"],"rarity":"Uncommon","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-26","name":"Solrock","number":"26","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-27","name":"Skitty","number":"27","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-28","name":"Machop","number":"28","supertype":"Pokemon","subtypes":["Basic"],"types":["Fighting"],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-29","name":"Psychic Energy","number":"29","supertype":"Energy","subtypes":[],"types":[],"rarity":"Common","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-xy-latio-30","name":"Latios","number":"30","supertype":"Pokemon","subtypes":["Basic"],"types":["Psychic"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]}],"updated":"2026-09-27T10:34:08.938953+00:00"}
+{
+  "set": {
+    "id": "tk-xy-latio",
+    "name": "XY trainer Kit (Latios)",
+    "series": "Trainer kits",
+    "releaseDate": "2015-04-29",
+    "printedTotal": 30,
+    "total": 30,
+    "images": {
+      "logo": "./assets/sets/tk-xy-latio/logo.webp"
+    },
+    "_source": "central"
+  },
+  "cards": [
+    {
+      "id": "tk-xy-latio-1",
+      "name": "Skitty",
+      "number": "1",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/001.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-2",
+      "name": "Fighting Energy",
+      "number": "2",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/002.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-3",
+      "name": "Fighting Energy",
+      "number": "3",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/003.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-4",
+      "name": "Rhydon",
+      "number": "4",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Uncommon",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/004.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-5",
+      "name": "Fighting Energy",
+      "number": "5",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/005.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-6",
+      "name": "Fighting Energy",
+      "number": "6",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/006.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-7",
+      "name": "Fighting Energy",
+      "number": "7",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/007.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-8",
+      "name": "Fighting Energy",
+      "number": "8",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/008.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-9",
+      "name": "Fighting Energy",
+      "number": "9",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/009.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-10",
+      "name": "Fighting Energy",
+      "number": "10",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/010.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-11",
+      "name": "Machop",
+      "number": "11",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/011.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-12",
+      "name": "Solrock",
+      "number": "12",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/012.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-13",
+      "name": "Latios",
+      "number": "13",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/013.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-14",
+      "name": "Machoke",
+      "number": "14",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Uncommon",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/014.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-15",
+      "name": "Rhyhorn",
+      "number": "15",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/015.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-16",
+      "name": "Psychic Energy",
+      "number": "16",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/016.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-17",
+      "name": "Fighting Energy",
+      "number": "17",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/017.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-18",
+      "name": "Psychic Energy",
+      "number": "18",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/018.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-19",
+      "name": "Delcatty",
+      "number": "19",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "Rare",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/019.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-20",
+      "name": "Acro Bike",
+      "number": "20",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Uncommon",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/020.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-21",
+      "name": "Potion",
+      "number": "21",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/021.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-22",
+      "name": "Machoke",
+      "number": "22",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Uncommon",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/022.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-23",
+      "name": "Rhyhorn",
+      "number": "23",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/023.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-24",
+      "name": "Delcatty",
+      "number": "24",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "Rare",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/024.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-25",
+      "name": "Rhydon",
+      "number": "25",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Uncommon",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/025.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-26",
+      "name": "Solrock",
+      "number": "26",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/026.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-27",
+      "name": "Skitty",
+      "number": "27",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/027.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-28",
+      "name": "Machop",
+      "number": "28",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/028.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-29",
+      "name": "Psychic Energy",
+      "number": "29",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [],
+      "rarity": "Common",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/029.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-30",
+      "name": "Latios",
+      "number": "30",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-xy-latio/030.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    }
+  ],
+  "updated": "2026-09-27T10:34:08.938953+00:00"
+}

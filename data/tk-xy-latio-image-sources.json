@@ -1,0 +1,302 @@
+[
+  {
+    "number": "1",
+    "name": "Skitty",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Skitty-1-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/0d/4c/06/0d4c06c3ba3835ad87f21bf2ee7e5be5ee8e7c2ab33b92d96a229662ff1baf67.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/50/48/b5/5048b53cc7436c1ff7602ce2b22abbf8502e1fc467ed64b40056f1e275745a94.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Rhydon",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Rhydon-4-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/27/7e/75/277e754f572501fdd9d9e798463752f8da7ea5753cede5ec318f7ba9cc4545fb.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/ae/84/9d/ae849da55f7c2a754c00dfa6e0755b4391ad5c4ebc63cfd3560a2711cc53e6e5.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/c0/94/37/c09437c8fbd41dfef7020afe764cc17c4a64c44153418b12b52ed0c8095ed967.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/93/fd/83/93fd83893dc85f5f9c402e259c5600784052ed4c9ae3de20cdc2102fea6e787b.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/d5/4f/9d/d54f9dad068a741a06127562006ce2db4f023b8a5d70e375acb67183f6d25b96.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/d1/f5/8f/d1f58fa6f2fa023cc615a4ddc0379884dd58dc9416bec35a32f8916fdd81800b.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Machop",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machop-11-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Solrock",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Solrock-12-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/012.png"
+  },
+  {
+    "number": "13",
+    "name": "Latios",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Latios-13-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/013.png"
+  },
+  {
+    "number": "14",
+    "name": "Machoke",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machoke-14-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/014.png"
+  },
+  {
+    "number": "15",
+    "name": "Rhyhorn",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Rhyhorn-15-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/015.png"
+  },
+  {
+    "number": "16",
+    "name": "Psychic Energy",
+    "source": "https://static.tcgcollector.com/content/images/3b/44/b5/3b44b535c9b4ff181ed4790a2bbd2ab417e0880e1235501986531b32d9d11f94.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/016.png"
+  },
+  {
+    "number": "17",
+    "name": "Fighting Energy",
+    "source": "https://static.tcgcollector.com/content/images/04/7c/91/047c913c2b874072d91647503654e23ac76bdf02b9a9ee27636d4be9db5fe4c5.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/017.png"
+  },
+  {
+    "number": "18",
+    "name": "Psychic Energy",
+    "source": "https://static.tcgcollector.com/content/images/48/5f/8f/485f8fdbfd9799085af9030adbbde09db6393804f3dc33416563486858674376.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/018.png"
+  },
+  {
+    "number": "19",
+    "name": "Delcatty",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Delcatty-19-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/019.png"
+  },
+  {
+    "number": "20",
+    "name": "Acro Bike",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Acro-Bike-20-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/020.png"
+  },
+  {
+    "number": "21",
+    "name": "Potion",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Potion-21-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/021.png"
+  },
+  {
+    "number": "22",
+    "name": "Machoke",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machoke-22-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/022.png"
+  },
+  {
+    "number": "23",
+    "name": "Rhyhorn",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Rhyhorn-23-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/023.png"
+  },
+  {
+    "number": "24",
+    "name": "Delcatty",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Delcatty-24-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/024.png"
+  },
+  {
+    "number": "25",
+    "name": "Rhydon",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Rhydon-25-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/025.png"
+  },
+  {
+    "number": "26",
+    "name": "Solrock",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Solrock-26-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/026.png"
+  },
+  {
+    "number": "27",
+    "name": "Skitty",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Skitty-27-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/027.png"
+  },
+  {
+    "number": "28",
+    "name": "Machop",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Machop-28-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/028.png"
+  },
+  {
+    "number": "29",
+    "name": "Psychic Energy",
+    "source": "https://static.tcgcollector.com/content/images/69/55/dc/6955dc7e9e02987dd65e8053314e749ce5b0b1505b463103433dc8fea99783ed.jpg",
+    "source_size": [
+      320,
+      446
+    ],
+    "path": "assets/sets/tk-xy-latio/029.png"
+  },
+  {
+    "number": "30",
+    "name": "Latios",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Latios-30-XY-Trainer-Kit-Latios.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latio/030.png"
+  }
+]
