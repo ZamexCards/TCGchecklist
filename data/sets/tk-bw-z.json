@@ -1,1 +1,547 @@
-{"set":{"id":"tk-bw-z","name":"BW trainer Kit (Zoroark)","series":"Trainer kits","releaseDate":"2011-09-01","printedTotal":30,"total":30,"images":{"logo":"./assets/sets/tk-bw-z/logo.webp"},"_source":"central"},"cards":[{"id":"tk-bw-z-1","name":"Purrloin","number":"1","supertype":"Pokemon","subtypes":["Basic"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-2","name":"Watchog","number":"2","supertype":"Pokemon","subtypes":["Stage1"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-3","name":"Darkness Energy","number":"3","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-4","name":"Minccino","number":"4","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-5","name":"Darkness Energy","number":"5","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-6","name":"Darkness Energy","number":"6","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-7","name":"Darkness Energy","number":"7","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-8","name":"Darkness Energy","number":"8","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-9","name":"Darkness Energy","number":"9","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-10","name":"Darkness Energy","number":"10","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-11","name":"PlusPower","number":"11","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-12","name":"Patrat","number":"12","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-13","name":"Zorua","number":"13","supertype":"Pokemon","subtypes":["Basic"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-14","name":"Pidove","number":"14","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-15","name":"Tranquill","number":"15","supertype":"Pokemon","subtypes":["Stage1"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-16","name":"Energy Retrieval","number":"16","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-17","name":"Zoroark","number":"17","supertype":"Pokemon","subtypes":["Stage1"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-18","name":"Pokémon Communication","number":"18","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-19","name":"Minccino","number":"19","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-20","name":"Darkness Energy","number":"20","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-21","name":"Pidove","number":"21","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-22","name":"Darkness Energy","number":"22","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-23","name":"Zorua","number":"23","supertype":"Pokemon","subtypes":["Basic"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-24","name":"Darkness Energy","number":"24","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-25","name":"Purrloin","number":"25","supertype":"Pokemon","subtypes":["Basic"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-26","name":"Darkness Energy","number":"26","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-27","name":"Energy Search","number":"27","supertype":"Trainer","subtypes":[],"types":[],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-28","name":"Darkness Energy","number":"28","supertype":"Energy","subtypes":[],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-29","name":"Patrat","number":"29","supertype":"Pokemon","subtypes":["Basic"],"types":["Colorless"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]},{"id":"tk-bw-z-30","name":"Zoroark","number":"30","supertype":"Pokemon","subtypes":["Stage1"],"types":["Darkness"],"rarity":"None","images":{"small":""},"availableVariants":["Base"]}],"updated":"2026-09-27T10:34:03.732397+00:00"}
+{
+  "set": {
+    "id": "tk-bw-z",
+    "name": "BW trainer Kit (Zoroark)",
+    "series": "Trainer kits",
+    "releaseDate": "2011-09-01",
+    "printedTotal": 30,
+    "total": 30,
+    "images": {
+      "logo": "./assets/sets/tk-bw-z/logo.webp"
+    },
+    "_source": "central"
+  },
+  "cards": [
+    {
+      "id": "tk-bw-z-1",
+      "name": "Purrloin",
+      "number": "1",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/001.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-2",
+      "name": "Watchog",
+      "number": "2",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/002.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-3",
+      "name": "Darkness Energy",
+      "number": "3",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/003.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-4",
+      "name": "Minccino",
+      "number": "4",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/004.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-5",
+      "name": "Darkness Energy",
+      "number": "5",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/005.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-6",
+      "name": "Darkness Energy",
+      "number": "6",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/006.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-7",
+      "name": "Darkness Energy",
+      "number": "7",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/007.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-8",
+      "name": "Darkness Energy",
+      "number": "8",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/008.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-9",
+      "name": "Darkness Energy",
+      "number": "9",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/009.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-10",
+      "name": "Darkness Energy",
+      "number": "10",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/010.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-11",
+      "name": "PlusPower",
+      "number": "11",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/011.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-12",
+      "name": "Patrat",
+      "number": "12",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/012.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-13",
+      "name": "Zorua",
+      "number": "13",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/013.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-14",
+      "name": "Pidove",
+      "number": "14",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/014.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-15",
+      "name": "Tranquill",
+      "number": "15",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/015.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-16",
+      "name": "Energy Retrieval",
+      "number": "16",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/016.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-17",
+      "name": "Zoroark",
+      "number": "17",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/017.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-18",
+      "name": "Pokémon Communication",
+      "number": "18",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/018.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-19",
+      "name": "Minccino",
+      "number": "19",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/019.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-20",
+      "name": "Darkness Energy",
+      "number": "20",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/020.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-21",
+      "name": "Pidove",
+      "number": "21",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/021.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-22",
+      "name": "Darkness Energy",
+      "number": "22",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/022.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-23",
+      "name": "Zorua",
+      "number": "23",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/023.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-24",
+      "name": "Darkness Energy",
+      "number": "24",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/024.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-25",
+      "name": "Purrloin",
+      "number": "25",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/025.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-26",
+      "name": "Darkness Energy",
+      "number": "26",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/026.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-27",
+      "name": "Energy Search",
+      "number": "27",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "types": [],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/027.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-28",
+      "name": "Darkness Energy",
+      "number": "28",
+      "supertype": "Energy",
+      "subtypes": [],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/028.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-29",
+      "name": "Patrat",
+      "number": "29",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/029.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    },
+    {
+      "id": "tk-bw-z-30",
+      "name": "Zoroark",
+      "number": "30",
+      "supertype": "Pokemon",
+      "subtypes": [
+        "Stage1"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "rarity": "None",
+      "images": {
+        "small": "./assets/sets/tk-bw-z/030.png"
+      },
+      "availableVariants": [
+        "Base"
+      ]
+    }
+  ],
+  "updated": "2026-09-27T10:34:03.732397+00:00"
+}
