@@ -1,0 +1,368 @@
+[
+  {
+    "number": "1",
+    "name": "Grass Energy",
+    "source": "https://i.ebayimg.com/images/g/ujYAAeSwl~pqtYni/s-l1600.jpg",
+    "source_size": [
+      782,
+      1051
+    ],
+    "path": "assets/sets/tk-xy-latia/001.png",
+    "crop_box": [
+      6,
+      0,
+      771,
+      1040
+    ]
+  },
+  {
+    "number": "2",
+    "name": "Grass Energy",
+    "source": "https://i.ebayimg.com/images/g/T4kAAeSwMeVqfkl4/s-l1600.jpg",
+    "source_size": [
+      1155,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/002.png",
+    "crop_box": [
+      37,
+      38,
+      1114,
+      1552
+    ]
+  },
+  {
+    "number": "3",
+    "name": "Grass Energy",
+    "source": "https://i.ebayimg.com/images/g/2sMAAeSwGdhqsKSN/s-l1600.jpg",
+    "source_size": [
+      1209,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/003.png",
+    "crop_box": [
+      69,
+      81,
+      1142,
+      1543
+    ]
+  },
+  {
+    "number": "4",
+    "name": "Fletchling",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Fletchling-4-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Grass Energy",
+    "source": "https://i.ebayimg.com/images/g/ejQAAeSw2G9qhS47/s-l1600.jpg",
+    "source_size": [
+      1204,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/005.png",
+    "crop_box": [
+      246,
+      237,
+      943,
+      1206
+    ]
+  },
+  {
+    "number": "6",
+    "name": "Lombre",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Lombre-6-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Treecko",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Treecko-7-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/EvQAAeSwUkpqhS3A/s-l1600.jpg",
+    "source_size": [
+      1204,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/008.png",
+    "crop_box": [
+      252,
+      232,
+      953,
+      1201
+    ]
+  },
+  {
+    "number": "9",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/xXIAAeSwfDJqf-CF/s-l1600.jpg",
+    "source_size": [
+      1121,
+      1504
+    ],
+    "path": "assets/sets/tk-xy-latia/009.png",
+    "crop_box": [
+      42,
+      73,
+      1048,
+      1470
+    ]
+  },
+  {
+    "number": "10",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/hVQAAeSwG~dquuQ5/s-l1600.jpg",
+    "source_size": [
+      816,
+      1106
+    ],
+    "path": "assets/sets/tk-xy-latia/010.png",
+    "crop_box": [
+      27,
+      29,
+      784,
+      1078
+    ]
+  },
+  {
+    "number": "11",
+    "name": "Lotad",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Lotad-11-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Tangrowth",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Tangrowth-12-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/012.png"
+  },
+  {
+    "number": "13",
+    "name": "Tangela",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Tangela-13-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/013.png"
+  },
+  {
+    "number": "14",
+    "name": "Latias",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Latias-14-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/014.png"
+  },
+  {
+    "number": "15",
+    "name": "Potion",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Potion-15-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/015.png"
+  },
+  {
+    "number": "16",
+    "name": "Surskit",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Surskit-16-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/016.png"
+  },
+  {
+    "number": "17",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/a-sAAeSwd3dqfkl3/s-l1600.jpg",
+    "source_size": [
+      1151,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/017.png",
+    "crop_box": [
+      34,
+      36,
+      1107,
+      1549
+    ]
+  },
+  {
+    "number": "18",
+    "name": "Grovyle",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Grovyle-18-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/018.png"
+  },
+  {
+    "number": "19",
+    "name": "Grass Energy",
+    "source": "https://i.ebayimg.com/images/g/g58AAeSw3ehqTSNb/s-l1600.jpg",
+    "source_size": [
+      789,
+      1084
+    ],
+    "path": "assets/sets/tk-xy-latia/019.png",
+    "crop_box": [
+      13,
+      18,
+      772,
+      1069
+    ]
+  },
+  {
+    "number": "20",
+    "name": "Acro Bike",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Acro-Bike-20-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/020.png"
+  },
+  {
+    "number": "21",
+    "name": "Lombre",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Lombre-21-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/021.png"
+  },
+  {
+    "number": "22",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/Ug8AAeSwGAhqtYni/s-l1600.jpg",
+    "source_size": [
+      774,
+      1107
+    ],
+    "path": "assets/sets/tk-xy-latia/022.png",
+    "crop_box": [
+      10,
+      58,
+      767,
+      1096
+    ]
+  },
+  {
+    "number": "23",
+    "name": "Lotad",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Lotad-23-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/023.png"
+  },
+  {
+    "number": "24",
+    "name": "Treecko",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Treecko-24-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/024.png"
+  },
+  {
+    "number": "25",
+    "name": "Tangrowth",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Tangrowth-25-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/025.png"
+  },
+  {
+    "number": "26",
+    "name": "Tangela",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Tangela-26-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/026.png"
+  },
+  {
+    "number": "27",
+    "name": "Grovyle",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Grovyle-27-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/027.png"
+  },
+  {
+    "number": "28",
+    "name": "Psychic Energy",
+    "source": "https://i.ebayimg.com/images/g/VqQAAeSw5UJqfki3/s-l1600.jpg",
+    "source_size": [
+      1143,
+      1600
+    ],
+    "path": "assets/sets/tk-xy-latia/028.png",
+    "crop_box": [
+      30,
+      39,
+      1104,
+      1554
+    ]
+  },
+  {
+    "number": "29",
+    "name": "Acro Bike",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Acro-Bike-29-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/029.png"
+  },
+  {
+    "number": "30",
+    "name": "Latias",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Latias-30-XY-Trainer-Kit-Latias.png",
+    "source_size": [
+      734,
+      1024
+    ],
+    "path": "assets/sets/tk-xy-latia/030.png"
+  }
+]
