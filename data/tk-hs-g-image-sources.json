@@ -1,0 +1,302 @@
+[
+  {
+    "number": "1",
+    "name": "Totodile",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Totodile-1-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/001.png"
+  },
+  {
+    "number": "2",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-2-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/002.png"
+  },
+  {
+    "number": "3",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-3-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/003.png"
+  },
+  {
+    "number": "4",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-4-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/004.png"
+  },
+  {
+    "number": "5",
+    "name": "Bill",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Bill-5-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/005.png"
+  },
+  {
+    "number": "6",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-6-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/006.png"
+  },
+  {
+    "number": "7",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-7-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/007.png"
+  },
+  {
+    "number": "8",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-8-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/008.png"
+  },
+  {
+    "number": "9",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-9-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/009.png"
+  },
+  {
+    "number": "10",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-10-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/010.png"
+  },
+  {
+    "number": "11",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-11-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/011.png"
+  },
+  {
+    "number": "12",
+    "name": "Magikarp",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Magikarp-12-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/012.png"
+  },
+  {
+    "number": "13",
+    "name": "Croconaw",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Croconaw-13-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/013.png"
+  },
+  {
+    "number": "14",
+    "name": "Totodile",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Totodile-14-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/014.png"
+  },
+  {
+    "number": "15",
+    "name": "Marill",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Marill-15-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/015.png"
+  },
+  {
+    "number": "16",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-16-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/016.png"
+  },
+  {
+    "number": "17",
+    "name": "Croconaw",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Croconaw-17-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/017.png"
+  },
+  {
+    "number": "18",
+    "name": "Bill",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Bill-18-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/018.png"
+  },
+  {
+    "number": "19",
+    "name": "Magikarp",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Magikarp-19-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/019.png"
+  },
+  {
+    "number": "20",
+    "name": "Gyarados",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Gyarados-20-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/020.png"
+  },
+  {
+    "number": "21",
+    "name": "Energy Switch",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Energy-Switch-21-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/021.png"
+  },
+  {
+    "number": "22",
+    "name": "Pokémon Communication",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Pokemon-Communication-22-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/022.png"
+  },
+  {
+    "number": "23",
+    "name": "Poké Ball",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Poke-Ball-23-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/023.png"
+  },
+  {
+    "number": "24",
+    "name": "Marill",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Marill-24-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/024.png"
+  },
+  {
+    "number": "25",
+    "name": "Professor Elm's Training Method",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Professor-Elms-Training-Method-25-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/025.png"
+  },
+  {
+    "number": "26",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-26-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/026.png"
+  },
+  {
+    "number": "27",
+    "name": "Pokémon Communication",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Pokemon-Communication-27-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/027.png"
+  },
+  {
+    "number": "28",
+    "name": "Switch",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Switch-28-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/028.png"
+  },
+  {
+    "number": "29",
+    "name": "Water Energy",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Water-Energy-29-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/029.png"
+  },
+  {
+    "number": "30",
+    "name": "Gyarados",
+    "source": "https://www.pokemonkaart.nl/wp-content/uploads/Gyarados-30-HGSS-Trainer-Kit-Gyarados.jpg",
+    "source_size": [
+      600,
+      825
+    ],
+    "path": "assets/sets/tk-hs-g/030.png"
+  }
+]
