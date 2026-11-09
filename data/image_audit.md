@@ -4,17 +4,17 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Totaaloverzicht
 
-- sets: 200
-- cards: 21623
+- sets: 201
+- cards: 21799
 - local_cards: 21623
-- missing_cards: 0
-- external_cards: 0
+- missing_cards: 173
+- external_cards: 3
 - broken_cards: 0
 - local_logos: 200
-- missing_logos: 0
+- missing_logos: 1
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 200
+- complete_sets: 196
 
 ## Per set
 
@@ -33,7 +33,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2023sv – McDonald's Collection 2023 | local | 15/15 | 0 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | local | 15/15 | 0 | 0 | 0 |
 | 30th-c – 30th Classic Collection | local | 30/30 | 0 | 0 | 0 |
-| 30th – 30th Celebration | local | 158/158 | 0 | 0 | 0 |
+| 30th – 30th Celebration | local | 158/161 | 0 | 3 | 0 |
 | A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
 | A1a – Mythical Island | local | 86/86 | 0 | 0 | 0 |
 | A2 – Space-Time Smackdown | local | 207/207 | 0 | 0 | 0 |
@@ -72,7 +72,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | cel25cc – Celebrations Classic Collection | local | 25/25 | 0 | 0 | 0 |
 | col1 – Call of Legends | local | 106/106 | 0 | 0 | 0 |
 | dc1 – Double Crisis | local | 34/34 | 0 | 0 | 0 |
-| det1 – Detective Pikachu | local | 18/18 | 0 | 0 | 0 |
+| det1 – Detective Pikachu | local | 18/19 | 1 | 0 | 0 |
 | dp1 – Diamond & Pearl | local | 130/130 | 0 | 0 | 0 |
 | dp2 – Mysterious Treasures | local | 124/124 | 0 | 0 | 0 |
 | dp3 – Secret Wonders | local | 132/132 | 0 | 0 | 0 |
@@ -117,8 +117,9 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me03 – Perfect Order | local | 124/124 | 0 | 0 | 0 |
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
-| mee – Mega Evolution Energy | local | 8/8 | 0 | 0 | 0 |
-| mep – MEP Black Star Promos | local | 89/89 | 0 | 0 | 0 |
+| me06 – Delta Reign | missing | 0/141 | 141 | 0 | 0 |
+| mee – Mega Evolution Energy | local | 8/16 | 8 | 0 | 0 |
+| mep – MEP Black Star Promos | local | 89/112 | 23 | 0 | 0 |
 | mfb – My First Battle | local | 34/34 | 0 | 0 | 0 |
 | miscp – Miscellaneous Promos | local | 1/1 | 0 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
@@ -223,6 +224,22 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Ontbrekende of ongeldige setlogo’s
 
+- me06 – Delta Reign: missing
 
 ## Kaarten zonder lokale afbeelding (per set)
+
+### 30th – 30th Celebration
+**Externe bronlink (niet geverifieerd) (3):** B, G, R
+
+### det1 – Detective Pikachu
+**Geen bronlink (1):** 25
+
+### me06 – Delta Reign
+**Geen bronlink (141):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046, 047, 048, 049, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 065, 066, 067, 068, 069, 070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141
+
+### mee – Mega Evolution Energy
+**Geen bronlink (8):** 009, 010, 011, 012, 013, 014, 015, 016
+
+### mep – MEP Black Star Promos
+**Geen bronlink (23):** 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 120
 
