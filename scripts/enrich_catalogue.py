@@ -191,6 +191,12 @@ def process_card(old,info,secondary,secondary_url,refresh=False):
   if old_url.startswith('https://'):candidates.append(old_url)
   if other:
    candidates.extend([other.get('images',{}).get('large',''),other.get('images',{}).get('small','')])
+  # An explicit English source product ID is also valid base-artwork evidence.
+  pid=(card.get('thirdParty')or{}).get('tcgplayer')
+  if not pid:
+   primary=next((p for p in card.get('printings',[])if p.get('_baseReference')or p.get('label')==card.get('baseVariant')),None)
+   if primary:pid=(primary.get('thirdParty')or{}).get('tcgplayer')
+  if pid:candidates.append('https://tcgplayer-cdn.tcgplayer.com/product/'+str(int(pid))+'_in_1000x1000.jpg')
   for url in dict.fromkeys(candidates):
    a=archive(url,sid,file_number(card['number'])+'-archived.webp','base',{'cardId':card['id'],'number':card['number'],'name':card['name'],'language':'en'})
    if a and not a.get('error'):
@@ -201,19 +207,23 @@ def process_card(old,info,secondary,secondary_url,refresh=False):
  if not card.get('printings'):
   card['printings']=[{'key':'base','type':'base','label':'Basiskaart','images':{'small':card['images'].get('small','')},'verification':'summary_only','imageStatus':'reference_image'}]
  base_assigned=False
+ product_counts={}
+ for p in card['printings']:
+  product=(p.get('thirdParty')or{}).get('tcgplayer')
+  if product:product_counts[str(product)]=product_counts.get(str(product),0)+1
  for p in card['printings']:
   p.setdefault('images',{})
   if p['images'].get('small')==old.get('images',{}).get('small')and p['images'].get('small'):
    p['images']['small']=card['images'].get('small','');base_assigned=True
   if not p['images'].get('small')and (p.get('_baseReference')or is_ordinary(p))and not base_assigned:
    p['images']['small']=card['images'].get('small','');base_assigned=True
-  # Ball patterns have explicit separate product IDs. Do not apply generic
-  # marketplace images to first editions, shadowless, stamps or Jumbo formats.
+  # Only an explicit, distinct product ID from this exact source printing is
+  # accepted. Shared marketplace listings cannot prove an edition or pattern.
   pid=(p.get('thirdParty')or{}).get('tcgplayer')
-  if not valid_image(p['images'].get('small',''))and p.get('foil')in('pokeball','masterball')and pid and not p.get('stamp')and p.get('size','standard')=='standard':
+  if not valid_image(p['images'].get('small',''))and pid and product_counts.get(str(pid))==1:
    url='https://tcgplayer-cdn.tcgplayer.com/product/'+str(int(pid))+'_in_1000x1000.jpg'
-   a=archive(url,sid,file_number(card['number'])+'-'+p['foil']+'.webp','variant',{'cardId':card['id'],'variantId':p.get('variantId'),'productId':pid,'foil':p['foil'],'language':'en'})
-   if a and not a.get('error'):p['images']['small']=a['path'];p['imageAsset']=a;p['verification']='source_product_matched'
+   a=archive(url,sid,file_number(card['number'])+'-variant-'+hashlib.sha256(p['key'].encode()).hexdigest()[:16]+'.webp','variant',{'cardId':card['id'],'variantId':p.get('variantId'),'productId':pid,'printing':{k:p[k]for k in ('type','foil','subtype','stamp','size')if k in p},'language':'en'})
+   if a and not a.get('error'):p['images']['small']=a['path'];p['imageAsset']=a;p['verification']='source_product_matched';p['independentlyVisuallyReviewed']=False
   p.pop('_baseReference',None)
   p['imageStatus']='catalogue_image'if valid_image(p['images'].get('small',''))else'needs_additional_sources'
   if p['imageStatus']=='needs_additional_sources':issues.append({'type':'variant_image','variantKey':p['key'],'variant':p['label'],'reason':'Separate English scan not verified; no simulated scan stored.','source':p.get('source')or card.get('_variantSource')or API+'/cards/'+card['id']})
@@ -241,10 +251,11 @@ def exports(manifest):
        with Image.open(f)as im:w,h=im.size
        assets[path]={'url':PUBLIC+path[2:],'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'width':w,'height':h,'bytes':f.stat().st_size,'sourceStatus':'source_metadata_in_card'if c.get('imageAssets')else'previously_archived'}
       except (OSError,ValueError):pass
+  rp=ROOT/'data/research/sets'/(s['id']+'.json')
+  if rp.exists():
+   set_issues=read(rp).get('issues',[]);issues.extend(set_issues);row['openResearch']=len(set_issues)
   byset.append({'id':s['id'],'name':s['name'],**row})
   for k,v in row.items():totals[k]+=v
-  rp=ROOT/'data/research/sets'/(s['id']+'.json')
-  if rp.exists():issues.extend(read(rp).get('issues',[]))
   series.setdefault(s.get('series')or'Other',[]).append(s['id'])
  checked=now();write(ROOT/'data/catalogue-quality.json',{'schemaVersion':SCHEMA,'checked':checked,'totals':totals,'sets':byset,'scope':'All stored English sets; digital Pocket collections remain explicitly separate.','complete':totals['openResearch']==0})
  write(ROOT/'data/research/open.json',{'checked':checked,'total':len(issues),'issues':issues})
@@ -268,6 +279,25 @@ def main():
    if args.sets and sid not in args.sets:continue
    path=ROOT/'data/sets'/(sid+'.json');payload=read(path)
    if payload['set']['id']!=sid:raise ValueError('Set identity mismatch')
+   set_issues=[]
+   try:
+    source_set=get(API+'/sets/'+urllib.parse.quote(sid,safe=''))
+    if source_set.get('id')!=sid:raise ValueError('Set source identity mismatch')
+    payload['set']['sourceMetadata']={k:v for k,v in source_set.items()if k!='cards'}
+    payload['set']['provenance']={'provider':'TCGdex','url':API+'/sets/'+sid,'language':'en','fetchedAt':now()}
+    if source_set.get('serie',{}).get('id'):payload['set']['seriesId']=source_set['serie']['id']
+    seen={c['id']for c in payload['cards']}
+    for row in source_set.get('cards',[]):
+     if row['id']not in seen:
+      payload['cards'].append({'id':row['id'],'name':row['name'],'number':row['localId'],'images':{'small':row['image']+'/low.webp'if row.get('image')else''}});seen.add(row['id'])
+    expected=(source_set.get('cardCount')or{}).get('total')
+    if expected and expected>len(payload['cards']):set_issues.append({'setId':sid,'type':'set_card_count','reason':'Source count exceeds enumerated card records.','expected':expected,'stored':len(payload['cards'])})
+    for kind in ('logo','symbol'):
+     target=payload['set'].setdefault('images',{})
+     if source_set.get(kind)and not valid_image(target.get(kind,'')):
+      url=source_set[kind]+'.webp';a=archive(url,sid,kind+'-archived.webp','logo',{'setId':sid,'kind':kind,'language':'en'})
+      if a and not a.get('error'):target[kind]=a['path'];payload['set'].setdefault('imageAssets',{})[kind]=a
+   except Exception as e:set_issues.append({'setId':sid,'type':'set_metadata','reason':str(e),'source':API+'/sets/'+sid})
    secondary={};matched=secondary_set(info,secondary_rows);secondary_url=''
    if matched:
     secondary_url=LEGACY+'cards/en/'+matched['id']+'.json'
@@ -280,7 +310,7 @@ def main():
     except Exception as e:print('Secondary set unavailable:',sid,e,flush=True)
     for k in ('ptcgoCode','legalities'):
      if matched.get(k)and not payload['set'].get(k):payload['set'][k]=matched[k]
-   cards=[];research=[]
+   cards=[];research=list(set_issues)
    with concurrent.futures.ThreadPoolExecutor(max_workers=int(os.environ.get('CATALOGUE_WORKERS','10')))as pool:
     for c,issues in pool.map(lambda old:process_card(old,info,secondary,secondary_url,args.refresh),payload['cards']):cards.append(c);research.extend(issues)
    assert len(cards)==len(payload['cards'])and len({c['id']for c in cards})==len(cards)

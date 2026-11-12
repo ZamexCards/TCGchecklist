@@ -46,7 +46,7 @@ const variants = card.printings.map(p => ({
 }));
 ```
 
-Een lege variantafbeelding betekent dat voor die specifieke uitvoering nog geen afzonderlijke scan is bevestigd. Toon dan expliciet een referentieafbeelding. Een reverse-glanslaag is een presentatie-effect en wordt nooit als een echte scan opgeslagen. Afbeeldingen van Poké Ball/Master Ball worden alleen gekoppeld als de bron een bijbehorend specifiek product-ID levert. Afzonderlijke edities, stempels en Jumbo-formaten krijgen niet automatisch dezelfde marketplace-afbeelding.
+Een lege variantafbeelding betekent dat voor die specifieke uitvoering nog geen afzonderlijke scan is bevestigd. Toon dan expliciet een referentieafbeelding. Een reverse-glanslaag is een presentatie-effect en wordt nooit als een echte scan opgeslagen. Marketplace-afbeeldingen worden alleen gekoppeld als de bron voor die exacte uitvoering een specifiek product-ID levert dat binnen de kaart niet met een andere uitvoering wordt gedeeld. Afzonderlijke edities, stempels en Jumbo-formaten krijgen dus geen generieke afbeelding van een andere uitvoering. Nieuwe koppelingen heten `source_product_matched` en hebben `independentlyVisuallyReviewed: false`; dit is een bronmatch, geen claim dat iedere afbeelding handmatig visueel gecontroleerd is.
 
 `images.sourceLarge` is een externe bronverwijzing; dit is geen toezegging dat de hoge-resolutieversie lokaal is opgeslagen. Voor de lokaal opgeslagen bestanden zijn de werkelijke afmetingen en controlesommen beschikbaar in `data/image-assets.json`. Er worden geen vermeende hogere-resolutieafbeeldingen gegenereerd of uitvergroot.
 
