@@ -72,7 +72,7 @@ def variants(card):
     if 'masterball' in serialized or 'master ball' in serialized:values.append('Master Ball')
     return values
 def card_summary(c):
-    return {**{k:v for k,v in c.items() if k not in ('set','image','localId')},'id':c.get('id',''),'name':c.get('name',''),'number':c.get('localId',''),
+    return {**({'_detailSnapshot':{'url':BASE+'/cards/'+c['id'],'setId':c['set']['id'],'fetchedAt':datetime.datetime.now(datetime.timezone.utc).isoformat()}} if c.get('category') and c.get('set',{}).get('id') else {}),**{k:v for k,v in c.items() if k not in ('set','image','localId')},'id':c.get('id',''),'name':c.get('name',''),'number':c.get('localId',''),
         'supertype':c.get('category',''),'subtypes':[c['stage']] if c.get('stage') else [],
         'types':c.get('types') or [],'rarity':c.get('rarity',''),
         'images':{'small':image_url(c.get('image'))},'availableVariants':variants(c)}
@@ -92,6 +92,8 @@ def build_set(item):
     def one(x):
         try:
             c=fetch(BASE+'/cards/'+urllib.parse.quote(x['id'],safe=''))
+            if c.get('id')!=x['id'] or c.get('set',{}).get('id')!=sid or c.get('name','').casefold()!=x.get('name','').casefold():
+                raise ValueError('Card source identity mismatch')
             result=card_summary(c)
             if not result['images']['small']:
                 result['images']['small']=image_url(x.get('image'))

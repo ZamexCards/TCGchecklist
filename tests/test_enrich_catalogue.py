@@ -21,6 +21,12 @@ class CatalogueTests(unittest.TestCase):
   a={'id':'svp','name':'SVP Black Star Promos','series':'Scarlet & Violet','printedTotal':500};b={'id':'svp','name':'Scarlet & Violet Black Star Promos','series':'Scarlet & Violet','printedTotal':1};self.assertEqual(m.secondary_set(a,[b]),b)
  def test_punctuation_card_numbers_have_unique_safe_file_names(self):
   self.assertNotEqual(m.file_number('!'),m.file_number('%3F'));m.safe(m.file_number('!'));m.safe(m.file_number('%3F'))
+ def test_temporary_source_failure_preserves_complete_verified_snapshot(self):
+  old={**self.old,**{k:v for k,v in self.d.items()if k not in ('localId','set')}}
+  secondary={('1',m.norm('Alakazam')):{'id':'base1-1','name':'Alakazam','number':'1','hp':'80'}}
+  with patch.object(m,'get',side_effect=OSError('HTTP 503')),patch.object(m,'valid_image',side_effect=lambda p:bool(p)):
+   c,issues=m.process_card(old,{'id':'base1','releaseDate':'1999-01-09'},secondary,'secondary-source')
+  self.assertEqual(c['hp'],80);self.assertEqual(len(c['printings']),2);self.assertTrue(c['dataQuality']['detailsArchived']);self.assertTrue(c['provenance']['primary']['recoveredFromStoredSnapshot']);self.assertFalse(any(i['type']=='card_detail'for i in issues))
  def test_no_fabricated_images_for_missing_reverse(self):
   d={**self.d,'variants_detailed':[{'type':'normal','size':'standard'},{'type':'reverse','size':'standard'}]}
   with patch.object(m,'get',return_value=d),patch.object(m,'valid_image',side_effect=lambda p:bool(p)),patch.object(m,'archive')as a:

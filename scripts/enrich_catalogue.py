@@ -189,7 +189,7 @@ def supplement(card,other,source):
 
 def process_card(old,info,secondary,secondary_url,refresh=False,templates=None,image_reviews=None):
  sid=info['id'];issues=[];card=copy.deepcopy(old);detail=None
- cached=card.get('_schemaVersion')==SCHEMA and card.get('provenance',{}).get('primary',{}).get('fetchedAt','')> (dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
+ cached=card.get('_schemaVersion')==SCHEMA and (card.get('provenance',{}).get('primary',{}).get('fetchedAt')or card.get('provenance',{}).get('primary',{}).get('recoveredAt',''))> (dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
  try:
   reviewed=reviewed_template(old,sid,templates or{})
   if reviewed:card=reviewed;detail={}
@@ -197,7 +197,20 @@ def process_card(old,info,secondary,secondary_url,refresh=False,templates=None,i
   else:
    detail=get(API+'/cards/'+urllib.parse.quote(old['id'],safe=''));card=merge(old,detail,sid)
    if detail.get('image'):card['imageSourceBase']=detail['image']
- except Exception as e:issues.append({'type':'card_detail','reason':str(e),'source':API+'/cards/'+old['id']})
+ except Exception as e:
+  match=secondary.get((num(old['number']),norm(old['name'])))
+  snapshot=old.get('_detailSnapshot')or{}
+  stored_proof=(snapshot.get('setId')==sid and snapshot.get('url')==API+'/cards/'+old['id'])or bool(match and str(match.get('hp',''))==str(old.get('hp','')))
+  if old.get('variants_detailed')and old.get('category')and stored_proof:
+   # The set refresher may already have archived the full exact response. Do not
+   # discard those facts because a second request temporarily returns HTTP 503.
+   recovered={k:copy.deepcopy(v)for k,v in old.items()if k not in('printings','images','provenance')}
+   recovered.update(id=old['id'],name=old['name'],localId=old['number'],set={'id':sid})
+   card=merge(old,recovered,sid);detail=recovered
+   meta=card['provenance']['primary'];meta.pop('fetchedAt',None)
+   if snapshot.get('fetchedAt'):meta['fetchedAt']=snapshot['fetchedAt']
+   meta.update(recoveredFromStoredSnapshot=True,recoveredAt=now(),refreshError=str(e),identityEvidence='Exact refresher source provenance'if snapshot else'English secondary set/number/name/HP match against stored complete source response')
+  else:issues.append({'type':'card_detail','reason':str(e),'source':API+'/cards/'+old['id']})
  other=secondary.get((num(card['number']),norm(card['name'])))
  if other:card=supplement(card,other,secondary_url)
  card.update(language='en',setId=sid)
