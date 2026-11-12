@@ -105,7 +105,7 @@
   let sets=[],cards=[],activeSet=null;
   const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
   const numVal=n=>{const m=String(n||'').match(/\d+/);return m?parseInt(m[0],10):999999};
-  const status=t=>els.status.innerHTML=t;
+  const status=t=>{els.status.innerHTML=t;els.status.hidden=!t;};
   async function getJSON(url){const r=await fetch(url); if(!r.ok) throw new Error('API fout '+r.status); return r.json();}
   function englishSetFilter(s){return !/jp|japan|korea|china|chinese|japanese|korean/i.test((s.name||'')+' '+(s.id||''));}
   // Cache per browser: setlijst 24 uur, kaartgegevens 30 dagen.
@@ -187,13 +187,13 @@
     const manifest=await centralJSON('./data/sets.json');
     if(!Array.isArray(manifest.sets)||!manifest.sets.length)throw Error('Nog geen centrale setgegevens');
     centralMode=true;
-    showSets(manifest.sets,'Sets direct geladen uit de centrale ZamexCards-database. Bijgewerkt: '+(manifest.updated||'onbekend'));
+    showSets(manifest.sets,'');
     return true;
   }
   async function loadSets(){
     try{await loadCentralSets();return;}catch(e){console.warn('Centrale gegevens nog niet beschikbaar; tijdelijke reservebron:',e);}
     const cached=cacheGet('sets',24*DAY);
-    if(cached?.length)showSets(cached,'Sets direct uit opgeslagen gegevens geladen. Nieuwe sets worden gecontroleerd...');
+    if(cached?.length)showSets(cached,'');
     else status('<span class="zc-loading"></span>Sets laden (eerste bezoek kan iets langer duren)...');
     try{
       const data=await fetchSetList();
