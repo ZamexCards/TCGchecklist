@@ -59,3 +59,9 @@ Marktprijzen blijven gedateerde bronmomentopnamen en worden niet als actuele Zam
 ## Gecontroleerde uitzonderingen
 
 `data/catalogue-overrides.json` bevat onderbouwde correcties op de bron. Een bronrecord zonder bevestigde Engelse druk kan buiten de Engelse export worden gezet. Het oorspronkelijke record blijft dan met de motivering en bewijslinks bewaard in `data/quarantine/`. Dit gebeurt onder andere bij Lt. Yoshida, dat in de Engelse bronmetadata staat maar niet in de officiële Engelse Detective Pikachu-checklist.
+
+## Gedeelde weergavestrategie voor uitvoeringen
+
+Iedere uitvoering bevat `imagePresentation.mode`: `catalogue_image` voor een gekoppelde afbeelding, `reverse_overlay` voor een glanseffect op de referentiekaart, `reference_only` als de uitvoering nog geen eigen scan heeft, en `not_available` als ook een referentie ontbreekt. `referenceImage` is het bronpad; `simulatedEffect` is alleen waar bij de expliciete reverse-overlay. Dit maakt dezelfde weergave in andere apps mogelijk zonder een effect als echte kaartscan op te slaan.
+
+De twaalf genummerde Fighting Energy-kaarten zonder eigen TCGdex-detailendpoint zijn afzonderlijk op hun afbeeldingen gecontroleerd. `data/imports/reviewed-numbered-energy.json` legt die relatie vast met de checksums van alle betrokken kaarten. Alleen gedeelde kaartgegevens worden overgenomen van de gelijksoortige kaart in dezelfde kit; nummers, eigen afbeeldingen, prijzen en marketplace-ID’s worden niet verwisseld.

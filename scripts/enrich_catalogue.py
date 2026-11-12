@@ -136,7 +136,7 @@ def reviewed_template(old,sid,rules):
  c['provenance']={**c.get('provenance',{}),'primary':{'provider':'TCGdex + reviewed same-kit numbered copy','url':c['_enrichedSource'],'language':'en','fetchedAt':now(),'sourceUpdatedAt':d.get('updated'),'identityChecked':['sameSet','sameCardName','archivedImageSha256','visualReview'],'templateCardId':d['id'],'relation':'same_card_text_distinct_collector_number','reason':rule['reason'],'evidence':rule['evidence'],'pricingTransferred':False}}
  return c
 
-def archive(url,sid,filename,kind,evidence):
+def archive(url,sid,filename,kind,evidence,expected_source_sha=None):
  if not url or not url.startswith('https://'):return None
  safe(sid);safe(filename);target=ROOT/'assets/sets'/sid/filename
  try:
@@ -145,6 +145,7 @@ def archive(url,sid,filename,kind,evidence):
    with Image.open(target)as im:im.load();w,h=im.size
   else:
    body=get(url,attempts=2,image=True)
+   if expected_source_sha and hashlib.sha256(body).hexdigest()!=expected_source_sha:raise ValueError('reviewed_source_image_changed')
    with Image.open(io.BytesIO(body))as source:
     source.load();w,h=source.size
     if kind!='logo'and (w<200 or h<280):raise ValueError('not_a_card_image')
@@ -153,7 +154,7 @@ def archive(url,sid,filename,kind,evidence):
     image=ImageOps.exif_transpose(source).convert('RGBA'if source.mode=='RGBA'else'RGB')
     image.save(tmp,'WEBP',quality=90,method=4);tmp.replace(target)
   raw=target.read_bytes()
-  return {'path':'./'+str(target.relative_to(ROOT)),'sourceUrl':url,'sha256':hashlib.sha256(raw).hexdigest(),'width':w,'height':h,'bytes':len(raw),'kind':kind,'identityEvidence':evidence,'archivedAt':now()}
+  return {'path':'./'+str(target.relative_to(ROOT)),'sourceUrl':url,'sourceSha256':expected_source_sha,'sha256':hashlib.sha256(raw).hexdigest(),'width':w,'height':h,'bytes':len(raw),'kind':kind,'identityEvidence':evidence,'archivedAt':now()}
  except (OSError,ValueError,urllib.error.URLError,TimeoutError)as e:return {'error':type(e).__name__+': '+str(e),'sourceUrl':url}
 
 def secondary_set(info,rows):
@@ -186,7 +187,7 @@ def supplement(card,other,source):
  card.setdefault('provenance',{})['secondary']={'provider':'PokemonTCG legacy dataset','url':source,'language':'en','fetchedAt':now(),'identityChecked':['setName','setPrintedTotal','number','name'],'fieldsFilled':fields,'historicalCompatibilitySource':True}
  return card
 
-def process_card(old,info,secondary,secondary_url,refresh=False,templates=None):
+def process_card(old,info,secondary,secondary_url,refresh=False,templates=None,image_reviews=None):
  sid=info['id'];issues=[];card=copy.deepcopy(old);detail=None
  cached=card.get('_schemaVersion')==SCHEMA and card.get('provenance',{}).get('primary',{}).get('fetchedAt','')> (dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
  try:
@@ -203,8 +204,10 @@ def process_card(old,info,secondary,secondary_url,refresh=False,templates=None):
  card.setdefault('images',{})
  # Base artwork: preserve existing verified files; consult a second catalogue if
  # the primary source supplies no image. Never derive an ID from a similar name.
+ reviewed_image=(image_reviews or{}).get(card['id'])
+ if reviewed_image and (reviewed_image['setId']!=sid or reviewed_image['id']!=card['id']or norm(reviewed_image['name'])!=norm(card['name'])or num(reviewed_image['number'])!=num(card['number'])or reviewed_image['language']!='en'):raise ValueError('reviewed_image_identity_mismatch')
  if not valid_image(card['images'].get('small','')):
-  candidates=[]
+  candidates=[reviewed_image['sourceUrl']]if reviewed_image else[]
   if detail and detail.get('image'):candidates.append(detail['image']+'/high.webp')
   old_url=card['images'].get('small','')
   if old_url.startswith('https://'):candidates.append(old_url)
@@ -217,9 +220,11 @@ def process_card(old,info,secondary,secondary_url,refresh=False,templates=None):
    if primary:pid=(primary.get('thirdParty')or{}).get('tcgplayer')
   if pid:candidates.append('https://tcgplayer-cdn.tcgplayer.com/product/'+str(int(pid))+'_in_1000x1000.jpg')
   for url in dict.fromkeys(candidates):
-   a=archive(url,sid,file_number(card['number'])+'-archived.webp','base',{'cardId':card['id'],'number':card['number'],'name':card['name'],'language':'en'})
+   a=archive(url,sid,file_number(card['number'])+'-archived.webp','base',{'cardId':card['id'],'number':card['number'],'name':card['name'],'language':'en'},expected_source_sha=reviewed_image['sourceSha256']if reviewed_image and url==reviewed_image['sourceUrl']else None)
    if a and not a.get('error'):
-    card['images']['small']=a['path'];card.setdefault('imageAssets',{})['base']=a;break
+    card['images']['small']=a['path'];card.setdefault('imageAssets',{})['base']=a
+    if reviewed_image and url==reviewed_image['sourceUrl']:card.setdefault('provenance',{})['reviewedImage']=reviewed_image
+    break
   if not valid_image(card['images'].get('small','')):issues.append({'type':'base_image','reason':'No independently matched English image could be archived.','sourcesTried':[x for x in candidates if x]})
  # Keep a source high-resolution URL distinct from the actually archived file.
  if card.get('imageSourceBase'):card['images']['sourceLarge']=card['imageSourceBase']+'/high.webp'
@@ -245,10 +250,13 @@ def process_card(old,info,secondary,secondary_url,refresh=False,templates=None):
    if a and not a.get('error'):p['images']['small']=a['path'];p['imageAsset']=a;p['verification']='source_product_matched';p['independentlyVisuallyReviewed']=False
   p.pop('_baseReference',None)
   p['imageStatus']='catalogue_image'if valid_image(p['images'].get('small',''))else'needs_additional_sources'
+  mode='catalogue_image'if p['imageStatus']=='catalogue_image'else'reverse_overlay'if p.get('type')=='reverse'and not p.get('foil')and'Pocket'not in info.get('series','')and valid_image(card['images'].get('small',''))else'reference_only'if valid_image(card['images'].get('small',''))else'not_available'
+  p['imagePresentation']={'mode':mode,'referenceImage':card['images'].get('small',''),'simulatedEffect':mode=='reverse_overlay'}
   if p['imageStatus']=='needs_additional_sources':issues.append({'type':'variant_image','variantKey':p['key'],'variant':p['label'],'reason':'Separate English scan not verified; no simulated scan stored.','source':p.get('source')or card.get('_variantSource')or API+'/cards/'+card['id']})
  if not card.get('illustrator')and'illustrator'not in card.get('_notApplicable',[]):issues.append({'type':'illustrator','reason':'Artist not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not card.get('hp'):issues.append({'type':'hp','reason':'HP not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not any(card.get(k)for k in ('attacks','abilities','effect')):issues.append({'type':'card_text','reason':'No attacks, ability or effect supplied by the matched sources.'})
+ card['baseVariant']=next((p['label']for p in card['printings']if p.get('images',{}).get('small')and p['images']['small']==card['images'].get('small')),card.get('baseVariant',card['printings'][0]['label']))
  card['availableVariants']=[p['label']for p in card['printings']]
  card['dataQuality']={'detailsArchived':bool(card.get('_enrichedSource')),'baseImageArchived':valid_image(card['images'].get('small','')),'printings':len(card['printings']),'variantImagesArchived':sum(valid_image(p['images'].get('small',''))for p in card['printings']),'openResearch':len(issues),'notApplicable':sorted(set(card.get('_notApplicable',[])+(['regulationMark']if not card.get('regulationMark')and (info.get('releaseDate','')<'2017-01-01')else[])))}
  return card,[{'setId':sid,'cardId':card['id'],'number':card['number'],'name':card['name'],**x}for x in issues]
@@ -294,6 +302,8 @@ def main():
  excluded=read(overrides_path).get('excludedFromEnglish',{})if overrides_path.exists()else{}
  templates_path=ROOT/'data/imports/reviewed-numbered-energy.json'
  templates=read(templates_path)if templates_path.exists()else{}
+ images_path=ROOT/'data/imports/reviewed-image-sources.json'
+ image_reviews=read(images_path).get('cards',{})if images_path.exists()else{}
  try:secondary_rows=get(LEGACY+'sets/en.json')
  except Exception as e:print('Secondary listing unavailable:',e,flush=True);secondary_rows=[]
  if not args.exports_only:
@@ -343,7 +353,7 @@ def main():
      if matched.get(k)and not payload['set'].get(k):payload['set'][k]=matched[k]
    cards=[];research=list(set_issues)
    with concurrent.futures.ThreadPoolExecutor(max_workers=int(os.environ.get('CATALOGUE_WORKERS','10')))as pool:
-    for c,issues in pool.map(lambda old:process_card(old,info,secondary,secondary_url,args.refresh,templates),payload['cards']):cards.append(c);research.extend(issues)
+    for c,issues in pool.map(lambda old:process_card(old,info,secondary,secondary_url,args.refresh,templates,image_reviews),payload['cards']):cards.append(c);research.extend(issues)
    assert len(cards)==len(payload['cards'])and len({c['id']for c in cards})==len(cards)
    payload.update(cards=cards,updated=now(),schemaVersion=SCHEMA,language='en')
    payload['set']['game']='pokemon-tcg-pocket'if'Pocket'in info.get('series','')else'pokemon-tcg';payload['set']['language']='en'
