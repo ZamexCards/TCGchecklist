@@ -114,6 +114,13 @@ def build_set(item):
                 payload['set']['images']['logo']=old.get('set',{}).get('images',{}).get('logo','')
             old_cards={c['id']:c for c in old.get('cards',[])}
             for c in payload['cards']:
+                previous=old_cards.get(c['id'],{})
+                # Keep reviewed printing variants when upstream flags are incomplete.
+                if (previous.get('_variantSource') and previous.get('availableVariants')
+                        and previous.get('name')==c.get('name')
+                        and previous.get('number')==c.get('number')):
+                    c['availableVariants']=previous['availableVariants']
+                    c['_variantSource']=previous['_variantSource']
                 previous_image=old_cards.get(c['id'],{}).get('images',{}).get('small','')
                 if previous_image.startswith('./assets/'):c['images']['small']=previous_image
                 if not c['images']['small']:
