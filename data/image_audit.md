@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 202
 - cards: 21979
-- local_cards: 21944
+- local_cards: 21947
 - missing_cards: 32
-- external_cards: 3
+- external_cards: 0
 - broken_cards: 0
 - local_logos: 201
 - missing_logos: 1
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 197
+- complete_sets: 198
 
 ## Per set
 
@@ -33,7 +33,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | 2023sv – McDonald's Collection 2023 | local | 15/15 | 0 | 0 | 0 |
 | 2024sv – McDonald's Collection 2024 | local | 15/15 | 0 | 0 | 0 |
 | 30th-c – 30th Classic Collection | local | 30/30 | 0 | 0 | 0 |
-| 30th – 30th Celebration | local | 158/161 | 0 | 3 | 0 |
+| 30th – 30th Celebration | local | 161/161 | 0 | 0 | 0 |
 | A1 – Genetic Apex | local | 286/286 | 0 | 0 | 0 |
 | A1a – Mythical Island | local | 86/86 | 0 | 0 | 0 |
 | A2 – Space-Time Smackdown | local | 207/207 | 0 | 0 | 0 |
@@ -228,9 +228,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - me06 – Delta Reign: missing
 
 ## Kaarten zonder lokale afbeelding (per set)
-
-### 30th – 30th Celebration
-**Externe bronlink (niet geverifieerd) (3):** B, G, R
 
 ### det1 – Detective Pikachu
 **Geen bronlink (1):** 25

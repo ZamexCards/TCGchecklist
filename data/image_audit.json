@@ -3,15 +3,15 @@
   "totals": {
     "sets": 202,
     "cards": 21979,
-    "local_cards": 21944,
+    "local_cards": 21947,
     "missing_cards": 32,
-    "external_cards": 3,
+    "external_cards": 0,
     "broken_cards": 0,
     "local_logos": 201,
     "missing_logos": 1,
     "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 197
+    "complete_sets": 198
   },
   "sets": [
     {
@@ -149,25 +149,9 @@
       "name": "30th Celebration",
       "logo_status": "local",
       "total_cards": 161,
-      "local_cards": 158,
+      "local_cards": 161,
       "missing_cards": [],
-      "external_unverified_cards": [
-        {
-          "id": "30th-B",
-          "number": "B",
-          "name": "Mew"
-        },
-        {
-          "id": "30th-G",
-          "number": "G",
-          "name": "Mew"
-        },
-        {
-          "id": "30th-R",
-          "number": "R",
-          "name": "Mew"
-        }
-      ],
+      "external_unverified_cards": [],
       "broken_cards": []
     },
     {
