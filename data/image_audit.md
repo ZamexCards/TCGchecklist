@@ -6,15 +6,15 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 217
 - cards: 23923
-- local_cards: 23922
-- missing_cards: 1
+- local_cards: 23923
+- missing_cards: 0
 - external_cards: 0
 - broken_cards: 0
-- local_logos: 210
+- local_logos: 211
 - missing_logos: 6
-- external_logos: 1
+- external_logos: 0
 - broken_logos: 0
-- complete_sets: 209
+- complete_sets: 211
 
 ## Per set
 
@@ -121,7 +121,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
 | me06 – Delta Reign | missing | 141/141 | 0 | 0 | 0 |
 | mee – Mega Evolution Energy | local | 16/16 | 0 | 0 | 0 |
-| mep – MEP Black Star Promos | local | 111/112 | 1 | 0 | 0 |
+| mep – MEP Black Star Promos | local | 112/112 | 0 | 0 | 0 |
 | mfb – My First Battle | local | 34/34 | 0 | 0 | 0 |
 | miscp – Miscellaneous Promos | local | 1/1 | 0 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
@@ -192,7 +192,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | swsh2 – Rebel Clash | local | 209/209 | 0 | 0 | 0 |
 | swsh3.5 – Champion's Path | local | 80/80 | 0 | 0 | 0 |
 | swsh3 – Darkness Ablaze | local | 201/201 | 0 | 0 | 0 |
-| swsh4.5 – Shining Fates | external_unverified | 73/73 | 0 | 0 | 0 |
+| swsh4.5 – Shining Fates | local | 73/73 | 0 | 0 | 0 |
 | swsh4.5sv – Shining Fates Shiny Vault | missing | 122/122 | 0 | 0 | 0 |
 | swsh4 – Vivid Voltage | local | 203/203 | 0 | 0 | 0 |
 | swsh5 – Battle Styles | local | 183/183 | 0 | 0 | 0 |
@@ -245,11 +245,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 - sm3.5 – Shining Legends: missing
 - sm7.5 – Dragon Majesty: missing
 - swsh12.5gg – Crown Zenith Galarian Gallery: missing
-- swsh4.5 – Shining Fates: external_unverified
 - swsh4.5sv – Shining Fates Shiny Vault: missing
 
 ## Kaarten zonder lokale afbeelding (per set)
-
-### mep – MEP Black Star Promos
-**Geen bronlink (1):** 120
 

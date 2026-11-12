@@ -3,15 +3,15 @@
   "totals": {
     "sets": 217,
     "cards": 23923,
-    "local_cards": 23922,
-    "missing_cards": 1,
+    "local_cards": 23923,
+    "missing_cards": 0,
     "external_cards": 0,
     "broken_cards": 0,
-    "local_logos": 210,
+    "local_logos": 211,
     "missing_logos": 6,
-    "external_logos": 1,
+    "external_logos": 0,
     "broken_logos": 0,
-    "complete_sets": 209
+    "complete_sets": 211
   },
   "sets": [
     {
@@ -1029,14 +1029,8 @@
       "name": "MEP Black Star Promos",
       "logo_status": "local",
       "total_cards": 112,
-      "local_cards": 111,
-      "missing_cards": [
-        {
-          "id": "mep-120",
-          "number": "120",
-          "name": "Celebratory Fanfare"
-        }
-      ],
+      "local_cards": 112,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -1743,7 +1737,7 @@
     {
       "id": "swsh4.5",
       "name": "Shining Fates",
-      "logo_status": "external_unverified",
+      "logo_status": "local",
       "total_cards": 73,
       "local_cards": 73,
       "missing_cards": [],
