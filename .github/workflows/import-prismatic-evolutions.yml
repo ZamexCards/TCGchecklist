@@ -1,0 +1,75 @@
+name: Import complete Prismatic Evolutions catalogue
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/imports/prismatic-evolutions.json.gz'
+      - 'data/imports/prismatic-evolutions-images.json.gz'
+      - 'scripts/import_prismatic_evolutions.py'
+      - '.github/workflows/import-prismatic-evolutions.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pokemon-checklist-data
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Import reviewed English cards
+        run: python scripts/import_prismatic_evolutions.py
+      - name: Audit complete image archive
+        run: python scripts/audit_images.py
+      - name: Commit image archive
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/sets/sv08.5/ data/
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive Prismatic Evolutions catalogue and reviewed variant images'
+            git fetch --unshallow origin || git fetch origin main
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          report=json.loads(Path('data/prismatic-evolutions-import-report.json').read_text())
+          print('## Prismatic Evolutions — Engelse kaarten')
+          print(f"Kaartnummers: {report['cards']}/180; uitvoeringen: {report['printings']}; echte afbeeldingen: {report['actualImages']}; open beeldonderzoek: {report['openImageResearch']}")
+          print('Setcode, kaartnummer, naam en taal zijn vooraf gecontroleerd; bronbestanden zijn SHA-256 vastgezet.')
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.commit.outputs.changed == 'true'
+        with:
+          path: '.'
+  deploy:
+    needs: import
+    if: needs.import.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish checklist
+        id: deployment
+        uses: actions/deploy-pages@v4
