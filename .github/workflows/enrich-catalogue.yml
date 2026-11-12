@@ -1,0 +1,84 @@
+name: Archive full English Pokemon catalogue
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/enrich_catalogue.py'
+      - 'tests/test_enrich_catalogue.py'
+      - '.github/workflows/enrich-catalogue.yml'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pokemon-checklist-data
+  cancel-in-progress: false
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Verify identity matching and preservation
+        run: python -m unittest discover -s tests -p test_enrich_catalogue.py -v
+      - name: Archive English details, printings and genuine images
+        env:
+          CATALOGUE_WORKERS: '10'
+        run: python -u scripts/enrich_catalogue.py
+      - name: Validate local artwork
+        run: python scripts/audit_images.py
+      - name: Commit enriched database and exports
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ assets/
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive full English card data, variant artwork and reusable catalogue exports'
+            git fetch --unshallow origin || git fetch origin main
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                echo '::error::Concurrent catalogue changes conflict; refusing to overwrite them.'
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                echo 'changed=true' >> "$GITHUB_OUTPUT"
+                break
+              fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
+          fi
+      - name: Write actual completeness report
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          r=json.load(open('data/catalogue-quality.json'))
+          print('## English catalogue archive')
+          for k,v in r['totals'].items():print(f'- {k}: {v}')
+          print('No simulated reverse or ball-pattern image was archived. Outstanding source gaps are listed in data/research/open.json.')
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+  deploy:
+    needs: enrich
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish reusable database endpoints
+        id: deployment
+        uses: actions/deploy-pages@v4

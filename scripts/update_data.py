@@ -72,7 +72,7 @@ def variants(card):
     if 'masterball' in serialized or 'master ball' in serialized:values.append('Master Ball')
     return values
 def card_summary(c):
-    return {'id':c.get('id',''),'name':c.get('name',''),'number':c.get('localId',''),
+    return {**{k:v for k,v in c.items() if k not in ('set','image','localId')},'id':c.get('id',''),'name':c.get('name',''),'number':c.get('localId',''),
         'supertype':c.get('category',''),'subtypes':[c['stage']] if c.get('stage') else [],
         'types':c.get('types') or [],'rarity':c.get('rarity',''),
         'images':{'small':image_url(c.get('image'))},'availableVariants':variants(c)}
@@ -115,6 +115,12 @@ def build_set(item):
             old_cards={c['id']:c for c in old.get('cards',[])}
             for c in payload['cards']:
                 previous=old_cards.get(c['id'],{})
+                # Preserve archived rich data, printing artwork and provenance.
+                if previous.get('_enrichedSource'):
+                    preserved={**previous,**c}
+                    for key in ('printings','availableVariants','baseVariant','_variantSource','_enrichedSource','_schemaVersion','provenance','imageAssets','dataQuality','supplemental'):
+                        if key in previous:preserved[key]=previous[key]
+                    c.clear();c.update(preserved)
                 # Keep reviewed printing variants when upstream flags are incomplete.
                 if (previous.get('_variantSource') and previous.get('availableVariants')
                         and previous.get('name')==c.get('name')
@@ -153,7 +159,7 @@ def main():
     # Existing snapshot remains available if a remote request fails.
     for item in listing:
         sid=item.get('id','')
-        if not re.fullmatch(r'[a-zA-Z0-9_-]+',sid):continue
+        if not re.fullmatch(r'[a-zA-Z0-9_.-]+',sid):continue
         path=SETS/(sid+'.json')
         existing=previous.get(sid)
         recent=bool(existing and existing.get('releaseDate') and
@@ -192,3 +198,4 @@ def main():
     print('Total:',len(ordered),'Failures:',len(errors),flush=True)
     if errors:print('Failures:',errors,flush=True)
 if __name__=='__main__':main()
+
