@@ -27,6 +27,9 @@ class CatalogueTests(unittest.TestCase):
   with patch.object(m,'get',side_effect=OSError('HTTP 503')),patch.object(m,'valid_image',side_effect=lambda p:bool(p)):
    c,issues=m.process_card(old,{'id':'base1','releaseDate':'1999-01-09'},secondary,'secondary-source')
   self.assertEqual(c['hp'],80);self.assertEqual(len(c['printings']),2);self.assertTrue(c['dataQuality']['detailsArchived']);self.assertTrue(c['provenance']['primary']['recoveredFromStoredSnapshot']);self.assertFalse(any(i['type']=='card_detail'for i in issues))
+ def test_reviewed_stamp_correction_and_image_evidence_survive_refresh(self):
+  old={**self.old,'_enrichedSource':'primary','printings':[{'type':'holo','stamp':['pokemon-day-2025'],'size':'standard','variantId':'same-print','key':'stable-old-key','label':'Holo · Pokémon Day 2025','images':{'small':'./assets/reviewed.webp'},'_reviewedOverrides':{'stamp':['pokemon-day-2025'],'label':'Holo · Pokémon Day 2025'},'_reviewedSourceFields':{'stamp':['30th-pokeday']},'imageAsset':{'sha256':'reviewed-hash'},'verification':'identity_and_image_reviewed','independentlyVisuallyReviewed':True}]}
+  detail={**self.d,'variants_detailed':[{'type':'holo','stamp':['30th-pokeday'],'size':'standard','variantId':'same-print'}]};c=m.merge(old,detail,'base1');p=next(p for p in c['printings']if p['key']=='stable-old-key');self.assertEqual(p['stamp'],['pokemon-day-2025']);self.assertEqual(p['imageAsset']['sha256'],'reviewed-hash');self.assertTrue(p['independentlyVisuallyReviewed'])
  def test_no_fabricated_images_for_missing_reverse(self):
   d={**self.d,'variants_detailed':[{'type':'normal','size':'standard'},{'type':'reverse','size':'standard'}]}
   with patch.object(m,'get',return_value=d),patch.object(m,'valid_image',side_effect=lambda p:bool(p)),patch.object(m,'archive')as a:

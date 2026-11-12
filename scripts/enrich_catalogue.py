@@ -91,9 +91,10 @@ def printings(old,d):
   match=next((v for v in result if signature(v)==signature(p)or(v.get('variantId')and v.get('variantId')==p.get('variantId'))or v['label'].casefold()==p.get('label','').casefold()),None)
   if match:
    if reviewed:
-    for k in ('key','label','verification'): 
+    for k in ('key','label','verification','imageAsset','independentlyVisuallyReviewed','_reviewedOverrides','_reviewedSourceFields'): 
      if p.get(k):match[k]=p[k]
     if p.get('images',{}).get('small'):match['images']=copy.deepcopy(p['images']);match['imageStatus']=p.get('imageStatus','catalogue_image')
+    if p.get('_reviewedOverrides'):match.update(copy.deepcopy(p['_reviewedOverrides']))
   elif reviewed:result.append(copy.deepcopy(p))
  if reviewed and not previous:
   for name in old.get('availableVariants',[]):

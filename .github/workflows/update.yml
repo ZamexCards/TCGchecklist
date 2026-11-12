@@ -11,6 +11,8 @@ on:
       - 'scripts/audit_images.py'
       - 'scripts/enrich_catalogue.py'
       - 'scripts/validate_catalogue.py'
+      - 'scripts/import_reviewed_variants.py'
+      - 'data/imports/reviewed-variant-images.json'
       - 'data/catalogue-overrides.json'
       - 'data/imports/reviewed-numbered-energy.json'
       - 'data/imports/reviewed-image-sources.json'
@@ -49,6 +51,8 @@ jobs:
         run: python scripts/archive_available_images.py
       - name: Archive complete English card details and variants
         run: python scripts/enrich_catalogue.py
+      - name: Apply visually reviewed English variant scans
+        run: python scripts/import_reviewed_variants.py
       - name: Validate complete database and reusable exports
         run: python scripts/validate_catalogue.py
       - name: Audit images
