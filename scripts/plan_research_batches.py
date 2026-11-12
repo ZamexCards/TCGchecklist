@@ -16,6 +16,16 @@ def main():
     excluded_reverse = 0
     seen = set()
     cards = {}
+    deferred_records = {}
+    for path in sorted((ROOT / 'data/research/completed').glob('*.json')):
+        report = m.read(path)
+        for item in report.get('items', []):
+            if (item.get('outcome') == 'searched_no_verified_image'
+                    and item.get('retryPolicy') == 'on_user_request_or_new_source'):
+                deferred_records[(item['cardId'], item['variantKey'])] = {
+                    'lastResearchPart': report['part'], 'checked': report['checked'],
+                    'reportPath': str(path.relative_to(ROOT)), 'reason': item['reason']}
+    deferred = []
     for s in manifest:
         cards.update({c['id']: c for c in m.read(ROOT / 'data/sets' / (s['id'] + '.json'))['cards']})
     for issue in open_issues['issues']:
@@ -29,6 +39,9 @@ def main():
         key = (issue['cardId'], issue['variantKey'])
         assert key not in seen, key
         seen.add(key)
+        if key in deferred_records:
+            deferred.append({**issue, **deferred_records[key]})
+            continue
         grouped[issue['setId']].append(issue)
     priority = ['sv10.5b', 'sv10.5w', 'sv08.5']
     order = priority + [s['id'] for s in manifest if s['id'] not in priority]
@@ -41,7 +54,7 @@ def main():
                             'count': len(rows[start:start + LIMIT]),
                             'items': rows[start:start + LIMIT]})
     assert all(0 < b['count'] <= LIMIT for b in batches)
-    assert sum(b['count'] for b in batches) == len(seen)
+    assert sum(b['count'] for b in batches) + len(deferred) == len(seen)
     metadata_groups = collections.defaultdict(list)
     for issue in open_issues['issues']:
         if issue['type'] != 'variant_image':
@@ -57,6 +70,9 @@ def main():
     m.write(ROOT / 'data/research/batches.json', {
         'schemaVersion': '1.0', 'checked': m.now(), 'maxItemsPerBatch': LIMIT,
         'variantImagesRemaining': len(seen), 'batchCount': len(batches),
+        'variantImagesToSearch': len(seen) - len(deferred),
+        'reviewedUnavailableImages': len(deferred),
+        'reviewedUnavailable': deferred,
         'metadataBatchCount': len(metadata_batches),
         'totalPendingBatches': len(batches) + len(metadata_batches),
         'ordinaryReverseExcluded': excluded_reverse,

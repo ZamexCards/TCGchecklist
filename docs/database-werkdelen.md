@@ -48,48 +48,52 @@ Status: **afgerond en online gecontroleerd op 12 november 2026**. Alle 25 afbeel
 
 ## Hoeveel delen?
 
-Met de huidige grens van maximaal 25 items per groep zijn **252 delen gepland**: 224 delen voor speciale afbeeldingen (2 uitgevoerd en 222 resterend) en 28 delen voor ontbrekende kaartgegevens (22 illustratorgroepen, 5 kaarttekstgroepen en 1 setaantalverschil). Een zoekdeel kan ook eindigen met expliciet vastgelegde onbeschikbare bronnen; dat telt niet als volledig aangevulde kaartdata. Nieuwe broninformatie kan de planning veranderen.
+Met de huidige grens van maximaal 25 items per groep zijn **252 delen gepland**: 224 delen voor speciale afbeeldingen (4 zoekdelen uitgevoerd en 220 resterend) en 28 delen voor ontbrekende kaartgegevens (22 illustratorgroepen, 5 kaarttekstgroepen en 1 setaantalverschil). Een zoekdeel kan ook eindigen met expliciet vastgelegde onbeschikbare bronnen; dat telt niet als volledig aangevulde kaartdata. Nieuwe broninformatie kan de planning veranderen.
 
-## Eerstvolgende chats na deel 2
+## Deel 3 en 4: resterende Black Bolt-uitvoeringen
 
-De gegenereerde batchnummers beginnen opnieuw bij de resterende kaartuitvoeringen. Gebruik de exacte kaart-ID’s en variantkeys hieronder als startpunt; een nummer alleen is geen bewijs dat het om dezelfde eerdere groep gaat.
+Status: de 38 geverifieerde afbeeldingen zijn lokaal geïmporteerd en gevalideerd; online publicatiecontrole volgt. Beide exacte zoeklijsten zijn afgewerkt. Vier uitvoeringen uit deel 4 blijven zonder afzonderlijk geverifieerd beeld.
+
+| Deel | Gecontroleerd | Beelden gevonden | Nog zonder geverifieerd beeld |
+| --- | ---: | ---: | ---: |
+| 3 | 25 | 25 | 0 |
+| 4 | 17 | 13 | 4 |
+
+Deel 3 bevat 23 Master Ball-foto’s, 1 Poké Ball-foto en Zekrom ex 034/086 met zichtbaar Ultra Ball League-logo. Deel 4 voegt 13 Master Ball-foto’s toe. Alle foto’s zijn gecontroleerd op Engelse taal, kaartnummer en het balpatroon of de bijzondere stempel. Het product van Eelektross heeft een spelfout in de winkeltitel; de daadwerkelijke kaartfoto is gecontroleerd op Eelektross en BLK EN 032/086.
+
+De exacte resultaten en geraadpleegde bronadressen staan in [deel 3](../data/research/completed/part-003-black-bolt.json) en [deel 4](../data/research/completed/part-004-black-bolt.json).
+
+### Open na de zoekronde van deel 4
+
+| Kaart | Nummer | Uitvoering |
+| --- | --- | --- |
+| Genesect ex | 067/086 | Liao Fu Guan |
+| Air Balloon | 079/086 | Liao Fu Guan |
+| Air Balloon | 079/086 | José Cruz Galindo-Resendiz |
+| Pokégear 3.0 | 084/086 | Liao Fu Guan |
+
+De productpagina’s van Cape Fear Collectibles tonen het winkellogo als afbeelding, zonder controleerbare kaartscan. De alternatieve product- en beeldbronnen retourneerden 403 of 404. Deze vier items blijven in de kwaliteitsrapportage als ontbrekend staan. De afgesloten zoekronde wordt apart getoond onder `reviewedUnavailable` in de werklijst, zodat dezelfde items niet automatisch de volgende zoekronde vullen. Opnieuw onderzoeken kan op verzoek of met nieuwe broninformatie; pas dan de betreffende `retryPolicy` aan of voeg een geverifieerde import toe.
+
+19 tests zijn geslaagd. De databasevalidatie controleerde 217 sets, 23.923 kaarten, 37.977 uitvoeringen en 25.943 gearchiveerde beeldbestanden. De volledige export bevat de 38 nieuwe variantkoppelingen. De gewone reverse holo’s blijven buiten het zoekwerk.
+
+### Actuele telling na deel 3 en 4
+
+- 4 zoekdelen uitgevoerd; 248 nieuwe werkdelen resterend: 220 voor afbeeldingen en 28 voor kaartgegevens.
+- 3.828 speciale afbeeldingen nog ontbrekend, waarvan 3.824 nog te onderzoeken en 4 vastgelegd als niet gevonden in deze begrensde ronde.
+- Een afgewerkt zoekdeel is geen bewering dat alle ontbrekende kaarten zijn aangevuld.
+
+## Eerstvolgende chats na deel 4
 
 | Deel | Actuele batch-ID | Inhoud | Aantal uitvoeringen |
 | --- | --- | --- | ---: |
-| 3 | sv10.5b-001 | Black Bolt | 25 |
-| 4 | sv10.5b-002 | Black Bolt | 17 |
 | 5 | sv10.5w-001 | White Flare | 2 |
 | 6 | sv08.5-001 | Prismatic Evolutions | 18 |
 | 7 | me06-001 | Delta Reign | 25 |
+| 8 | me06-002 | Delta Reign | 25 |
 
-### Exact startpunt voor deel 3
-
-De volgende 25 nog niet afgewerkte uitvoeringen vormen deel 3. Zoek uitsluitend bijpassende Engelse afbeeldingen, controleer kaartnummer en fysieke uitvoering, importeer alleen passende beelden en leg per regel het resultaat vast.
+### Exact startpunt voor deel 5
 
 | Kaart-ID | Naam | Uitvoering | Variantkey |
 | --- | --- | --- | --- |
-| sv10.5b-031 | Eelektrik | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-031 | Eelektrik | Poké Ball | 3739bbtj3i910y5ynn9xc6ryf |
-| sv10.5b-032 | Eelektross | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-033 | Thundurus | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-034 | Zekrom ex | Holo · ultra-ball-league | 1c79txmtnonthck609704l3ls0zo4i1 |
-| sv10.5b-035 | Munna | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-036 | Musharna | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-037 | Solosis | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-038 | Duosion | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-039 | Reuniclus | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-041 | Beheeyem | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-042 | Golett | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-043 | Golurk | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-045 | Drilbur | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-048 | Gurdurr | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-049 | Conkeldurr | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-050 | Throh | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-051 | Dwebble | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-052 | Crustle | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-053 | Landorus | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-054 | Venipede | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-056 | Scolipede | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-058 | Krokorok | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-059 | Krookodile | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
-| sv10.5b-060 | Escavalier | Master Ball | 2asus05yghmpd1ud1sdmlq3as4e |
+| sv10.5w-011 | Tepig | Holo · Tinsel | 6z2xz7qsvmqlfamgn6z2 |
+| sv10.5w-021 | Oshawott | Holo · Tinsel | 6z2xz7qsvmqlfamgn6z2 |

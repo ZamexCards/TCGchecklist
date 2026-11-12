@@ -1,0 +1,241 @@
+{
+  "part": 3,
+  "batchIdAtStart": "sv10.5b-001",
+  "checked": "2026-11-12",
+  "scope": "Exact persisted part 3 Black Bolt printings",
+  "itemsChecked": 25,
+  "verifiedImagesFound": 25,
+  "notFound": 0,
+  "counts": {
+    "masterball": 23,
+    "pokeball": 1,
+    "ultra-ball-league": 1
+  },
+  "items": [
+    {
+      "cardId": "sv10.5b-031",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Eelektrik",
+      "number": "031",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-031086-eelektrik-master-ball-reverse-holo",
+      "sourceSha256": "966c16772b9f687d17af1ef364cb3b911625ed1f243be1b5b052f8f4a0d5f3a4"
+    },
+    {
+      "cardId": "sv10.5b-031",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "name": "Eelektrik",
+      "number": "031",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-031086-eelektrik-poke-ball-reverse-holo",
+      "sourceSha256": "570e742b523fc7cae7909dae9efca9728f873693fc593f037897b9cf8d560ff7"
+    },
+    {
+      "cardId": "sv10.5b-032",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Eelektross",
+      "number": "032",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-032086-elektross-master-ball-reverse-holo",
+      "sourceSha256": "cea82db71acd7f153cc5c98e002cc4dbaf35b4ebf49bd1f7bca9a191a5333b92"
+    },
+    {
+      "cardId": "sv10.5b-033",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Thundurus",
+      "number": "033",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-033086-thundurus-master-ball-reverse-holo",
+      "sourceSha256": "348ef68300160468fbde4215c018c822d132839a1610272453d477149eebacd3"
+    },
+    {
+      "cardId": "sv10.5b-034",
+      "variantKey": "1c79txmtnonthck609704l3ls0zo4i1",
+      "name": "Zekrom ex",
+      "number": "034",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-034086-zekrom-ex-ultra-ball-league-promo",
+      "sourceSha256": "40f1dd3f013f28eb6a736fcbbc22dfad475da3e782f88148e10809ead43b09d9"
+    },
+    {
+      "cardId": "sv10.5b-035",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Munna",
+      "number": "035",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-035086-munna-master-ball-reverse-holo",
+      "sourceSha256": "ed47271458250e59786a94d18d4df3ed9d308e191786569eb26049be5848c3f3"
+    },
+    {
+      "cardId": "sv10.5b-036",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Musharna",
+      "number": "036",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-036086-musharna-master-ball-reverse-holo",
+      "sourceSha256": "c2cdaa799542b3cccd4d76feb9dcb423937d57a2e167675e184410b91b1a6ce3"
+    },
+    {
+      "cardId": "sv10.5b-037",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Solosis",
+      "number": "037",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-037086-solosis-master-ball-reverse-holo",
+      "sourceSha256": "db7ba5ff1eb048afaa76f19d095e9027d884c6c9c1070491fb261cbaf7be2eb7"
+    },
+    {
+      "cardId": "sv10.5b-038",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Duosion",
+      "number": "038",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-038086-duosion-master-ball-reverse-holo",
+      "sourceSha256": "da34f765cea1d8ad0738aa64bf4b229a4fb6a819ed8b52f3881b3d1d73beb31e"
+    },
+    {
+      "cardId": "sv10.5b-039",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Reuniclus",
+      "number": "039",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-039086-reuniclus-master-ball-reverse-holo",
+      "sourceSha256": "ddf3f7f5fbfdbc32715d943bff2dfca1fadb7742f1041b270e4e5d45cc3abb6b"
+    },
+    {
+      "cardId": "sv10.5b-041",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Beheeyem",
+      "number": "041",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-041086-beheeyem-master-ball-reverse-holo",
+      "sourceSha256": "a9fbfa0f2e4d30b1caabe1303331ca70aa61a58116d57075c729cdd42d54848b"
+    },
+    {
+      "cardId": "sv10.5b-042",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Golett",
+      "number": "042",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-042086-golett-master-ball-reverse-holo",
+      "sourceSha256": "8489bd64a5c4b7c46a19f6920c3435a1ccbd95b729707ee154551e182dc8d667"
+    },
+    {
+      "cardId": "sv10.5b-043",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Golurk",
+      "number": "043",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-043086-golurk-master-ball-reverse-holo",
+      "sourceSha256": "45e48bf1d1061562b2dddace98acc642f90a4229d0d6520a99366ceb3030cce6"
+    },
+    {
+      "cardId": "sv10.5b-045",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Drilbur",
+      "number": "045",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-045086-drilbur-master-ball-reverse-holo",
+      "sourceSha256": "d98dd97fa701c47f867e4da247582f2bef87d34b9d316bbf26073301b35ced6e"
+    },
+    {
+      "cardId": "sv10.5b-048",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Gurdurr",
+      "number": "048",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-048086-gurdurr-master-ball-reverse-holo",
+      "sourceSha256": "42e2b76e3aaceaf0a69d4023423b66efc97eb2a09b268b7d9d88964dbf7df07c"
+    },
+    {
+      "cardId": "sv10.5b-049",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Conkeldurr",
+      "number": "049",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-049086-conkeldurr-master-ball-reverse-holo",
+      "sourceSha256": "936cceb2756ce9b632377e30a3791713da1624d2146ee5c6a311503739a6d006"
+    },
+    {
+      "cardId": "sv10.5b-050",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Throh",
+      "number": "050",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-050086-throh-master-ball-reverse-holo",
+      "sourceSha256": "d1e8f0c0653a72f7b9b0d08db1832efafd6e5ec061ad67429544cb087ccced87"
+    },
+    {
+      "cardId": "sv10.5b-051",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Dwebble",
+      "number": "051",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-051086-dwebble-master-ball-reverse-holo",
+      "sourceSha256": "2425c0791ac667c5208b55a7a4943ac9f10c860218ef37a30df4d46b7c943025"
+    },
+    {
+      "cardId": "sv10.5b-052",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Crustle",
+      "number": "052",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-052086-crustle-master-ball-reverse-holo",
+      "sourceSha256": "0a14afcb51161b0bc68e9b2ee5bc803cbeba9322c653202252aba1b02ee80790"
+    },
+    {
+      "cardId": "sv10.5b-053",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Landorus",
+      "number": "053",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-053086-landorus-master-ball-reverse-holo",
+      "sourceSha256": "08844137c6fd508d6a14cd69790bd6e586c8fd4b0b65fc38d90f698da1198fc6"
+    },
+    {
+      "cardId": "sv10.5b-054",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Venipede",
+      "number": "054",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-054086-venipede-master-ball-reverse-holo",
+      "sourceSha256": "bb69fd5e0cab548cfbf974d6d38bf1e091fccb3bde07b7500248399883d0ce06"
+    },
+    {
+      "cardId": "sv10.5b-056",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Scolipede",
+      "number": "056",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-056086-scolipede-master-ball-reverse-holo",
+      "sourceSha256": "7ddc2177640d3d11fe9b7591f305d6a901e3bde90381e91aeb33bdd98a2049b5"
+    },
+    {
+      "cardId": "sv10.5b-058",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Krokorok",
+      "number": "058",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-058086-krokorok-master-ball-reverse-holo",
+      "sourceSha256": "706977188bfe58003513bed95a0370136e715517b35abd16cb64ff4b7de9c40a"
+    },
+    {
+      "cardId": "sv10.5b-059",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Krookodile",
+      "number": "059",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-059086-krookodile-master-ball-reverse-holo",
+      "sourceSha256": "f846f9346ed7d98d1414a2ce2ea1c459db591d8a94666ceddb253ffc0c6e3031"
+    },
+    {
+      "cardId": "sv10.5b-060",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Escavalier",
+      "number": "060",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-060086-escavalier-master-ball-reverse-holo",
+      "sourceSha256": "533c7bf19375b4afcb41500eb6ecd54e425c909061f04f35419f904dc7190bac"
+    }
+  ]
+}

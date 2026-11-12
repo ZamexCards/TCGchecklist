@@ -1,0 +1,243 @@
+{
+  "part": 4,
+  "batchIdAtStart": "sv10.5b-002",
+  "checked": "2026-11-12",
+  "scope": "Exact persisted part 4 Black Bolt printings",
+  "itemsChecked": 17,
+  "verifiedImagesFound": 13,
+  "notFound": 4,
+  "counts": {
+    "masterball": 13
+  },
+  "items": [
+    {
+      "cardId": "sv10.5b-061",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Klink",
+      "number": "061",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-061086-klink-master-ball-reverse-holo",
+      "sourceSha256": "5898b632bc0b20c10af018464f6e803f8808aef7b224843eb65c5296f000f635"
+    },
+    {
+      "cardId": "sv10.5b-062",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Klang",
+      "number": "062",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-062086-klang-master-ball-reverse-holo",
+      "sourceSha256": "fe329447f07eb2cc567afebeb33975cbb16b4d1998e6f2df22e4a4d21b2b03d6"
+    },
+    {
+      "cardId": "sv10.5b-063",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Klinklang",
+      "number": "063",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-063086-klinklang-master-ball-reverse-holo",
+      "sourceSha256": "fbd208e17ba221647681f75e361a5a5060e8b5384e06b3062122657896cf242d"
+    },
+    {
+      "cardId": "sv10.5b-064",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Pawniard",
+      "number": "064",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-064086-pawniard-master-ball-reverse-holo",
+      "sourceSha256": "c9fb579b630bd79a874260ad566f36065459f9b65a9993bd99c151c94fbbfd2a"
+    },
+    {
+      "cardId": "sv10.5b-065",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Bisharp",
+      "number": "065",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-065086-bisharp-master-ball-reverse-holo",
+      "sourceSha256": "01b9748dcc39ed174d99fc550b382491e21e202869ee9972187ca0d7753524dd"
+    },
+    {
+      "cardId": "sv10.5b-066",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Cobalion",
+      "number": "066",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-066086-cobalion-master-ball-reverse-holo",
+      "sourceSha256": "3c3b23e03c8988c3ee06a478c40fade0128519d9faf9e8f680d3887ad222ce8f"
+    },
+    {
+      "cardId": "sv10.5b-068",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Axew",
+      "number": "068",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-068086-axew-master-ball-reverse-holo",
+      "sourceSha256": "ff57561dd99a56feeda37412dab0c3e8b7be10a1857240fc4c898da1d996517e"
+    },
+    {
+      "cardId": "sv10.5b-069",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Fraxure",
+      "number": "069",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-069086-fraxure-master-ball-reverse-holo",
+      "sourceSha256": "b736d616e03a00d545b512159f19c01cd72519afb89f35024b3710412657e043"
+    },
+    {
+      "cardId": "sv10.5b-070",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Haxorus",
+      "number": "070",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-070086-haxorus-master-ball-reverse-holo",
+      "sourceSha256": "2ef46ed2af1bd5a57184edca40b4513a999d4d1c02ddfdd52c6e7e2e28c9d566"
+    },
+    {
+      "cardId": "sv10.5b-072",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Tranquill",
+      "number": "072",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-072086-tranquill-master-ball-reverse-holo",
+      "sourceSha256": "642c741071265a6673fe8e39ce04e2ab577230a6132d8048e62bc6ccd9792d8d"
+    },
+    {
+      "cardId": "sv10.5b-075",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Minccino",
+      "number": "075",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-075086-minccino-master-ball-reverse-holo",
+      "sourceSha256": "7425c2e5c39fb7d20dff3ae4c42e21d05f8e99f7a7f0feda929b7463eebd226c"
+    },
+    {
+      "cardId": "sv10.5b-077",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Rufflet",
+      "number": "077",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-077086-rufflet-master-ball-reverse-holo",
+      "sourceSha256": "ff4a809f5c07a7b932f7e3b126f9823c102d9380362841ca53a3831e8745d1db"
+    },
+    {
+      "cardId": "sv10.5b-078",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "name": "Braviary",
+      "number": "078",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-078086-braviary-master-ball-reverse-holo",
+      "sourceSha256": "bf51170698ae66cedc7b226455c39585fccfdc3f08222dd78f6cebd9286e42f9"
+    },
+    {
+      "setId": "sv10.5b",
+      "cardId": "sv10.5b-067",
+      "variantKey": "23hmnvtwdrhebhrw495kru307lu5",
+      "number": "067",
+      "name": "Genesect ex",
+      "variant": "Normal · liao-fu-guan",
+      "outcome": "searched_no_verified_image",
+      "retryPolicy": "on_user_request_or_new_source",
+      "reason": "No accessible English image proving the specific World Championships player signature; ordinary card and shop logo rejected.",
+      "sourcesChecked": [
+        {
+          "url": "https://www.capefearcollectibles.com/products/genesect-ex-2025-liao-fu-guan-067-086-world-championship-decks",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0557/2267/2288/files/Web_Banner_16cb4d19-bb79-4943-87fd-6292fe94678a.jpg?v=1621256718",
+          "result": "Only shop logo supplied; no card image",
+          "rejectedImageSha256": "73d722723d61bb62f47b2e7aa73d9d4ff38cb38ed0f20d8b65784aca16b122e7"
+        },
+        {
+          "url": "https://tcg.goodgames.com.au/products/genesect-ex-067-086-2025-liao-fu-guan-world-championships-2025",
+          "result": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.tcgplayer.com/product/689618",
+          "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/689618_in_1000x1000.jpg",
+          "result": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "setId": "sv10.5b",
+      "cardId": "sv10.5b-079",
+      "variantKey": "23hmnvtwdrhebhrw495kru307lu5",
+      "number": "079",
+      "name": "Air Balloon",
+      "variant": "Normal · liao-fu-guan",
+      "outcome": "searched_no_verified_image",
+      "retryPolicy": "on_user_request_or_new_source",
+      "reason": "No accessible English image proving the specific World Championships player signature; ordinary card and shop logo rejected.",
+      "sourcesChecked": [
+        {
+          "url": "https://www.capefearcollectibles.com/products/air-balloon-2025-liao-fu-guan-079-086-world-championship-decks",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0557/2267/2288/files/Web_Banner_16cb4d19-bb79-4943-87fd-6292fe94678a.jpg?v=1621256718",
+          "result": "Only shop logo supplied; no card image",
+          "rejectedImageSha256": "73d722723d61bb62f47b2e7aa73d9d4ff38cb38ed0f20d8b65784aca16b122e7"
+        },
+        {
+          "url": "https://tcg.goodgames.com.au/products/air-balloon-079-086-2025-liao-fu-guan-world-championships-2025",
+          "result": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.tcgplayer.com/product/690279",
+          "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/690279_in_1000x1000.jpg",
+          "result": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "setId": "sv10.5b",
+      "cardId": "sv10.5b-079",
+      "variantKey": "9aza5qfk157t92rzwbz6tmlhku5j0wndzm9o003fu",
+      "number": "079",
+      "name": "Air Balloon",
+      "variant": "Normal · jose-cruz-galindo-resendiz",
+      "outcome": "searched_no_verified_image",
+      "retryPolicy": "on_user_request_or_new_source",
+      "reason": "No accessible English image proving the specific World Championships player signature; ordinary card and shop logo rejected.",
+      "sourcesChecked": [
+        {
+          "url": "https://www.capefearcollectibles.com/products/air-balloon-2025-jose-cruz-galindo-resendiz-079-086-world-championship-decks",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0557/2267/2288/files/Web_Banner_16cb4d19-bb79-4943-87fd-6292fe94678a.jpg?v=1621256718",
+          "result": "Only shop logo supplied; no card image",
+          "rejectedImageSha256": "73d722723d61bb62f47b2e7aa73d9d4ff38cb38ed0f20d8b65784aca16b122e7"
+        },
+        {
+          "url": "https://tcg.goodgames.com.au/products/air-balloon-079-086-2025-jose-cruz-galindo-resendiz-world-championships-2025",
+          "result": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.tcgplayer.com/product/690510",
+          "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/690510_in_1000x1000.jpg",
+          "result": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "setId": "sv10.5b",
+      "cardId": "sv10.5b-084",
+      "variantKey": "23hmnvtwdrhebhrw495kru307lu5",
+      "number": "084",
+      "name": "Pokégear 3.0",
+      "variant": "Normal · liao-fu-guan",
+      "outcome": "searched_no_verified_image",
+      "retryPolicy": "on_user_request_or_new_source",
+      "reason": "No accessible English image proving the specific World Championships player signature; ordinary card and shop logo rejected.",
+      "sourcesChecked": [
+        {
+          "url": "https://www.capefearcollectibles.com/products/pokegear-3-0-2025-liao-fu-guan-084-086-world-championship-decks",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0557/2267/2288/files/Web_Banner_16cb4d19-bb79-4943-87fd-6292fe94678a.jpg?v=1621256718",
+          "result": "Only shop logo supplied; no card image",
+          "rejectedImageSha256": "73d722723d61bb62f47b2e7aa73d9d4ff38cb38ed0f20d8b65784aca16b122e7"
+        },
+        {
+          "url": "https://www.nwcardgames.com/products/pokegear-3-0-084-086-2025-liao-fu-guan-world-championships-2025",
+          "result": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.tcgplayer.com/product/690277",
+          "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/690277_in_1000x1000.jpg",
+          "result": "HTTP Error 403: Forbidden"
+        }
+      ]
+    }
+  ]
+}
