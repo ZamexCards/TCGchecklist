@@ -4,17 +4,17 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Totaaloverzicht
 
-- sets: 202
-- cards: 21979
-- local_cards: 21947
-- missing_cards: 32
+- sets: 217
+- cards: 23923
+- local_cards: 23922
+- missing_cards: 1
 - external_cards: 0
 - broken_cards: 0
-- local_logos: 201
-- missing_logos: 1
-- external_logos: 0
+- local_logos: 210
+- missing_logos: 6
+- external_logos: 1
 - broken_logos: 0
-- complete_sets: 198
+- complete_sets: 209
 
 ## Per set
 
@@ -72,7 +72,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | cel25cc – Celebrations Classic Collection | local | 25/25 | 0 | 0 | 0 |
 | col1 – Call of Legends | local | 106/106 | 0 | 0 | 0 |
 | dc1 – Double Crisis | local | 34/34 | 0 | 0 | 0 |
-| det1 – Detective Pikachu | local | 18/19 | 1 | 0 | 0 |
+| det1 – Detective Pikachu | local | 18/18 | 0 | 0 | 0 |
 | dp1 – Diamond & Pearl | local | 130/130 | 0 | 0 | 0 |
 | dp2 – Mysterious Treasures | local | 124/124 | 0 | 0 | 0 |
 | dp3 – Secret Wonders | local | 132/132 | 0 | 0 | 0 |
@@ -96,6 +96,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | ex2 – Sandstorm | local | 100/100 | 0 | 0 | 0 |
 | ex3 – Dragon | local | 100/100 | 0 | 0 | 0 |
 | ex4 – Team Magma vs Team Aqua | local | 97/97 | 0 | 0 | 0 |
+| ex5.5 – Poké Card Creator Pack | missing | 5/5 | 0 | 0 | 0 |
 | ex5 – Hidden Legends | local | 102/102 | 0 | 0 | 0 |
 | ex6 – FireRed & LeafGreen | local | 116/116 | 0 | 0 | 0 |
 | ex7 – Team Rocket Returns | local | 111/111 | 0 | 0 | 0 |
@@ -113,13 +114,14 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | hgssp – HGSS Black Star Promos | local | 25/25 | 0 | 0 | 0 |
 | lc – Legendary Collection | local | 110/110 | 0 | 0 | 0 |
 | me01 – Mega Evolution | local | 188/188 | 0 | 0 | 0 |
+| me02.5 – Ascended Heroes | local | 295/295 | 0 | 0 | 0 |
 | me02 – Phantasmal Flames | local | 130/130 | 0 | 0 | 0 |
 | me03 – Perfect Order | local | 124/124 | 0 | 0 | 0 |
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
 | me06 – Delta Reign | missing | 141/141 | 0 | 0 | 0 |
-| mee – Mega Evolution Energy | local | 8/16 | 8 | 0 | 0 |
-| mep – MEP Black Star Promos | local | 89/112 | 23 | 0 | 0 |
+| mee – Mega Evolution Energy | local | 16/16 | 0 | 0 | 0 |
+| mep – MEP Black Star Promos | local | 111/112 | 1 | 0 | 0 |
 | mfb – My First Battle | local | 34/34 | 0 | 0 | 0 |
 | miscp – Miscellaneous Promos | local | 1/1 | 0 | 0 | 0 |
 | neo1 – Neo Genesis | local | 111/111 | 0 | 0 | 0 |
@@ -148,10 +150,12 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sm115 – Hidden Fates | local | 69/69 | 0 | 0 | 0 |
 | sm12 – Cosmic Eclipse | local | 271/271 | 0 | 0 | 0 |
 | sm2 – Guardians Rising | local | 169/169 | 0 | 0 | 0 |
+| sm3.5 – Shining Legends | missing | 78/78 | 0 | 0 | 0 |
 | sm3 – Burning Shadows | local | 169/169 | 0 | 0 | 0 |
 | sm4 – Crimson Invasion | local | 125/125 | 0 | 0 | 0 |
 | sm5 – Ultra Prism | local | 173/173 | 0 | 0 | 0 |
 | sm6 – Forbidden Light | local | 146/146 | 0 | 0 | 0 |
+| sm7.5 – Dragon Majesty | missing | 78/78 | 0 | 0 | 0 |
 | sm7 – Celestial Storm | local | 183/183 | 0 | 0 | 0 |
 | sm8 – Lost Thunder | local | 236/236 | 0 | 0 | 0 |
 | sm9 – Team Up | local | 196/196 | 0 | 0 | 0 |
@@ -159,26 +163,37 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | smp – SM Black Star Promos | local | 248/248 | 0 | 0 | 0 |
 | sv01 – Scarlet & Violet | local | 258/258 | 0 | 0 | 0 |
 | sv02 – Paldea Evolved | local | 279/279 | 0 | 0 | 0 |
+| sv03.5 – 151 | local | 207/207 | 0 | 0 | 0 |
 | sv03 – Obsidian Flames | local | 230/230 | 0 | 0 | 0 |
+| sv04.5 – Paldean Fates | local | 245/245 | 0 | 0 | 0 |
 | sv04 – Paradox Rift | local | 266/266 | 0 | 0 | 0 |
 | sv05 – Temporal Forces | local | 218/218 | 0 | 0 | 0 |
+| sv06.5 – Shrouded Fable | local | 99/99 | 0 | 0 | 0 |
 | sv06 – Twilight Masquerade | local | 226/226 | 0 | 0 | 0 |
 | sv07 – Stellar Crown | local | 175/175 | 0 | 0 | 0 |
 | sv08.5 – Prismatic Evolutions | local | 180/180 | 0 | 0 | 0 |
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
+| sv10.5b – Black Bolt | local | 172/172 | 0 | 0 | 0 |
+| sv10.5w – White Flare | local | 173/173 | 0 | 0 | 0 |
 | sv10 – Destined Rivals | local | 244/244 | 0 | 0 | 0 |
 | sve – Scarlet & Violet Energy | local | 24/24 | 0 | 0 | 0 |
 | svp – SVP Black Star Promos | local | 226/226 | 0 | 0 | 0 |
 | swsh1 – Sword & Shield | local | 216/216 | 0 | 0 | 0 |
+| swsh10.5 – Pokémon GO | local | 88/88 | 0 | 0 | 0 |
 | swsh10 – Astral Radiance | local | 216/216 | 0 | 0 | 0 |
 | swsh10tg – Astral Radiance Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swsh11 – Lost Origin | local | 217/217 | 0 | 0 | 0 |
 | swsh11tg – Lost Origin Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
+| swsh12.5 – Crown Zenith | local | 160/160 | 0 | 0 | 0 |
+| swsh12.5gg – Crown Zenith Galarian Gallery | missing | 70/70 | 0 | 0 | 0 |
 | swsh12 – Silver Tempest | local | 215/215 | 0 | 0 | 0 |
 | swsh12tg – Silver Tempest Trainer Gallery | local | 30/30 | 0 | 0 | 0 |
 | swsh2 – Rebel Clash | local | 209/209 | 0 | 0 | 0 |
+| swsh3.5 – Champion's Path | local | 80/80 | 0 | 0 | 0 |
 | swsh3 – Darkness Ablaze | local | 201/201 | 0 | 0 | 0 |
+| swsh4.5 – Shining Fates | external_unverified | 73/73 | 0 | 0 | 0 |
+| swsh4.5sv – Shining Fates Shiny Vault | missing | 122/122 | 0 | 0 | 0 |
 | swsh4 – Vivid Voltage | local | 203/203 | 0 | 0 | 0 |
 | swsh5 – Battle Styles | local | 183/183 | 0 | 0 | 0 |
 | swsh6 – Chilling Reign | local | 233/233 | 0 | 0 | 0 |
@@ -225,16 +240,16 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Ontbrekende of ongeldige setlogo’s
 
+- ex5.5 – Poké Card Creator Pack: missing
 - me06 – Delta Reign: missing
+- sm3.5 – Shining Legends: missing
+- sm7.5 – Dragon Majesty: missing
+- swsh12.5gg – Crown Zenith Galarian Gallery: missing
+- swsh4.5 – Shining Fates: external_unverified
+- swsh4.5sv – Shining Fates Shiny Vault: missing
 
 ## Kaarten zonder lokale afbeelding (per set)
 
-### det1 – Detective Pikachu
-**Geen bronlink (1):** 25
-
-### mee – Mega Evolution Energy
-**Geen bronlink (8):** 009, 010, 011, 012, 013, 014, 015, 016
-
 ### mep – MEP Black Star Promos
-**Geen bronlink (23):** 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 120
+**Geen bronlink (1):** 120
 

@@ -1,17 +1,17 @@
 {
   "note": "External URLs are not downloaded or verified by this audit. Missing means no URL; broken means a local reference is absent, too small or invalid.",
   "totals": {
-    "sets": 202,
-    "cards": 21979,
-    "local_cards": 21947,
-    "missing_cards": 32,
+    "sets": 217,
+    "cards": 23923,
+    "local_cards": 23922,
+    "missing_cards": 1,
     "external_cards": 0,
     "broken_cards": 0,
-    "local_logos": 201,
-    "missing_logos": 1,
-    "external_logos": 0,
+    "local_logos": 210,
+    "missing_logos": 6,
+    "external_logos": 1,
     "broken_logos": 0,
-    "complete_sets": 198
+    "complete_sets": 209
   },
   "sets": [
     {
@@ -538,15 +538,9 @@
       "id": "det1",
       "name": "Detective Pikachu",
       "logo_status": "local",
-      "total_cards": 19,
+      "total_cards": 18,
       "local_cards": 18,
-      "missing_cards": [
-        {
-          "id": "det1-25",
-          "number": "25",
-          "name": "Lt. Yoshida"
-        }
-      ],
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -781,6 +775,16 @@
       "broken_cards": []
     },
     {
+      "id": "ex5.5",
+      "name": "Poké Card Creator Pack",
+      "logo_status": "missing",
+      "total_cards": 5,
+      "local_cards": 5,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "ex5",
       "name": "Hidden Legends",
       "logo_status": "local",
@@ -951,6 +955,16 @@
       "broken_cards": []
     },
     {
+      "id": "me02.5",
+      "name": "Ascended Heroes",
+      "logo_status": "local",
+      "total_cards": 295,
+      "local_cards": 295,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "me02",
       "name": "Phantasmal Flames",
       "logo_status": "local",
@@ -1005,49 +1019,8 @@
       "name": "Mega Evolution Energy",
       "logo_status": "local",
       "total_cards": 16,
-      "local_cards": 8,
-      "missing_cards": [
-        {
-          "id": "mee-009",
-          "number": "009",
-          "name": "Basic Grass Energy"
-        },
-        {
-          "id": "mee-010",
-          "number": "010",
-          "name": "Basic Fire Energy"
-        },
-        {
-          "id": "mee-011",
-          "number": "011",
-          "name": "Basic Water Energy"
-        },
-        {
-          "id": "mee-012",
-          "number": "012",
-          "name": "Basic Lightning Energy"
-        },
-        {
-          "id": "mee-013",
-          "number": "013",
-          "name": "Basic Psychic Energy"
-        },
-        {
-          "id": "mee-014",
-          "number": "014",
-          "name": "Basic Fighting Energy"
-        },
-        {
-          "id": "mee-015",
-          "number": "015",
-          "name": "Basic Darkness Energy"
-        },
-        {
-          "id": "mee-016",
-          "number": "016",
-          "name": "Basic Metal Energy"
-        }
-      ],
+      "local_cards": 16,
+      "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
     },
@@ -1056,118 +1029,8 @@
       "name": "MEP Black Star Promos",
       "logo_status": "local",
       "total_cards": 112,
-      "local_cards": 89,
+      "local_cards": 111,
       "missing_cards": [
-        {
-          "id": "mep-089",
-          "number": "089",
-          "name": "Mega Zeraora ex"
-        },
-        {
-          "id": "mep-090",
-          "number": "090",
-          "name": "Mega Darkrai ex"
-        },
-        {
-          "id": "mep-091",
-          "number": "091",
-          "name": "Mega Dragonite ex"
-        },
-        {
-          "id": "mep-092",
-          "number": "092",
-          "name": "Paradise Resort"
-        },
-        {
-          "id": "mep-093",
-          "number": "093",
-          "name": "Pikachu"
-        },
-        {
-          "id": "mep-094",
-          "number": "094",
-          "name": "Alolan Exeggutor"
-        },
-        {
-          "id": "mep-095",
-          "number": "095",
-          "name": "Lucario"
-        },
-        {
-          "id": "mep-096",
-          "number": "096",
-          "name": "Moltres"
-        },
-        {
-          "id": "mep-097",
-          "number": "097",
-          "name": "Articuno"
-        },
-        {
-          "id": "mep-098",
-          "number": "098",
-          "name": "Zapdos"
-        },
-        {
-          "id": "mep-099",
-          "number": "099",
-          "name": "Greninja ex"
-        },
-        {
-          "id": "mep-100",
-          "number": "100",
-          "name": "Sylveon ex"
-        },
-        {
-          "id": "mep-101",
-          "number": "101",
-          "name": "Nidorina"
-        },
-        {
-          "id": "mep-102",
-          "number": "102",
-          "name": "Victini"
-        },
-        {
-          "id": "mep-103",
-          "number": "103",
-          "name": "Zeraora"
-        },
-        {
-          "id": "mep-104",
-          "number": "104",
-          "name": "Mewtwo"
-        },
-        {
-          "id": "mep-105",
-          "number": "105",
-          "name": "Mew"
-        },
-        {
-          "id": "mep-106",
-          "number": "106",
-          "name": "Ditto"
-        },
-        {
-          "id": "mep-107",
-          "number": "107",
-          "name": "Pikachu ex"
-        },
-        {
-          "id": "mep-108",
-          "number": "108",
-          "name": "Espeon ex"
-        },
-        {
-          "id": "mep-109",
-          "number": "109",
-          "name": "Pikachu ex"
-        },
-        {
-          "id": "mep-110",
-          "number": "110",
-          "name": "Umbreon ex"
-        },
         {
           "id": "mep-120",
           "number": "120",
@@ -1458,6 +1321,16 @@
       "broken_cards": []
     },
     {
+      "id": "sm3.5",
+      "name": "Shining Legends",
+      "logo_status": "missing",
+      "total_cards": 78,
+      "local_cards": 78,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "sm3",
       "name": "Burning Shadows",
       "logo_status": "local",
@@ -1493,6 +1366,16 @@
       "logo_status": "local",
       "total_cards": 146,
       "local_cards": 146,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "sm7.5",
+      "name": "Dragon Majesty",
+      "logo_status": "missing",
+      "total_cards": 78,
+      "local_cards": 78,
       "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
@@ -1568,11 +1451,31 @@
       "broken_cards": []
     },
     {
+      "id": "sv03.5",
+      "name": "151",
+      "logo_status": "local",
+      "total_cards": 207,
+      "local_cards": 207,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "sv03",
       "name": "Obsidian Flames",
       "logo_status": "local",
       "total_cards": 230,
       "local_cards": 230,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "sv04.5",
+      "name": "Paldean Fates",
+      "logo_status": "local",
+      "total_cards": 245,
+      "local_cards": 245,
       "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
@@ -1593,6 +1496,16 @@
       "logo_status": "local",
       "total_cards": 218,
       "local_cards": 218,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "sv06.5",
+      "name": "Shrouded Fable",
+      "logo_status": "local",
+      "total_cards": 99,
+      "local_cards": 99,
       "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
@@ -1648,6 +1561,26 @@
       "broken_cards": []
     },
     {
+      "id": "sv10.5b",
+      "name": "Black Bolt",
+      "logo_status": "local",
+      "total_cards": 172,
+      "local_cards": 172,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "sv10.5w",
+      "name": "White Flare",
+      "logo_status": "local",
+      "total_cards": 173,
+      "local_cards": 173,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "sv10",
       "name": "Destined Rivals",
       "logo_status": "local",
@@ -1683,6 +1616,16 @@
       "logo_status": "local",
       "total_cards": 216,
       "local_cards": 216,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "swsh10.5",
+      "name": "Pokémon GO",
+      "logo_status": "local",
+      "total_cards": 88,
+      "local_cards": 88,
       "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
@@ -1728,6 +1671,26 @@
       "broken_cards": []
     },
     {
+      "id": "swsh12.5",
+      "name": "Crown Zenith",
+      "logo_status": "local",
+      "total_cards": 160,
+      "local_cards": 160,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "logo_status": "missing",
+      "total_cards": 70,
+      "local_cards": 70,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "swsh12",
       "name": "Silver Tempest",
       "logo_status": "local",
@@ -1758,11 +1721,41 @@
       "broken_cards": []
     },
     {
+      "id": "swsh3.5",
+      "name": "Champion's Path",
+      "logo_status": "local",
+      "total_cards": 80,
+      "local_cards": 80,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
       "id": "swsh3",
       "name": "Darkness Ablaze",
       "logo_status": "local",
       "total_cards": 201,
       "local_cards": 201,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "swsh4.5",
+      "name": "Shining Fates",
+      "logo_status": "external_unverified",
+      "total_cards": 73,
+      "local_cards": 73,
+      "missing_cards": [],
+      "external_unverified_cards": [],
+      "broken_cards": []
+    },
+    {
+      "id": "swsh4.5sv",
+      "name": "Shining Fates Shiny Vault",
+      "logo_status": "missing",
+      "total_cards": 122,
+      "local_cards": 122,
       "missing_cards": [],
       "external_unverified_cards": [],
       "broken_cards": []
