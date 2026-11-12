@@ -52,7 +52,7 @@ Met de huidige grens van maximaal 25 items per groep zijn **252 delen gepland**:
 
 ## Deel 3 en 4: resterende Black Bolt-uitvoeringen
 
-Status: de 38 geverifieerde afbeeldingen zijn lokaal geïmporteerd en gevalideerd; online publicatiecontrole volgt. Beide exacte zoeklijsten zijn afgewerkt. Vier uitvoeringen uit deel 4 blijven zonder afzonderlijk geverifieerd beeld.
+Status: **beide zoekronden zijn afgewerkt en de 38 geverifieerde afbeeldingen zijn online gepubliceerd en gecontroleerd op 12 november 2026**. Deel 3 heeft 25 van 25 beelden; deel 4 heeft 13 van 17 beelden. Vier handtekeninguitvoeringen uit deel 4 blijven als ontbrekend geregistreerd. De online setgegevens, zoekrapporten en volledige export zijn gecontroleerd; alle 231 eerder en nieuw beoordeelde variantkoppelingen zijn in de online export teruggevonden. Voorbeelden van Master Ball, Poké Ball en Ultra Ball League zijn gedownload en op hun bestandshash gecontroleerd.
 
 | Deel | Gecontroleerd | Beelden gevonden | Nog zonder geverifieerd beeld |
 | --- | ---: | ---: | ---: |
@@ -62,6 +62,10 @@ Status: de 38 geverifieerde afbeeldingen zijn lokaal geïmporteerd en gevalideer
 Deel 3 bevat 23 Master Ball-foto’s, 1 Poké Ball-foto en Zekrom ex 034/086 met zichtbaar Ultra Ball League-logo. Deel 4 voegt 13 Master Ball-foto’s toe. Alle foto’s zijn gecontroleerd op Engelse taal, kaartnummer en het balpatroon of de bijzondere stempel. Het product van Eelektross heeft een spelfout in de winkeltitel; de daadwerkelijke kaartfoto is gecontroleerd op Eelektross en BLK EN 032/086.
 
 De exacte resultaten en geraadpleegde bronadressen staan in [deel 3](../data/research/completed/part-003-black-bolt.json) en [deel 4](../data/research/completed/part-004-black-bolt.json).
+
+- Toevoegingen en beide zoekrapporten: [6c5aea0](https://github.com/ZamexCards/TCGchecklist/commit/6c5aea02982731f499d7d262d1d3846b43cf0c57).
+- Gepubliceerde database: [8e1ca5b](https://github.com/ZamexCards/TCGchecklist/commit/8e1ca5b407cde92b4a069de963a11230cbd05173).
+- [Databaseverwerking en publicatie deel 3 en 4 geslaagd](https://github.com/ZamexCards/TCGchecklist/actions/runs/43312538859).
 
 ### Open na de zoekronde van deel 4
 
