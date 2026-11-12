@@ -55,3 +55,7 @@ Een lege variantafbeelding betekent dat voor die specifieke uitvoering nog geen 
 De workflow **Archive full English Pokemon catalogue** vult de hele bestaande database aan en publiceert de bestanden. De bestaande maandagupdate voert dezelfde verrijking uit na het bijwerken van sets. Identiteitscontrole gebruikt kaart-ID, set-ID, kaartnummer én kaartnaam. Een historische tweede dataset wordt alleen gebruikt bij één unieke setmatch op naam en officieel kaartaantal en daarna op kaartnaam en nummer. Bestaande kaartrecords worden niet verwijderd wanneer een bron tijdelijk minder kaarten teruggeeft.
 
 Marktprijzen blijven gedateerde bronmomentopnamen en worden niet als actuele ZamexCards-verkoopprijzen, Near Mint-prijzen of landgebonden prijzen gepresenteerd. De gegevens zijn voor hergebruik beschikbaar; rechten op Pokémon-illustraties blijven bij de rechthebbenden.
+
+## Gecontroleerde uitzonderingen
+
+`data/catalogue-overrides.json` bevat onderbouwde correcties op de bron. Een bronrecord zonder bevestigde Engelse druk kan buiten de Engelse export worden gezet. Het oorspronkelijke record blijft dan met de motivering en bewijslinks bewaard in `data/quarantine/`. Dit gebeurt onder andere bij Lt. Yoshida, dat in de Engelse bronmetadata staat maar niet in de officiële Engelse Detective Pikachu-checklist.

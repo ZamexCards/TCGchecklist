@@ -11,6 +11,7 @@ on:
       - 'scripts/audit_images.py'
       - 'scripts/enrich_catalogue.py'
       - 'scripts/validate_catalogue.py'
+      - 'data/catalogue-overrides.json'
       - 'tests/test_enrich_catalogue.py'
   schedule:
     - cron: '17 4 * * 1'

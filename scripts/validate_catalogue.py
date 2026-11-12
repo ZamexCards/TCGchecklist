@@ -18,6 +18,9 @@ def main():
    for image in [c['images'].get('small','')]+[v['images'].get('small','')for v in ps]:
     if image.startswith('./'):
      path=(ROOT/image[2:]).resolve();assert path.is_relative_to((ROOT/'assets').resolve())and path.is_file(),(c['id'],image)
+ overrides=ROOT/'data/catalogue-overrides.json'
+ if overrides.exists():
+  for cid in load('data/catalogue-overrides.json').get('excludedFromEnglish',{}):assert cid not in seen,cid
  quality=load('data/catalogue-quality.json');assert quality['totals']['cards']==total;assert quality['totals']['printings']==printing_count
  issues=load('data/research/open.json');assert issues['total']==len(issues['issues'])==quality['totals']['openResearch']
  index=load('data/cards-index.json');assert {c['id']for c in index['cards']}==seen

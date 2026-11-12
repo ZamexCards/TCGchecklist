@@ -271,6 +271,8 @@ def exports(manifest):
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--sets',nargs='*');parser.add_argument('--refresh',action='store_true');parser.add_argument('--exports-only',action='store_true');args=parser.parse_args()
  manifest=read(ROOT/'data/sets.json')
+ overrides_path=ROOT/'data/catalogue-overrides.json'
+ excluded=read(overrides_path).get('excludedFromEnglish',{})if overrides_path.exists()else{}
  try:secondary_rows=get(LEGACY+'sets/en.json')
  except Exception as e:print('Secondary listing unavailable:',e,flush=True);secondary_rows=[]
  if not args.exports_only:
@@ -280,6 +282,10 @@ def main():
    path=ROOT/'data/sets'/(sid+'.json');payload=read(path)
    if payload['set']['id']!=sid:raise ValueError('Set identity mismatch')
    set_issues=[]
+   for original in payload['cards']:
+    if original['id']in excluded:write(ROOT/'data/quarantine'/(file_number(original['id'])+'.json'),{'original':original,'review':excluded[original['id']]})
+   payload['cards']=[c for c in payload['cards']if c['id']not in excluded]
+   payload['excludedCardIds']=[cid for cid,rule in excluded.items()if rule['setId']==sid]
    try:
     source_set=get(API+'/sets/'+urllib.parse.quote(sid,safe=''))
     if source_set.get('id')!=sid:raise ValueError('Set source identity mismatch')
@@ -288,9 +294,10 @@ def main():
     if source_set.get('serie',{}).get('id'):payload['set']['seriesId']=source_set['serie']['id']
     seen={c['id']for c in payload['cards']}
     for row in source_set.get('cards',[]):
-     if row['id']not in seen:
+     if row['id']not in seen and row['id']not in excluded:
       payload['cards'].append({'id':row['id'],'name':row['name'],'number':row['localId'],'images':{'small':row['image']+'/low.webp'if row.get('image')else''}});seen.add(row['id'])
     expected=(source_set.get('cardCount')or{}).get('total')
+    if expected:expected-=sum(row['id']in excluded for row in source_set.get('cards',[]))
     payload['set']['total']=max(len(payload['cards']),expected or 0)
     if (source_set.get('cardCount')or{}).get('official'):payload['set']['printedTotal']=source_set['cardCount']['official']
     if source_set.get('releaseDate'):payload['set']['releaseDate']=source_set['releaseDate']
