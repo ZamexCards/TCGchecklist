@@ -4,17 +4,17 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ## Totaaloverzicht
 
-- sets: 201
-- cards: 21799
-- local_cards: 21764
+- sets: 202
+- cards: 21979
+- local_cards: 21944
 - missing_cards: 32
 - external_cards: 3
 - broken_cards: 0
-- local_logos: 200
+- local_logos: 201
 - missing_logos: 1
 - external_logos: 0
 - broken_logos: 0
-- complete_sets: 196
+- complete_sets: 197
 
 ## Per set
 
@@ -164,6 +164,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | sv05 – Temporal Forces | local | 218/218 | 0 | 0 | 0 |
 | sv06 – Twilight Masquerade | local | 226/226 | 0 | 0 | 0 |
 | sv07 – Stellar Crown | local | 175/175 | 0 | 0 | 0 |
+| sv08.5 – Prismatic Evolutions | local | 180/180 | 0 | 0 | 0 |
 | sv08 – Surging Sparks | local | 252/252 | 0 | 0 | 0 |
 | sv09 – Journey Together | local | 190/190 | 0 | 0 | 0 |
 | sv10 – Destined Rivals | local | 244/244 | 0 | 0 | 0 |
