@@ -6,8 +6,8 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 - sets: 201
 - cards: 21799
-- local_cards: 21623
-- missing_cards: 173
+- local_cards: 21764
+- missing_cards: 32
 - external_cards: 3
 - broken_cards: 0
 - local_logos: 200
@@ -117,7 +117,7 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 | me03 – Perfect Order | local | 124/124 | 0 | 0 | 0 |
 | me04 – Chaos Rising | local | 122/122 | 0 | 0 | 0 |
 | me05 – Pitch Black | local | 120/120 | 0 | 0 | 0 |
-| me06 – Delta Reign | missing | 0/141 | 141 | 0 | 0 |
+| me06 – Delta Reign | missing | 141/141 | 0 | 0 | 0 |
 | mee – Mega Evolution Energy | local | 8/16 | 8 | 0 | 0 |
 | mep – MEP Black Star Promos | local | 89/112 | 23 | 0 | 0 |
 | mfb – My First Battle | local | 34/34 | 0 | 0 | 0 |
@@ -233,9 +233,6 @@ Lokale bestanden worden op aanwezigheid en minimale grootte gecontroleerd. Exter
 
 ### det1 – Detective Pikachu
 **Geen bronlink (1):** 25
-
-### me06 – Delta Reign
-**Geen bronlink (141):** 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046, 047, 048, 049, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 065, 066, 067, 068, 069, 070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094, 095, 096, 097, 098, 099, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141
 
 ### mee – Mega Evolution Energy
 **Geen bronlink (8):** 009, 010, 011, 012, 013, 014, 015, 016
