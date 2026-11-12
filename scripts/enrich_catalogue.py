@@ -243,7 +243,7 @@ def exports(manifest):
    q=c.get('dataQuality',{});row['cards']+=1
    for target,key in [('detailsArchived','detailsArchived'),('baseImagesArchived','baseImageArchived'),('printings','printings'),('variantImagesArchived','variantImagesArchived'),('openResearch','openResearch')]:row[target]+=int(q.get(key,0))
    allcards.append(c)
-   for path in [c.get('images',{}).get('small','')]+[p.get('images',{}).get('small','')for p in c.get('printings',[])]:
+   for path in [s.get('images',{}).get(kind,'')for kind in ('logo','symbol')]+[c.get('images',{}).get('small','')]+[p.get('images',{}).get('small','')for p in c.get('printings',[])]:
     if path and path not in assets:
      f=local(path)
      if f:
@@ -291,6 +291,9 @@ def main():
      if row['id']not in seen:
       payload['cards'].append({'id':row['id'],'name':row['name'],'number':row['localId'],'images':{'small':row['image']+'/low.webp'if row.get('image')else''}});seen.add(row['id'])
     expected=(source_set.get('cardCount')or{}).get('total')
+    payload['set']['total']=max(len(payload['cards']),expected or 0)
+    if (source_set.get('cardCount')or{}).get('official'):payload['set']['printedTotal']=source_set['cardCount']['official']
+    if source_set.get('releaseDate'):payload['set']['releaseDate']=source_set['releaseDate']
     if expected and expected>len(payload['cards']):set_issues.append({'setId':sid,'type':'set_card_count','reason':'Source count exceeds enumerated card records.','expected':expected,'stored':len(payload['cards'])})
     for kind in ('logo','symbol'):
      target=payload['set'].setdefault('images',{})

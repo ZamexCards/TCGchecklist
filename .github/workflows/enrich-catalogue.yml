@@ -29,6 +29,8 @@ jobs:
         env:
           CATALOGUE_WORKERS: '10'
         run: python -u scripts/enrich_catalogue.py
+      - name: Validate complete database and reusable exports
+        run: python scripts/validate_catalogue.py
       - name: Validate local artwork
         run: python scripts/audit_images.py
       - name: Commit enriched database and exports

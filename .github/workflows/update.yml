@@ -10,6 +10,7 @@ on:
       - 'scripts/archive_available_images.py'
       - 'scripts/audit_images.py'
       - 'scripts/enrich_catalogue.py'
+      - 'scripts/validate_catalogue.py'
       - 'tests/test_enrich_catalogue.py'
   schedule:
     - cron: '17 4 * * 1'
@@ -45,6 +46,8 @@ jobs:
         run: python scripts/archive_available_images.py
       - name: Archive complete English card details and variants
         run: python scripts/enrich_catalogue.py
+      - name: Validate complete database and reusable exports
+        run: python scripts/validate_catalogue.py
       - name: Audit images
         run: python scripts/audit_images.py
       - name: Publish progress summary
