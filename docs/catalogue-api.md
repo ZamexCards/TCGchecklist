@@ -65,3 +65,9 @@ Marktprijzen blijven gedateerde bronmomentopnamen en worden niet als actuele Zam
 Iedere uitvoering bevat `imagePresentation.mode`: `catalogue_image` voor een gekoppelde afbeelding, `reverse_overlay` voor een glanseffect op de referentiekaart, `reference_only` als de uitvoering nog geen eigen scan heeft, en `not_available` als ook een referentie ontbreekt. `referenceImage` is het bronpad; `simulatedEffect` is alleen waar bij de expliciete reverse-overlay. Dit maakt dezelfde weergave in andere apps mogelijk zonder een effect als echte kaartscan op te slaan.
 
 De twaalf genummerde Fighting Energy-kaarten zonder eigen TCGdex-detailendpoint zijn afzonderlijk op hun afbeeldingen gecontroleerd. `data/imports/reviewed-numbered-energy.json` legt die relatie vast met de checksums van alle betrokken kaarten. Alleen gedeelde kaartgegevens worden overgenomen van de gelijksoortige kaart in dezelfde kit; nummers, eigen afbeeldingen, prijzen en marketplace-ID’s worden niet verwisseld.
+
+## Gewone reverse holo’s — afgesproken beleid
+
+Een gewone reverse holo gebruikt de basisafbeelding met een duidelijke glansoverlay. Een aparte scan is niet vereist en deze uitvoering staat niet meer in de zoeklijst. Stempels, Poké Ball, Master Ball, Cosmos, bijzondere patronen, edities en afwijkende formaten blijven aparte zoekopdrachten. `data/catalogue-policy.json` publiceert deze keuze voor andere apps.
+
+Het kwaliteitsrapport onderscheidt nu `variantImagesArchived` (echte gekoppelde afbeeldingen), `ordinaryReverseOverlays` (goedgekeurde weergave met de basiskaart), `variantDisplaysReady` (afbeelding of gewone reverse-overlay beschikbaar) en `variantImagesToResearch` (speciale uitvoeringen waarvoor nog een aparte afbeelding moet worden gevonden). Daardoor worden gewone reverse holo’s niet langer meegeteld als nog te zoeken afbeeldingen.

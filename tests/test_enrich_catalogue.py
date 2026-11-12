@@ -30,8 +30,15 @@ class CatalogueTests(unittest.TestCase):
  def test_reviewed_stamp_correction_and_image_evidence_survive_refresh(self):
   old={**self.old,'_enrichedSource':'primary','printings':[{'type':'holo','stamp':['pokemon-day-2025'],'size':'standard','variantId':'same-print','key':'stable-old-key','label':'Holo · Pokémon Day 2025','images':{'small':'./assets/reviewed.webp'},'_reviewedOverrides':{'stamp':['pokemon-day-2025'],'label':'Holo · Pokémon Day 2025'},'_reviewedSourceFields':{'stamp':['30th-pokeday']},'imageAsset':{'sha256':'reviewed-hash'},'verification':'identity_and_image_reviewed','independentlyVisuallyReviewed':True}]}
   detail={**self.d,'variants_detailed':[{'type':'holo','stamp':['30th-pokeday'],'size':'standard','variantId':'same-print'}]};c=m.merge(old,detail,'base1');p=next(p for p in c['printings']if p['key']=='stable-old-key');self.assertEqual(p['stamp'],['pokemon-day-2025']);self.assertEqual(p['imageAsset']['sha256'],'reviewed-hash');self.assertTrue(p['independentlyVisuallyReviewed'])
+ def test_ordinary_reverse_uses_overlay_without_research_or_extra_download(self):
+  d={**self.d,'variants_detailed':[{'type':'normal','size':'standard'},{'type':'reverse','size':'standard'}]}
+  with patch.object(m,'get',return_value=d),patch.object(m,'valid_image',side_effect=lambda p:bool(p)),patch.object(m,'archive')as archive:
+   c,issues=m.process_card(self.old,{'id':'base1','releaseDate':'1999-01-09'},{},'')
+  reverse=next(p for p in c['printings']if p['type']=='reverse');self.assertEqual(reverse['imagePresentation']['mode'],'reverse_overlay');self.assertFalse(any(i['type']=='variant_image'for i in issues));archive.assert_not_called();self.assertEqual(c['dataQuality']['ordinaryReverseOverlays'],1)
+ def test_special_reverse_stamps_and_patterns_still_need_their_own_image(self):
+  self.assertFalse(m.ordinary_reverse({'type':'reverse','stamp':['set-logo']}));self.assertFalse(m.ordinary_reverse({'type':'reverse','foil':'pokeball'}));self.assertFalse(m.ordinary_reverse({'type':'reverse','size':'jumbo'}))
  def test_no_fabricated_images_for_missing_reverse(self):
   d={**self.d,'variants_detailed':[{'type':'normal','size':'standard'},{'type':'reverse','size':'standard'}]}
   with patch.object(m,'get',return_value=d),patch.object(m,'valid_image',side_effect=lambda p:bool(p)),patch.object(m,'archive')as a:
-   c,issues=m.process_card(self.old,{'id':'base1','releaseDate':'1999-01-09'}, {},'');self.assertFalse(c['printings'][1]['images']['small']);self.assertTrue(any(i['type']=='variant_image'for i in issues));a.assert_not_called()
+   c,issues=m.process_card(self.old,{'id':'base1','releaseDate':'1999-01-09'}, {},'');self.assertFalse(c['printings'][1]['images']['small']);self.assertFalse(any(i['type']=='variant_image'for i in issues));a.assert_not_called()
 if __name__=='__main__':unittest.main()

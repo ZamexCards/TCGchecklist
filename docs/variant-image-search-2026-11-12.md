@@ -21,3 +21,17 @@ Bron: de individuele Engelse productpagina’s en bijbehorende afbeeldingen van 
 - Cromos: de variantenlijst was vindbaar, maar het direct ophalen van de pagina voor beeldcontrole gaf 403. De afbeeldingen zijn daarom niet als geverifieerde scans ingevoerd.
 
 Standaard reverse-holo’s vormen de grootste groep ontbrekende scans. Een glansoverlay blijft een apart presentatie-effect en telt niet mee als echte scan.
+
+## Additional reviewed Black Bolt / White Flare scans
+
+A bounded search of 40 English Magic Madhouse catalogue pages yielded 165 missing matching ball-pattern scans. Each image was visually checked for English text, collector number and the actual Poké Ball or Master Ball pattern (including the M on Master Ball). All 165 decoded images are distinct; exact source bytes are frozen by SHA256. Source product and image URLs are recorded individually in the reviewed import manifest.
+
+| Set | Poké Ball | Master Ball | Added images |
+| --- | ---: | ---: | ---: |
+| Black Bolt | 12 | 4 | 16 |
+| White Flare | 79 | 70 | 149 |
+| Total | 91 | 74 | 165 |
+
+These are photographs of the special finishes. Image dimensions and lighting vary; they are not replaced by fabricated scans. This round does not claim to have searched every outstanding variant.
+
+Ordinary reverse holos are excluded from further scan research per the catalogue policy. Their display uses a base-card image with an explicitly simulated reverse shine layer; physical scans and display readiness are counted separately.

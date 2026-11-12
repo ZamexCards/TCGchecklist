@@ -25,7 +25,7 @@ def main():
   if overrides:p['_reviewedOverrides']=overrides;p.update(overrides)
   p.update(images={'small':asset['path']},imageAsset=asset,imageStatus='catalogue_image',verification=rule['verification'],independentlyVisuallyReviewed=True,imagePresentation={'mode':'catalogue_image','referenceImage':c['images']['small'],'simulatedEffect':False})
   c['availableVariants']=[v['label']for v in c['printings']]
-  c['dataQuality']['variantImagesArchived']=sum(m.valid_image(v.get('images',{}).get('small',''))for v in c['printings'])
+  c['dataQuality'].update(m.image_quality(c))
   rp=ROOT/'data/research/sets'/(sid+'.json');research=m.read(rp)
   research['issues']=[i for i in research['issues']if not(i.get('cardId')==c['id']and i.get('type')=='variant_image'and i.get('variantKey')==p['key'])]
   c['dataQuality']['openResearch']=sum(i.get('cardId')==c['id']for i in research['issues'])

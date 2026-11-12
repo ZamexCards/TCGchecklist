@@ -70,6 +70,11 @@ def label(v):
 def signature(v):
  return tuple(json.dumps(v.get(k),sort_keys=True)for k in ('type','foil','subtype','stamp','size','firstEdition'))
 def is_ordinary(v):return v.get('type')not in('reverse',)and not v.get('stamp')and not v.get('firstEdition')and v.get('size','standard')=='standard'and v.get('subtype','unlimited')=='unlimited'and v.get('foil')not in('pokeball','masterball','cosmos')
+def ordinary_reverse(p):
+ return p.get('type')=='reverse'and not p.get('foil')and not p.get('stamp')and not p.get('firstEdition')and p.get('size','standard')=='standard'and not p.get('subtype')
+def image_quality(card):
+ rows=[(p,valid_image(p.get('images',{}).get('small','')))for p in card.get('printings',[])]
+ return {'variantImagesArchived':sum(actual for p,actual in rows),'ordinaryReverseOverlays':sum(not actual and p.get('imagePresentation',{}).get('mode')=='reverse_overlay'for p,actual in rows),'variantImagesToResearch':sum(not actual and not ordinary_reverse(p)for p,actual in rows),'variantDisplaysReady':sum(actual or p.get('imagePresentation',{}).get('mode')=='reverse_overlay'for p,actual in rows)}
 def printings(old,d):
  raw=copy.deepcopy(d.get('variants_detailed')or[])
  if not raw:
@@ -258,31 +263,33 @@ def process_card(old,info,secondary,secondary_url,refresh=False,templates=None,i
   # Only an explicit, distinct product ID from this exact source printing is
   # accepted. Shared marketplace listings cannot prove an edition or pattern.
   pid=(p.get('thirdParty')or{}).get('tcgplayer')
-  if not valid_image(p['images'].get('small',''))and pid and product_counts.get(str(pid))==1:
+  if not valid_image(p['images'].get('small',''))and pid and product_counts.get(str(pid))==1 and not ordinary_reverse(p):
    url='https://tcgplayer-cdn.tcgplayer.com/product/'+str(int(pid))+'_in_1000x1000.jpg'
    a=archive(url,sid,file_number(card['number'])+'-variant-'+hashlib.sha256(p['key'].encode()).hexdigest()[:16]+'.webp','variant',{'cardId':card['id'],'variantId':p.get('variantId'),'productId':pid,'printing':{k:p[k]for k in ('type','foil','subtype','stamp','size')if k in p},'language':'en'})
    if a and not a.get('error'):p['images']['small']=a['path'];p['imageAsset']=a;p['verification']='source_product_matched';p['independentlyVisuallyReviewed']=False
   p.pop('_baseReference',None)
   p['imageStatus']='catalogue_image'if valid_image(p['images'].get('small',''))else'needs_additional_sources'
-  mode='catalogue_image'if p['imageStatus']=='catalogue_image'else'reverse_overlay'if p.get('type')=='reverse'and not p.get('foil')and'Pocket'not in info.get('series','')and valid_image(card['images'].get('small',''))else'reference_only'if valid_image(card['images'].get('small',''))else'not_available'
+  mode='catalogue_image'if p['imageStatus']=='catalogue_image'else'reverse_overlay'if ordinary_reverse(p)and'Pocket'not in info.get('series','')and valid_image(card['images'].get('small',''))else'reference_only'if valid_image(card['images'].get('small',''))else'not_available'
+  if mode=='reverse_overlay':p['imageStatus']='reference_with_reverse_overlay'
   p['imagePresentation']={'mode':mode,'referenceImage':card['images'].get('small',''),'simulatedEffect':mode=='reverse_overlay'}
-  if p['imageStatus']=='needs_additional_sources':issues.append({'type':'variant_image','variantKey':p['key'],'variant':p['label'],'reason':'Separate English scan not verified; no simulated scan stored.','source':p.get('source')or card.get('_variantSource')or API+'/cards/'+card['id']})
+  if p['imageStatus']=='needs_additional_sources'and not ordinary_reverse(p):issues.append({'type':'variant_image','variantKey':p['key'],'variant':p['label'],'reason':'Separate English scan not verified; no simulated scan stored.','source':p.get('source')or card.get('_variantSource')or API+'/cards/'+card['id']})
  if not card.get('illustrator')and'illustrator'not in card.get('_notApplicable',[]):issues.append({'type':'illustrator','reason':'Artist not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not card.get('hp'):issues.append({'type':'hp','reason':'HP not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not any(card.get(k)for k in ('attacks','abilities','effect')):issues.append({'type':'card_text','reason':'No attacks, ability or effect supplied by the matched sources.'})
  card['baseVariant']=next((p['label']for p in card['printings']if p.get('images',{}).get('small')and p['images']['small']==card['images'].get('small')),card.get('baseVariant',card['printings'][0]['label']))
  card['availableVariants']=[p['label']for p in card['printings']]
  card['dataQuality']={'detailsArchived':bool(card.get('_enrichedSource')),'baseImageArchived':valid_image(card['images'].get('small','')),'printings':len(card['printings']),'variantImagesArchived':sum(valid_image(p['images'].get('small',''))for p in card['printings']),'openResearch':len(issues),'notApplicable':sorted(set(card.get('_notApplicable',[])+(['regulationMark']if not card.get('regulationMark')and (info.get('releaseDate','')<'2017-01-01')else[])))}
+ card['dataQuality'].update(image_quality(card))
  return card,[{'setId':sid,'cardId':card['id'],'number':card['number'],'name':card['name'],**x}for x in issues]
 
 def exports(manifest):
- issues=[];allcards=[];series={};totals={'sets':0,'cards':0,'detailsArchived':0,'baseImagesArchived':0,'printings':0,'variantImagesArchived':0,'openResearch':0};assets={};byset=[]
+ issues=[];allcards=[];series={};totals={'sets':0,'cards':0,'detailsArchived':0,'baseImagesArchived':0,'printings':0,'variantImagesArchived':0,'ordinaryReverseOverlays':0,'variantImagesToResearch':0,'variantDisplaysReady':0,'openResearch':0};assets={};byset=[]
  for s in manifest['sets']:
   data=read(ROOT/'data/sets'/(s['id']+'.json'));cards=data['cards'];totals['sets']+=1
-  row={k:0 for k in ('cards','detailsArchived','baseImagesArchived','printings','variantImagesArchived','openResearch')}
+  row={k:0 for k in ('cards','detailsArchived','baseImagesArchived','printings','variantImagesArchived','ordinaryReverseOverlays','variantImagesToResearch','variantDisplaysReady','openResearch')}
   for c in cards:
    q=c.get('dataQuality',{});row['cards']+=1
-   for target,key in [('detailsArchived','detailsArchived'),('baseImagesArchived','baseImageArchived'),('printings','printings'),('variantImagesArchived','variantImagesArchived'),('openResearch','openResearch')]:row[target]+=int(q.get(key,0))
+   for target,key in [('detailsArchived','detailsArchived'),('baseImagesArchived','baseImageArchived'),('printings','printings'),('variantImagesArchived','variantImagesArchived'),('ordinaryReverseOverlays','ordinaryReverseOverlays'),('variantImagesToResearch','variantImagesToResearch'),('variantDisplaysReady','variantDisplaysReady'),('openResearch','openResearch')]:row[target]+=int(q.get(key,0))
    allcards.append(c)
    for path in [s.get('images',{}).get(kind,'')for kind in ('logo','symbol')]+[c.get('images',{}).get('small','')]+[p.get('images',{}).get('small','')for p in c.get('printings',[])]:
     if path and path not in assets:
@@ -305,7 +312,7 @@ def exports(manifest):
  write(ROOT/'data/image-assets.json',{'schemaVersion':SCHEMA,'checked':checked,'assets':assets})
  out=ROOT/'data/exports';out.mkdir(exist_ok=True)
  with gzip.GzipFile(filename=str(out/'pokemon-en.json.gz'),mode='wb',mtime=0)as f:f.write(json.dumps({'schemaVersion':SCHEMA,'language':'en','updated':checked,'sets':manifest['sets'],'cards':allcards},ensure_ascii=False,separators=(',',':')).encode())
- write(ROOT/'data/catalogue.json',{'schemaVersion':SCHEMA,'language':'en','baseUrl':PUBLIC,'updated':checked,'endpoints':{'sets':'data/sets.json','series':'data/series.json','cardIndex':'data/cards-index.json','set':'data/sets/{setId}.json','bulk':'data/exports/pokemon-en.json.gz','images':'data/image-assets.json','quality':'data/catalogue-quality.json','research':'data/research/open.json'},'totals':totals,'imagePolicy':'Only genuine source images are archived. A reverse shine overlay is a UI effect, not a scan. Source image rights remain with their respective rights holders.'})
+ write(ROOT/'data/catalogue.json',{'schemaVersion':SCHEMA,'language':'en','baseUrl':PUBLIC,'updated':checked,'endpoints':{'sets':'data/sets.json','series':'data/series.json','cardIndex':'data/cards-index.json','set':'data/sets/{setId}.json','bulk':'data/exports/pokemon-en.json.gz','images':'data/image-assets.json','quality':'data/catalogue-quality.json','research':'data/research/open.json'},'totals':totals,'imagePolicyUrl':'data/catalogue-policy.json','imagePolicy':'Only genuine source images are archived. A reverse shine overlay is a UI effect, not a scan. Source image rights remain with their respective rights holders.'})
  print('CATALOGUE TOTALS '+json.dumps(totals),flush=True)
  return totals
 
