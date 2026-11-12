@@ -9,6 +9,8 @@ on:
       - 'scripts/update_data.py'
       - 'scripts/archive_available_images.py'
       - 'scripts/audit_images.py'
+      - 'scripts/enrich_catalogue.py'
+      - 'tests/test_enrich_catalogue.py'
   schedule:
     - cron: '17 4 * * 1'
 

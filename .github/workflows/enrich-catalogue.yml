@@ -1,12 +1,6 @@
 name: Archive full English Pokemon catalogue
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/enrich_catalogue.py'
-      - 'tests/test_enrich_catalogue.py'
-      - '.github/workflows/enrich-catalogue.yml'
 permissions:
   contents: write
   pages: write
@@ -23,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 1
       - uses: actions/setup-python@v5
         with:

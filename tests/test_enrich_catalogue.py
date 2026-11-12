@@ -17,6 +17,8 @@ class CatalogueTests(unittest.TestCase):
   o={**self.old,'_enrichedSource':'primary','printings':[{'type':'holo','subtype':'shadowless','stamp':['1st-edition'],'size':'standard','key':'my-key','label':'1st Edition reviewed','images':{'small':'./assets/verified.png'},'verification':'reviewed'}]};c=m.merge(o,self.d,'base1');p=next(p for p in c['printings']if p['key']=='my-key');self.assertEqual(p['images']['small'],'./assets/verified.png')
  def test_secondary_requires_matching_set_and_card(self):
   info={'name':'Base Set','printedTotal':102};self.assertIsNotNone(m.secondary_set(info,[{'name':'Base','printedTotal':102,'id':'base1'}]));self.assertIsNone(m.secondary_set(info,[{'name':'Base','printedTotal':130,'id':'base4'}]));c=m.supplement(dict(self.old),{'id':'x','name':'Alakazam','number':'2','artist':'Wrong'},'source');self.assertNotIn('illustrator',c)
+ def test_promo_counts_can_grow_with_verified_series_and_id(self):
+  a={'id':'svp','name':'SVP Black Star Promos','series':'Scarlet & Violet','printedTotal':500};b={'id':'svp','name':'Scarlet & Violet Black Star Promos','series':'Scarlet & Violet','printedTotal':1};self.assertEqual(m.secondary_set(a,[b]),b)
  def test_punctuation_card_numbers_have_unique_safe_file_names(self):
   self.assertNotEqual(m.file_number('!'),m.file_number('%3F'));m.safe(m.file_number('!'));m.safe(m.file_number('%3F'))
  def test_no_fabricated_images_for_missing_reverse(self):

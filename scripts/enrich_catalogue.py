@@ -144,6 +144,11 @@ def secondary_set(info,rows):
  # insufficient: a matching printed count is required as an independent check.
  aliases={'baseset':'base','151':'151'}
  name=aliases.get(norm(info['name']),norm(info['name']))
+ # Promo series grow continuously; their printed totals are not invariant.
+ # Matching provider IDs plus series and explicit promo category are stable.
+ if 'promo' in info['name'].casefold():
+  promo=[s for s in rows if s.get('id')==info['id'] and 'promo' in s['name'].casefold() and norm(s.get('series',''))==norm(info.get('series',''))]
+  if len(promo)==1:return promo[0]
  matches=[s for s in rows if aliases.get(norm(s['name']),norm(s['name']))==name and int(s.get('printedTotal',0))==int(info.get('printedTotal',-1))]
  return matches[0]if len(matches)==1 else None
 
