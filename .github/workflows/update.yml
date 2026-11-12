@@ -52,10 +52,13 @@ jobs:
       - name: Test catalogue identity and frozen image imports
         run: python -m unittest discover -s tests -v
       - name: Refresh new sets, promos and missing artwork
+        if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Reviewed batch:') }}
         run: python scripts/update_data.py
       - name: Store available card images and logos
+        if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Reviewed batch:') }}
         run: python scripts/archive_available_images.py
       - name: Archive complete English card details and variants
+        if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Reviewed batch:') }}
         run: python scripts/enrich_catalogue.py
       - name: Apply visually reviewed English variant scans
         run: python scripts/import_reviewed_variants.py

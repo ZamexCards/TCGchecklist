@@ -42,13 +42,27 @@ def main():
                             'items': rows[start:start + LIMIT]})
     assert all(0 < b['count'] <= LIMIT for b in batches)
     assert sum(b['count'] for b in batches) == len(seen)
+    metadata_groups = collections.defaultdict(list)
+    for issue in open_issues['issues']:
+        if issue['type'] != 'variant_image':
+            metadata_groups[issue['type']].append(issue)
+    metadata_batches = []
+    for kind in sorted(metadata_groups):
+        rows = sorted(metadata_groups[kind], key=lambda i: (i['setId'], i.get('cardId', '')))
+        for start in range(0, len(rows), LIMIT):
+            items = rows[start:start + LIMIT]
+            metadata_batches.append({'id': f"metadata-{kind}-{start // LIMIT + 1:03d}",
+                                     'type': kind, 'count': len(items), 'items': items})
+    assert sum(b['count'] for b in metadata_batches) == sum(len(v) for v in metadata_groups.values())
     m.write(ROOT / 'data/research/batches.json', {
         'schemaVersion': '1.0', 'checked': m.now(), 'maxItemsPerBatch': LIMIT,
         'variantImagesRemaining': len(seen), 'batchCount': len(batches),
+        'metadataBatchCount': len(metadata_batches),
+        'totalPendingBatches': len(batches) + len(metadata_batches),
         'ordinaryReverseExcluded': excluded_reverse,
         'otherResearchByType': dict(collections.Counter(i['type'] for i in open_issues['issues'] if i['type'] != 'variant_image')),
         'completionRule': 'Every item has either a verified matching image committed and published, or an explicit searched-but-unavailable result with sources. Unavailable is not complete data.',
-        'batches': batches})
+        'batches': batches, 'metadataBatches': metadata_batches})
     print('RESEARCH BATCHES', len(batches), 'groups,', len(seen), 'special images; max', LIMIT, 'per group')
 
 if __name__ == '__main__':

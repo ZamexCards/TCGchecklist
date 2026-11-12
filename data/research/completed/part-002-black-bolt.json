@@ -1,0 +1,191 @@
+{
+  "part": 2,
+  "batchIdAtStart": "sv10.5b-001",
+  "checked": "2026-11-12",
+  "scope": "First 25 previously unresolved Black Bolt printings",
+  "itemsChecked": 25,
+  "verifiedImagesFound": 25,
+  "notFound": 0,
+  "counts": {
+    "pokeball": 10,
+    "masterball": 14,
+    "jumbo": 1
+  },
+  "items": [
+    {
+      "cardId": "sv10.5b-002",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-002086-servine-poke-ball-reverse-holo",
+      "sourceSha256": "8deed8524033d2188463e02d49925f46db14377935835718fa498ec2bb2c8708"
+    },
+    {
+      "cardId": "sv10.5b-005",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-005086-simisage-poke-ball-reverse-holo",
+      "sourceSha256": "708c0e56e7053d61a985ffbfd24627aba1481d599b09555aa9226469ccd1b627"
+    },
+    {
+      "cardId": "sv10.5b-007",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-007086-lilligant-poke-ball-reverse-holo",
+      "sourceSha256": "9842a524f2a7d64f7209df501467110327702eb6c3a6362ebf0ff404a12c3508"
+    },
+    {
+      "cardId": "sv10.5b-009",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-009086-karrablast-master-ball-reverse-holo",
+      "sourceSha256": "1d6f0602d8a228d3710dd7a8939139ea5e81b9b0a678b717a7c95abda6beb063"
+    },
+    {
+      "cardId": "sv10.5b-010",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-010086-foongus-master-ball-reverse-holo",
+      "sourceSha256": "66068463d48a237117466509472f9bfc167e2c4abc8d3f3e64cef00a20ffd631"
+    },
+    {
+      "cardId": "sv10.5b-010",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-010086-foongus-poke-ball-reverse-holo",
+      "sourceSha256": "806f5301b7ae3a59901055b16b478b8ccef95c1b06537a58ea23731042931241"
+    },
+    {
+      "cardId": "sv10.5b-012",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-012086-victini-master-ball-reverse-holo",
+      "sourceSha256": "8c3618ceca339037476720b7a6450df29c44d4646ed5e50db0f0c02f7ca1f749"
+    },
+    {
+      "cardId": "sv10.5b-014",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-014086-darmanitan-master-ball-reverse-holo",
+      "sourceSha256": "1df816efbfc27adc7a311b09be7c77e804e24250f9e6d0079a06f9285b2714ef"
+    },
+    {
+      "cardId": "sv10.5b-016",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-016086-volcarona-master-ball-reverse-holo",
+      "sourceSha256": "71aecd69e43c8d75628b6aa1fe0773f8f96046ab44d3c23fb6325b055a095ff8"
+    },
+    {
+      "cardId": "sv10.5b-016",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-016086-volcarona-poke-ball-reverse-holo",
+      "sourceSha256": "2b83be510373fe6758e4658695e7298c35076366308815a60d024c00bfbc1596"
+    },
+    {
+      "cardId": "sv10.5b-017",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-017086-panpour-master-ball-reverse-holo",
+      "sourceSha256": "97f009e23b666bcab864d31551f39b0c2b93b21e15b071a239ff9ae128c7c7ac"
+    },
+    {
+      "cardId": "sv10.5b-017",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-017086-panpour-poke-ball-reverse-holo",
+      "sourceSha256": "795dfc83b358024360a6815c7fbab737245de2cfe3bb783c09cad4bfc0689e28"
+    },
+    {
+      "cardId": "sv10.5b-018",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-018086-simipour-master-ball-reverse-holo",
+      "sourceSha256": "71de92902cc0b380006065996095fbca0db9a0bc1d6bc125a9a904db3bc43522"
+    },
+    {
+      "cardId": "sv10.5b-019",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-019086-tympole-master-ball-reverse-holo",
+      "sourceSha256": "b319cfc2d2ebe0acca9b4829738338df0a941eb114c6f80a27e8f158d2490c91"
+    },
+    {
+      "cardId": "sv10.5b-020",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-020086-palpitoad-master-ball-reverse-holo",
+      "sourceSha256": "0a9728a674464fcc6c4d2d16e7e0d2d90cd888a5329e531a5e3e0d0e9d6797ca"
+    },
+    {
+      "cardId": "sv10.5b-020",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-020086-palpitoad-poke-ball-reverse-holo",
+      "sourceSha256": "30d6faad9ce395ddd476e48c15e9702de4cb10446e9f20809006fb29c18f8c10"
+    },
+    {
+      "cardId": "sv10.5b-021",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-021086-seismitoad-master-ball-reverse-holo",
+      "sourceSha256": "dca4c8cbb81ae9c86ff871026f4786f77e6975bd0ba04b0525fbdd1196d5f3cb"
+    },
+    {
+      "cardId": "sv10.5b-022",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-022086-tirtouga-poke-ball-reverse-holo",
+      "sourceSha256": "468970cac35ec3ca18f4ef2dab7a8ee1aa2a83546607d5efe03b4ea9674522da"
+    },
+    {
+      "cardId": "sv10.5b-023",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-023086-carracosta-master-ball-reverse-holo",
+      "sourceSha256": "91f1b1b7035044abe6b3f9d9de98b2fbf5256d96a212c451fc4a60762eef9f9b"
+    },
+    {
+      "cardId": "sv10.5b-025",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-025086-cubchoo-poke-ball-reverse-holo",
+      "sourceSha256": "da864b79c6b0e1be420e43ce0e401feafeaedf8850c8a23cea78000ab87c7991"
+    },
+    {
+      "cardId": "sv10.5b-026",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-026086-beartic-master-ball-reverse-holo",
+      "sourceSha256": "cd40458c2b1756f00ad85903137a052333bdedf26e534cd7589de92229741e9b"
+    },
+    {
+      "cardId": "sv10.5b-027",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-027086-cryogonal-master-ball-reverse-holo",
+      "sourceSha256": "c5aeb02b7783f4a45feb9d1f88da0f05df67c7fccb2a3bf14d9c9101bfb8727c"
+    },
+    {
+      "cardId": "sv10.5b-028",
+      "variantKey": "slwlv6rn87",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://pittsburgtcg.com/products/kyurem-ex-028-086-oversized-jumbo-card",
+      "sourceSha256": "2d4f8fac769c473a6fa321ccceee8f289c92313b5e9542f8f564407d9ea077ec"
+    },
+    {
+      "cardId": "sv10.5b-029",
+      "variantKey": "2asus05yghmpd1ud1sdmlq3as4e",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-029086-emolga-master-ball-reverse-holo",
+      "sourceSha256": "5e91d8da6b9abc2f7cf55e872723e6dac62ec4c487989cda7476d739080a8780"
+    },
+    {
+      "cardId": "sv10.5b-030",
+      "variantKey": "3739bbtj3i910y5ynn9xc6ryf",
+      "outcome": "verified_image_found",
+      "sourcePage": "https://magicmadhouse.co.uk/pokemon-sv-black-bolt-030086-tynamo-poke-ball-reverse-holo",
+      "sourceSha256": "bc358771e87ea1feb776c2d5953436e5f366d5537115c81e8ea3b000422f9b65"
+    }
+  ]
+}
