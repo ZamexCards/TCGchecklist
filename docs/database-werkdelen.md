@@ -34,13 +34,17 @@ Lees eerst dit bestand, controleer de laatste geslaagde GitHub Actions-publicati
 
 ## Deel 2: eerste 25 resterende Black Bolt-uitvoeringen
 
-Status: 25 afbeeldingen gevonden, visueel gecontroleerd, geïmporteerd en lokaal gevalideerd; publicatiecontrole volgt.
+Status: **afgerond en online gecontroleerd op 12 november 2026**. Alle 25 afbeeldingen zijn geïmporteerd en gepubliceerd. De 25 variantkoppelingen zijn online gecontroleerd in het Black Bolt-setbestand en de volledige downloadexport. Voorbeelden van Poké Ball, Master Ball en Jumbo zijn gedownload en op de opgeslagen bestandshash gecontroleerd.
 
 - 10 Poké Ball, 14 Master Ball en 1 Kyurem ex Jumbo (028/086).
 - 25 van 25 gevonden; 0 niet gevonden. De exacte afgewerkte lijst met bronnen en bestandshashes staat in [`data/research/completed/part-002-black-bolt.json`](../data/research/completed/part-002-black-bolt.json).
 - Bronfoto’s van Magic Madhouse (24) en Pittsburg TCG and Collectibles (1). Bij de Jumbo-uitvoering komt het formaattype uit de bijbehorende productbeschrijving; het kaartnummer en de Engelse tekst zijn op de foto gecontroleerd.
 - 17 tests geslaagd; 217 sets, 23.923 kaartrecords en 37.977 uitvoeringen gevalideerd. Na import: 25.686 uitvoeringen met een eigen afbeelding, 8.425 gewone reverse-presentaties met glanslaag, 3.866 nog te onderzoeken speciale variantafbeeldingen.
 - Kleine beoordeelde imports verwerken voortaan alleen de vastgezette bronbestanden en de bestaande database. De volledige externe bronverversing blijft voor de geplande volledige updates beschikbaar.
+
+- Toevoeging en import: [25d1cd7](https://github.com/ZamexCards/TCGchecklist/commit/25d1cd7f8eb0ba1f2430dd9dff6f2c0a879fe505).
+- Gepubliceerde database: [a0a33b9](https://github.com/ZamexCards/TCGchecklist/commit/a0a33b9a00ca29dc602e80eae95a116479c471f0).
+- [Databaseverwerking en publicatie deel 2 geslaagd](https://github.com/ZamexCards/TCGchecklist/actions/runs/43307775489).
 
 ## Hoeveel delen?
 
