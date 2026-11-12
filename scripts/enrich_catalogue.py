@@ -119,6 +119,23 @@ def merge(old,d,sid):
  out['provenance']={**old.get('provenance',{}),'primary':{'provider':'TCGdex','url':out['_enrichedSource'],'language':'en','fetchedAt':now(),'sourceUpdatedAt':d.get('updated'),'identityChecked':['id','setId','number','name']}}
  return out
 
+def reviewed_template(old,sid,rules):
+ rule=rules.get('rules',{}).get(old['id'])
+ if not rule:return None
+ d=rules['templates'][rule['templateCardId']]
+ image=local(old.get('images',{}).get('small',''))
+ if (rule['setId']!=sid or norm(rule['name'])!=norm(old['name'])or d['set']['id']!=sid or norm(d['name'])!=norm(old['name'])or d['id']!=rule['templateCardId']or not image or hashlib.sha256(image.read_bytes()).hexdigest()!=rule['imageSha256']):raise ValueError('reviewed_template_identity_mismatch')
+ c=copy.deepcopy(old)
+ for k in ('category','rarity','variants','energyType','updated'):
+  if k in d:c[k]=copy.deepcopy(d[k])
+ c.update(supertype=d['category'],language='en',setId=sid,_schemaVersion=SCHEMA,_enrichedSource=API+'/cards/'+d['id'])
+ c['printings']=printings(old,d)
+ for p in c['printings']:
+  p.pop('pricing',None);p.pop('thirdParty',None);p['source']=c['_enrichedSource'];p['verification']='reviewed_numbered_copy'
+ c['baseVariant']=c['printings'][0]['label'];c['_notApplicable']=rule.get('notApplicable',[])
+ c['provenance']={**c.get('provenance',{}),'primary':{'provider':'TCGdex + reviewed same-kit numbered copy','url':c['_enrichedSource'],'language':'en','fetchedAt':now(),'sourceUpdatedAt':d.get('updated'),'identityChecked':['sameSet','sameCardName','archivedImageSha256','visualReview'],'templateCardId':d['id'],'relation':'same_card_text_distinct_collector_number','reason':rule['reason'],'evidence':rule['evidence'],'pricingTransferred':False}}
+ return c
+
 def archive(url,sid,filename,kind,evidence):
  if not url or not url.startswith('https://'):return None
  safe(sid);safe(filename);target=ROOT/'assets/sets'/sid/filename
@@ -169,11 +186,13 @@ def supplement(card,other,source):
  card.setdefault('provenance',{})['secondary']={'provider':'PokemonTCG legacy dataset','url':source,'language':'en','fetchedAt':now(),'identityChecked':['setName','setPrintedTotal','number','name'],'fieldsFilled':fields,'historicalCompatibilitySource':True}
  return card
 
-def process_card(old,info,secondary,secondary_url,refresh=False):
+def process_card(old,info,secondary,secondary_url,refresh=False,templates=None):
  sid=info['id'];issues=[];card=copy.deepcopy(old);detail=None
  cached=card.get('_schemaVersion')==SCHEMA and card.get('provenance',{}).get('primary',{}).get('fetchedAt','')> (dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
  try:
-  if cached and not refresh:detail={'image':card.get('imageSourceBase','')}
+  reviewed=reviewed_template(old,sid,templates or{})
+  if reviewed:card=reviewed;detail={}
+  elif cached and not refresh:detail={'image':card.get('imageSourceBase','')}
   else:
    detail=get(API+'/cards/'+urllib.parse.quote(old['id'],safe=''));card=merge(old,detail,sid)
    if detail.get('image'):card['imageSourceBase']=detail['image']
@@ -227,11 +246,11 @@ def process_card(old,info,secondary,secondary_url,refresh=False):
   p.pop('_baseReference',None)
   p['imageStatus']='catalogue_image'if valid_image(p['images'].get('small',''))else'needs_additional_sources'
   if p['imageStatus']=='needs_additional_sources':issues.append({'type':'variant_image','variantKey':p['key'],'variant':p['label'],'reason':'Separate English scan not verified; no simulated scan stored.','source':p.get('source')or card.get('_variantSource')or API+'/cards/'+card['id']})
- if not card.get('illustrator'):issues.append({'type':'illustrator','reason':'Artist not supplied by the matched sources.'})
+ if not card.get('illustrator')and'illustrator'not in card.get('_notApplicable',[]):issues.append({'type':'illustrator','reason':'Artist not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not card.get('hp'):issues.append({'type':'hp','reason':'HP not supplied by the matched sources.'})
  if card.get('supertype')=='Pokemon'and not any(card.get(k)for k in ('attacks','abilities','effect')):issues.append({'type':'card_text','reason':'No attacks, ability or effect supplied by the matched sources.'})
  card['availableVariants']=[p['label']for p in card['printings']]
- card['dataQuality']={'detailsArchived':bool(card.get('_enrichedSource')),'baseImageArchived':valid_image(card['images'].get('small','')),'printings':len(card['printings']),'variantImagesArchived':sum(valid_image(p['images'].get('small',''))for p in card['printings']),'openResearch':len(issues),'notApplicable':['regulationMark']if not card.get('regulationMark')and (info.get('releaseDate','')<'2017-01-01')else[]}
+ card['dataQuality']={'detailsArchived':bool(card.get('_enrichedSource')),'baseImageArchived':valid_image(card['images'].get('small','')),'printings':len(card['printings']),'variantImagesArchived':sum(valid_image(p['images'].get('small',''))for p in card['printings']),'openResearch':len(issues),'notApplicable':sorted(set(card.get('_notApplicable',[])+(['regulationMark']if not card.get('regulationMark')and (info.get('releaseDate','')<'2017-01-01')else[])))}
  return card,[{'setId':sid,'cardId':card['id'],'number':card['number'],'name':card['name'],**x}for x in issues]
 
 def exports(manifest):
@@ -273,6 +292,8 @@ def main():
  manifest=read(ROOT/'data/sets.json')
  overrides_path=ROOT/'data/catalogue-overrides.json'
  excluded=read(overrides_path).get('excludedFromEnglish',{})if overrides_path.exists()else{}
+ templates_path=ROOT/'data/imports/reviewed-numbered-energy.json'
+ templates=read(templates_path)if templates_path.exists()else{}
  try:secondary_rows=get(LEGACY+'sets/en.json')
  except Exception as e:print('Secondary listing unavailable:',e,flush=True);secondary_rows=[]
  if not args.exports_only:
@@ -322,7 +343,7 @@ def main():
      if matched.get(k)and not payload['set'].get(k):payload['set'][k]=matched[k]
    cards=[];research=list(set_issues)
    with concurrent.futures.ThreadPoolExecutor(max_workers=int(os.environ.get('CATALOGUE_WORKERS','10')))as pool:
-    for c,issues in pool.map(lambda old:process_card(old,info,secondary,secondary_url,args.refresh),payload['cards']):cards.append(c);research.extend(issues)
+    for c,issues in pool.map(lambda old:process_card(old,info,secondary,secondary_url,args.refresh,templates),payload['cards']):cards.append(c);research.extend(issues)
    assert len(cards)==len(payload['cards'])and len({c['id']for c in cards})==len(cards)
    payload.update(cards=cards,updated=now(),schemaVersion=SCHEMA,language='en')
    payload['set']['game']='pokemon-tcg-pocket'if'Pocket'in info.get('series','')else'pokemon-tcg';payload['set']['language']='en'

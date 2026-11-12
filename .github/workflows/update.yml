@@ -12,6 +12,7 @@ on:
       - 'scripts/enrich_catalogue.py'
       - 'scripts/validate_catalogue.py'
       - 'data/catalogue-overrides.json'
+      - 'data/imports/reviewed-numbered-energy.json'
       - 'tests/test_enrich_catalogue.py'
   schedule:
     - cron: '17 4 * * 1'
