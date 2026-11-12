@@ -142,15 +142,18 @@ def reviewed_template(old,sid,rules):
  c['provenance']={**c.get('provenance',{}),'primary':{'provider':'TCGdex + reviewed same-kit numbered copy','url':c['_enrichedSource'],'language':'en','fetchedAt':now(),'sourceUpdatedAt':d.get('updated'),'identityChecked':['sameSet','sameCardName','archivedImageSha256','visualReview'],'templateCardId':d['id'],'relation':'same_card_text_distinct_collector_number','reason':rule['reason'],'evidence':rule['evidence'],'pricingTransferred':False}}
  return c
 
-def archive(url,sid,filename,kind,evidence,expected_source_sha=None):
+def archive(url,sid,filename,kind,evidence,expected_source_sha=None,source_bytes=None):
  if not url or not url.startswith('https://'):return None
  safe(sid);safe(filename);target=ROOT/'assets/sets'/sid/filename
  try:
+  if source_bytes is not None:
+   if len(source_bytes)>MAX_IMAGE:raise ValueError('image_too_large')
+   if not expected_source_sha or hashlib.sha256(source_bytes).hexdigest()!=expected_source_sha:raise ValueError('reviewed_source_image_changed')
   # Resumable imports never need to redownload archived source files.
   if target.is_file():
    with Image.open(target)as im:im.load();w,h=im.size
   else:
-   body=get(url,attempts=2,image=True)
+   body=source_bytes if source_bytes is not None else get(url,attempts=2,image=True)
    if expected_source_sha and hashlib.sha256(body).hexdigest()!=expected_source_sha:raise ValueError('reviewed_source_image_changed')
    with Image.open(io.BytesIO(body))as source:
     source.load();w,h=source.size

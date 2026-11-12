@@ -3,6 +3,16 @@
 import hashlib,json,pathlib
 import enrich_catalogue as m
 ROOT=pathlib.Path(__file__).resolve().parents[1]
+def frozen_source(rule):
+ """Use exact reviewed source bytes from Git, without contacting the CDN."""
+ path=rule.get('sourcePath')
+ if not path:return None
+ source=m.local(path)
+ if source is None:raise ValueError('missing_reviewed_source: '+str(path))
+ body=source.read_bytes()
+ if hashlib.sha256(body).hexdigest()!=rule['sourceSha256']:raise ValueError('reviewed_source_image_changed')
+ return body
+
 def main():
  m.ROOT=ROOT
  reviews=m.read(ROOT/'data/imports/reviewed-variant-images.json')
@@ -18,7 +28,7 @@ def main():
   name=m.file_number(c['number'])+'-reviewed-'+hashlib.sha256(p['key'].encode()).hexdigest()[:12]+'.webp'
   previous=p.get('imageAsset')or{}
   if previous.get('path')and m.local(previous['path']):assert hashlib.sha256(m.local(previous['path']).read_bytes()).hexdigest()==previous['sha256']
-  asset=m.archive(rule['sourceUrl'],sid,name,'variant',{'cardId':c['id'],'number':c['number'],'name':c['name'],'language':'en','variantKey':p['key'],'sourcePage':rule['sourcePage'],'visualEvidence':rule['visualEvidence']},expected_source_sha=rule['sourceSha256'])
+  asset=m.archive(rule['sourceUrl'],sid,name,'variant',{'cardId':c['id'],'number':c['number'],'name':c['name'],'language':'en','variantKey':p['key'],'sourcePage':rule['sourcePage'],'visualEvidence':rule['visualEvidence']},expected_source_sha=rule['sourceSha256'],source_bytes=frozen_source(rule))
   assert asset and not asset.get('error'),asset
   p.setdefault('_reviewedSourceFields',{k:p.get(k)for k in ('type','foil','stamp','size','label')})
   overrides=rule.get('overrides',{});assert set(overrides)<=set(['stamp','label','foil','subtype','size','type'])

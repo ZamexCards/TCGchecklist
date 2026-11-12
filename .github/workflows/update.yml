@@ -12,12 +12,15 @@ on:
       - 'scripts/enrich_catalogue.py'
       - 'scripts/validate_catalogue.py'
       - 'scripts/import_reviewed_variants.py'
+      - 'scripts/plan_research_batches.py'
       - 'data/imports/reviewed-variant-images.json'
       - 'data/catalogue-policy.json'
       - 'data/catalogue-overrides.json'
       - 'data/imports/reviewed-numbered-energy.json'
       - 'data/imports/reviewed-image-sources.json'
       - 'tests/test_enrich_catalogue.py'
+      - 'tests/test_reviewed_variants.py'
+      - 'assets/reviewed-sources/**'
   schedule:
     - cron: '17 4 * * 1'
 
@@ -46,6 +49,8 @@ jobs:
           python-version: '3.12'
       - name: Install image validation
         run: python -m pip install pillow
+      - name: Test catalogue identity and frozen image imports
+        run: python -m unittest discover -s tests -v
       - name: Refresh new sets, promos and missing artwork
         run: python scripts/update_data.py
       - name: Store available card images and logos
@@ -54,6 +59,8 @@ jobs:
         run: python scripts/enrich_catalogue.py
       - name: Apply visually reviewed English variant scans
         run: python scripts/import_reviewed_variants.py
+      - name: Save bounded research batches
+        run: python scripts/plan_research_batches.py
       - name: Validate complete database and reusable exports
         run: python scripts/validate_catalogue.py
       - name: Audit images
